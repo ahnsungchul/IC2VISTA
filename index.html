@@ -1,0 +1,370 @@
+<!DOCTYPE HTML>
+<html lang="ko" class="layoutMain"><!--관리자 구분용(추후 사용자/진입시 첫 메인용 추가될수도)-->
+    <head>
+        <meta charset="utf-8" />
+        <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+        <meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no"><!--240213 수정-->
+        <!-- 검색 관련 메타태그 -->
+        <meta name="author" content="제작자(개발자)" />
+        <meta name="keywords" content="검색 키워드" />
+        <meta name="copyright" content="저작권자(개발자 또는 업체명)" />
+        <meta name="description" content="홈페이지 설명 문구">
+        <meta name="subject" content="주제">
+        <!--오픈그래프-->
+        <meta property="og:type" content="website">
+        <meta property="og:title" content="홈페이지 타이틀">
+        <meta property="og:description" content="홈페이지 설명 문구">
+        <meta property="og:site_name" content="홈페이지 이름">
+        <meta property="og:url" content="홈페이지 url" />
+    
+        <!-- 사파리 전화번호 링크 제거-->
+        <meta name="format-detection" content="telephone=no" />
+    
+        <title>IC2VISTA 홈페이지</title>
+
+        <!-- 기본 세팅 -->
+        <!--css : style.css는 css정렬중 제일 마지막 배치, 기타 css는 style.css위로 배치-->
+        <!-- <link rel="stylesheet" type="text/css" href="css/common.css" />
+        <link rel="stylesheet" type="text/css" href="css/layout.css" /> -->
+        <!-- <link rel="stylesheet" type="text/css" href="./resources/common/common/css/style.css" /> -->
+
+        <!--js-->
+        <script src="./resources/js/jquery-1.11.2.min.js" type="text/javascript"></script>
+        <!-- //기본 세팅 -->
+
+        <script>
+            $(document).ready(function(){
+                menutree.count();
+                menutree.type();
+                menutree.state();
+                menutree.head();
+                menutree.url();
+            });
+
+            const menutree = {
+                count : function(){
+                    const _tr = $(".menutree-scroll .scroll-body .menutree tr");
+                    const _total = _tr.length;
+                    // console.log(">>> _total : ",_total);
+                    for(let i = 0; i < _total; i++){
+                        _tr.eq(i).find(".count").text(i+1);
+                    }
+                },
+                type : function(){
+                    const _tr = $(".menutree-scroll .scroll-body .menutree tr");
+                    const _type = $(".page .info .type");
+                    const _state = $(".page .info .state");
+                    const _td = _tr.find("td");
+                    const _total = _tr.length;
+                    let _type1 = 0;
+                    let _type2 = 0;
+                    let _type3 = 0;
+                    let _type4 = 0;
+                    let _type5 = 0;
+                    let _type6 = 0;
+                    let _type7 = 0;
+                    let _type8 = 0;
+                    let _type9 = 0;
+                    for(let i = 0; i < _total; i++){
+                        if(_tr.eq(i).find("td").eq(7).text() == "팝업"){
+                            _type1 += 1;
+                        }else if(_tr.eq(i).find("td").eq(7).text() == "디자인"){
+                            _type2 += 1;
+                        }else if(_tr.eq(i).find("td").eq(7).text() == "템플릿"){
+                            _type3 += 1;
+                        }else if(_tr.eq(i).find("td").eq(7).text() == "게시판-목록"){
+                            _type4 += 1;
+                        }else if(_tr.eq(i).find("td").eq(7).text() == "게시판-상세"){
+                            _type5 += 1;
+                        }else if(_tr.eq(i).find("td").eq(7).text() == "게시판-등록"){
+                            _type6 += 1;
+                        }
+                        if(_tr.eq(i).find("td").eq(11).hasClass("ok")){
+                            _type7 += 1;
+                        }else if(_tr.eq(i).find("td").eq(11).hasClass("hold")){
+                            _type8 += 1;
+                        }else if(_tr.eq(i).find("td").eq(11).hasClass("del")){
+                            _type9 += 1;
+                        }
+                    }
+                    _type.find(".total").text(_total);
+                    _type.find(".type0").text(_total - (_type1 + _type2 + _type3 + _type4 + _type5 + _type6));
+                    _type.find(".type1").text(_type1);
+                    _type.find(".type2").text(_type2);
+                    _type.find(".type3").text(_type3);
+                    _type.find(".type4").text(_type4);
+                    _type.find(".type5").text(_type5);
+                    _type.find(".type6").text(_type6);
+                    _type.find(".type7").text(_type7);
+                    _type.find(".type8").text(_type8);
+                    _type.find(".type9").text(_type9);
+
+                    let _state1 = _type7;
+                    let _state2 = _total - _type8 - _type9;
+                    let _state3 = _type7 * 100 / _state2;
+                    _state.find(".state1").text(_state1);
+                    _state.find(".state2").text(_state2);
+                    _state.find(".state3").text(Math.round(_state3));
+                },
+                state : function(){
+                    const _tr = $(".menutree-scroll .scroll-body .menutree tr");
+                    _tr.each(function(){
+                        // console.log(">>>",$(this).find("td").eq(11));
+                        if($(this).find("td").eq(11).hasClass("hold")){
+                            $(this).addClass("hold");
+                        }else if($(this).find("td").eq(11).hasClass("ok")){
+                            $(this).addClass("ok");
+                            if ($(this).find("td").eq(11).hasClass("edit")) {
+                                $(this).addClass("ok edit");
+                            }
+                        }else if($(this).find("td").eq(11).hasClass("del")){
+                            $(this).addClass("del");
+                        }else if($(this).find("td").eq(11).hasClass("ing")){
+                            $(this).addClass("ing");
+                        }
+                    });
+                },
+                head : function(){
+                    const _headHeight = $(".menutree-scroll .scroll-top").height();
+                    const _body = $(".menutree-scroll .scroll-body");
+                    const _menutree = _body.find(".menutree");
+                    _body.css({"padding-top":_headHeight});
+                    _menutree.css({"top":_headHeight});
+                },
+                url : function(){
+                    const _tr = $(".menutree-scroll .scroll-body .menutree tr");
+                    _tr.each(function(){
+                        const _id = $(this).find(".id").text();
+                        const _url = "html/"+_id+".html";
+                        $(this).find(".url").html("<a href='"+_url+"' target='_blank'></a>");
+                    });
+                }
+            }
+        </script>
+
+        <style type="text/css">
+            * {font-family: 'dotum'; font-size:12px; color:#666;}
+            html,body{ height: 100%;}
+            body{ padding: 20px; margin: 0; display: flex; flex-direction: column; box-sizing: border-box;}
+            .page {position:relative; font:bold 26px Dotum; color: #000; padding:10px; margin-bottom:10px; border-bottom:2px solid #666; display: flex; justify-content: space-between;}
+            .page .info .tit{ font:bold 26px Dotum; color: #000;}
+            .page .info .type{ font: bold 12px dotum; color: #666; margin: 5px 0 0 0;}
+            .page .info .type span{ font: bold 12px dotum; color: #000; margin: 5px 0 0 0;}
+            .page .info .type .total2,
+            .page .info .type .total2 span{ font-size: 16px; color: #000;}
+            .page .info .type .ok,
+            .page .info .type .ok span{ font-size: 16px; color: #00F;}
+            .page .info .type .hold,
+            .page .info .type .hold span{ font-size: 16px; color: #F00;}
+            .page .info .type .state,
+            .page .info .type .state span{ font-size: 16px;}
+            h2 {font:bold 20px/24px Dotum;padding:30px 0 0 0;}
+            dt {margin:0;padding:10px 0;border-top:1px solid #666;}
+            dd {margin:0;padding:0;}
+            a {cursor:pointer; color:#666;}
+            a:visited {color:#666;}
+            a:link {}
+            a:hover {}
+            .t_a_l{ text-align: left !important;}
+            .intro {text-align:right;line-height:14px;color:#999;}
+            .link {position:absolute;top:10px;left:350px;}
+            .link a{color:#666;font-size:14px;color:#555;padding-right:10px;}
+            .menutree { width:100%; margin: 0; border-collapse:collapse;}
+            .menutree thead th {background:#888; font-weight:bold; color: #fff;}
+            .menutree th {border:1px solid #666; padding:5px 0;vertical-align:middle; font-weight:normal;}
+            .menutree tbody{border-bottom:2px soild blue;margin-bottom:3px;}
+            .menutree tr:nth-child(2n + 1) td{ background-color: #fff;}
+            .menutree tr:nth-child(2n + 2) td{ background-color: #f9f9f9;}
+            .menutree tr td,
+            .menutree tr td a,
+            .menutree tr:hover td a{ color:#000;}
+            .menutree td { color: #000; border: 1px solid #666; padding: 5px; text-align: center;}
+            .menutree td:nth-child(2),
+            .menutree td:nth-child(3),
+            .menutree td:nth-child(4),
+            .menutree td:nth-child(5),
+            .menutree td:nth-child(6),
+            .menutree td:nth-child(10){ text-align: left;}
+            .menutree td.url {text-align:left;padding-left:10px;}
+            .menutree td.url a::before{ font-size: 9px; content: '▶ ';}
+            .menutree td.url a:hover{ text-decoration: underline;}
+            .menutree td.url a[target=_blank]::after{ content: attr(href);}
+            .menutree tr.ok td{ background-color:#bce0ff;}
+            .menutree tr .ok{ background-color:#00F !important; color:#fff;}
+            .menutree tr .ok::before{ content:'완료';}
+            .menutree tr.ing td{ background-color:#ffe2e2;}
+            .menutree tr .ing{ background-color:#F00 !important; color:#fff;}
+            .menutree tr .ing::before{ content:'진행중';}
+            .menutree tr.edit td {background-color:#cce7cb;}
+            .menutree tr .edit{ background-color:#090 !important; color:#fff;}
+            .menutree tr .edit::before{ content:'수정';}
+            .menutree tr .check{ background-color:#C60 !important; color:#fff;}
+            .menutree tr .check::before{ content:'확인필요';}
+            .menutree tr.hold td{ background-color:#a9a9a9;}
+            .menutree tr .hold{ background-color:#888 !important; color:#fff;}
+            .menutree tr .hold::before{ content:'보류';}
+            .menutree tr .noDesign{ background-color:#888 !important; color:#fff;}
+            .menutree tr .noDesign::before{ content:'디자인없음';}
+            .menutree tr.del td,
+            .menutree tr.del td a{ background-color:#f1f1f1; color:#ccc;}
+            .menutree tr td.del{ background-color:#ccc !important; color:#888;}
+            .menutree tr td.del::before{ content:'삭제';}
+            .menutree tr .hold.same::before{ content:'동일-제외??';}
+            .menutree tr .del.same::before{ content:'동일-제외';}
+            .menutree tr.ok .ck{ background-color:#00F; color:#fff;}
+            .menutree tr.ok2 .ck{ background-color:#F00; color:#fff;}
+            .menutree tr.ok3 .ck{ background-color:#090; color:#fff;}
+            .menutree tr.ok4 .ck{ background-color:#C60; color:#fff;}
+            .menutree tr.ok5 .ck{ background-color:#888; color:#fff;}
+            .menutree tr.ok6 .ck{ background-color:#F00; color:#fff;}
+            .menutree tr:hover td{ background-color:#e7ffd5;}
+            .menutree tr.ok:hover td{ background-color:#8dc7fa;}
+            .menutree tr.ing:hover td{ background-color:#ffcece;}
+            .menutree tr.del:hover td{ background-color:transparent;}
+            .menutree tr.edit:hover td {background-color:#81d87e;}
+            div.info-msg,
+            .menutree .re{ width: 100%; color: #F00; padding: 0; margin: 4px 0; display: flex;}
+            .menutree .re::before{ content: 're> '; margin-right: 3px;}
+            div.info-msg.type2,
+            .menutree .re.re2 {color: #000;}
+            div.info-msg {padding: 0 10px 5px; text-align: center;line-height: 1.4; display: block;}
+            div.info-msg div {color: #000; display: inline-block; text-align: left; width: auto;}
+            div.info-msg span {color: #F00;}
+            .menutree td hr{ width: 100%; margin: 10px 0; border: 0; border-top: 1px dashed #000;}
+            .html {background:pink;}
+            .dev {background:skyblue;}
+            .complete {background:#eee;}
+            .question {background:red;}
+            .menutreeheader { width:100%; margin-bottom:10px; border-collapse:collapse;}
+            .menutreeheader thead th { background:#ddd; font-weight:bold; border:1px solid #777;  border-bottom:2px solid #777; padding:0px;}
+            .menutreeheader thead th a{ display:block; line-height:40px; text-decoration:none; font-size:14px; color:#777; font-weight:normal; }
+            .menutreeheader thead th.on { background-color:#fff; border:2px solid #777; border-bottom:0px;}
+            .menutreeheader thead th.on a{ color:#000; font-weight:bold;}
+            .menutree-scroll{ width: 100%; margin: 0 0 20px 0; flex: 1; position: relative;}
+            .menutree-scroll .scroll-top{ border-top: 1px solid #000; border-left: 1px solid #000; position: absolute; top: 0; right: 3px; left: 0; z-index: 1;}
+            .menutree-scroll .scroll-body{ width: 100%; height: 100%; background-color: #f1f1f1; padding: 23px 0 0 0; flex: 1; overflow-y: scroll; border: 1px solid #000; border-bottom: 1px solid #666; position: relative;}
+            .menutree-scroll .scroll-body::-webkit-scrollbar{ width: 4px; border: 1px solid #000;}
+            .menutree-scroll .scroll-body::-webkit-scrollbar-track{ background-color: #999;}
+            .menutree-scroll .scroll-body::-webkit-scrollbar-thumb{ background-color: #000;}
+            .menutree-scroll .scroll-body .menutree{ position: absolute; top: 23px; right: 0; bottom: 0; left: 0;}
+            .menutree-scroll .scroll-top .menutree th:first-child,
+            .menutree-scroll .scroll-body .menutree td:first-child{ border-left: 0;}
+            .menutree-scroll .scroll-top .menutree th:last-child,
+            .menutree-scroll .scroll-body .menutree td:last-child{ border-right: 0;}
+            .menutree-scroll .scroll-top .menutree tr:first-child th,
+            .menutree-scroll .scroll-body .menutree tr:first-child td{ border-top: 0;}
+            .menutree-scroll .scroll-body .menutree tr:last-child td{ border-bottom: 0;}
+            .menutree-scroll .scroll-body .menutree::after{ width: 100%; height: 1px; background-color: #000; content: ''; position: absolute; bottom: -1px; left: 0;}
+            .tab-box{ width: 100%; margin: 0 0 10px 0; display: flex; flex-wrap: wrap; border-bottom: 1px solid #333; position: relative;}
+            .tab-box a{ width: 200px; height: 40px; background-color: #eee; font-weight: 700; font-size: 16px; text-decoration: none; color: #555; margin: 0 0 -1px 0; display: flex; align-items: center; justify-content: center; border: 1px solid #333;}
+            .tab-box a + a{ margin-left: -1px;}
+            .tab-box a.on,
+            .tab-box a.on:hover{ background-color: #fff; color: #000; border-bottom-color: #fff;}
+            .tab-box a:hover{ background-color: #ccc; color: #000;}
+            .tab-box > span {position: absolute;}
+
+            .ex-box {background-color: #fff; padding: 5px; border: 1px dotted #666; display: flex; flex-direction: column; margin: 5px 0;}
+            .ex-box::before {content: '화면예시 : ';}
+
+            span.new {color: #00F; font-weight: bold;}
+        </style>
+    </head>
+    <body>
+        <div class="page">
+            <div class="info">
+                <h1 class="tit">Project - IC2VISTA 홈페이지 구축</h1>
+                <p class="type">
+                    <span class="total2">전체 : <span class="total"></span></span>,
+                    <span class="ok">완료 : <span class="type7"></span></span>,
+                    <span class="hold">보류 : <span class="type8"></span></span>,
+                    <span class="hold">삭제 : <span class="type9"></span></span> / 
+                    <span class="state">
+                        진행상황 : <span class="state1"></span>/<span class="state2"></span>(<span class="state3"></span>%)
+                    </span> / 
+                    기타 : <span class="type0"></span>,
+                    팝업 : <span class="type1"></span>,
+                    디자인 : <span class="type2"></span>,
+                    템플릿 : <span class="type3"></span>,
+                    게시판-목록 : <span class="type4"></span>,
+                    게시판-상세 : <span class="type5"></span>,
+                    게시판-등록 : <span class="type6"></span>
+                </p>
+            </div>
+            <span class="intro">
+                HTML5 / CSS3 / utf-8 <br>
+                Browser - Firefox, edge, Crome, Safari, Opera<br>
+            </span>
+        </div>
+
+        <div class="menutree-scroll">
+            <div class="scroll-top">
+                <table class="menutree" summary="메뉴구조도" >
+                    <colgroup>
+                        <col style="width: 60px;" />
+                        <col style="width: 10%;" />
+                        <col style="width: 10%;" />
+                        <col style="width: 10%;" />
+                        <col style="width: 10%;" />
+                        <col style="width: 10%;" />
+                        <col style="width: 5%;" />
+                        <col style="width: 5%;" />
+                        <col style="width: 7%;" />
+                        <col style="width: auto;" />
+                        <col style="width: 80px;" />
+                        <col style="width: 10%;" />
+                    </colgroup>
+                    <thead>
+                        <tr>
+                            <th>번호</th>
+                            <th>1depth</th>
+                            <th>2depth</th>
+                            <th>3depth</th>
+                            <th>4depth</th>
+                            <th>5depth</th>
+                            <th>타입</th>
+                            <th>폴더명</th>
+                            <th>ID(파일생성 후 변경ID)</th>
+                            <th>URL</th>
+                            <th>진행상태</th>
+                            <th>기타</th>
+                        </tr>
+                    </thead>
+                </table>
+            </div>
+            <div class="scroll-body">
+                <table class="menutree" summary="메뉴구조도" >
+                    <colgroup>
+                        <col style="width: 60px;" />
+                        <col style="width: 10%;" />
+                        <col style="width: 10%;" />
+                        <col style="width: 10%;" />
+                        <col style="width: 10%;" />
+                        <col style="width: 10%;" />
+                        <col style="width: 5%;" />
+                        <col style="width: 5%;" />
+                        <col style="width: 7%;" />
+                        <col style="width: auto;" />
+                        <col style="width: 80px;" />
+                        <col style="width: 10%;" />
+                    </colgroup>
+                    <tbody>
+                        <tr>
+                            <td class="count"></td>
+                            <td>template</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>공통</td>
+                            <td>html</td>
+                            <td class="id">template</td>
+                            <td class="url"></td>
+                            <td class="ing"></td><!-- ok:완료, ing:진행중, edit:수정, check:확인필요, hold:보류 -->
+                            <td class="t_a_l"></td>
+                        </tr>
+                    </tbody>
+                </table>
+            </div>
+        </div>
+    </body>
+</html>

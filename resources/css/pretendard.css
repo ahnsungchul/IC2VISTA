@@ -1,0 +1,30 @@
+/* 
+ * Nanum Square Web Fonts
+ * https://github.com/hiun/NanumSquare
+ * Copyright (c) 2010, NAVER Corporation (http://www.nhncorp.com) 
+ */
+ 
+@font-face {
+ font-family: 'Pretendard';
+ font-style: normal;
+ font-weight: 400;
+ src: url(../font/Pretendard/Pretendard-Regular.woff) format('woff');
+}
+@font-face {
+ font-family: 'Pretendard';
+ font-style: normal;
+ font-weight: 500;
+ src: url(../font/Pretendard/Pretendard-Medium.woff) format('woff');
+}
+@font-face {
+ font-family: 'Pretendard';
+ font-style: normal;
+ font-weight: 600;
+ src: url(../font/Pretendard/Pretendard-SemiBold.woff) format('woff');
+}
+@font-face {
+ font-family: 'Pretendard';
+ font-style: normal;
+ font-weight: 700;
+ src: url(../font/Pretendard/Pretendard-Bold.woff) format('woff');
+}
