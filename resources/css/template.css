@@ -28,6 +28,17 @@
 [class^="txt-"][class*="-lh18"]{ line-height: 1.8;}
 [class^="txt-"][class*="-lh19"]{ line-height: 1.9;}
 [class^="txt-"][class*="-lh20"]{ line-height: 2.0;}
+[class^="txt-"][class*="-lh10px"]{ line-height: 10px;}
+[class^="txt-"][class*="-lh11px"]{ line-height: 11px;}
+[class^="txt-"][class*="-lh12px"]{ line-height: 12px;}
+[class^="txt-"][class*="-lh13px"]{ line-height: 13px;}
+[class^="txt-"][class*="-lh14px"]{ line-height: 14px;}
+[class^="txt-"][class*="-lh15px"]{ line-height: 15px;}
+[class^="txt-"][class*="-lh16px"]{ line-height: 16px;}
+[class^="txt-"][class*="-lh17px"]{ line-height: 17px;}
+[class^="txt-"][class*="-lh18px"]{ line-height: 18px;}
+[class^="txt-"][class*="-lh19px"]{ line-height: 19px;}
+[class^="txt-"][class*="-lh20px"]{ line-height: 20px;}
 [class^="txt-"][class*="-tal"]{ text-align: left;}
 [class^="txt-"][class*="-tac"]{ text-align: center;}
 [class^="txt-"][class*="-tar"]{ text-align: right;}
@@ -47,3 +58,200 @@
 [class^="txt-"][class*="-fcDDDDDD"]{ color: #DDDDDD;}
 [class^="txt-"][class*="-fcEEEEEE"]{ color: #EEEEEE;}
 [class^="txt-"][class*="-fcFFFFFF"]{ color: #FFFFFF;}
+[class^="txt-"][class*="-fc5F627B"]{ color: #5F627B;}
+[class^="txt-"][class*="-fc41679F"]{ color: #41679F;}
+[class^="txt-"][class*="-fc2AA138"]{ color: #2AA138;}
+[class^="txt-"][class*="-fc5490DE"]{ color: #5490DE;}
+[class^="txt-"] > span{ display: inline;}
+
+.ico{ background: no-repeat center center;}
+.ico[class*="-10-10"]{ width: 10px; height: 10px;}
+.ico[class*="-12-12"]{ width: 12px; height: 12px;}
+.ico[class*="-14-14"]{ width: 14px; height: 14px;}
+.ico[class*="-16-16"]{ width: 16px; height: 16px;}
+.ico[class*="-18-18"]{ width: 18px; height: 18px;}
+.ico[class*="-20-20"]{ width: 20px; height: 20px;}
+.ico[class*="-24-24"]{ width: 24px; height: 24px;}
+.ico[class*="-66-66"]{ width: 66px; height: 66px;}
+.ico.ico-3d-b-18-18{ background-image: url(../img/ico/ico-3d-b-18-18.png);}
+.ico.ico-add-b-12-12{ background-image: url(../img/ico/ico-add-b-12-12.png);}
+.ico.ico-add-w-12-12{ background-image: url(../img/ico/ico-add-w-12-12.png);}
+.ico.ico-add-w-14-14{ background-image: url(../img/ico/ico-add-w-14-14.png);}
+.ico.ico-add-w-16-16{ background-image: url(../img/ico/ico-add-w-16-16.png);}
+.ico.ico-add-w-18-18{ background-image: url(../img/ico/ico-add-w-18-18.png);}
+.ico.ico-arrow-down-b-10-10{ background-image: url(../img/ico/ico-arrow-down-b-10-10.png);}
+.ico.ico-arrow-down-b-14-14{ background-image: url(../img/ico/ico-arrow-down-b-14-14.png);}
+.ico.ico-arrow-down-b-16-16{ background-image: url(../img/ico/ico-arrow-down-b-16-16.png);}
+.ico.ico-arrow-down-w-12-12{ background-image: url(../img/ico/ico-arrow-down-w-12-12.png);}
+.ico.ico-arrow-left-b-14-14{ background-image: url(../img/ico/ico-arrow-left-b-14-14.png);}
+.ico.ico-arrow-left-double-b-20-20{ background-image: url(../img/ico/ico-arrow-left-double-b-20-20.png);}
+.ico.ico-arrow-left-w-24-24{ background-image: url(../img/ico/ico-arrow-left-w-24-24.png);}
+.ico.ico-arrow-right-b-14-14{ background-image: url(../img/ico/ico-arrow-right-b-14-14.png);}
+.ico.ico-arrow-right-double-b-20-20{ background-image: url(../img/ico/ico-arrow-right-double-b-20-20.png);}
+.ico.ico-arrow-right-w-24-24{ background-image: url(../img/ico/ico-arrow-right-w-24-24.png);}
+.ico.ico-arrow-up-b-14-14{ background-image: url(../img/ico/ico-arrow-up-b-14-14.png);}
+.ico.ico-arrow-up-b-18-18{ background-image: url(../img/ico/ico-arrow-up-b-18-18.png);}
+.ico.ico-battery-w-18-18{ background-image: url(../img/ico/ico-battery-w-18-18.png);}
+.ico.ico-box-b-18-18{ background-image: url(../img/ico/ico-box-b-18-18.png);}
+.ico.ico-camera-b-18-18{ background-image: url(../img/ico/ico-camera-b-18-18.png);}
+.ico.ico-camera-off-w-14-14{ background-image: url(../img/ico/ico-camera-off-w-14-14.png);}
+.ico.ico-camera-w-14-14{ background-image: url(../img/ico/ico-camera-w-14-14.png);}
+.ico.ico-chart-w-20-20{ background-image: url(../img/ico/ico-chart-w-20-20.png);}
+.ico.ico-clock2-b-20-20{ background-image: url(../img/ico/ico-clock2-b-20-20.png);}
+.ico.ico-clock-b-20-20{ background-image: url(../img/ico/ico-clock-b-20-20.png);}
+.ico.ico-close-b-16-16{ background-image: url(../img/ico/ico-close-b-16-16.png);}
+.ico.ico-close-w-20-20{ background-image: url(../img/ico/ico-close-w-20-20.png);}
+.ico.ico-completion-b-18-18{ background-image: url(../img/ico/ico-completion-b-18-18.png);}
+.ico.ico-crop-w-18-18{ background-image: url(../img/ico/ico-crop-w-18-18.png);}
+.ico.ico-crosshair-w-18-18{ background-image: url(../img/ico/ico-crosshair-w-18-18.png);}
+.ico.ico-dashboard-w-20-20{ background-image: url(../img/ico/ico-dashboard-w-20-20.png);}
+.ico.ico-disc-w-20-20{ background-image: url(../img/ico/ico-disc-w-20-20.png);}
+.ico.ico-dots-w-24-24{ background-image: url(../img/ico/ico-dots-w-24-24.png);}
+.ico.ico-download-w-18-18{ background-image: url(../img/ico/ico-download-w-18-18.png);}
+.ico.ico-drone-b-66-66{ background-image: url(../img/ico/ico-drone-b-66-66.png);}
+.ico.ico-drone-w-20-20{ background-image: url(../img/ico/ico-drone-w-20-20.png);}
+.ico.ico-drone-w-24-24{ background-image: url(../img/ico/ico-drone-w-24-24.png);}
+.ico.ico-dust-type1-16-16{ background-image: url(../img/ico/ico-dust-type1-16-16.png);}
+.ico.ico-dust-type2-16-16{ background-image: url(../img/ico/ico-dust-type2-16-16.png);}
+.ico.ico-dust-type3-16-16{ background-image: url(../img/ico/ico-dust-type3-16-16.png);}
+.ico.ico-dust-type4-16-16{ background-image: url(../img/ico/ico-dust-type4-16-16.png);}
+.ico.ico-dust-type5-16-16{ background-image: url(../img/ico/ico-dust-type5-16-16.png);}
+.ico.ico-equalizer-b-18-18{ background-image: url(../img/ico/ico-equalizer-b-18-18.png);}
+.ico.ico-expand-height-b-18-18{ background-image: url(../img/ico/ico-expand-height-b-18-18.png);}
+.ico.ico-flag-w-18-18{ background-image: url(../img/ico/ico-flag-w-18-18.png);}
+.ico.ico-flight-takeoff-w-24-24{ background-image: url(../img/ico/ico-flight-takeoff-w-24-24.png);}
+.ico.ico-focus-b-18-18{ background-image: url(../img/ico/ico-focus-b-18-18.png);}
+.ico.ico-fullscreen2-w-14-14{ background-image: url(../img/ico/ico-fullscreen2-w-14-14.png);}
+.ico.ico-fullscreen-w-14-14{ background-image: url(../img/ico/ico-fullscreen-w-14-14.png);}
+.ico.ico-gauge-b-18-18{ background-image: url(../img/ico/ico-gauge-b-18-18.png);}
+.ico.ico-gps-w-20-20{ background-image: url(../img/ico/ico-gps-w-20-20.png);}
+.ico.ico-guide-w-18-18{ background-image: url(../img/ico/ico-guide-w-18-18.png);}
+.ico.ico-guide-b-18-18{ background-image: url(../img/ico/ico-guide-b-18-18.png);}
+.ico.ico-image-b-18-18{ background-image: url(../img/ico/ico-image-b-18-18.png);}
+.ico.ico-image-b-20-20{ background-image: url(../img/ico/ico-image-b-20-20.png);}
+.ico.ico-information-w-14-14{ background-image: url(../img/ico/ico-information-w-14-14.png);}
+.ico.ico-lens-b-18-18{ background-image: url(../img/ico/ico-lens-b-18-18.png);}
+.ico.ico-list-w-20-20{ background-image: url(../img/ico/ico-list-w-20-20.png);}
+.ico.ico-logo-144-26{ width: 144px; height: 26px; background-image: url(../img/ico/ico-logo-144-26.png);}
+.ico.ico-logout-w-20-20{ background-image: url(../img/ico/ico-logout-w-20-20.png);}
+.ico.ico-map2-w-20-20{ background-image: url(../img/ico/ico-map2-w-20-20.png);}
+.ico.ico-map-w-20-20{ background-image: url(../img/ico/ico-map-w-20-20.png);}
+.ico.ico-move-w-14-14{ background-image: url(../img/ico/ico-move-w-14-14.png);}
+.ico.ico-notification-w-20-20{ background-image: url(../img/ico/ico-notification-w-20-20.png);}
+.ico.ico-pencil-ruler-w-18-18{ background-image: url(../img/ico/ico-pencil-ruler-w-18-18.png);}
+.ico.ico-plane-b-66-66{ background-image: url(../img/ico/ico-plane-b-66-66.png);}
+.ico.ico-plane-w-14-14{ background-image: url(../img/ico/ico-plane-w-14-14.png);}
+.ico.ico-radar-w-20-20{ background-image: url(../img/ico/ico-radar-w-20-20.png);}
+.ico.ico-radio-w-14-14{ background-image: url(../img/ico/ico-radio-w-14-14.png);}
+.ico.ico-remote-w-20-20{ background-image: url(../img/ico/ico-remote-w-20-20.png);}
+.ico.ico-reset-w-14-14{ background-image: url(../img/ico/ico-reset-w-14-14.png);}
+.ico.ico-road-b-18-18{ background-image: url(../img/ico/ico-road-b-18-18.png);}
+.ico.ico-robot-b-66-66{ background-image: url(../img/ico/ico-robot-b-66-66.png);}
+.ico.ico-route-b-18-18{ background-image: url(../img/ico/ico-route-b-18-18.png);}
+.ico.ico-route-b-20-20{ background-image: url(../img/ico/ico-route-b-20-20.png);}
+.ico.ico-router-w-20-20{ background-image: url(../img/ico/ico-router-w-20-20.png);}
+.ico.ico-route-w-18-18{ background-image: url(../img/ico/ico-route-w-18-18.png);}
+.ico.ico-road-w-18-18{ background-image: url(../img/ico/ico-road-w-18-18.png);}
+.ico.ico-skew-w-18-18{ background-image: url(../img/ico/ico-skew-w-18-18.png);}
+.ico.ico-box-w-18-18{ background-image: url(../img/ico/ico-box-w-18-18.png);}
+.ico.ico-3d-w-18-18{ background-image: url(../img/ico/ico-3d-w-18-18.png);}
+.ico.ico-route-w-20-20{ background-image: url(../img/ico/ico-route-w-20-20.png);}
+.ico.ico-ruler-w-18-18{ background-image: url(../img/ico/ico-ruler-w-18-18.png);}
+.ico.ico-save-w-16-16{ background-image: url(../img/ico/ico-save-w-16-16.png);}
+.ico.ico-search-w-18-18{ background-image: url(../img/ico/ico-search-w-18-18.png);}
+.ico.ico-settings-b-18-18{ background-image: url(../img/ico/ico-settings-b-18-18.png);}
+.ico.ico-settings-w-14-14{ background-image: url(../img/ico/ico-settings-w-14-14.png);}
+.ico.ico-shape-b-20-20{ background-image: url(../img/ico/ico-shape-b-20-20.png);}
+.ico.ico-shape-w-18-18{ background-image: url(../img/ico/ico-shape-w-18-18.png);}
+.ico.ico-share-w-18-18{ background-image: url(../img/ico/ico-share-w-18-18.png);}
+.ico.ico-ship-b-66-66{ background-image: url(../img/ico/ico-ship-b-66-66.png);}
+.ico.ico-signal-w-12-12{ background-image: url(../img/ico/ico-signal-w-12-12.png);}
+.ico.ico-skew-b-18-18{ background-image: url(../img/ico/ico-skew-b-18-18.png);}
+.ico.ico-station-w-20-20{ background-image: url(../img/ico/ico-station-w-20-20.png);}
+.ico.ico-subtract-w-12-12{ background-image: url(../img/ico/ico-subtract-w-12-12.png);}
+.ico.ico-subtract-b-12-12{ background-image: url(../img/ico/ico-subtract-b-12-12.png);}
+.ico.ico-subtract-w-14-14{ background-image: url(../img/ico/ico-subtract-w-14-14.png);}
+.ico.ico-subtract-w-18-18{ background-image: url(../img/ico/ico-subtract-w-18-18.png);}
+.ico.ico-triangle-b-18-18{ background-image: url(../img/ico/ico-triangle-b-18-18.png);}
+.ico.ico-user-w-20-20{ background-image: url(../img/ico/ico-user-w-20-20.png);}
+.ico.ico-volume-mute-w-14-14{ background-image: url(../img/ico/ico-volume-mute-w-14-14.png);}
+.ico.ico-volume-w-20-20{ background-image: url(../img/ico/ico-volume-w-20-20.png);}
+.ico.ico-weather-type1-24-24{ background-image: url(../img/ico/ico-weather-type1-24-24.png);}
+.ico.ico-weather-type2-24-24{ background-image: url(../img/ico/ico-weather-type2-24-24.png);}
+.ico.ico-weather-type3-24-24{ background-image: url(../img/ico/ico-weather-type3-24-24.png);}
+.ico.ico-weather-type4-24-24{ background-image: url(../img/ico/ico-weather-type4-24-24.png);}
+.ico.ico-weather-type5-24-24{ background-image: url(../img/ico/ico-weather-type5-24-24.png);}
+.ico.ico-weather-type6-24-24{ background-image: url(../img/ico/ico-weather-type6-24-24.png);}
+.ico.ico-weather-type7-24-24{ background-image: url(../img/ico/ico-weather-type7-24-24.png);}
+.ico.ico-weather-type8-24-24{ background-image: url(../img/ico/ico-weather-type8-24-24.png);}
+.ico.ico-weather-type9-24-24{ background-image: url(../img/ico/ico-weather-type9-24-24.png);}
+.ico.ico-weather-type10-24-24{ background-image: url(../img/ico/ico-weather-type10-24-24.png);}
+.ico.ico-weather-type11-24-24{ background-image: url(../img/ico/ico-weather-type11-24-24.png);}
+.ico.ico-weather-type12-24-24{ background-image: url(../img/ico/ico-weather-type12-24-24.png);}
+.ico.ico-weather-type13-24-24{ background-image: url(../img/ico/ico-weather-type13-24-24.png);}
+.ico.ico-weather-type14-24-24{ background-image: url(../img/ico/ico-weather-type14-24-24.png);}
+.ico.ico-weather-type15-24-24{ background-image: url(../img/ico/ico-weather-type15-24-24.png);}
+.ico.ico-weather-type16-24-24{ background-image: url(../img/ico/ico-weather-type16-24-24.png);}
+.ico.ico-weather-type17-24-24{ background-image: url(../img/ico/ico-weather-type17-24-24.png);}
+.ico.ico-webcam-w-20-20{ background-image: url(../img/ico/ico-webcam-w-20-20.png);}
+
+
+[class*="badge-"]{ display: inline-flex; align-items: center; justify-content: center;}
+[class*="badge-"][class*="sz64"]{ width: 64px; height: 64px;}
+[class*="badge-"][class*="sz60"]{ width: 60px; height: 60px;}
+[class*="badge-"][class*="sz46"]{ width: 46px; height: 46px;}
+[class*="badge-"][class*="sz30"]{ width: 30px; height: 30px;}
+[class*="badge-"][class*="sz24"]{ width: 24px; height: 24px;}
+[class*="badge-"][class*="sz20"]{ width: 20px; height: 20px;}
+[class*="badge-"][class*="sz14"]{ width: 14px; height: 14px;}
+[class*="badge-"][class*="sz10"]{ width: 10px; height: 10px;}
+[class*="badge-"][class*="bg000000"]{ background-color: #000000;}
+[class*="badge-"][class*="bg111111"]{ background-color: #111111;}
+[class*="badge-"][class*="bg222222"]{ background-color: #222222;}
+[class*="badge-"][class*="bg333333"]{ background-color: #333333;}
+[class*="badge-"][class*="bg444444"]{ background-color: #444444;}
+[class*="badge-"][class*="bg555555"]{ background-color: #555555;}
+[class*="badge-"][class*="bg666666"]{ background-color: #666666;}
+[class*="badge-"][class*="bg777777"]{ background-color: #777777;}
+[class*="badge-"][class*="bg888888"]{ background-color: #888888;}
+[class*="badge-"][class*="bg999999"]{ background-color: #999999;}
+[class*="badge-"][class*="bgF7F9FB"]{ background-color: #F7F9FB;}
+[class*="badge-"][class*="bg5490DE"]{ background-color: #5490DE;}
+[class*="badge-"][class*="bg153457"]{ background-color: #153457;}
+[class*="badge-"][class*="bg390D84"]{ background-color: #390D84;}
+[class*="badge-"][class*="bgC10230"]{ background-color: #C10230;}
+[class*="badge-"][class*="bg124689"]{ background-color: #124689;}
+[class*="badge-"][class*="bg2AA138"]{ background-color: #2AA138;}
+[class*="badge-"][class*="bgC9CFDA"]{ background-color: #C9CFDA;}
+[class*="badge-"][class*="br1"]{ border-radius: 1px;}
+[class*="badge-"][class*="br2"]{ border-radius: 2px;}
+[class*="badge-"][class*="br3"]{ border-radius: 3px;}
+[class*="badge-"][class*="br4"]{ border-radius: 4px;}
+[class*="badge-"][class*="br5"]{ border-radius: 5px;}
+[class*="badge-"][class*="br6"]{ border-radius: 6px;}
+[class*="badge-"][class*="br7"]{ border-radius: 7px;}
+[class*="badge-"][class*="br8"]{ border-radius: 8px;}
+[class*="badge-"][class*="br8"]{ border-radius: 8px;}
+[class*="badge-"][class*="br10"]{ border-radius: 10px;}
+[class*="badge-"][class*="br11"]{ border-radius: 11px;}
+[class*="badge-"][class*="br12"]{ border-radius: 12px;}
+[class*="badge-"][class*="br13"]{ border-radius: 13px;}
+[class*="badge-"][class*="br14"]{ border-radius: 14px;}
+[class*="badge-"][class*="br15"]{ border-radius: 15px;}
+[class*="badge-"][class*="br16"]{ border-radius: 16px;}
+[class*="badge-"][class*="br17"]{ border-radius: 17px;}
+[class*="badge-"][class*="br18"]{ border-radius: 18px;}
+[class*="badge-"][class*="br19"]{ border-radius: 19px;}
+[class*="badge-"][class*="br20"]{ border-radius: 20px;}
+[class*="badge-"][class*="br21"]{ border-radius: 21px;}
+[class*="badge-"][class*="br22"]{ border-radius: 22px;}
+[class*="badge-"][class*="br23"]{ border-radius: 23px;}
+[class*="badge-"][class*="br24"]{ border-radius: 24px;}
+[class*="badge-"][class*="br25"]{ border-radius: 25px;}
+[class*="badge-"][class*="br26"]{ border-radius: 26px;}
+[class*="badge-"][class*="br27"]{ border-radius: 27px;}
+[class*="badge-"][class*="br28"]{ border-radius: 28px;}
+[class*="badge-"][class*="br29"]{ border-radius: 29px;}
+[class*="badge-"][class*="br30"]{ border-radius: 30px;}
+[class*="badge-"][class*="br31"]{ border-radius: 31px;}
+[class*="badge-"][class*="br32"]{ border-radius: 32px;}

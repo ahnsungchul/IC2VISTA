@@ -23,7 +23,7 @@ html,body,div,span,applet,object,iframe,h1,h2,h3,h4,h5,h6,p,blockquote,pre,a,abb
 	background:transparent;
 	word-break:break-all;
 }
-body{font-family:'Pretendard','Dotum','arial','sans-serif'; font-size:1.4rem; font-weight:300; letter-spacing:-1.4px;}
+body{font-family:'Pretendard','Dotum','arial','sans-serif'; font-size:1.4rem; font-weight:300; letter-spacing:0;}
 article,aside,details,figcaption,figure,footer,header,hgroup,main,menu,nav,section,summary{	display:block;}
 ol,ul{ list-style:none;}
 table{ border-collapse:separate; border-spacing:0;}

@@ -13,13 +13,23 @@
 <link rel="stylesheet" type="text/css" href="../resources/css/layout.css">
 <link rel="stylesheet" type="text/css" href="../resources/css/template.css">
 <style>
-    .template-html-group{ width: 100%; padding: 20px; display: flex; flex-direction: column; gap: 30px; box-sizing: border-box;}
+    .template-html-group{ width: 100%; background-color: #000; padding: 20px; display: flex; flex-direction: column; gap: 30px; box-sizing: border-box;}
     .template-box{ display: flex; flex-direction: column;}
-    .template-box > .box-head{ background-color: #fff; padding: 5px;}
-    .template-box > .box-head .tit{ font-weight: 700; font-size: 20px; color: #000;}
-    .template-box > .box-body{ padding: 20px; border: 1px solid #ccc; box-sizing: border-box;}
-    .template-box > .box-foot{ background-color: #f1f1f1; border: 1px solid #ccc; border-top: 0; box-sizing: border-box;}
-    .template-box > .box-foot textarea{ width: 100%; height: 140px; background-color: transparent; padding: 20px; border: 0; box-sizing: border-box; resize: none;}
+    .template-box > .box-head{ background-color: #000; padding: 5px;}
+    .template-box > .box-head .tit{ font-weight: 700; font-size: 28px; color: #fff; line-height: 1.4;}
+    .template-box > .box-body{ background-color: #fff; padding: 20px; border: 0; box-sizing: border-box;}
+    .template-box > .box-foot{ background-color: #f1f1f1; border-top: 2px solid #000; box-sizing: border-box;}
+    .template-box > .box-foot textarea{ width: 100%; height: 120px; background-color: transparent; padding: 20px; border: 0; box-sizing: border-box; resize: none;}
+
+    .list-box{ display: inline-flex; flex-wrap: wrap; gap: 10px;}
+    .list-box > [class^="item"]{ background-color: #fff; padding: 10px; display: inline-flex; gap: 0; align-items: center; border: 1px solid #ccc; border-radius: 5px;}
+    .list-box > [class^="item"] > .ico{ margin: 10px;}
+    .list-box > [class^="item"] > .ico + .txt{ margin-left: 10px; border-left: 1px solid #ccc;}
+    .list-box > [class^="item"] .txt{ height: 100%; font-weight: 400; font-size: 16px; color: #000; line-height: 1; padding: 10px; display: inline-flex; align-items: center; box-sizing: border-box;}
+    .list-box > [class^="item"]:has( > .ico[class*="-w-"]){ background-color: #000; border-color: #000;}
+    .list-box > [class^="item"]:has( > .ico[class*="-w-"]) .txt{ color: #fff; border-color: #333;}
+    .list-box > hr{ margin: 10px 0;}
+    .list-box > [class^="item"]:has( [class*="badge-"]){ border: 0;}
 </style>
 </head>
 <body>
@@ -27,7 +37,7 @@
         <!--template-box-->
         <div class="template-box">
             <div class="box-head">
-                <h2 class="tit">1. 폰트</h2>
+                <h2 class="tit">1. 폰트 설정</h2>
             </div>
             <div class="box-body">
                 <p class="txt-fw400-fs12-lh12-tal-fc000000">font-family:Pretendard; font-weight:400; font-size:12px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
@@ -38,6 +48,7 @@
                 <p class="txt-fw400-fs17-lh12-tal-fc000000">font-family:Pretendard; font-weight:400; font-size:17px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
                 <p class="txt-fw400-fs18-lh12-tal-fc000000">font-family:Pretendard; font-weight:400; font-size:18px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
                 <p class="txt-fw400-fs19-lh12-tal-fc000000">font-family:Pretendard; font-weight:400; font-size:19px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
+                <hr>
                 <p class="txt-fw400-fs20-lh12-tal-fc000000">font-family:Pretendard; font-weight:400; font-size:20px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
                 <p class="txt-fw500-fs20-lh12-tal-fc000000">font-family:Pretendard; font-weight:500; font-size:20px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
                 <p class="txt-fw600-fs20-lh12-tal-fc000000">font-family:Pretendard; font-weight:600; font-size:20px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
@@ -45,6 +56,8 @@
             </div>
             <div class="box-foot">
 <textarea>
+<p class="txt-fw굴기-fs폰트사이즈-lh행간-ta정렬-fc헥스코드">폰트설정</p>
+
 <p class="txt-fw400-fs12-lh12-tal-fc000000">font-family:Pretendard; font-weight:400; font-size:12px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
 <p class="txt-fw400-fs13-lh12-tal-fc000000">font-family:Pretendard; font-weight:400; font-size:13px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
 <p class="txt-fw400-fs14-lh12-tal-fc000000">font-family:Pretendard; font-weight:400; font-size:14px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
@@ -53,6 +66,7 @@
 <p class="txt-fw400-fs17-lh12-tal-fc000000">font-family:Pretendard; font-weight:400; font-size:17px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
 <p class="txt-fw400-fs18-lh12-tal-fc000000">font-family:Pretendard; font-weight:400; font-size:18px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
 <p class="txt-fw400-fs19-lh12-tal-fc000000">font-family:Pretendard; font-weight:400; font-size:19px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
+
 <p class="txt-fw400-fs20-lh12-tal-fc000000">font-family:Pretendard; font-weight:400; font-size:20px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
 <p class="txt-fw500-fs20-lh12-tal-fc000000">font-family:Pretendard; font-weight:500; font-size:20px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
 <p class="txt-fw600-fs20-lh12-tal-fc000000">font-family:Pretendard; font-weight:600; font-size:20px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
@@ -65,36 +79,727 @@
         <!--template-box-->
         <div class="template-box">
             <div class="box-head">
-                <h2 class="tit">2. 아이콘</h2>
+                <h2 class="tit">2. 폰트 색상</h2>
             </div>
             <div class="box-body">
-                <p class="txt-fw400-fs12-lh12-tal-fc000000">font-family:Pretendard; font-weight:400; font-size:12px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
-                <p class="txt-fw400-fs13-lh12-tal-fc000000">font-family:Pretendard; font-weight:400; font-size:13px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
-                <p class="txt-fw400-fs14-lh12-tal-fc000000">font-family:Pretendard; font-weight:400; font-size:14px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
-                <p class="txt-fw400-fs15-lh12-tal-fc000000">font-family:Pretendard; font-weight:400; font-size:15px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
-                <p class="txt-fw400-fs16-lh12-tal-fc000000">font-family:Pretendard; font-weight:400; font-size:16px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
-                <p class="txt-fw400-fs17-lh12-tal-fc000000">font-family:Pretendard; font-weight:400; font-size:17px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
-                <p class="txt-fw400-fs18-lh12-tal-fc000000">font-family:Pretendard; font-weight:400; font-size:18px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
-                <p class="txt-fw400-fs19-lh12-tal-fc000000">font-family:Pretendard; font-weight:400; font-size:19px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
-                <p class="txt-fw400-fs20-lh12-tal-fc000000">font-family:Pretendard; font-weight:400; font-size:20px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
-                <p class="txt-fw500-fs20-lh12-tal-fc000000">font-family:Pretendard; font-weight:500; font-size:20px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
-                <p class="txt-fw600-fs20-lh12-tal-fc000000">font-family:Pretendard; font-weight:600; font-size:20px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
-                <p class="txt-fw700-fs20-lh12-tal-fc000000">font-family:Pretendard; font-weight:700; font-size:20px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
+<div class="list-box">
+    <div class="item">
+        <p class="txt-fs16-fc000000">fc000000</p>
+    </div>
+    <div class="item">
+        <p class="txt-fs16-fc111111">fc111111</p>
+    </div>
+    <div class="item">
+        <p class="txt-fs16-fc222222">fc222222</p>
+    </div>
+    <div class="item">
+        <p class="txt-fs16-fc333333">fc333333</p>
+    </div>
+    <div class="item">
+        <p class="txt-fs16-fc444444">fc444444</p>
+    </div>
+    <div class="item">
+        <p class="txt-fs16-fc555555">fc555555</p>
+    </div>
+    <div class="item">
+        <p class="txt-fs16-fc666666">fc666666</p>
+    </div>
+    <div class="item">
+        <p class="txt-fs16-fc777777">fc777777</p>
+    </div>
+    <div class="item">
+        <p class="txt-fs16-fc888888">fc888888</p>
+    </div>
+    <div class="item">
+        <p class="txt-fs16-fc999999">fc999999</p>
+    </div>
+    <hr>
+    <div class="item">
+        <p class="txt-fs16-fc5F627B">fc5F627B</p>
+    </div>
+    <div class="item">
+        <p class="txt-fs16-fc41679F">fc41679F</p>
+    </div>
+    <div class="item">
+        <p class="txt-fs16-fc2AA138">fc2AA138</p>
+    </div>
+    <div class="item">
+        <p class="txt-fs16-fc5490DE">fc5490DE</p>
+    </div>
+</div>
+                <hr>
+                <p class="txt-fw500-fs14-lh18px-fc5F627B">
+                    <span class="txt-fw700-fs18-fc000000">12℃</span>
+                    날씨 맑음
+                </p>
             </div>
             <div class="box-foot">
 <textarea>
-<p class="txt-fw400-fs12-lh12-tal-fc000000">font-family:Pretendard; font-weight:400; font-size:12px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
-<p class="txt-fw400-fs13-lh12-tal-fc000000">font-family:Pretendard; font-weight:400; font-size:13px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
-<p class="txt-fw400-fs14-lh12-tal-fc000000">font-family:Pretendard; font-weight:400; font-size:14px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
-<p class="txt-fw400-fs15-lh12-tal-fc000000">font-family:Pretendard; font-weight:400; font-size:15px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
-<p class="txt-fw400-fs16-lh12-tal-fc000000">font-family:Pretendard; font-weight:400; font-size:16px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
-<p class="txt-fw400-fs17-lh12-tal-fc000000">font-family:Pretendard; font-weight:400; font-size:17px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
-<p class="txt-fw400-fs18-lh12-tal-fc000000">font-family:Pretendard; font-weight:400; font-size:18px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
-<p class="txt-fw400-fs19-lh12-tal-fc000000">font-family:Pretendard; font-weight:400; font-size:19px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
-<p class="txt-fw400-fs20-lh12-tal-fc000000">font-family:Pretendard; font-weight:400; font-size:20px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
-<p class="txt-fw500-fs20-lh12-tal-fc000000">font-family:Pretendard; font-weight:500; font-size:20px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
-<p class="txt-fw600-fs20-lh12-tal-fc000000">font-family:Pretendard; font-weight:600; font-size:20px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
-<p class="txt-fw700-fs20-lh12-tal-fc000000">font-family:Pretendard; font-weight:700; font-size:20px; color:#000000; text-align:left; line-height:1.2; - 1234567890 ABCDEFGHIJKLMNOPQRSTUVWXYZ 가나다라마바사아자차카타파하</p>
+<p class="txt-fc헥스코드">폰트색상</p>
+
+<p class="txt-fw500-fs14-lh18px-fc5F627B">
+    <span class="txt-fw700-fs18-fc000000">12℃</span>
+    날씨 맑음
+</p>
+</textarea>
+            </div>
+        </div>
+        <!--//template-box-->
+        
+        <!--template-box-->
+        <div class="template-box">
+            <div class="box-head">
+                <h2 class="tit">3. 아이콘</h2>
+            </div>
+            <div class="box-body">
+<div class="list-box">
+    <div class="item">
+        <i class="ico ico-logo-144-26"></i>
+        <p class="txt">ico-logo-144-26</p>
+    </div>
+    <hr/>
+    <div class="item">
+        <i class="ico ico-guide-w-18-18"></i>
+        <p class="txt">ico-guide-w-18-18</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-guide-b-18-18"></i>
+        <p class="txt">ico-guide-b-18-18</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-route-w-18-18"></i>
+        <p class="txt">ico-route-w-18-18</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-route-b-18-18"></i>
+        <p class="txt">ico-route-b-18-18</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-road-w-18-18"></i>
+        <p class="txt">ico-road-w-18-18</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-road-b-18-18"></i>
+        <p class="txt">ico-road-b-18-18</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-skew-w-18-18"></i>
+        <p class="txt">ico-skew-w-18-18</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-skew-b-18-18"></i>
+        <p class="txt">ico-skew-b-18-18</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-box-w-18-18"></i>
+        <p class="txt">ico-box-w-18-18</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-box-b-18-18"></i>
+        <p class="txt">ico-box-b-18-18</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-3d-w-18-18"></i>
+        <p class="txt">ico-3d-w-18-18</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-3d-b-18-18"></i>
+        <p class="txt">ico-3d-b-18-18</p>
+    </div>
+    <hr/>
+    <div class="item">
+        <i class="ico ico-subtract-w-12-12"></i>
+        <p class="txt">ico-subtract-w-12-12</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-subtract-b-12-12"></i>
+        <p class="txt">ico-subtract-b-12-12</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-subtract-w-14-14"></i>
+        <p class="txt">ico-subtract-w-14-14</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-subtract-w-18-18"></i>
+        <p class="txt">ico-subtract-w-18-18</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-add-w-12-12"></i>
+        <p class="txt">ico-add-w-12-12</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-add-b-12-12"></i>
+        <p class="txt">ico-add-b-12-12</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-add-w-14-14"></i>
+        <p class="txt">ico-add-w-14-14</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-add-w-16-16"></i>
+        <p class="txt">ico-add-w-16-16</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-add-w-18-18"></i>
+        <p class="txt">ico-add-w-18-18</p>
+    </div>
+    <hr/>
+    <div class="item">
+        <i class="ico ico-arrow-down-b-10-10"></i>
+        <p class="txt">ico-arrow-down-b-10-10</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-arrow-down-b-14-14"></i>
+        <p class="txt">ico-arrow-down-b-14-14</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-arrow-down-b-16-16"></i>
+        <p class="txt">ico-arrow-down-b-16-16</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-arrow-down-w-12-12"></i>
+        <p class="txt">ico-arrow-down-w-12-12</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-arrow-left-b-14-14"></i>
+        <p class="txt">ico-arrow-left-b-14-14</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-arrow-left-double-b-20-20"></i>
+        <p class="txt">ico-arrow-left-double-b-20-20</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-arrow-left-w-24-24"></i>
+        <p class="txt">ico-arrow-left-w-24-24</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-arrow-right-b-14-14"></i>
+        <p class="txt">ico-arrow-right-b-14-14</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-arrow-right-double-b-20-20"></i>
+        <p class="txt">ico-arrow-right-double-b-20-20</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-arrow-right-w-24-24"></i>
+        <p class="txt">ico-arrow-right-w-24-24</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-arrow-up-b-14-14"></i>
+        <p class="txt">ico-arrow-up-b-14-14</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-arrow-up-b-18-18"></i>
+        <p class="txt">ico-arrow-up-b-18-18</p>
+    </div>
+    <hr/>
+    <div class="item">
+        <i class="ico ico-battery-w-18-18"></i>
+        <p class="txt">ico-battery-w-18-18</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-camera-b-18-18"></i>
+        <p class="txt">ico-camera-b-18-18</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-camera-off-w-14-14"></i>
+        <p class="txt">ico-camera-off-w-14-14</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-camera-w-14-14"></i>
+        <p class="txt">ico-camera-w-14-14</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-clock2-b-20-20"></i>
+        <p class="txt">ico-clock2-b-20-20</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-clock-b-20-20"></i>
+        <p class="txt">ico-clock-b-20-20</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-close-b-16-16"></i>
+        <p class="txt">ico-close-b-16-16</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-close-w-20-20"></i>
+        <p class="txt">ico-close-w-20-20</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-completion-b-18-18"></i>
+        <p class="txt">ico-completion-b-18-18</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-crop-w-18-18"></i>
+        <p class="txt">ico-crop-w-18-18</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-crosshair-w-18-18"></i>
+        <p class="txt">ico-crosshair-w-18-18</p>
+    </div>
+    <hr/>
+    <div class="item">
+        <i class="ico ico-dashboard-w-20-20"></i>
+        <p class="txt">ico-dashboard-w-20-20</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-drone-w-20-20"></i>
+        <p class="txt">ico-drone-w-20-20</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-webcam-w-20-20"></i>
+        <p class="txt">ico-webcam-w-20-20</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-map-w-20-20"></i>
+        <p class="txt">ico-map-w-20-20</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-map2-w-20-20"></i>
+        <p class="txt">ico-map2-w-20-20</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-gps-w-20-20"></i>
+        <p class="txt">ico-gps-w-20-20</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-remote-w-20-20"></i>
+        <p class="txt">ico-remote-w-20-20</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-route-w-20-20"></i>
+        <p class="txt">ico-route-w-20-20</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-disc-w-20-20"></i>
+        <p class="txt">ico-disc-w-20-20</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-chart-w-20-20"></i>
+        <p class="txt">ico-chart-w-20-20</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-dots-w-24-24"></i>
+        <p class="txt">ico-dots-w-24-24</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-user-w-20-20"></i>
+        <p class="txt">ico-user-w-20-20</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-router-w-20-20"></i>
+        <p class="txt">ico-router-w-20-20</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-list-w-20-20"></i>
+        <p class="txt">ico-list-w-20-20</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-volume-w-20-20"></i>
+        <p class="txt">ico-volume-w-20-20</p>
+    </div>
+    <hr/>
+    <div class="item">
+        <i class="ico ico-download-w-18-18"></i>
+        <p class="txt">ico-download-w-18-18</p>
+    </div>
+    <hr/>
+    <div class="item">
+        <i class="ico ico-drone-w-24-24"></i>
+        <p class="txt">ico-drone-w-24-24</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-flight-takeoff-w-24-24"></i>
+        <p class="txt">ico-flight-takeoff-w-24-24</p>
+    </div>
+    <hr/>
+    <div class="item">
+        <i class="ico ico-dust-type1-16-16"></i>
+        <p class="txt">ico-dust-type1-16-16</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-dust-type2-16-16"></i>
+        <p class="txt">ico-dust-type2-16-16</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-dust-type3-16-16"></i>
+        <p class="txt">ico-dust-type3-16-16</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-dust-type4-16-16"></i>
+        <p class="txt">ico-dust-type4-16-16</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-dust-type5-16-16"></i>
+        <p class="txt">ico-dust-type5-16-16</p>
+    </div>
+    <hr/>
+    <div class="item">
+        <i class="ico ico-equalizer-b-18-18"></i>
+        <p class="txt">ico-equalizer-b-18-18</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-expand-height-b-18-18"></i>
+        <p class="txt">ico-expand-height-b-18-18</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-flag-w-18-18"></i>
+        <p class="txt">ico-flag-w-18-18</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-focus-b-18-18"></i>
+        <p class="txt">ico-focus-b-18-18</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-fullscreen2-w-14-14"></i>
+        <p class="txt">ico-fullscreen2-w-14-14</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-fullscreen-w-14-14"></i>
+        <p class="txt">ico-fullscreen-w-14-14</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-gauge-b-18-18"></i>
+        <p class="txt">ico-gauge-b-18-18</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-image-b-18-18"></i>
+        <p class="txt">ico-image-b-18-18</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-image-b-20-20"></i>
+        <p class="txt">ico-image-b-20-20</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-information-w-14-14"></i>
+        <p class="txt">ico-information-w-14-14</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-lens-b-18-18"></i>
+        <p class="txt">ico-lens-b-18-18</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-logout-w-20-20"></i>
+        <p class="txt">ico-logout-w-20-20</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-move-w-14-14"></i>
+        <p class="txt">ico-move-w-14-14</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-notification-w-20-20"></i>
+        <p class="txt">ico-notification-w-20-20</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-pencil-ruler-w-18-18"></i>
+        <p class="txt">ico-pencil-ruler-w-18-18</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-plane-w-14-14"></i>
+        <p class="txt">ico-plane-w-14-14</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-radar-w-20-20"></i>
+        <p class="txt">ico-radar-w-20-20</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-radio-w-14-14"></i>
+        <p class="txt">ico-radio-w-14-14</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-reset-w-14-14"></i>
+        <p class="txt">ico-reset-w-14-14</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-route-b-20-20"></i>
+        <p class="txt">ico-route-b-20-20</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-route-w-18-18"></i>
+        <p class="txt">ico-route-w-18-18</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-ruler-w-18-18"></i>
+        <p class="txt">ico-ruler-w-18-18</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-save-w-16-16"></i>
+        <p class="txt">ico-save-w-16-16</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-search-w-18-18"></i>
+        <p class="txt">ico-search-w-18-18</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-settings-b-18-18"></i>
+        <p class="txt">ico-settings-b-18-18</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-settings-w-14-14"></i>
+        <p class="txt">ico-settings-w-14-14</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-shape-b-20-20"></i>
+        <p class="txt">ico-shape-b-20-20</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-shape-w-18-18"></i>
+        <p class="txt">ico-shape-w-18-18</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-share-w-18-18"></i>
+        <p class="txt">ico-share-w-18-18</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-signal-w-12-12"></i>
+        <p class="txt">ico-signal-w-12-12</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-station-w-20-20"></i>
+        <p class="txt">ico-station-w-20-20</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-triangle-b-18-18"></i>
+        <p class="txt">ico-triangle-b-18-18</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-volume-mute-w-14-14"></i>
+        <p class="txt">ico-volume-mute-w-14-14</p>
+    </div>
+    <hr/>
+    <div class="item">
+        <i class="ico ico-weather-type1-24-24"></i>
+        <p class="txt">ico-weather-type1-24-24</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-weather-type2-24-24"></i>
+        <p class="txt">ico-weather-type2-24-24</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-weather-type3-24-24"></i>
+        <p class="txt">ico-weather-type3-24-24</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-weather-type4-24-24"></i>
+        <p class="txt">ico-weather-type4-24-24</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-weather-type5-24-24"></i>
+        <p class="txt">ico-weather-type5-24-24</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-weather-type6-24-24"></i>
+        <p class="txt">ico-weather-type6-24-24</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-weather-type7-24-24"></i>
+        <p class="txt">ico-weather-type7-24-24</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-weather-type8-24-24"></i>
+        <p class="txt">ico-weather-type8-24-24</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-weather-type9-24-24"></i>
+        <p class="txt">ico-weather-type9-24-24</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-weather-type10-24-24"></i>
+        <p class="txt">ico-weather-type10-24-24</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-weather-type11-24-24"></i>
+        <p class="txt">ico-weather-type11-24-24</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-weather-type12-24-24"></i>
+        <p class="txt">ico-weather-type12-24-24</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-weather-type13-24-24"></i>
+        <p class="txt">ico-weather-type13-24-24</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-weather-type14-24-24"></i>
+        <p class="txt">ico-weather-type14-24-24</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-weather-type15-24-24"></i>
+        <p class="txt">ico-weather-type15-24-24</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-weather-type16-24-24"></i>
+        <p class="txt">ico-weather-type16-24-24</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-weather-type17-24-24"></i>
+        <p class="txt">ico-weather-type17-24-24</p>
+    </div>
+    <hr/>
+    <div class="item">
+        <i class="ico ico-drone-b-66-66"></i>
+        <p class="txt">ico-drone-b-66-66</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-plane-b-66-66"></i>
+        <p class="txt">ico-plane-b-66-66</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-robot-b-66-66"></i>
+        <p class="txt">ico-robot-b-66-66</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-ship-b-66-66"></i>
+        <p class="txt">ico-ship-b-66-66</p>
+    </div>
+</div>
+            </div>
+            <div class="box-foot">
+<textarea>
+<i class="ico 아이콘명"></i>
+</textarea>
+            </div>
+        </div>
+        <!--//template-box-->
+        
+        
+        <!--template-box-->
+        <div class="template-box">
+            <div class="box-head">
+                <h2 class="tit">4. 배지 심볼</h2>
+            </div>
+            <div class="box-body">
+<div class="list-box">
+    <div class="item">
+        <span class="badge-sz64-bg000000-br32"></span>
+        <p class="txt">sz64(64x64)</p>
+    </div>
+    <div class="item">
+        <span class="badge-sz60-bg000000-br30"></span>
+        <p class="txt">sz60(60x60)</p>
+    </div>
+    <div class="item">
+        <span class="badge-sz46-bg000000-br23"></span>
+        <p class="txt">sz46(46x46)</p>
+    </div>
+    <div class="item">
+        <span class="badge-sz30-bg000000-br15"></span>
+        <p class="txt">sz30(30x30)</p>
+    </div>
+    <div class="item">
+        <span class="badge-sz24-bg000000-br12"></span>
+        <p class="txt">sz24(24x24)</p>
+    </div>
+    <div class="item">
+        <span class="badge-sz20-bg000000-br10"></span>
+        <p class="txt">sz20(20x20)</p>
+    </div>
+    <div class="item">
+        <span class="badge-sz14-bg000000-br7"></span>
+        <p class="txt">sz14(14x14)</p>
+    </div>
+    <div class="item">
+        <span class="badge-sz10-bg000000-br5"></span>
+        <p class="txt">sz10(10x10)</p>
+    </div>
+    <hr>
+    <div class="item">
+        <span class="badge-sz60-bgF7F9FB-br30"></span>
+        <p class="txt">bgF7F9FB</p>
+    </div>
+    <div class="item">
+        <span class="badge-sz60-bg5490DE-br30"></span>
+        <p class="txt">bg5490DE</p>
+    </div>
+    <div class="item">
+        <span class="badge-sz60-bg153457-br30"></span>
+        <p class="txt">bg153457</p>
+    </div>
+    <div class="item">
+        <span class="badge-sz60-bg390D84-br30"></span>
+        <p class="txt">bg390D84</p>
+    </div>
+    <div class="item">
+        <span class="badge-sz60-bgC10230-br30"></span>
+        <p class="txt">bgC10230</p>
+    </div>
+    <div class="item">
+        <span class="badge-sz60-bg124689-br30"></span>
+        <p class="txt">bg124689</p>
+    </div>
+    <div class="item">
+        <span class="badge-sz60-bg124689-br30"></span>
+        <p class="txt">bg124689</p>
+    </div>
+    <div class="item">
+        <span class="badge-sz60-bg2AA138-br30"></span>
+        <p class="txt">bg2AA138</p>
+    </div>
+    <div class="item">
+        <span class="badge-sz60-bgC9CFDA-br30"></span>
+        <p class="txt">bgC9CFDA</p>
+    </div>
+    <hr>
+    <div class="item">
+        <span class="badge-sz60-bgC9CFDA-br3"></span>
+        <p class="txt">br3</p>
+    </div>
+    <div class="item">
+        <span class="badge-sz60-bgC9CFDA-br5"></span>
+        <p class="txt">br5</p>
+    </div>
+    <div class="item">
+        <span class="badge-sz60-bgC9CFDA-br10"></span>
+        <p class="txt">br10</p>
+    </div>
+    <div class="item">
+        <span class="badge-sz60-bgC9CFDA-br15"></span>
+        <p class="txt">br15</p>
+    </div>
+    <div class="item">
+        <span class="badge-sz60-bgC9CFDA-br20"></span>
+        <p class="txt">br20</p>
+    </div>
+    <div class="item">
+        <span class="badge-sz60-bgC9CFDA-br25"></span>
+        <p class="txt">br25</p>
+    </div>
+    <div class="item">
+        <span class="badge-sz60-bgC9CFDA-br30"></span>
+        <p class="txt">br30</p>
+    </div>
+    <hr>
+    <div class="item">
+        <span class="badge-sz60-bgF7F9FB-br30">
+            <img src="../resources/img/@sample-drone-img.png" />
+        </span>
+    </div>
+    <div class="item">
+        <span class="badge-sz46-bgC10230-br23">
+            <i class="ico ico-drone-w-24-24"></i>
+        </span>
+    </div>
+    <div class="item">
+        <span class="badge-sz30-bg5490DE-br15">
+            <i class="ico ico-station-w-20-20"></i>
+        </span>
+    </div>
+
+</div>
+            </div>
+            <div class="box-foot">
+<textarea>
+<span class="badge-sz사이즈-bg헥스코드-br모서리라운드"></span>
+
+<span class="badge-sz60-bgF7F9FB-br30">
+    <img src="../resources/img/@sample-drone-img.png" />
+</span>
+<span class="badge-sz46-bgC10230-br23">
+    <i class="ico ico-drone-w-24-24"></i>
+</span>
+<span class="badge-sz30-bg5490DE-br15">
+    <i class="ico ico-station-w-20-20"></i>
+</span>
 </textarea>
             </div>
         </div>
