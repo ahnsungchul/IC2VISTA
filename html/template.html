@@ -22,12 +22,12 @@
     .template-box > .box-foot textarea{ width: 100%; height: 120px; background-color: transparent; padding: 20px; border: 0; box-sizing: border-box; resize: none;}
 
     .list-box{ display: inline-flex; flex-wrap: wrap; gap: 10px;}
-    .list-box > [class^="item"]{ background-color: #fff; padding: 10px; display: inline-flex; gap: 0; align-items: center; border: 1px solid #ccc; border-radius: 5px;}
+    .list-box > [class^="item"]{ background-color: #fff; padding: 10px; display: inline-flex; gap: 10px; align-items: center;}
     .list-box > [class^="item"] > .ico{ margin: 10px;}
-    .list-box > [class^="item"] > .ico + .txt{ margin-left: 10px; border-left: 1px solid #ccc;}
-    .list-box > [class^="item"] .txt{ height: 100%; font-weight: 400; font-size: 16px; color: #000; line-height: 1; padding: 10px; display: inline-flex; align-items: center; box-sizing: border-box;}
+    .list-box > [class^="item"] .txt{ height: 100%; font-weight: 400; font-size: 16px; color: #000; line-height: 1; display: inline-flex; align-items: center; box-sizing: border-box;}
+    .list-box > [class^="item"]:has( > .ico){ border: 1px solid #ccc; border-radius: 5px;}
     .list-box > [class^="item"]:has( > .ico[class*="-w-"]){ background-color: #000; border-color: #000;}
-    .list-box > [class^="item"]:has( > .ico[class*="-w-"]) .txt{ color: #fff; border-color: #333;}
+    .list-box > [class^="item"]:has( > .ico[class*="-w-"]) .txt{ color: #fff;}
     .list-box > hr{ margin: 10px 0;}
     .list-box > [class^="item"]:has( [class*="badge-"]){ border: 0;}
 </style>
@@ -661,8 +661,7 @@
             </div>
         </div>
         <!--//template-box-->
-        
-        
+                
         <!--template-box-->
         <div class="template-box">
             <div class="box-head">
@@ -671,116 +670,116 @@
             <div class="box-body">
 <div class="list-box">
     <div class="item">
-        <span class="badge-sz64-bg000000-br32"></span>
-        <p class="txt">sz64(64x64)</p>
+        <span class="badge-wh64-bg000000-br32"></span>
+        <p class="txt">wh64(64x64)</p>
     </div>
     <div class="item">
-        <span class="badge-sz60-bg000000-br30"></span>
-        <p class="txt">sz60(60x60)</p>
+        <span class="badge-wh60-bg000000-br30"></span>
+        <p class="txt">wh60(60x60)</p>
     </div>
     <div class="item">
-        <span class="badge-sz46-bg000000-br23"></span>
-        <p class="txt">sz46(46x46)</p>
+        <span class="badge-wh46-bg000000-br23"></span>
+        <p class="txt">wh46(46x46)</p>
     </div>
     <div class="item">
-        <span class="badge-sz30-bg000000-br15"></span>
-        <p class="txt">sz30(30x30)</p>
+        <span class="badge-wh30-bg000000-br15"></span>
+        <p class="txt">wh30(30x30)</p>
     </div>
     <div class="item">
-        <span class="badge-sz24-bg000000-br12"></span>
-        <p class="txt">sz24(24x24)</p>
+        <span class="badge-wh24-bg000000-br12"></span>
+        <p class="txt">wh24(24x24)</p>
     </div>
     <div class="item">
-        <span class="badge-sz20-bg000000-br10"></span>
-        <p class="txt">sz20(20x20)</p>
+        <span class="badge-wh20-bg000000-br10"></span>
+        <p class="txt">wh20(20x20)</p>
     </div>
     <div class="item">
-        <span class="badge-sz14-bg000000-br7"></span>
-        <p class="txt">sz14(14x14)</p>
+        <span class="badge-wh14-bg000000-br7"></span>
+        <p class="txt">wh14(14x14)</p>
     </div>
     <div class="item">
-        <span class="badge-sz10-bg000000-br5"></span>
-        <p class="txt">sz10(10x10)</p>
+        <span class="badge-wh10-bg000000-br5"></span>
+        <p class="txt">wh10(10x10)</p>
     </div>
     <hr>
     <div class="item">
-        <span class="badge-sz60-bgF7F9FB-br30"></span>
+        <span class="badge-wh60-bgF7F9FB-br30"></span>
         <p class="txt">bgF7F9FB</p>
     </div>
     <div class="item">
-        <span class="badge-sz60-bg5490DE-br30"></span>
+        <span class="badge-wh60-bg5490DE-br30"></span>
         <p class="txt">bg5490DE</p>
     </div>
     <div class="item">
-        <span class="badge-sz60-bg153457-br30"></span>
+        <span class="badge-wh60-bg153457-br30"></span>
         <p class="txt">bg153457</p>
     </div>
     <div class="item">
-        <span class="badge-sz60-bg390D84-br30"></span>
+        <span class="badge-wh60-bg390D84-br30"></span>
         <p class="txt">bg390D84</p>
     </div>
     <div class="item">
-        <span class="badge-sz60-bgC10230-br30"></span>
+        <span class="badge-wh60-bgC10230-br30"></span>
         <p class="txt">bgC10230</p>
     </div>
     <div class="item">
-        <span class="badge-sz60-bg124689-br30"></span>
+        <span class="badge-wh60-bg124689-br30"></span>
         <p class="txt">bg124689</p>
     </div>
     <div class="item">
-        <span class="badge-sz60-bg124689-br30"></span>
+        <span class="badge-wh60-bg124689-br30"></span>
         <p class="txt">bg124689</p>
     </div>
     <div class="item">
-        <span class="badge-sz60-bg2AA138-br30"></span>
+        <span class="badge-wh60-bg2AA138-br30"></span>
         <p class="txt">bg2AA138</p>
     </div>
     <div class="item">
-        <span class="badge-sz60-bgC9CFDA-br30"></span>
+        <span class="badge-wh60-bgC9CFDA-br30"></span>
         <p class="txt">bgC9CFDA</p>
     </div>
     <hr>
     <div class="item">
-        <span class="badge-sz60-bgC9CFDA-br3"></span>
+        <span class="badge-wh60-bgC9CFDA-br3"></span>
         <p class="txt">br3</p>
     </div>
     <div class="item">
-        <span class="badge-sz60-bgC9CFDA-br5"></span>
+        <span class="badge-wh60-bgC9CFDA-br5"></span>
         <p class="txt">br5</p>
     </div>
     <div class="item">
-        <span class="badge-sz60-bgC9CFDA-br10"></span>
+        <span class="badge-wh60-bgC9CFDA-br10"></span>
         <p class="txt">br10</p>
     </div>
     <div class="item">
-        <span class="badge-sz60-bgC9CFDA-br15"></span>
+        <span class="badge-wh60-bgC9CFDA-br15"></span>
         <p class="txt">br15</p>
     </div>
     <div class="item">
-        <span class="badge-sz60-bgC9CFDA-br20"></span>
+        <span class="badge-wh60-bgC9CFDA-br20"></span>
         <p class="txt">br20</p>
     </div>
     <div class="item">
-        <span class="badge-sz60-bgC9CFDA-br25"></span>
+        <span class="badge-wh60-bgC9CFDA-br25"></span>
         <p class="txt">br25</p>
     </div>
     <div class="item">
-        <span class="badge-sz60-bgC9CFDA-br30"></span>
+        <span class="badge-wh60-bgC9CFDA-br30"></span>
         <p class="txt">br30</p>
     </div>
     <hr>
     <div class="item">
-        <span class="badge-sz60-bgF7F9FB-br30">
+        <span class="badge-wh60-bgF7F9FB-br30">
             <img src="../resources/img/@sample-drone-img.png" />
         </span>
     </div>
     <div class="item">
-        <span class="badge-sz46-bgC10230-br23">
+        <span class="badge-wh46-bgC10230-br23">
             <i class="ico ico-drone-w-24-24"></i>
         </span>
     </div>
     <div class="item">
-        <span class="badge-sz30-bg5490DE-br15">
+        <span class="badge-wh30-bg5490DE-br15">
             <i class="ico ico-station-w-20-20"></i>
         </span>
     </div>
@@ -789,17 +788,283 @@
             </div>
             <div class="box-foot">
 <textarea>
-<span class="badge-sz사이즈-bg헥스코드-br모서리라운드"></span>
+<span class="badge-wh사이즈-bg헥스코드-br모서리라운드"></span>
 
-<span class="badge-sz60-bgF7F9FB-br30">
+<span class="badge-wh60-bgF7F9FB-br30">
     <img src="../resources/img/@sample-drone-img.png" />
 </span>
-<span class="badge-sz46-bgC10230-br23">
+<span class="badge-wh46-bgC10230-br23">
     <i class="ico ico-drone-w-24-24"></i>
 </span>
-<span class="badge-sz30-bg5490DE-br15">
+<span class="badge-wh30-bg5490DE-br15">
     <i class="ico ico-station-w-20-20"></i>
 </span>
+</textarea>
+            </div>
+        </div>
+        <!--//template-box-->
+                
+        <!--template-box-->
+        <div class="template-box">
+            <div class="box-head">
+                <h2 class="tit">5. 버튼</h2>
+            </div>
+            <div class="box-body">
+<div class="list-box">
+    <div class="item">
+        <button type="button" class="btn-wh20-bg000000-br5-hvbg444444">
+            <span class="txt-fs10-fcFFFFFF">버튼</span>
+        </button>
+        <p class="txt">wh20(20x20)</p>
+    </div>
+    <div class="item">
+        <button type="button" class="btn-wh22-bg000000-br5-hvbg444444">
+            <span class="txt-fs10-fcFFFFFF">버튼</span>
+        </button>
+        <p class="txt">wh22(22x22)</p>
+    </div>
+    <div class="item">
+        <button type="button" class="btn-wh24-bg000000-br5-hvbg444444">
+            <span class="txt-fs10-fcFFFFFF">버튼</span>
+        </button>
+        <p class="txt">wh24(24x24)</p>
+    </div>
+    <div class="item">
+        <button type="button" class="btn-wh26-bg000000-br5-hvbg444444">
+            <span class="txt-fs10-fcFFFFFF">버튼</span>
+        </button>
+        <p class="txt">wh26(26x26)</p>
+    </div>
+    <div class="item">
+        <button type="button" class="btn-wh30-bg000000-br5-hvbg444444">
+            <span class="txt-fcFFFFFF">버튼</span>
+        </button>
+        <p class="txt">wh30(30x30)</p>
+    </div>
+    <hr>
+    <div class="item">
+        <button type="button" class="btn-h20-bg000000-pdlr10-br5-hvbg444444">
+            <span class="txt-fs10-fcFFFFFF">버튼</span>
+        </button>
+        <p class="txt">h20(가변x20)</p>
+    </div>
+    <div class="item">
+        <button type="button" class="btn-h22-bg000000-pdlr10-br5-hvbg444444">
+            <span class="txt-fs10-fcFFFFFF">버튼</span>
+        </button>
+        <p class="txt">h22(가변x22)</p>
+    </div>
+    <div class="item">
+        <button type="button" class="btn-h24-bg000000-pdlr10-br5-hvbg444444">
+            <span class="txt-fs10-fcFFFFFF">버튼</span>
+        </button>
+        <p class="txt">h24(가변x24)</p>
+    </div>
+    <div class="item">
+        <button type="button" class="btn-h26-bg000000-pdlr10-br5-hvbg444444">
+            <span class="txt-fs10-fcFFFFFF">버튼</span>
+        </button>
+        <p class="txt">h26(가변x26)</p>
+    </div>
+    <div class="item">
+        <button type="button" class="btn-h30-bg000000-pdlr10-br5-hvbg444444">
+            <span class="txt-fcFFFFFF">버튼</span>
+        </button>
+        <p class="txt">h30(가변x30)</p>
+    </div>
+    <hr>
+    <div class="item">
+        <button type="button" class="btn-h30-bgF5F6F8-pdlr10-br5-hvbg444444">
+            <span class="txt-fs14-fc000000">bgF5F6F8</span>
+        </button>
+        <p class="txt">bgF5F6F8</p>
+    </div>
+    <div class="item">
+        <button type="button" class="btn-h30-bg5467DE-pdlr10-br5-hvbg444444">
+            <span class="txt-fs14-fcFFFFFF">bg5467DE</span>
+        </button>
+        <p class="txt">bgF5F6F8</p>
+    </div>
+    <div class="item">
+        <button type="button" class="btn-h30-bg153457-pdlr10-br5-hvbg444444">
+            <span class="txt-fs14-fcFFFFFF">bg153457</span>
+        </button>
+        <p class="txt">bg153457</p>
+    </div>
+    <div class="item">
+        <button type="button" class="btn-h30-bg5490DE-pdlr10-br5-hvbg444444">
+            <span class="txt-fs14-fcFFFFFF">bg5490DE</span>
+        </button>
+        <p class="txt">bg5490DE</p>
+    </div>
+    <hr>
+    <div class="item">
+        <button type="button" class="btn-h30-bg000000-pdlr10-br5-hvbg444444-op01">
+            <span class="txt-fs14-fcFFFFFF">op01</span>
+        </button>
+        <p class="txt">op01</p>
+    </div>
+    <div class="item">
+        <button type="button" class="btn-h30-bg000000-pdlr10-br5-hvbg444444-op01">
+            <span class="txt-fs14-fcFFFFFF">op01</span>
+        </button>
+        <p class="txt">op01</p>
+    </div>
+    <div class="item">
+        <button type="button" class="btn-h30-bg000000-pdlr10-br5-hvbg444444-op02">
+            <span class="txt-fs14-fcFFFFFF">op02</span>
+        </button>
+        <p class="txt">op02</p>
+    </div>
+    <div class="item">
+        <button type="button" class="btn-h30-bg000000-pdlr10-br5-hvbg444444-op03">
+            <span class="txt-fs14-fcFFFFFF">op03</span>
+        </button>
+        <p class="txt">op03</p>
+    </div>
+    <div class="item">
+        <button type="button" class="btn-h30-bg000000-pdlr10-br5-hvbg444444-op04">
+            <span class="txt-fs14-fcFFFFFF">op04</span>
+        </button>
+        <p class="txt">op04</p>
+    </div>
+    <div class="item">
+        <button type="button" class="btn-h30-bg000000-pdlr10-br5-hvbg444444-op05">
+            <span class="txt-fs14-fcFFFFFF">op05</span>
+        </button>
+        <p class="txt">op05</p>
+    </div>
+    <div class="item">
+        <button type="button" class="btn-h30-bg000000-pdlr10-br5-hvbg444444-op06">
+            <span class="txt-fs14-fcFFFFFF">op06</span>
+        </button>
+        <p class="txt">op06</p>
+    </div>
+    <div class="item">
+        <button type="button" class="btn-h30-bg000000-pdlr10-br5-hvbg444444-op07">
+            <span class="txt-fs14-fcFFFFFF">op07</span>
+        </button>
+        <p class="txt">op07</p>
+    </div>
+    <div class="item">
+        <button type="button" class="btn-h30-bg000000-pdlr10-br5-hvbg444444-op08">
+            <span class="txt-fs14-fcFFFFFF">op08</span>
+        </button>
+        <p class="txt">op08</p>
+    </div>
+    <div class="item">
+        <button type="button" class="btn-h30-bg000000-pdlr10-br5-hvbg444444-op09">
+            <span class="txt-fs14-fcFFFFFF">op09</span>
+        </button>
+        <p class="txt">op09</p>
+    </div>
+    <hr>
+    <div class="item">
+        <button type="button" class="btn-h30-bg5467DE-pdlr10-br5-hvbg444444">
+            <span class="txt-fs14-fcFFFFFF">pdlr10</span>
+        </button>
+        <p class="txt">pdlr10</p>
+    </div>
+    <div class="item">
+        <button type="button" class="btn-h30-bg5467DE-pdlr20-br5-hvbg444444">
+            <span class="txt-fs14-fcFFFFFF">pdlr20</span>
+        </button>
+        <p class="txt">pdlr20</p>
+    </div>
+    <div class="item">
+        <button type="button" class="btn-h30-bg5467DE-pdlr30-br5-hvbg444444">
+            <span class="txt-fs14-fcFFFFFF">pdlr30</span>
+        </button>
+        <p class="txt">pdlr30</p>
+    </div>
+    <hr>
+    <div class="item">
+        <button type="button" class="btn-wh30-bg5467DE-pdlr30-br5-hvbg444444">
+            <i class="ico ico-drone-w-20-20"></i>
+        </button>
+    </div>
+    <div class="item">
+        <button type="button" class="btn-h30-bg5467DE-pdlr10-br5-gap5-hvbg444444">
+            <i class="ico ico-drone-w-20-20"></i>
+            <span class="txt-fs14-fcFFFFFF-lh14px">텍스트</span>
+        </button>
+    </div>
+    <div class="item">
+        <button type="button" class="btn-h30-bg5467DE-pdlr10-br5-gap5-hvbg444444">
+            <span class="txt-fs14-fcFFFFFF-lh14px">텍스트</span>
+            <i class="ico ico-drone-w-20-20"></i>
+        </button>
+    </div>
+</div>
+            </div>
+            <div class="box-foot">
+<textarea>
+<button class="btn-wh사이즈-bg헥스코드-pdlr여백사이즈-br모서리라운드-gap사이여백-hvbg헥스코드-op투명도">
+    <span class="txt">텍스트</span>
+</button>
+<button class="btn-h사이즈-bg헥스코드-pdlr여백사이즈-br모서리라운드-gap사이여백-hvbg헥스코드-op투명도">
+    <span class="txt">텍스트</span>
+</button>
+<button class="btn-wh사이즈-bg헥스코드-pdlr여백사이즈-br모서리라운드-gap사이여백-hvbg헥스코드-op투명도">
+    <i class="ico 아이콘명"></i>
+</button>
+<button class="btn-wh사이즈-bg헥스코드-pdlr여백사이즈-br모서리라운드-gap사이여백-hvbg헥스코드-op투명도">
+    <i class="ico 아이콘명"></i>
+    <span class="txt">텍스트</span>
+</button>
+<button class="btn-wh사이즈-bg헥스코드-pdlr여백사이즈-br모서리라운드-gap사이여백-hvbg헥스코드-op투명도">
+    <span class="txt">텍스트</span>
+    <i class="ico 아이콘명"></i>
+</button>
+</textarea>
+            </div>
+        </div>
+        <!--//template-box-->
+                
+        <!--template-box-->
+        <div class="template-box">
+            <div class="box-head">
+                <h2 class="tit">6. 라디오/체크/스위치</h2>
+            </div>
+            <div class="box-body">
+<div class="list-box">
+    <div class="item">
+        <label class="chk-box">
+            <input type="checkbox" >
+            <span class="txt">checkbox</span>
+        </label>
+    </div>
+    <div class="item">
+        <label class="chk-box solo">
+            <input type="checkbox" >
+            <span class="txt">checkbox</span>
+        </label>
+    </div>
+    <hr>
+    <div class="item">
+        <label class="chk-box">
+            <input type="radio" name="ra1" >
+            <span class="txt">radio1</span>
+        </label>
+    </div>
+    <div class="item">
+        <label class="chk-box">
+            <input type="radio" name="ra1" >
+            <span class="txt">radio2</span>
+        </label>
+    </div>
+</div>
+            </div>
+            <div class="box-foot">
+<textarea>
+<label class="chk-box">
+    <input type="checkbox" >
+    <span class="txt">선택1</span>
+</label>
+<label class="chk-box solo">
+    <input type="checkbox" >
+    <span class="txt">선택2</span>
+</label>
 </textarea>
             </div>
         </div>
