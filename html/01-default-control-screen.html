@@ -1,0 +1,198 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<link rel="shortcut icon" href="../img/inc/favicon.ico" type="image/x-icon">
+<title>IC2VISTA</title>
+<script type="text/javascript" src="../resources/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../resources/js/jquery-ui.js"></script>
+<script type="text/javascript" src="../resources/js/common.js"></script>
+<link rel="stylesheet" type="text/css" href="../resources/css/common.css">
+<link rel="stylesheet" type="text/css" href="../resources/css/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="../resources/css/layout.css">
+<link rel="stylesheet" type="text/css" href="../resources/css/template.css">
+</head>
+<body>
+    <div id="control-wrap">
+        <!--head-layout-->
+        <header id="header-layout">
+            <!--로고-->
+            <h1 class="logo">
+                <a href="#">
+                    <i class="ico ico-logo-144-26"></i>
+                </a>
+            </h1>
+            <!--//로고-->
+            <div class="info">
+                <div class="iFlex-row-gap30 ai-c">
+                    <!--날씨-->
+                    <div class="iFlex-row-gap6 ai-c">
+                        <i class="ico ico-weather-type1-24-24"></i>
+                        <p class="txt-fw700-fs18-fc000000-lh10">12℃</p>
+                        <p class="txt-fw500-fs14-fc5F627B-lh10">날씨 맑음</p>
+                    </div>
+                    <!--//날씨-->
+                    <div class="iFlex-row-gap10 ai-c">
+                        <!--미세먼지-->
+                        <div class="iFlex-row-gap5 ai-c">
+                            <i class="ico ico-dust-type1-16-16"></i>
+                            <p class="txt-fw500-fs14-fc5F627B-lh10">미세먼지</p>
+                            <p class="txt-fw500-fs14-fc41679F-lh10">좋음</p>
+                        </div>
+                        <!--//미세먼지-->
+                        <!--초미세먼지-->
+                        <div class="iFlex-row-gap5 ai-c">
+                            <i class="ico ico-dust-type2-16-16"></i>
+                            <p class="txt-fw500-fs14-fc5F627B-lh10">초미세먼지</p>
+                            <p class="txt-fw500-fs14-fc2AA138-lh10">좋음</p>
+                        </div>
+                        <!--//초미세먼지-->
+                    </div>
+                    <!--KP지수-->
+                    <div class="badge-h30-pdlr20-bg153457-br5-gap5 iFlex-row ai-c">
+                        <i class="ico ico-radar-w-20-20"></i>
+                        <p class="txt-fw500-fs14-fcFFFFFF-lh1">KP지수 2.33</p>
+                    </div>
+                    <!--//KP지수-->
+                    <!--KP지수-->
+                    <div class="badge-h30-pdlr20-bgF5F6F8-br5-gap5 iFlex-row ai-c">
+                        <i class="ico ico-clock-b-20-20"></i>
+                        <p class="txt-fw500-fs14-fc5F627B-lh1">2025년 11월 22일(토) 13:33:33</p>
+                    </div>
+                    <!--//KP지수-->
+                </div>
+            </div>
+        </header>
+        <!--//head-layout-->
+        <!--side-left-layout-->
+        <side id="side-left-layout">
+            <!--gnb-layout-->
+            <div id="gnb-layout">
+                <button type="button" class="gnb-open" onclick="gnb.open()">
+                    <i class="ico ico-arrow-right-w-24-24"></i>
+                </button>
+                <!--depth1-box-->
+                <nav class="depth1-box">
+                    <ul class="list">
+                        <li class="item">
+                            <button type="button" class="depth1-menu active">
+                                <i class="ico ico-dashboard-w-20-20"></i>
+                                <span class="txt">대시보드</span>
+                            </button>
+                        </li>
+                        <li class="item">
+                            <button type="button" class="depth1-menu">
+                                <i class="ico ico-drone-w-20-20"></i>
+                                <span class="txt">관제</span>
+                            </button>
+                        </li>
+                        <li class="item">
+                            <button type="button" class="depth1-menu">
+                                <i class="ico ico-webcam-w-20-20"></i>
+                                <span class="txt">영상</span>
+                            </button>
+                        </li>
+                        <li class="item">
+                            <button type="button" class="depth1-menu">
+                                <i class="ico ico-map-w-20-20"></i>
+                                <span class="txt">지도</span>
+                            </button>
+                        </li>
+                        <li class="item">
+                            <button type="button" class="depth1-menu">
+                                <i class="ico ico-map2-w-20-20"></i>
+                                <span class="txt">지도종류</span>
+                            </button>
+                        </li>
+                        <li class="item">
+                            <button type="button" class="depth1-menu">
+                                <i class="ico ico-gps-w-20-20"></i>
+                                <span class="txt">공역정보</span>
+                            </button>
+                        </li>
+                        <li class="item">
+                            <button type="button" class="depth1-menu">
+                                <i class="ico ico-remote-w-20-20"></i>
+                                <span class="txt">임무</span>
+                            </button>
+                        </li>
+                        <li class="item">
+                            <button type="button" class="depth1-menu">
+                                <i class="ico ico-route-w-20-20"></i>
+                                <span class="txt">경로</span>
+                            </button>
+                        </li>
+                        <li class="item">
+                            <button type="button" class="depth1-menu">
+                                <i class="ico ico-disc-w-20-20"></i>
+                                <span class="txt">미디어</span>
+                            </button>
+                        </li>
+                        <li class="item">
+                            <button type="button" class="depth1-menu">
+                                <i class="ico ico-chart-w-20-20"></i>
+                                <span class="txt">분석</span>
+                            </button>
+                        </li>
+                        <li class="item dots">
+                            <i class="ico ico-dots-w-24-24"></i>
+                        </li>
+                        <li class="item">
+                            <button type="button" class="depth1-menu">
+                                <i class="ico ico-user-w-20-20"></i>
+                                <span class="txt">계정</span>
+                            </button>
+                        </li>
+                        <li class="item">
+                            <button type="button" class="depth1-menu">
+                                <i class="ico ico-router-w-20-20"></i>
+                                <span class="txt">장비</span>
+                            </button>
+                        </li>
+                        <li class="item">
+                            <button type="button" class="depth1-menu">
+                                <i class="ico ico-list-w-20-20"></i>
+                                <span class="txt">이력</span>
+                            </button>
+                        </li>
+                        <li class="item">
+                            <button type="button" class="depth1-menu">
+                                <i class="ico ico-volume-w-20-20"></i>
+                                <span class="txt">공지</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <ul class="list type-util">
+                        <li class="item">
+                            <button type="button" class="util-menu">
+                                <i class="ico ico-notification-w-20-20"></i>
+                                <span class="txt">알람</span>
+                                <span class="count">5</span>
+                            </button>
+                        </li>
+                        <li class="item">
+                            <button type="button" class="util-menu">
+                                <i class="ico ico-logout-w-20-20"></i>
+                                <span class="txt">로그아웃</span>
+                            </button>
+                        </li>
+                    </ul>
+                    <button type="button" class="gnb-close" onclick="gnb.close()">
+                        <i class="ico ico-arrow-left-w-24-24"></i>
+                    </button>
+                </nav>
+                <!--//depth1-box-->
+            </div>
+            <!--//gnb-layout-->
+        </side>
+        <!--//side-layout-->
+        <!--main-layout-->
+        <main id="main-layout" class="type-map"><!--지도타입-->
+
+        </main>
+        <!--//main-layout-->
+    </div>
+</body>
+</html>

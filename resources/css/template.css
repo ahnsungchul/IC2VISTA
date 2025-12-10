@@ -1,4 +1,22 @@
 @charset "utf-8";
+/*
+###################################################
+
+	[PAG] is a professional web publishing company.
+    COMPANY NAME : PAG(PAGNATION)
+	HOMEPAGE : www.pag.kr
+	EMAIL : pag@pag.kr
+	
+###################################################
+*/
+
+[class*="iFlex-"]{ display: inline-flex;}
+[class*="iFlex-"][class*="-row"]{ flex-direction: row;}
+[class*="iFlex-"][class*="-col"]{ flex-direction: column;}
+
+[class*="ai-s"]{ align-items: flex-start;}
+[class*="ai-c"]{ align-items: center;}
+[class*="ai-e"]{ align-items: flex-end;}
 
 [class*="-wh10"]{ width: 10px; height: 10px;}
 [class*="-wh14"]{ width: 14px; height: 14px;}
@@ -11,6 +29,8 @@
 [class*="-wh46"]{ width: 46px; height: 46px;}
 [class*="-wh60"]{ width: 60px; height: 60px;}
 [class*="-wh64"]{ width: 64px; height: 64px;}
+
+[class*="-w30"]{ width: 30px;}
 
 [class*="-h10"]{ height: 10px;}
 [class*="-h14"]{ height: 14px;}
@@ -304,6 +324,40 @@
 [class*="-br31"]{ border-radius: 31px;}
 [class*="-br32"]{ border-radius: 32px;}
 
+[class*="-gap1"]{ gap: 1px;}
+[class*="-gap2"]{ gap: 2px;}
+[class*="-gap3"]{ gap: 3px;}
+[class*="-gap4"]{ gap: 4px;}
+[class*="-gap5"]{ gap: 5px;}
+[class*="-gap6"]{ gap: 6px;}
+[class*="-gap7"]{ gap: 7px;}
+[class*="-gap8"]{ gap: 8px;}
+[class*="-gap9"]{ gap: 9px;}
+[class*="-gap10"]{ gap: 10px;}
+[class*="-gap11"]{ gap: 11px;}
+[class*="-gap12"]{ gap: 12px;}
+[class*="-gap13"]{ gap: 13px;}
+[class*="-gap14"]{ gap: 14px;}
+[class*="-gap15"]{ gap: 15px;}
+[class*="-gap16"]{ gap: 16px;}
+[class*="-gap17"]{ gap: 17px;}
+[class*="-gap18"]{ gap: 18px;}
+[class*="-gap19"]{ gap: 19px;}
+[class*="-gap20"]{ gap: 20px;}
+[class*="-gap21"]{ gap: 21px;}
+[class*="-gap22"]{ gap: 22px;}
+[class*="-gap23"]{ gap: 23px;}
+[class*="-gap24"]{ gap: 24px;}
+[class*="-gap25"]{ gap: 25px;}
+[class*="-gap26"]{ gap: 26px;}
+[class*="-gap27"]{ gap: 27px;}
+[class*="-gap28"]{ gap: 28px;}
+[class*="-gap29"]{ gap: 29px;}
+[class*="-gap30"]{ gap: 30px;}
+
+[class*="-row"]{ flex-direction: row;}
+[class*="-col"]{ flex-direction: column;}
+
 [class*="txt-"][class*="-fw400"]{ font-weight: 400;}
 [class*="txt-"][class*="-fw500"]{ font-weight: 500;}
 [class*="txt-"][class*="-fw600"]{ font-weight: 600;}
@@ -368,6 +422,7 @@
 [class*="txt-"][class*="-fc41679F"]{ color: #41679F;}
 [class*="txt-"][class*="-fc2AA138"]{ color: #2AA138;}
 [class*="txt-"][class*="-fc5490DE"]{ color: #5490DE;}
+[class*="txt-"][class*="-fc41679F"]{ color: #41679F;}
 [class*="txt-"] > span{ display: inline;}
 
 .ico{ background: no-repeat center center;}
@@ -506,9 +561,41 @@
 [class*="btn-"]{ display: inline-flex; align-items: center; justify-content: center;}
 [class*="btn-"][class*="-wh"]{ padding: 0;}
 
-.chk-box{ display: inline-flex; align-items: center;gap: 5px; position: relative; cursor: pointer;}
-.chk-box > input{ width: 0; height: 0; opacity: 0; position: absolute; top: 0; left: -9999px;}
-.chk-box::before{ width: 14px; height: 14px; border-color: #000000; content: ''; margin: 2px; border: 2px solid #000; border-radius: 2px;}
-.chk-box:has( > input:checked)::before{ background-color: #153457;}
-.chk-box:has( > input:checked)::after{ width: 3px; height: 8px; content: ''; border-right: 2px solid #fff; border-bottom: 2px solid #fff; position: absolute; top: 5px; left: 9px; transform: rotate(45deg);}
+[class*="chk-group"]{ display: inline-flex; flex-wrap: wrap;}
+.chk-box,
+[class*="chk-group"] > label{ display: inline-flex; align-items: center; gap: 5px; position: relative; cursor: pointer;}
+.chk-box > input,
+[class*="chk-group"] > label > input{ width: 0; height: 0; opacity: 0; position: absolute; top: 0; left: -9999px;}
+.chk-box::before,
+[class*="chk-group"] > label::before{ width: 18px; height: 18px; content: ''; margin: 1px; border: 2px solid #000; border-radius: 2px; box-sizing: border-box;}
+.chk-box:has( > input:checked)::before,
+[class*="chk-group"] > label:has( > input:checked)::before{ background-color: #153457; border-color: #153457;}
+.chk-box:has( > input:checked)::after,
+[class*="chk-group"] > label:has( > input:checked)::after{ width: 3px; height: 8px; content: ''; border-right: 2px solid #fff; border-bottom: 2px solid #fff; position: absolute; top: 4px; left: 8px; transform: rotate(45deg);}
 .chk-box.solo > .txt{ font-size: 0; text-indent: -9999px; position: absolute; top: 0; left: -9999px;}
+.chk-box:has( > input[type=radio])::before,
+[class*="chk-group"] > label:has( > input[type=radio])::before{ background-color: #fff; border-color: #5F627B; border-radius: 50%;}
+.chk-box:has( > input[type=radio])::after,
+[class*="chk-group"] > label:has( > input[type=radio])::after{ width: 8px; height: 8px; background-color: #5F627B; content: ''; border-radius: 50%; position: absolute; top: 6px; left: 6px;}
+.chk-box:has( > input[type=radio]:checked)::before,
+[class*="chk-group"] > label:has( > input[type=radio]:checked)::before{ border-width: 5px; border-color: #153457;}
+.chk-box:has( > input[type=radio]:checked)::after,
+[class*="chk-group"] > label:has( > input[type=radio]:checked)::after{ display: none;}
+
+[class*="switch-txt-"]{ width: auto; height: auto; display: inline-flex; flex-wrap: wrap;}
+[class*="switch-txt-"] > label{ display: inline-flex; align-items: center; position: relative; cursor: pointer;}
+[class*="switch-txt-"] > label > input{ width: 0; height: 0; opacity: 0; position: absolute; top: 0; left: -9999px;}
+[class*="switch-txt-"][class*="-type1"] .txt{ background-color: #fff; font-weight: 600; font-size: 10px; color: #5F627B; display: inline-flex; align-items: center; justify-content: center;}
+[class*="switch-txt-"][class*="-w40"] .txt{ width: 40px;}
+[class*="switch-txt-"][class*="-w50"] .txt{ width: 50px;}
+[class*="switch-txt-"][class*="-h20"] .txt{ height: 20px;}
+[class*="switch-txt-"][class*="-h20"][class*="-type1"] .txt{ border-radius: 10px;}
+[class*="switch-txt-"][class*="-h20"][class*="-type1"] input:checked ~ .txt{ background-color: #153457; color: #fff;}
+
+[class*="switch-circle-"]{ position: relative; cursor: pointer; transition: all 0.3s;}
+[class*="switch-circle-"] > input{ width: 0; height: 0; opacity: 0; position: absolute; top: 0; left: -9999px;}
+[class*="switch-circle-"][class*="-type1"]{ background-color: #fff;}
+[class*="switch-circle-"][class*="-type1"][class*="-h20"][class*="-type1"]{ border-radius: 10px;}
+[class*="switch-circle-"][class*="-type1"][class*="-h20"]::before{ width: 12px; height: 12px; background-color: #153457; content: ''; display: block; border-radius: 50%; position: absolute; top: 4px; left: 4px; transition: all 0.3s;}
+[class*="switch-circle-"][class*="-type1"]:has( > input:checked){ background-color: #153457;}
+[class*="switch-circle-"][class*="-type1"][class*="-w30"]:has( > input:checked)::before{ background-color: #fff; left: 14px;}
