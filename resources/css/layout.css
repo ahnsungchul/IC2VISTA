@@ -20,7 +20,7 @@
 #gnb-layout .gnb-open:hover{ background-color: #112a46;}
 #gnb-layout .gnb-close{ width: 64px; height: 49px; background-color: #153457; display: inline-flex; align-items: center; justify-content: center; position: absolute; top: 0; left: 0;}
 #gnb-layout .gnb-close:hover{ background-color: #112a46;}
-#gnb-layout .depth1-box{ width: 64px; height: 100%; background-color: #153457; padding: 50px 0 0 0; display: none; flex-direction: column; box-sizing: border-box; position: absolute; top: 0; left: -64px; transition: left 0.2s;}
+#gnb-layout .depth1-box{ width: 64px; height: 100%; background-color: #153457; padding: 50px 0 0 0; display: none; flex-direction: column; box-sizing: border-box; position: absolute; top: 0; left: -64px; transition: left 0.1s; z-index: 3;}
 #gnb-layout .depth1-box .list{ display: flex; flex-direction: column; flex: 1;}
 #gnb-layout .depth1-box .item{ display: flex; align-items: center; justify-content: center; flex: 1;}
 #gnb-layout .depth1-box .item.dots{ height: 34px; flex: none;}
@@ -36,10 +36,26 @@
 #gnb-layout .depth1-box .util-menu .txt{ font-size: 0; text-indent: -9999px; opacity: 0;}
 #gnb-layout .depth1-box .util-menu .count{ width: 14px; height: 14px; background-color: #C10230; font-weight: 600; font-size: 10px; color: #fff; line-height: 1; padding: 0; margin: -15px 0 0 0; display: flex; align-items: center; justify-content: center; border-radius: 7px; position: absolute; top: 50%; left: 50%;}
 #gnb-layout .depth1-box .util-menu:hover .ico{ opacity: 1;}
-#gnb-layout .depth2-box{ width: 276px; background-color: #fff; padding: 0 10px 15px 10px; box-sizing: border-box; position: absolute; top: 50px; right: auto; bottom: 0; left: 64px;}
+#gnb-layout .depth2-box{ width: 276px; background-color: #fff; padding: 0 3px 15px 5px; box-sizing: border-box; position: absolute; top: 50px; right: auto; bottom: 0; left: -276px; transition: left 0.1s; z-index: 2;}
+#gnb-layout .depth2-box > .scroll-y{ padding: 0 3px 0 5px; display: none;}
+#gnb-layout .depth2-box .depth2-open,
+#gnb-layout .depth2-box .depth2-close{ width: 30px; height: 50px; background-color: #fff; display: none; align-items: center; justify-content: center; border-radius: 0 5px 5px 0; position: absolute; top: 60px; right: -30px;}
+#gnb-layout .depth2-box .depth2-open{ display: flex;}
+#gnb-layout .depth2-box.show > .scroll-y{ display: block;}
+#gnb-layout .depth2-box.active{ left: 0;}
+#gnb-layout .depth2-box.active .depth2-open{ display: none;}
+#gnb-layout .depth2-box.active .depth2-close{ display: flex;}
+#gnb-layout .depth3-box{ width: 266px; background-color: #fff; padding: 0 3px 15px 5px; display: none; box-sizing: border-box; opacity: 0; position: absolute; top: 50px; right: auto; bottom: 0; left: 276px; transition: all 0.1s; z-index: 2;}
+#gnb-layout .depth3-box > .scroll-y{ padding: 0 3px 0 5px;}
+#gnb-layout .depth3-box.show{ display: block;}
+#gnb-layout .depth3-box.active{ opacity: 1;}
+#gnb-layout .depth3-box .depth3-close{ width: 30px; height: 50px; background-color: #fff; display: flex; align-items: center; justify-content: center; border-radius: 0 5px 5px 0; position: absolute; top: 60px; right: -30px;}
 
 #gnb-layout.show .depth1-box{ display: inline-flex;}
 #gnb-layout.active .depth1-box{ left: 0;}
+#gnb-layout.active .depth2-box{ left: -212px;}
+#gnb-layout.active .depth2-box.active{ left: 64px;}
+#gnb-layout.active .depth3-box{ left: 340px;}
 
 #main-layout{ grid-column: 1 / 2; grid-row: 2 / 3;}
 #main-layout.type-map{ background-color: #999;}
