@@ -729,23 +729,24 @@
                                         </div>
                                         <!--//세계 비행 속도-->
                                         <!--물론 각도-->
-                                        <div class="flex-col-bgF5F6F8-pd10-gap10-br5 m_t_16 rangeJS rangeJS-min">
+                                        <div class="flex-col-bgF5F6F8-pd10-gap10-br5 m_t_16 rangeJS" data-rangeType="min" data-rangeMin="0" data-rangeMax="360" data-rangeDefault="324">
                                             <div class="flex-sb ai-c">
                                                 <div class="iFlex-row-gap5 ai-c">
                                                     <i class="ico ico-triangle-b-18-18"></i>
                                                     <p class="txt-fw700-fs14-fc000000-lh10">물론 각도</p>
                                                 </div>
                                                 <p class="txt-fw700-fs16-fc153457-lh10">
-                                                    <span>324</span>
+                                                    <span class="rangeJS-output">324</span>
                                                     ˚
                                                 </p>
                                             </div>
-                                            <div class="range-min-type1">
-                                                <button type="button" class="badge-wh20-bg153457-br3">
+                                            <div class="rangeJS-box-type1">
+                                                <input type="hidden" class="rangeJS-val">
+                                                <button type="button" class="badge-wh20-bg153457-br3 rangeJS-btn rangeJS-subtract">
                                                     <i class="ico ico-subtract-w-12-12"></i>
                                                 </button>
-                                                <div class="range"></div>
-                                                <button type="button" class="badge-wh20-bgFFFFFF-br3">
+                                                <div class="rangeJS-slider"></div>
+                                                <button type="button" class="badge-wh20-bgFFFFFF-br3 rangeJS-btn rangeJS-btn rangeJS-add">
                                                     <i class="ico ico-add-b-12-12"></i>
                                                 </button>
                                             </div>
