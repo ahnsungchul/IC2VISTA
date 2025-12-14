@@ -1,7 +1,6 @@
 $(function() {
     accoJS.init();
     rangeJS.init();
-    $( "#lp-layout .lp-draggable" ).draggable({ handle: ".box-head" });
 });
 
 const gnb = {
@@ -236,11 +235,5 @@ const rangeJS = {
                  self.updateValue(_this, _inputVal);
             });
         });
-    }
-}
-
-const lpDrag = {
-    init(){
-        $(document).find()
     }
 }
