@@ -15,6 +15,150 @@
 <link rel="stylesheet" type="text/css" href="../resources/css/template.css">
 </head>
 <body>
+    <!--lp-layout-->
+    <div id="lp-layout">
+        <div class="lp-box createRoute lp-draggable" style="top: 700px; left: 500px;">
+            <div class="box-head">
+                <h2 class="tit">Create Route</h2>
+            </div>
+            <div class="box-body">
+                <div class="flex-col-gap10">
+                    <!--Route Type-->
+                    <div class="flex-col-gap10">
+                        <p class="txt-fw700-fs14-fc000000-lh10">Route Type</p>
+                        <div class="switch-txt-type3-gap5 flex-row row3">
+                            <label>
+                                <input type="radio" name="routeType1" checked="">
+                                <span class="txt txt-h30-pdlr10-gap5-br5-pdlr10 jc-s wFull">
+                                    <i class="ico ico-guide-b-18-18"></i>
+                                    <i class="ico ico-guide-w-18-18"></i>
+                                    Waypoint Route
+                                </span>
+                            </label>
+                            <label>
+                                <input type="radio" name="routeType1">
+                                <span class="txt txt-h30-pdlr10-gap5-br5-pdlr10 jc-s wFull">
+                                    <i class="ico ico-route-b-18-18"></i>
+                                    <i class="ico ico-route-w-18-18"></i>
+                                    Area Route
+                                </span>
+                            </label>
+                            <label>
+                                <input type="radio" name="routeType1">
+                                <span class="txt txt-h30-pdlr10-gap5-br5-pdlr10 jc-s wFull">
+                                    <i class="ico ico-road-b-18-18"></i>
+                                    <i class="ico ico-road-w-18-18"></i>
+                                    Linear Route
+                                </span>
+                            </label>
+                            <label>
+                                <input type="radio" name="routeType1">
+                                <span class="txt txt-h30-pdlr10-gap5-br5-pdlr10 jc-s wFull">
+                                    <i class="ico ico-skew-b-18-18"></i>
+                                    <i class="ico ico-skew-w-18-18"></i>
+                                    Slope Route
+                                </span>
+                            </label>
+                            <label>
+                                <input type="radio" name="routeType1">
+                                <span class="txt txt-h30-pdlr10-gap5-br5-pdlr10 jc-s wFull">
+                                    <i class="ico ico-box-b-18-18"></i>
+                                    <i class="ico ico-box-w-18-18"></i>
+                                    Geometric Route
+                                </span>
+                            </label>
+                            <label>
+                                <input type="radio" name="routeType1">
+                                <span class="txt txt-h30-pdlr10-gap5-br5-pdlr10 jc-s wFull">
+                                    <i class="ico ico-3d-b-18-18"></i>
+                                    <i class="ico ico-3d-w-18-18"></i>
+                                    Smart 3D Capture
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <!--//Route Type-->
+                    <!--Slect Aircraft-->
+                    <div class="flex-col-gap10">
+                        <p class="txt-fw700-fs14-fc000000-lh10">Slect Aircraft</p>
+                        <div class="switch-txt-type3-gap5 flex-row row2">
+                            <label>
+                                <input type="radio" name="slectAircraft1">
+                                <span class="txt txt-h30-pdlr10-gap5-br5-pdlr10 jc-s wFull">
+                                    Matrice 30 Series
+                                </span>
+                            </label>
+                            <label>
+                                <input type="radio" name="slectAircraft1">
+                                <span class="txt txt-h30-pdlr10-gap5-br5-pdlr10 jc-s wFull">
+                                    Mavic 3 Enterprice Serises
+                                </span>
+                            </label>
+                            <label>
+                                <input type="radio" name="slectAircraft1">
+                                <span class="txt txt-h30-pdlr10-gap5-br5-pdlr10 jc-s wFull">
+                                    Matrice 3D Series
+                                </span>
+                            </label>
+                            <label>
+                                <input type="radio" name="slectAircraft1">
+                                <span class="txt txt-h30-pdlr10-gap5-br5-pdlr10 jc-s wFull">
+                                    Matrice 4 Enterprice Serises
+                                </span>
+                            </label>
+                            <label>
+                                <input type="radio" name="slectAircraft1" checked>
+                                <span class="txt txt-h30-pdlr10-gap5-br5-pdlr10 jc-s wFull">
+                                    Matrice 4D Series
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <!--//Slect Aircraft-->
+                    <!--Select Model-->
+                    <div class="flex-col-gap10">
+                        <p class="txt-fw700-fs14-fc000000-lh10">Select Model</p>
+                        <div class="switch-txt-type3-gap5 flex-row row2">
+                            <label>
+                                <input type="radio" name="selectModel" checked>
+                                <span class="txt txt-h30-pdlr10-gap5-br5-pdlr10 jc-s wFull">
+                                    Matrice 4D
+                                </span>
+                            </label>
+                            <label>
+                                <input type="radio" name="selectModel">
+                                <span class="txt txt-h30-pdlr10-gap5-br5-pdlr10 jc-s wFull">
+                                    Matrice 4TD
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <!--//Select Model-->
+                    <!--Select Model-->
+                    <div class="flex-col-gap10">
+                        <p class="txt-fw700-fs14-fc000000-lh10">Route Name</p>
+                        <input type="text" class="input-h30-txt-fs12-type1" placeholder="New Geometric Route(">
+                    </div>
+                    <!--//Select Model-->
+                </div>
+            </div>
+            <div class="box-foot">
+                <div class="flex-center-gap5">
+                    <button type="button" class="btn-w90-h30-bdw1-solid-bdcE1E4EB-br5">
+                        <p class="txt-fw600-fs12-fc5F627B-lh10">Cancel</p>
+                    </button>
+                    <button type="button" class="btn-w90-h30-bg153457-br5">
+                        <p class="txt-fw600-fs12-fcFFFFFF-lh10">Ok</p>
+                    </button>
+                </div>
+            </div>
+            <button type="button" class="lp-close">
+                <i class="ico ico-close-w-20-20"></i>
+            </button>
+        </div>
+    </div>
+    <!--//lp-layout-->
+
     <div id="control-wrap">
         <!--head-layout-->
         <header id="header-layout">
@@ -105,7 +249,7 @@
         <!--side-left-layout-->
         <side id="side-left-layout">
             <!--gnb-layout-->
-            <div id="gnb-layout">
+            <div id="gnb-layout" class="show active">
                 <button type="button" class="gnb-open" onclick="gnb.open()">
                     <i class="ico ico-arrow-right-w-24-24"></i>
                 </button>
@@ -113,61 +257,61 @@
                 <nav class="depth1-box">
                     <ul class="list">
                         <li class="item">
-                            <button type="button" class="depth1-menu active">
+                            <button type="button" class="depth1-menu active" onclick="depth2.open(this)">
                                 <i class="ico ico-dashboard-w-20-20"></i>
                                 <span class="txt">대시보드</span>
                             </button>
                         </li>
                         <li class="item">
-                            <button type="button" class="depth1-menu">
+                            <button type="button" class="depth1-menu" onclick="depth2.open(this)">
                                 <i class="ico ico-drone-w-20-20"></i>
                                 <span class="txt">관제</span>
                             </button>
                         </li>
                         <li class="item">
-                            <button type="button" class="depth1-menu">
+                            <button type="button" class="depth1-menu" onclick="depth2.open(this)">
                                 <i class="ico ico-webcam-w-20-20"></i>
                                 <span class="txt">영상</span>
                             </button>
                         </li>
                         <li class="item">
-                            <button type="button" class="depth1-menu">
+                            <button type="button" class="depth1-menu" onclick="depth2.open(this)">
                                 <i class="ico ico-map-w-20-20"></i>
                                 <span class="txt">지도</span>
                             </button>
                         </li>
                         <li class="item">
-                            <button type="button" class="depth1-menu">
+                            <button type="button" class="depth1-menu" onclick="depth2.open(this)">
                                 <i class="ico ico-map2-w-20-20"></i>
                                 <span class="txt">지도종류</span>
                             </button>
                         </li>
                         <li class="item">
-                            <button type="button" class="depth1-menu">
+                            <button type="button" class="depth1-menu" onclick="depth2.open(this)">
                                 <i class="ico ico-gps-w-20-20"></i>
                                 <span class="txt">공역정보</span>
                             </button>
                         </li>
                         <li class="item">
-                            <button type="button" class="depth1-menu">
+                            <button type="button" class="depth1-menu" onclick="depth2.open(this)">
                                 <i class="ico ico-remote-w-20-20"></i>
                                 <span class="txt">임무</span>
                             </button>
                         </li>
                         <li class="item">
-                            <button type="button" class="depth1-menu">
+                            <button type="button" class="depth1-menu" onclick="depth2.open(this)">
                                 <i class="ico ico-route-w-20-20"></i>
                                 <span class="txt">경로</span>
                             </button>
                         </li>
                         <li class="item">
-                            <button type="button" class="depth1-menu">
+                            <button type="button" class="depth1-menu" onclick="depth2.open(this)">
                                 <i class="ico ico-disc-w-20-20"></i>
                                 <span class="txt">미디어</span>
                             </button>
                         </li>
                         <li class="item">
-                            <button type="button" class="depth1-menu">
+                            <button type="button" class="depth1-menu" onclick="depth2.open(this)">
                                 <i class="ico ico-chart-w-20-20"></i>
                                 <span class="txt">분석</span>
                             </button>
@@ -176,25 +320,25 @@
                             <i class="ico ico-dots-w-24-24"></i>
                         </li>
                         <li class="item">
-                            <button type="button" class="depth1-menu">
+                            <button type="button" class="depth1-menu" onclick="depth2.open(this)">
                                 <i class="ico ico-user-w-20-20"></i>
                                 <span class="txt">계정</span>
                             </button>
                         </li>
                         <li class="item">
-                            <button type="button" class="depth1-menu">
+                            <button type="button" class="depth1-menu" onclick="depth2.open(this)">
                                 <i class="ico ico-router-w-20-20"></i>
                                 <span class="txt">장비</span>
                             </button>
                         </li>
                         <li class="item">
-                            <button type="button" class="depth1-menu">
+                            <button type="button" class="depth1-menu" onclick="depth2.open(this)">
                                 <i class="ico ico-list-w-20-20"></i>
                                 <span class="txt">이력</span>
                             </button>
                         </li>
                         <li class="item">
-                            <button type="button" class="depth1-menu">
+                            <button type="button" class="depth1-menu" onclick="depth2.open(this)">
                                 <i class="ico ico-volume-w-20-20"></i>
                                 <span class="txt">공지</span>
                             </button>
@@ -266,7 +410,7 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="switch-txt-type2-gap5 flex-row row2">
+                                                    <div class="switch-txt-type2-gap5 flex-row row2 wFull">
                                                         <label>
                                                             <input type="radio" name="camera1" checked >
                                                             <span class="txt txt-wFull-h20">FPV Camera</span>
@@ -300,7 +444,7 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="switch-txt-type2-gap5 flex-row row2">
+                                                    <div class="switch-txt-type2-gap5 flex-row row2 wFull">
                                                         <label>
                                                             <input type="radio" name="camera2" checked >
                                                             <span class="txt txt-wFull-h20">FPV Camera</span>
@@ -336,7 +480,8 @@
                                 <div class="box-body accoJS-cont p_b_30px">
                                     <ul class="list-col-box-gap40">
                                         <li class="item">
-                                            <div class="flex-row-gap10">
+                                            <button type="button" class="detail-info-btn" onclick="dronDetailJS.open(this)">선택</button>
+                                            <div class="flex-row-gap10 option-box">
                                                 <div class="badge-wh60-bgF7F9FB-br30">
                                                     <img src="../resources/img/@sample-drone-img.png" />
                                                 </div>
@@ -352,7 +497,7 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="flex-col-gap5">
+                                                    <div class="flex-col-gap5 wFull">
                                                         <div class="flex-row-gap5 row2">
                                                             <button class="btn-h20-bgF5F6F8-br3-hvbgEEEEEE" onclick="depth3.open()">
                                                                 <span class="txt-fw600-fs10-fc5F627B-lh10">경로설정</span>
@@ -372,7 +517,7 @@
                                                                 <option>세부메뉴3</option>
                                                             </select>
                                                         </div>
-                                                        <div class="switch-txt-type2-gap5 flex-row row2">
+                                                        <div class="switch-txt-type2-gap5 flex-row row2 wFull">
                                                             <label>
                                                                 <input type="radio" name="camera3" checked >
                                                                 <span class="txt txt-wFull-h20">FPV Camera</span>
@@ -387,7 +532,8 @@
                                             </div>
                                         </li>
                                         <li class="item">
-                                            <div class="flex-row-gap10">
+                                            <button type="button" class="detail-info-btn" onclick="dronDetailJS.open(this)">선택</button>
+                                            <div class="flex-row-gap10 option-box">
                                                 <div class="badge-wh60-bgF7F9FB-br30">
                                                     <img src="../resources/img/@sample-drone-img.png" />
                                                 </div>
@@ -403,7 +549,7 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="flex-col-gap5">
+                                                    <div class="flex-col-gap5 wFull">
                                                         <div class="flex-row-gap5 row2">
                                                             <button class="btn-h20-bgF5F6F8-br3-hvbgEEEEEE" onclick="depth3.open()">
                                                                 <span class="txt-fw600-fs10-fc5F627B-lh10">경로설정</span>
@@ -423,7 +569,7 @@
                                                                 <option>세부메뉴3</option>
                                                             </select>
                                                         </div>
-                                                        <div class="switch-txt-type2-gap5 flex-row row2">
+                                                        <div class="switch-txt-type2-gap5 flex-row row2 wFull">
                                                             <label>
                                                                 <input type="radio" name="camera4" checked >
                                                                 <span class="txt txt-wFull-h20">FPV Camera</span>
@@ -438,7 +584,8 @@
                                             </div>
                                         </li>
                                         <li class="item">
-                                            <div class="flex-row-gap10">
+                                            <button type="button" class="detail-info-btn" onclick="dronDetailJS.open(this)">선택</button>
+                                            <div class="flex-row-gap10 option-box">
                                                 <div class="badge-wh60-bgF7F9FB-br30">
                                                     <img src="../resources/img/@sample-drone-img.png" />
                                                 </div>
@@ -454,7 +601,7 @@
                                                             </li>
                                                         </ul>
                                                     </div>
-                                                    <div class="flex-col-gap5">
+                                                    <div class="flex-col-gap5 wFull">
                                                         <div class="flex-row-gap5 row2">
                                                             <button class="btn-h20-bgF5F6F8-br3-hvbgEEEEEE" onclick="depth3.open()">
                                                                 <span class="txt-fw600-fs10-fc5F627B-lh10">경로설정</span>
@@ -474,7 +621,7 @@
                                                                 <option>세부메뉴3</option>
                                                             </select>
                                                         </div>
-                                                        <div class="switch-txt-type2-gap5 flex-row row2">
+                                                        <div class="switch-txt-type2-gap5 flex-row row2 wFull">
                                                             <label>
                                                                 <input type="radio" name="camera5" checked >
                                                                 <span class="txt txt-wFull-h20">FPV Camera</span>
@@ -729,23 +876,24 @@
                                         </div>
                                         <!--//세계 비행 속도-->
                                         <!--물론 각도-->
-                                        <div class="flex-col-bgF5F6F8-pd10-gap10-br5 m_t_16 rangeJS rangeJS-min">
+                                        <div class="flex-col-bgF5F6F8-pd10-gap10-br5 m_t_16 rangeJS" data-rangeType="min" data-rangeMin="0" data-rangeMax="360" data-rangeDefault="324">
                                             <div class="flex-sb ai-c">
                                                 <div class="iFlex-row-gap5 ai-c">
                                                     <i class="ico ico-triangle-b-18-18"></i>
                                                     <p class="txt-fw700-fs14-fc000000-lh10">물론 각도</p>
                                                 </div>
                                                 <p class="txt-fw700-fs16-fc153457-lh10">
-                                                    <span>324</span>
+                                                    <span class="rangeJS-output">324</span>
                                                     ˚
                                                 </p>
                                             </div>
-                                            <div class="range-min-type1">
-                                                <button type="button" class="badge-wh20-bg153457-br3">
+                                            <div class="rangeJS-box-type1">
+                                                <input type="hidden" class="rangeJS-val">
+                                                <button type="button" class="badge-wh20-bg153457-br3 rangeJS-btn rangeJS-subtract">
                                                     <i class="ico ico-subtract-w-12-12"></i>
                                                 </button>
-                                                <div class="range"></div>
-                                                <button type="button" class="badge-wh20-bgFFFFFF-br3">
+                                                <div class="rangeJS-slider"></div>
+                                                <button type="button" class="badge-wh20-bgFFFFFF-br3 rangeJS-btn rangeJS-btn rangeJS-add">
                                                     <i class="ico ico-add-b-12-12"></i>
                                                 </button>
                                             </div>
@@ -801,10 +949,312 @@
             </div>
             <!--//gnb-layout-->
         </side>
-        <!--//side-layout-->
+        <!--//side-left-layout-->
+        
+        <!--side-right-layout-->
+        <side id="side-right-layout">
+            <!--dron-detail-box-->
+            <div class="dron-detail-box">
+                <div class="box-head">
+                    <div class="flex-row-gap10 ai-c">
+                        <div class="badge-h30-bg5490DE-br5-pdlr8">
+                            <p class="txt-fw700-fs14-fcFFFFFF-lh30px">온라인</p>
+                        </div>
+                        <ul class="list-row-box-gap10">
+                            <li class="item">
+                                <p class="txt-fw500-fs14-fc050505-lh12">M350</p>
+                            </li>
+                            <li class="item">
+                                <p class="txt-fw500-fs14-fc050505-lh12">DRONE 01</p>
+                            </li>
+                        </ul>
+                    </div>
+                </div>
+                <div class="box-body">
+                    <div class="scroll-y">
+                        <div class="flex-col-gap10">
+                            <!--mission-waypoint-box-->
+                            <div class="mission-waypoint-box">
+                                <div class="progress-bar">
+                                    <div class="bar" style="width: 40%;"></div>
+                                    <p class="start">00:26:27</p>
+                                    <p class="end">01:00:00</p>
+                                </div>
+                                <div class="target" style="left: 40%;">
+                                    <div class="fly">
+                                        <i class="ico ico-plane-w-14-14"></i>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//mission-waypoint-box-->
+                            <!--드론 정보-->
+                            <div class="flex-col-gap5-bgF7F9FB-br5-pd10-relative">
+                                <button type="button" class="badge-wh24-bg124689-br12-absolute-top10-right4">
+                                    <i class="ico ico-information-w-14-14"></i>
+                                </button>
+                                <div class="flex-center-mgtb5">
+                                    <img src="../resources/img/@sample-drone-img2.png" />
+                                </div>
+                                <div class="flex-sb-h30-bgFFFFFF-br5-pdlr10 ai-c">
+                                    <p class="txt-fw600-fs12-fc000000-lh10">규격</p>
+                                    <p class="txt-fw500-fs12-fc5F627B-lh10">400x600xx280mm</p>
+                                </div>
+                                <div class="flex-sb-h30-bgFFFFFF-br5-pdlr10 ai-c">
+                                    <p class="txt-fw600-fs12-fc000000-lh10">최대비행시간</p>
+                                    <p class="txt-fw500-fs12-fc5F627B-lh10">1:00:00</p>
+                                </div>
+                                <div class="flex-sb-h30-bgFFFFFF-br5-pdlr10 ai-c">
+                                    <p class="txt-fw600-fs12-fc000000-lh10">장비중량</p>
+                                    <p class="txt-fw500-fs12-fc5F627B-lh10">2.0kg</p>
+                                </div>
+                                <div class="flex-sb-h30-bgFFFFFF-br5-pdlr10 ai-c">
+                                    <p class="txt-fw600-fs12-fc000000-lh10">최대중량</p>
+                                    <p class="txt-fw500-fs12-fc5F627B-lh10">2.0kg</p>
+                                </div>
+                            </div>
+                            <!--//드론 정보-->
+                            <!--Speed/Power-->
+                            <div class="flex-col-gap5-bgF7F9FB-br5-pd10-relative">
+                                <div class="flex-col-gap4">
+                                    <div class="flex-center-gap26">
+                                        <div class="badge-wh64-bg5490DE-br32 flex-col ai-c jc-c">
+                                            <p class="txt-fw700-fs12-fcFFFFFF-lh10">Speed</p>
+                                            <p class="txt-fw700-fs16-fcFFFFFF-lh10">35</p>
+                                        </div>
+                                        <i class="ico ico-plane-b-66-66"></i>
+                                        <div class="badge-wh64-bg5490DE-br32 flex-col ai-c jc-c">
+                                            <p class="txt-fw700-fs12-fcFFFFFF-lh10">Power</p>
+                                            <p class="txt-fw700-fs16-fcFFFFFF-lh10">245</p>
+                                        </div>
+                                    </div>
+                                    <div class="flex-center-gap20">
+                                        <div class="flex-col-gap5 ai-c">
+                                            <p class="txt-fw500-fs10-fc5F627B-tac-lh10">Latitude</p>
+                                            <p class="txt-fw500-fs10-fc5490DE-tac-lh10">37.123456</p>
+                                        </div>
+                                        <div class="flex-col-gap5 ai-c">
+                                            <p class="txt-fw500-fs10-fc5F627B-tac-lh10">Longitude</p>
+                                            <p class="txt-fw500-fs10-fc5490DE-tac-lh10">127.123456</p>
+                                        </div>
+                                        <div class="flex-col-gap5 ai-c">
+                                            <p class="txt-fw500-fs10-fc5F627B-tac-lh10">Altitude</p>
+                                            <p class="txt-fw500-fs10-fc5490DE-tac-lh10">120m</p>
+                                        </div>
+                                        <div class="flex-col-gap5 ai-c">
+                                            <p class="txt-fw500-fs10-fc5F627B-tac-lh10">Altitued</p>
+                                            <p class="txt-fw500-fs10-fc5490DE-tac-lh10">76m</p>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//Speed/Power-->
+                            <!--BASIC FLIGHT STATE-->
+                            <div class="flex-col-gap5-bgF7F9FB-br5-pd10-relative">
+                                <div class="flex-sb-h22 ai-c">
+                                    <p class="txt-fw700-fs16-fc000000-lh10">- BASIC FLIGHT STATE</p>
+                                    <button type="button" class="badge-h22-bg5490DE-pdlr5-br3">
+                                        <p class="txt-fw700-fs12-fcFFFFFF-lh22px">자세히보기</p>
+                                    </button>
+                                </div>
+                                <div class="flex-sb-h30-bgFFFFFF-br5-pdlr10 ai-c">
+                                    <p class="txt-fw600-fs12-fc000000-lh10">1.2°/Pitch/Yaw</p>
+                                    <p class="txt-fw500-fs12-fc5F627B-lh10">1.2°/-0.8°/123.4</p>
+                                </div>
+                                <div class="flex-sb-h30-bgFFFFFF-br5-pdlr10 ai-c">
+                                    <p class="txt-fw600-fs12-fc000000-lh10">Velocity NED(Speed)</p>
+                                    <p class="txt-fw500-fs12-fc5F627B-lh10">12.8m/s</p>
+                                </div>
+                            </div>
+                            <!--//BASIC FLIGHT STATE-->
+                            <!--SATellite Signal&GPS Lock-->
+                            <div class="flex-col-gap5-bgF7F9FB-br5-pd10-relative">
+                                <div class="flex-row-h22">
+                                    <p class="txt-fw700-fs16-fc000000-lh10">- SATellite Signal&GPS Lock</p>
+                                </div>
+                                <div class="flex-row-gap14">
+                                    <div class="flex-col-gap5 flex1">
+                                        <div class="flex-sb-h30-bgFFFFFF-br5-pdlr10 ai-c">
+                                            <p class="txt-fw600-fs12-fc000000-lh10">Satellite count</p>
+                                            <p class="txt-fw500-fs12-fc5F627B-lh10">14</p>
+                                        </div>
+                                        <div class="flex-sb-h30-bgFFFFFF-br5-pdlr10 ai-c">
+                                            <p class="txt-fw600-fs12-fc000000-lh10">Fix type (2D/3/DGP)</p>
+                                            <p class="txt-fw500-fs12-fc5F627B-lh10">DGPS</p>
+                                        </div>
+                                        <div class="flex-sb-h30-bgFFFFFF-br5-pdlr10 ai-c">
+                                            <p class="txt-fw600-fs12-fc000000-lh10">GPS lock</p>
+                                            <i class="ico ico-check-b-12-12"></i>
+                                        </div>
+                                    </div>
+                                    <div class="bat-chart-box" style="width: 100px;">차트</div>
+                                </div>
+                            </div>
+                            <!--//SATellite Signal&GPS Lock-->
+                            <!--stream control-->
+                            <div class="stream-control-box">
+                                <div class="fixed-btn-tl">
+                                    <div class="flex-row-gap1">
+                                        <button type="button" class="badge-wh24-bg000000-op05-br5">
+                                            <i class="ico ico-camera-off-w-14-14"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="fixed-btn-tr">
+                                    <div class="flex-row-gap1">
+                                        <button type="button" class="badge-wh24-bg000000-op05-br5">
+                                            <i class="ico ico-add-w-14-14"></i>
+                                        </button>
+                                        <button type="button" class="badge-wh24-bg000000-op05-br5">
+                                            <i class="ico ico-subtract-w-14-14"></i>
+                                        </button>
+                                        <button type="button" class="badge-wh24-bg000000-op05-br5">
+                                            <i class="ico ico-radio-w-14-14"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="fixed-btn-bl">
+                                    <div class="flex-row-gap1">
+                                        <button type="button" class="badge-h24-bg000000-op05-pdlr5-br5">
+                                            <p class="txt-fw500-fs12-fcFFFFFF-lh24px">Android</p>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="fixed-btn-br">
+                                    <div class="flex-row-gap1">
+                                        <button type="button" class="badge-wh24-bg000000-op05-br5">
+                                            <i class="ico ico-volume-mute-w-14-14"></i>
+                                        </button>
+                                        <button type="button" class="badge-wh24-bg000000-op05-br5">
+                                            <i class="ico ico-add-w-14-14"></i>
+                                        </button>
+                                        <button type="button" class="badge-wh24-bg000000-op05-br5">
+                                            <i class="ico ico-subtract-w-14-14"></i>
+                                        </button>
+                                        <button type="button" class="badge-wh24-bg000000-op05-br5">
+                                            <i class="ico ico-reset-w-14-14"></i>
+                                        </button>
+                                        <button type="button" class="badge-wh24-bg000000-op05-br5">
+                                            <i class="ico ico-camera-w-14-14"></i>
+                                        </button>
+                                        <button type="button" class="badge-wh24-bg000000-op05-br5">
+                                            <i class="ico ico-fullscreen-w-14-14"></i>
+                                        </button>
+                                        <button type="button" class="badge-wh24-bg000000-op05-br5">
+                                            <i class="ico ico-settings-w-14-14"></i>
+                                        </button>
+                                        <button type="button" class="badge-wh24-bg000000-op05-br5">
+                                            <i class="ico ico-fullscreen2-w-14-14"></i>
+                                        </button>
+                                        <button type="button" class="badge-wh24-bg000000-op05-br5">
+                                            <i class="ico ico-move-w-14-14"></i>
+                                        </button>
+                                    </div>
+                                </div>
+                                <div class="fixed-btn-t">
+                                    <button type="button" class="badge-wh22-bgFFFFFF-br11 bsdw-2px2px4px0px-0000001A">
+                                        <i class="ico ico-arrow-up-b-14-14"></i>
+                                    </button>
+                                </div>
+                                <div class="fixed-btn-r">
+                                    <button type="button" class="badge-wh22-bgFFFFFF-br11 bsdw-2px2px4px0px-0000001A">
+                                        <i class="ico ico-arrow-right-b-14-14"></i>
+                                    </button>
+                                </div>
+                                <div class="fixed-btn-b">
+                                    <button type="button" class="badge-wh22-bgFFFFFF-br11 bsdw-2px2px4px0px-0000001A">
+                                        <i class="ico ico-arrow-down-b-14-14"></i>
+                                    </button>
+                                </div>
+                                <div class="fixed-btn-l">
+                                    <button type="button" class="badge-wh22-bgFFFFFF-br11 bsdw-2px2px4px0px-0000001A">
+                                        <i class="ico ico-arrow-left-b-14-14"></i>
+                                    </button>
+                                </div>
+                                <p class="txt">스트림이 닫혔습니다.</p>
+                                <div class="stream"></div>
+                            </div>
+                            <!--//stream control-->
+                        </div>
+                    </div>
+                </div>
+                <button type="button" class="dron-detail-close" onclick="dronDetailJS.close()">
+                    <i class="ico ico-close-b-16-16"></i>
+                </button>
+            </div>
+            <!--//dron-detail-box-->
+        </side>
+        <!--//side-right-layout-->
+
         <!--main-layout-->
         <main id="main-layout" class="type-map"><!--지도타입-->
-
+            <!--고정바-컨트롤버튼-->
+            <div class="fixed-tool-control">
+                <div class="iFlex-col-gap15">
+                    <div class="iFlex-col-gap1">
+                        <button type="button" class="btn-wh30-bg000000-op05-br5">
+                            <i class="ico ico-crosshair-w-18-18"></i>
+                        </button>
+                        <button type="button" class="btn-wh30-bg000000-op05-br5">
+                            <i class="ico ico-add-w-18-18"></i>
+                        </button>
+                        <button type="button" class="btn-wh30-bg000000-op05-br5">
+                            <i class="ico ico-subtract-w-18-18"></i>
+                        </button>
+                        <button type="button" class="btn-wh30-bg000000-op05-br5">
+                            <i class="ico ico-share-w-18-18"></i>
+                        </button>
+                    </div>
+                    <div class="iFlex-col-gap1">
+                        <button type="button" class="btn-wh30-bg000000-op05-br5">
+                            <i class="ico ico-ruler-w-18-18"></i>
+                        </button>
+                        <button type="button" class="btn-wh30-bg000000-op05-br5">
+                            <i class="ico ico-shape-w-18-18"></i>
+                        </button>
+                        <button type="button" class="btn-wh30-bg000000-op05-br5">
+                            <i class="ico ico-pencil-ruler-w-18-18"></i>
+                        </button>
+                        <button type="button" class="btn-wh30-bg000000-op05-br5">
+                            <i class="ico ico-flag-w-18-18"></i>
+                        </button>
+                        <button type="button" class="btn-wh30-bg000000-op05-br5">
+                            <i class="ico ico-download-w-18-18"></i>
+                        </button>
+                        <button type="button" class="btn-wh30-bg000000-op05-br5">
+                            <i class="ico ico-crop-w-18-18"></i>
+                        </button>
+                    </div>
+                </div>
+            </div>
+            <!--//고정바-GPS-->
+            <!--고정바-GPS-->
+            <div class="fixed-tool-gps">
+                <div class="badge-wFull-bg000000-op05-br5-pdtb10">
+                    <div class="flex-center-wrap-gap5">
+                        <div class="flex-row-gap5 m_r_5">
+                            <span class="badge-wh10-bg2AA138-br5-mgtb2"></span>
+                            <p class="txt-fw500-fs14-fcFFFFFF-lh14px">GPS(양호)</p>
+                        </div>
+                        <p class="txt-fw500-fs14-fcFFFFFF-lh14px m_r_5">위도(37.402912), 경도(127.108221), 고도(55m), 방향(북동(NE))</p>
+                        <p class="txt-fw500-fs14-fcFFFFFF-lh14px">PS 속도(62 km/h), 평균 속도(48 km/h), GPS 수신 상태(매우 양호), 경로 추적(활성화됨)</p>
+                    </div>
+                </div>
+            </div>
+            <!--//고정바-GPS-->
+            <!--스낵바-배너리알림-->
+            <div class="snack-bar-battery">
+                <div class="battery">
+                    <div class="badge-h40-bg5490DE-br5-pdlr18 flex-row-gap10 ai-c">
+                        <i class="ico ico-battery-w-18-18"></i>
+                        <p class="txt-fw600-fs12-fcFFFFFF">잔여 배터리 위험 경고</p>
+                        <p class="txt-fw600-fs12-fcFFFFFF">10:33</p>
+                    </div>
+                    <button type="button" class="btn-wh22-bgFFFFFF-br11 snack-bar-close">
+                        <i class="ico ico-close-b-16-16"></i>
+                    </button>
+                </div>
+            </div>
+            <!--//스낵바-배너리알림-->
         </main>
         <!--//main-layout-->
     </div>
