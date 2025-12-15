@@ -31,9 +31,9 @@
 [class*="flex-row"].row2 > *{ width: calc(100% / 2);}
 [class*="flex-row"][class*="-gap5"].row2 > *{ width: calc((100% - 0.313rem) / 2);}
 [class*="flex-row"].row3 > *{ width: calc(100% / 2);}
-[class*="flex-row"][class*="-gap5"].row3 > *{ width: calc((100% - 0.625rem) / 3);}
+[class*="flex-row"][class*="-gap5"].row3 > *{ width: calc((100% - 0.626rem) / 3);}
 [class*="flex-row"].row4 > *{ width: calc(100% / 2);}
-[class*="flex-row"][class*="-gap5"].row4 > *{ width: calc((100% - 0.938rem) / 4);}
+[class*="flex-row"][class*="-gap5"].row4 > *{ width: calc((100% - 0.939rem) / 4);}
 
 [class*="-gap1"]{ gap: 0.063rem;}
 [class*="-gap2"]{ gap: 0.125rem;}
