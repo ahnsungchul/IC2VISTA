@@ -1,0 +1,168 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<link rel="shortcut icon" href="../img/inc/favicon.ico" type="image/x-icon">
+<title>IC2VISTA</title>
+<script type="text/javascript" src="../resources/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../resources/js/jquery-ui.js"></script>
+<script type="text/javascript" src="../resources/js/common.js"></script>
+<link rel="stylesheet" type="text/css" href="../resources/css/common.css">
+<link rel="stylesheet" type="text/css" href="../resources/css/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="../resources/css/layout.css">
+<link rel="stylesheet" type="text/css" href="../resources/css/template.css">
+</head>
+<body>
+    <!--lp-layout-->
+    <div id="lp-layout">
+        <div class="lp-box createRoute lp-draggable" style="top: 700px; left: 500px;">
+            <div class="box-head">
+                <h2 class="tit">Create Route</h2>
+            </div>
+            <div class="box-body">
+                <div class="flex-col-gap10">
+                    <!--Route Type-->
+                    <div class="flex-col-gap10">
+                        <p class="txt-fw700-fs14-fc000000-lh10">Route Type</p>
+                        <div class="switch-txt-type3-gap5 flex-row row3">
+                            <label>
+                                <input type="radio" name="routeType1" checked="">
+                                <span class="txt txt-h30-pdlr10-gap5-br5-pdlr10 jc-s wFull">
+                                    <i class="ico ico-guide-b-18-18"></i>
+                                    <i class="ico ico-guide-w-18-18"></i>
+                                    Waypoint Route
+                                </span>
+                            </label>
+                            <label>
+                                <input type="radio" name="routeType1">
+                                <span class="txt txt-h30-pdlr10-gap5-br5-pdlr10 jc-s wFull">
+                                    <i class="ico ico-route-b-18-18"></i>
+                                    <i class="ico ico-route-w-18-18"></i>
+                                    Area Route
+                                </span>
+                            </label>
+                            <label>
+                                <input type="radio" name="routeType1">
+                                <span class="txt txt-h30-pdlr10-gap5-br5-pdlr10 jc-s wFull">
+                                    <i class="ico ico-road-b-18-18"></i>
+                                    <i class="ico ico-road-w-18-18"></i>
+                                    Linear Route
+                                </span>
+                            </label>
+                            <label>
+                                <input type="radio" name="routeType1">
+                                <span class="txt txt-h30-pdlr10-gap5-br5-pdlr10 jc-s wFull">
+                                    <i class="ico ico-skew-b-18-18"></i>
+                                    <i class="ico ico-skew-w-18-18"></i>
+                                    Slope Route
+                                </span>
+                            </label>
+                            <label>
+                                <input type="radio" name="routeType1">
+                                <span class="txt txt-h30-pdlr10-gap5-br5-pdlr10 jc-s wFull">
+                                    <i class="ico ico-box-b-18-18"></i>
+                                    <i class="ico ico-box-w-18-18"></i>
+                                    Geometric Route
+                                </span>
+                            </label>
+                            <label>
+                                <input type="radio" name="routeType1">
+                                <span class="txt txt-h30-pdlr10-gap5-br5-pdlr10 jc-s wFull">
+                                    <i class="ico ico-3d-b-18-18"></i>
+                                    <i class="ico ico-3d-w-18-18"></i>
+                                    Smart 3D Capture
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <!--//Route Type-->
+                    <!--Slect Aircraft-->
+                    <div class="flex-col-gap10">
+                        <p class="txt-fw700-fs14-fc000000-lh10">Slect Aircraft</p>
+                        <div class="switch-txt-type3-gap5 flex-row row2">
+                            <label>
+                                <input type="radio" name="slectAircraft1">
+                                <span class="txt txt-h30-pdlr10-gap5-br5-pdlr10 jc-s wFull">
+                                    Matrice 30 Series
+                                </span>
+                            </label>
+                            <label>
+                                <input type="radio" name="slectAircraft1">
+                                <span class="txt txt-h30-pdlr10-gap5-br5-pdlr10 jc-s wFull">
+                                    Mavic 3 Enterprice Serises
+                                </span>
+                            </label>
+                            <label>
+                                <input type="radio" name="slectAircraft1">
+                                <span class="txt txt-h30-pdlr10-gap5-br5-pdlr10 jc-s wFull">
+                                    Matrice 3D Series
+                                </span>
+                            </label>
+                            <label>
+                                <input type="radio" name="slectAircraft1">
+                                <span class="txt txt-h30-pdlr10-gap5-br5-pdlr10 jc-s wFull">
+                                    Matrice 4 Enterprice Serises
+                                </span>
+                            </label>
+                            <label>
+                                <input type="radio" name="slectAircraft1" checked>
+                                <span class="txt txt-h30-pdlr10-gap5-br5-pdlr10 jc-s wFull">
+                                    Matrice 4D Series
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <!--//Slect Aircraft-->
+                    <!--Select Model-->
+                    <div class="flex-col-gap10">
+                        <p class="txt-fw700-fs14-fc000000-lh10">Select Model</p>
+                        <div class="switch-txt-type3-gap5 flex-row row2">
+                            <label>
+                                <input type="radio" name="selectModel" checked>
+                                <span class="txt txt-h30-pdlr10-gap5-br5-pdlr10 jc-s wFull">
+                                    Matrice 4D
+                                </span>
+                            </label>
+                            <label>
+                                <input type="radio" name="selectModel">
+                                <span class="txt txt-h30-pdlr10-gap5-br5-pdlr10 jc-s wFull">
+                                    Matrice 4TD
+                                </span>
+                            </label>
+                        </div>
+                    </div>
+                    <!--//Select Model-->
+                    <!--Select Model-->
+                    <div class="flex-col-gap10">
+                        <p class="txt-fw700-fs14-fc000000-lh10">Route Name</p>
+                        <input type="text" class="input-h30-txt-fs12-type1" placeholder="New Geometric Route(">
+                    </div>
+                    <!--//Select Model-->
+                </div>
+            </div>
+            <div class="box-foot">
+                <div class="flex-center-gap5">
+                    <button type="button" class="btn-w90-h30-bdw1-solid-bdcE1E4EB-br5">
+                        <p class="txt-fw600-fs12-fc5F627B-lh10">Cancel</p>
+                    </button>
+                    <button type="button" class="btn-w90-h30-bg153457-br5">
+                        <p class="txt-fw600-fs12-fcFFFFFF-lh10">Ok</p>
+                    </button>
+                </div>
+            </div>
+            <button type="button" class="lp-close" onclick="lp.close(this)">
+                <i class="ico ico-close-w-20-20"></i>
+            </button>
+        </div>
+    </div>
+    <!--//lp-layout-->
+
+    <div class="flex-row-wrap-gap10-pd20">
+        <button type="button" class="btn-h30-pdlr20-bdw1-solid-bdcCCCCCC-br5-hvbgEEEEEE" onclick="lp.open('createRoute',700,500)">
+            <span class="txt-tw600-fs14-lh10">Create Route</span>
+        </button>
+    </div>
+</body>
+</html>

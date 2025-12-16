@@ -239,8 +239,18 @@ const rangeJS = {
     }
 }
 
-const lpDrag = {
-    init(){
-        $(document).find()
+const lp = {
+    open(_target,_top,_left){
+        $("html").addClass("lpOpen");
+        const onTotal = $(document).find("#lp-layout .lp-box.on").length + 1;
+        if($(document).find("#lp-layout .lp-box."+_target).hasClass("on")){
+            return false;
+        }
+        $(document).find("#lp-layout .lp-box."+_target).addClass("on").css({"z-index":onTotal,"top":_top,"left":_left});
+    },
+    close(_this){
+        $("html").removeClass("lpOpen");
+        $(_this).parents(".lp-box").removeClass("on").removeAttr("style");
     }
 }
+

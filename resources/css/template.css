@@ -622,14 +622,15 @@
 [class*="-left20"]{ left: 1.25rem;}
 
 .ico{ background: no-repeat center center;}
-.ico[class*="-10-10"]{ width: 0.625rem; height: 0.625rem; background-size: contain;}
-.ico[class*="-12-12"]{ width: 0.75rem; height: 0.75rem; background-size: contain;}
-.ico[class*="-14-14"]{ width: 0.875rem; height: 0.875rem; background-size: contain;}
-.ico[class*="-16-16"]{ width: 1rem; height: 1rem; background-size: contain;}
-.ico[class*="-18-18"]{ width: 1.125rem; height: 1.125rem; background-size: contain;}
-.ico[class*="-20-20"]{ width: 1.25rem; height: 1.25rem; background-size: contain;}
-.ico[class*="-24-24"]{ width: 1.5rem; height: 1.5rem; background-size: contain;}
-.ico[class*="-66-66"]{ width: 4.125rem; height: 4.125rem; background-size: contain;}
+.ico[class*="ico-"]{ background-size: contain;}
+.ico[class*="-10-10"]{ width: 0.625rem; height: 0.625rem;}
+.ico[class*="-12-12"]{ width: 0.75rem; height: 0.75rem;}
+.ico[class*="-14-14"]{ width: 0.875rem; height: 0.875rem;}
+.ico[class*="-16-16"]{ width: 1rem; height: 1rem;}
+.ico[class*="-18-18"]{ width: 1.125rem; height: 1.125rem;}
+.ico[class*="-20-20"]{ width: 1.25rem; height: 1.25rem;}
+.ico[class*="-24-24"]{ width: 1.5rem; height: 1.5rem;}
+.ico[class*="-66-66"]{ width: 4.125rem; height: 4.125rem;}
 .ico.ico-3d-b-18-18{ background-image: url(../img/ico/ico-3d-b-18-18.svg);}
 .ico.ico-add-b-12-12{ background-image: url(../img/ico/ico-add-b-12-12.svg);}
 .ico.ico-add-w-12-12{ background-image: url(../img/ico/ico-add-w-12-12.svg);}
@@ -691,6 +692,7 @@
 .ico.ico-lens-b-18-18{ background-image: url(../img/ico/ico-lens-b-18-18.svg);}
 .ico.ico-list-w-20-20{ background-image: url(../img/ico/ico-list-w-20-20.svg);}
 .ico.ico-logo-144-26{ width: 9rem; height: 1.625rem; background-image: url(../img/ico/ico-logo-144-26.svg);}
+.ico.ico-logo-148-26{ width: 9.25rem; height: 1.625rem; background-image: url(../img/ico/ico-logo-148-26.svg);}
 .ico.ico-logout-w-20-20{ background-image: url(../img/ico/ico-logout-w-20-20.svg);}
 .ico.ico-map2-w-20-20{ background-image: url(../img/ico/ico-map2-w-20-20.svg);}
 .ico.ico-map-w-20-20{ background-image: url(../img/ico/ico-map-w-20-20.svg);}
@@ -884,8 +886,8 @@ position: absolute; top: 1.875rem;}
 .stream-control-box > .txt{ font-weight: 700; font-size: 0.75rem; color: #000; line-height: 1; position: relative; z-index: 2;}
 .stream-control-box > .stream{ width: 100%; height: 100%; background-color: #F7F9FB; position: absolute; top: 0; left: 0; z-index: 1;}
 
-#lp-layout{ width: 0; height: 0; position: fixed; top: 0; left: 0; z-index: 1;}
-#lp-layout .lp-box{ background-color: #fff; display: flex; flex-direction: column; box-shadow: 0.313rem 0.625rem 1.25rem 0rem #0000004D; border-radius: 0.313rem; overflow: hidden; position: absolute; z-index: 9;}
+#lp-layout{ width: 0; height: 0; display: none; position: fixed; top: 0; left: 0; z-index: 1;}
+#lp-layout .lp-box{ background-color: #fff; display: none; flex-direction: column; box-shadow: 0.313rem 0.625rem 1.25rem 0rem #0000004D; border-radius: 0.313rem; overflow: hidden; position: absolute; z-index: 1;}
 #lp-layout .lp-box > .box-head{ height: 2.5rem; background-color: #153457; padding: 0 1.25rem; display: flex; align-items: center;}
 #lp-layout .lp-box > .box-head .tit{ font-weight: 600; font-size: 0.875rem; color: #fff; line-height: 1;}
 #lp-layout .lp-box > .box-body{ padding: 1.25rem 1.563rem;}
@@ -893,5 +895,6 @@ position: absolute; top: 1.875rem;}
 #lp-layout .lp-box:has( .box-foot) > .box-body{ padding-bottom: 0;}
 #lp-layout .lp-box.lp-draggable > .box-head{ cursor: move;}
 #lp-layout .lp-box > .lp-close{ width: 1.875rem; height: 1.875rem; display: flex; align-items: center; justify-content: center; position: absolute; top: 0.313rem; right: 0.938rem;}
-
 #lp-layout .lp-box.createRoute{ width: 30rem;}
+.lpOpen #lp-layout{ display: block;}
+.lpOpen #lp-layout .lp-box.on{ display: flex;}
