@@ -1,7 +1,7 @@
 $(function() {
     accoJS.init();
     rangeJS.init();
-    $( "#lp-layout .lp-draggable" ).draggable({ handle: ".box-head" });
+    $( "#lp-layout .draggableJS" ).draggable();
 });
 
 const gnb = {
@@ -249,8 +249,9 @@ const lp = {
         $(document).find("#lp-layout .lp-box."+_target).addClass("on").css({"z-index":onTotal,"top":_top,"left":_left});
     },
     close(_this){
-        $("html").removeClass("lpOpen");
+        if($(document).find("#lp-layout > .on").length == 0){
+            $("html").removeClass("lpOpen");
+        }
         $(_this).parents(".lp-box").removeClass("on").removeAttr("style");
     }
 }
-

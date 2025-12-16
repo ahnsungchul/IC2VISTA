@@ -8,6 +8,7 @@
 <title>IC2VISTA</title>
 <script type="text/javascript" src="../resources/js/jquery-1.11.2.min.js"></script>
 <script type="text/javascript" src="../resources/js/jquery-ui.js"></script>
+<script type="text/javascript" src="../resources/js/common.js"></script>
 <link rel="stylesheet" type="text/css" href="../resources/css/common.css">
 <link rel="stylesheet" type="text/css" href="../resources/css/jquery-ui.css">
 <link rel="stylesheet" type="text/css" href="../resources/css/template.css">
@@ -32,6 +33,34 @@
 </style>
 </head>
 <body>
+    <!--lp-layout-->
+    <div id="lp-layout">
+        <!--lp-box-->
+        <div class="lp-box type1 draggableJS" style="top: 700px; left: 500px;">
+            <div class="box-head">
+                <h2 class="tit">layer popup - type1</h2>
+            </div>
+            <div class="box-body">
+                내용
+            </div>
+            <div class="box-foot">
+                <div class="flex-center-gap5">
+                    <button type="button" class="btn-w90-h30-bdw1-solid-bdcE1E4EB-br5">
+                        <p class="txt-fw600-fs12-fc5F627B-lh10">Cancel</p>
+                    </button>
+                    <button type="button" class="btn-w90-h30-bg153457-br5">
+                        <p class="txt-fw600-fs12-fcFFFFFF-lh10">Ok</p>
+                    </button>
+                </div>
+            </div>
+            <button type="button" class="lp-close" onclick="lp.close(this)">
+                <i class="ico ico-close-w-20-20"></i>
+            </button>
+        </div>
+        <!--//lp-box-->
+    </div>
+    <!--//lp-layout-->
+
     <div class="template-html-group">
         <!--template-box-->
         <div class="template-box">
@@ -657,6 +686,23 @@
     <div class="item">
         <i class="ico ico-ship-b-66-66"></i>
         <p class="txt">ico-ship-b-66-66</p>
+    </div>
+    <hr>
+    <div class="item">
+        <i class="ico ico-walk-b-16-16"></i>
+        <p class="txt">ico-walk-b-16-16</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-car-b-16-16"></i>
+        <p class="txt">ico-car-b-16-16</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-ship-b-16-16"></i>
+        <p class="txt">ico-ship-b-16-16</p>
+    </div>
+    <div class="item">
+        <i class="ico ico-moving-b-16-16"></i>
+        <p class="txt">ico-moving-b-16-16</p>
     </div>
 </div>
             </div>
@@ -1301,6 +1347,111 @@
 <span class="badge-wh22-bgFFFFFF-br11 bsdw-2px2px4px0px-0000001A">
     <i class="ico ico-arrow-down-b-16-16"></i>
 </span>
+</textarea>
+            </div>
+        </div>
+        <!--//template-box-->
+                
+        <!--template-box-->
+        <div class="template-box">
+            <div class="box-head">
+                <h2 class="tit">7. layer popup</h2>
+            </div>
+            <div class="box-body">
+<div class="list-box">
+    <div class="item">
+        <button type="button" class="btn-h30-pdlr20-bdw1-solid-bdcCCCCCC-br5-hvbgEEEEEE" onclick="lp.open('type1',500,500)">
+            <span class="txt-tw600-fs14-lh10">layer popup - type1</span>
+        </button>
+    </div>
+</div>
+            </div>
+            <div class="box-foot">
+<textarea>
+onclick="lp.open('팝업이름',top위치,left위치)"
+
+<!--lp-box-->
+<div class="lp-box 팝업이름 draggableJS" style="top: 700px; left: 500px;">
+    <div class="box-head">
+        <h2 class="tit">layer popup - type1</h2>
+    </div>
+    <div class="box-body">
+        내용
+    </div>
+    <div class="box-foot">
+        <div class="flex-center-gap5">
+            <button type="button" class="btn-w90-h30-bdw1-solid-bdcE1E4EB-br5">
+                <p class="txt-fw600-fs12-fc5F627B-lh10">Cancel</p>
+            </button>
+            <button type="button" class="btn-w90-h30-bg153457-br5">
+                <p class="txt-fw600-fs12-fcFFFFFF-lh10">Ok</p>
+            </button>
+        </div>
+    </div>
+    <button type="button" class="lp-close" onclick="lp.close(this)">
+        <i class="ico ico-close-w-20-20"></i>
+    </button>
+</div>
+<!--//lp-box-->
+</textarea>
+            </div>
+        </div>
+        <!--//template-box-->
+                
+        <!--template-box-->
+        <div class="template-box">
+            <div class="box-head">
+                <h2 class="tit">8. Range</h2>
+            </div>
+            <div class="box-body">
+
+<div class="flex-col-bgF5F6F8-pd10-gap10-br5 m_t_16 rangeJS" data-rangeType="min" data-rangeMin="0" data-rangeMax="360" data-rangeDefault="324">
+    <div class="flex-sb ai-c">
+        <div class="iFlex-row-gap5 ai-c">
+            <i class="ico ico-triangle-b-18-18"></i>
+            <p class="txt-fw700-fs14-fc000000-lh10">물론 각도</p>
+        </div>
+        <p class="txt-fw700-fs16-fc153457-lh10">
+            <span class="rangeJS-output">324</span>
+            ˚
+        </p>
+    </div>
+    <div class="rangeJS-box-type1">
+        <input type="hidden" class="rangeJS-val">
+        <button type="button" class="badge-wh20-bg153457-br3 rangeJS-btn rangeJS-subtract">
+            <i class="ico ico-subtract-w-12-12"></i>
+        </button>
+        <div class="rangeJS-slider"></div>
+        <button type="button" class="badge-wh20-bgFFFFFF-br3 rangeJS-btn rangeJS-btn rangeJS-add">
+            <i class="ico ico-add-b-12-12"></i>
+        </button>
+    </div>
+</div>
+            </div>
+            <div class="box-foot">
+<textarea>
+<div class="flex-col-bgF5F6F8-pd10-gap10-br5 m_t_16 rangeJS" data-rangeType="min" data-rangeMin="0" data-rangeMax="360" data-rangeDefault="324">
+    <div class="flex-sb ai-c">
+        <div class="iFlex-row-gap5 ai-c">
+            <i class="ico ico-triangle-b-18-18"></i>
+            <p class="txt-fw700-fs14-fc000000-lh10">물론 각도</p>
+        </div>
+        <p class="txt-fw700-fs16-fc153457-lh10">
+            <span class="rangeJS-output">324</span>
+            ˚
+        </p>
+    </div>
+    <div class="rangeJS-box-type1">
+        <input type="hidden" class="rangeJS-val">
+        <button type="button" class="badge-wh20-bg153457-br3 rangeJS-btn rangeJS-subtract">
+            <i class="ico ico-subtract-w-12-12"></i>
+        </button>
+        <div class="rangeJS-slider"></div>
+        <button type="button" class="badge-wh20-bgFFFFFF-br3 rangeJS-btn rangeJS-btn rangeJS-add">
+            <i class="ico ico-add-b-12-12"></i>
+        </button>
+    </div>
+</div>
 </textarea>
             </div>
         </div>

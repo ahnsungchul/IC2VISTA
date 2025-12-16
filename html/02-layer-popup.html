@@ -17,7 +17,8 @@
 <body>
     <!--lp-layout-->
     <div id="lp-layout">
-        <div class="lp-box createRoute lp-draggable" style="top: 700px; left: 500px;">
+        <!--lp-box-->
+        <div class="lp-box createRoute draggableJS">
             <div class="box-head">
                 <h2 class="tit">Create Route</h2>
             </div>
@@ -156,12 +157,349 @@
                 <i class="ico ico-close-w-20-20"></i>
             </button>
         </div>
+        <!--//lp-box-->
+        <!--lp2-box-->
+        <div class="lp-box typeLP2 aircraft draggableJS">
+            <div class="box-body flex1">
+                <div class="aircraft-left">
+                    <div class="flex-row jc-c">
+                        <img src="../resources/img/@sample-drone-img2.png" style="height: 3.875rem;" />
+                    </div>
+                    <div class="flex-col-gap12 m_t_20">
+                        <div class="flex-col-gap8">
+                            <p class="txt-fw500-fs12-fc5F627B-lh10">M30 v00.00.0021</p>
+                            <p class="txt-fw500-fs10-fc5F627B-lh10">Aircraft Name : Aircraft_10</p>
+                            <p class="txt-fw500-fs10-fc5F627B-lh10">Aircraft SN : DJ340DIKRJ</p>
+                            <p class="txt-fw500-fs10-fc5F627B-lh10">Left Battery SN: DJ340DIKRJ</p>
+                            <p class="txt-fw500-fs10-fc5F627B-lh10">Right Battery SN: DJ340DIKRJ</p>
+                        </div>
+                        <div class="flex-col-gap4">
+                            <div class="box-bgFFFFFF-br5-pd10 flex-col-gap5">
+                                <p class="txt-fw600-fs10-fc000000-lh10">DJI Maintenance program</p>
+                                <p class="txt-fw500-fs10-fc5F627B-lh10">300h/520d/554flights</p>
+                            </div>
+                            <div class="box-bgFFFFFF-br5-pd10 flex-col-gap5">
+                                <p class="txt-fw600-fs10-fc000000-lh10">DJI Care Enterprise</p>
+                                <p class="txt-fw500-fs10-fc5F627B-lh10">2022-12-22</p>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <div class="aircraft-right flex1">
+                    <div class="flex-col-gap29">
+                        <div class="flex-row-gap10 ai-c">
+                            <p class="txt-fw700-fs16-fc000000-lh10-pdlr10">Aircraft</p>
+                            <div class="flex-row-gap5 ai-c">
+                                <div class="flex-row-gap3">
+                                    <span class="badge-wh10-bg153457-br5 m_1"></span>
+                                    <p class="txt-fw500-fs12-fc5F627B-lh10">Inside Dock, Powered-off</p>
+                                </div>
+                                <span class="badge-h15-bg2AA138-br3-pdlr3 txt-fw600-fs9-fcFFFFFF-lh15px">
+                                    N/A
+                                </span>
+                            </div>
+                        </div>
+                        <div class="flex-col-gap20">
+                            <div class="flex-sb">
+                                <div class="flex-col-gap5 ai-c">
+                                    <p class="txt-h20-fw600-fs10-fc5F627B-lh18px-tac-pdlr7-bdw1-solid-bdcE1E4EB-br3">12h</p>
+                                    <p class="txt-fw500-fs10-fc5490DE-lh10">RunningTime</p>
+                                </div>
+                                <div class="flex-col-gap5 ai-c">
+                                    <p class="txt-h20-fw600-fs10-fc5F627B-lh18px-tac-pdlr7-bdw1-solid-bdcE1E4EB-br3">35 Flights</p>
+                                    <p class="txt-fw500-fs10-fc5490DE-lh10">Flights</p>
+                                </div>
+                                <div class="flex-col-gap5 ai-c">
+                                    <div class="box-h20-pdlr7-bdw1-solid-bdcE1E4EB-br3 flex-row-gap2 ai-c">
+                                        <p class="txt-fw600-fs10-fc5F627B-lh10">4G</p>
+                                        <i class="ico ico-4g-b-7-7"></i>
+                                    </div>
+                                    <p class="txt-fw500-fs10-fc5490DE-lh10">image Transmission</p>
+                                </div>
+                                <div class="flex-col-gap5 ai-c">
+                                    <div class="box-h20-pdlr7-bdw1-solid-bdcE1E4EB-br3 flex-row-gap2 ai-c">
+                                        <p class="txt-fw600-fs10-fc5F627B-lh10">RTK</p>
+                                        <i class="ico ico-router-b-10-10"></i>
+                                        <p class="txt-fw600-fs10-fc5F627B-lh10">20</p>
+                                    </div>
+                                    <p class="txt-fw500-fs10-fc5490DE-lh10">Satellites</p>
+                                </div>
+                            </div>
+                            <div class="flex-col-gap13">
+                                <hr class="m_0"/>
+                                <div class="flex-col-gap5">
+                                    <dl class="flex-row ai-c">
+                                        <dt class="txt-w90-fw500-fs10-fc5490DE-lh10">Left Battery SN</dt>
+                                        <dd class="flex1 flex-sb">
+                                            <p class="txt-w27-h20-fw600-fs10-fc5F627B-lh18px-tac-bdw1-solid-bdcE1E4EB-br3">53</p>
+                                            <p class="txt-w27-h20-fw600-fs10-fc5F627B-lh18px-tac-bdw1-solid-bdcE1E4EB-br3">30</p>
+                                            <p class="txt-w42-h20-fw600-fs10-fc5F627B-lh18px-tac-bdw1-solid-bdcE1E4EB-br3">23.6V</p>
+                                            <p class="txt-w44-h20-fw600-fs10-fc5F627B-lh18px-tac-bdw1-solid-bdcE1E4EB-br3">54.1℃</p>
+                                            <p class="txt-w36-h20-fw600-fs10-fc5F627B-lh18px-tac-bdw1-solid-bdcE1E4EB-br3">20%</p>
+                                        </dd>
+                                    </dl>
+                                    <dl class="flex-row ai-c">
+                                        <dt class="txt-w90-fw500-fs10-fc5490DE-lh10">Right Battery SN</dt>
+                                        <dd class="flex1 flex-sb">
+                                            <p class="txt-w27-h20-fw600-fs10-fc5F627B-lh18px-tac-bdw1-solid-bdcE1E4EB-br3">30</p>
+                                            <p class="txt-w27-h20-fw600-fs10-fc5F627B-lh18px-tac-bdw1-solid-bdcE1E4EB-br3">53</p>
+                                            <p class="txt-w42-h20-fw600-fs10-fc5F627B-lh18px-tac-bdw1-solid-bdcE1E4EB-br3">23.6V</p>
+                                            <p class="txt-w44-h20-fw600-fs10-fc5F627B-lh18px-tac-bdw1-solid-bdcE1E4EB-br3">54.1℃</p>
+                                            <p class="txt-w36-h20-fw600-fs10-fc5F627B-lh18px-tac-bdw1-solid-bdcE1E4EB-br3">20%</p>
+                                        </dd>
+                                    </dl>
+                                    <div class="flex-row jc-e">
+                                        <p class="txt-fw500-fs10-fc5490DE-tac-lh10">Cycle <br>Count</p>
+                                        <p class="txt-fw500-fs10-fc5490DE-tac-lh10-mgl2">High battery <br>Level Storage</p>
+                                        <p class="txt-w42-fw500-fs10-fc5490DE-tac-lh10">Voltage</p>
+                                        <p class="txt-w44-fw500-fs10-fc5490DE-tac-lh10-mgl18">Tempera <br>ture</p>
+                                        <p class="txt-w36-fw500-fs10-fc5490DE-tac-lh10-mgl18">Battery <br>Level</p>
+                                    </div>
+                                </div>
+                                <div class="flex-row-gap5-cgap10-wrap row2">
+                                    <div class="box-h30-bgF7F9FB-br5-pdlr10 flex-sb ai-c">
+                                        <p class="txt-fw600-fs10-fc000000-lh10">Beacons</p>
+                                        <label class="switch-circle-w30-h20-type1">
+                                            <input type="checkbox" checked >
+                                        </label>
+                                    </div>
+                                    <div class="box-h30-bgF7F9FB-br5-pdlr10 flex-sb ai-c">
+                                        <p class="txt-fw600-fs10-fc000000-lh10">Altemate Route</p>
+                                        <div class="flex-row ai-c">
+                                            <p class="txt-fw500-fs10-fc5F627B-lh10">120m</p>
+                                            <button type="button" class="btn-wh12">
+                                                <i class="ico ico-pencil-b-12-12"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="box-h30-bgF7F9FB-br5-pdlr10 flex-sb ai-c">
+                                        <p class="txt-fw600-fs10-fc000000-lh10">Max Altitude</p>
+                                        <div class="flex-row ai-c">
+                                            <p class="txt-fw500-fs10-fc5F627B-lh10">120m</p>
+                                            <button type="button" class="btn-wh12">
+                                                <i class="ico ico-pencil-b-12-12"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="box-h30-bgF7F9FB-br5-pdlr10 flex-sb ai-c">
+                                        <p class="txt-fw600-fs10-fc000000-lh10">Max Flight Distance</p>
+                                        <div class="flex-row ai-c">
+                                            <p class="txt-fw500-fs10-fc5F627B-lh10">120m</p>
+                                            <button type="button" class="btn-wh12">
+                                                <i class="ico ico-pencil-b-12-12"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="box-h30-bgF7F9FB-br5-pdlr10 flex-sb ai-c">
+                                        <p class="txt-fw600-fs10-fc000000-lh10">Ovstacle Sensing </p>
+                                        <div class="flex-row ai-c">
+                                            <p class="txt-fw500-fs10-fc5F627B-lh10">Enable</p>
+                                            <button type="button" class="btn-wh12">
+                                                <i class="ico ico-pencil-b-12-12"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="box-h30-bgF7F9FB-br5-pdlr10 flex-sb ai-c">
+                                        <p class="txt-fw600-fs10-fc000000-lh10">Charging Mode</p>
+                                        <div class="flex-row ai-c">
+                                            <p class="txt-fw500-fs10-fc5F627B-lh10">Standby</p>
+                                            <button type="button" class="btn-wh12">
+                                                <i class="ico ico-pencil-b-12-12"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                    <div class="box-h30-bgF7F9FB-br5-pdlr10 flex-sb ai-c">
+                                        <p class="txt-fw600-fs10-fc000000-lh10">Resenved battery</p>
+                                        <div class="flex-row ai-c">
+                                            <p class="txt-fw500-fs10-fc5F627B-lh10">25%</p>
+                                            <button type="button" class="btn-wh12">
+                                                <i class="ico ico-pencil-b-12-12"></i>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="lp-close" onclick="lp.close(this)">
+                <i class="ico ico-close-b-16-16"></i>
+            </button>
+        </div>
+        <!--//lp2-box-->
+        <!--lp3-box-->
+        <div class="lp-box typeLP3 aiAnalysis draggableJS">
+            <div class="box-head">
+                <h2 class="tit">AI 영상분석</h2>
+            </div>
+            <div class="box-body">
+                <div class="flex-col-gap20">
+                    <div class="box-bgF5F6F8-br3-pd15">
+                        <p class="txt-fw600-fs12-fc5F627B-lh15px">
+                            아래에서 제공하는 상황을 체크하여 수신되는 모든 영상을 분석합니다.<br>
+                            최대 00개 채널을 동시에 분석할 수 있으며 H/W 성능에 따라 분석 <br>
+                            속도 및동시처리 채널 수에 제한이 있을 수 있습니다.
+                        </p>
+                    </div>
+                    <div class="flex-col-gap11-pdlr10">
+                        <p class="txt-fw700-fs14-fc000000-lh10">분석 종류</p>
+                        <div class="flex-sb">
+                            <div class="chk-group-col">
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="txt-fw500-fs12-lh10">사물인식</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="txt-fw500-fs12-lh10">화재감지</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="txt-fw500-fs12-lh10">번호인식</span>
+                                </label>
+                            </div>
+                            <div class="chk-group-col">
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="txt-fw500-fs12-lh10">전체</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="txt-fw500-fs12-lh10">하얀</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="txt-fw500-fs12-lh10">회색연기</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="txt-fw500-fs12-lh10">검은연기</span>
+                                </label>
+                                <label>
+                                    <input type="checkbox">
+                                    <span class="txt-fw500-fs12-lh10">불</span>
+                                </label>
+                            </div>
+                            <div class="flex-sb-col">
+                                <div class="flex-col-gap2">
+                                    <label class="chk-box">
+                                        <input type="checkbox">
+                                        <span class="txt-fw500-fs12-lh10">MMS 발송</span>
+                                    </label>
+                                    <p class="txt-fw500-fs12-fc5F627B-lh15px">
+                                        화재가 감지되면 관리자에게 <br>
+                                        촬영사진 및 관련정보를 자동으로 <br> 
+                                        전송합니다.
+                                    </p>
+                                </div>
+                                <label class="chk-box">
+                                    <input type="checkbox">
+                                    <span class="txt-fw500-fs12-lh10">오디오</span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <div class="box-foot">
+                <div class="flex-center-gap5">
+                    <button type="button" class="btn-w90-h30-bdw1-solid-bdcE1E4EB-br5">
+                        <p class="txt-fw600-fs12-fc5F627B-lh10">취소</p>
+                    </button>
+                    <button type="button" class="btn-w90-h30-bg153457-br5">
+                        <p class="txt-fw600-fs12-fcFFFFFF-lh10">저장</p>
+                    </button>
+                </div>
+            </div>
+            <button type="button" class="lp-close" onclick="lp.close(this)">
+                <i class="ico ico-close-b-16-16"></i>
+            </button>
+        </div>
+        <!--//lp3-box-->
+        <!--lp3-box-->
+        <div class="lp-box typeLP3 aiOption draggableJS">
+            <div class="box-head">
+                <h2 class="tit">AI</h2>
+            </div>
+            <div class="box-body">
+                <div class="flex-col-gap20">
+                    <div class="flex-col-gap10">
+                        <p class="txt-fw700-fs14-fc000000-lh10">Intelligent Algorithms</p>
+                        <select class="select-h30-type3">
+                            <option>DJI Infrared Recognition</option>
+                        </select>
+                    </div>
+                    <div class="flex-col-gap10">
+                        <p class="txt-fw700-fs14-fc000000-lh10">Confidence Level</p>
+                        <select class="select-h30-type3">
+                            <option>Subject Count</option>
+                        </select>
+                        <div class="flex-sb-gap5 ai-c rangeJS" data-rangeType="min" data-rangeMin="0" data-rangeMax="100" data-rangeDefault="70">
+                            <div class="rangeJS-box-type1 flex1">
+                                <input type="hidden" class="rangeJS-val">
+                                <button type="button" class="badge-wh20-bg153457-br3 rangeJS-btn rangeJS-subtract">
+                                    <i class="ico ico-subtract-w-12-12"></i>
+                                </button>
+                                <div class="rangeJS-slider"></div>
+                                <button type="button" class="badge-wh20-bgFFFFFF-br3-bdw1-solid-bdcE1E4EB rangeJS-btn rangeJS-add">
+                                    <i class="ico ico-add-b-12-12"></i>
+                                </button>
+                            </div>
+                            <p class="txt-fw700-fs16-fc153457-tar-lh10-w40">
+                                <span class="rangeJS-output">70</span>
+                                %
+                            </p>
+                        </div>
+                    </div>
+                    <div class="flex-col-gap10">
+                        <p class="txt-fw700-fs14-fc000000-lh10">Rocognition Type</p>
+                        <div class="chk-group flex-row-wrap-gap5 row2">
+                            <label class="box-h30-bgF5F6F8-br5-pdlr10">
+                                <input type="checkbox">
+                                <i class="ico ico-walk-b-16-16"></i>
+                                <span class="txt-fw500-fs12-fc5F627B">People</span>
+                            </label>
+                            <label class="box-h30-bgF5F6F8-br5-pdlr10">
+                                <input type="checkbox">
+                                <i class="ico ico-car-b-16-16"></i>
+                                <span class="txt-fw500-fs12-fc5F627B">Car</span>
+                            </label>
+                            <label class="box-h30-bgF5F6F8-br5-pdlr10">
+                                <input type="checkbox">
+                                <i class="ico ico-ship-b-16-16"></i>
+                                <span class="txt-fw500-fs12-fc5F627B">Boats</span>
+                            </label>
+                            <label class="box-h30-bgF5F6F8-br5-pdlr10">
+                                <input type="checkbox">
+                                <i class="ico ico-moving-b-16-16"></i>
+                                <span class="txt-fw500-fs12-fc5F627B">Moving Objects</span>
+                            </label>
+
+                        </div>
+                    </div>
+                </div>
+            </div>
+            <button type="button" class="lp-close" onclick="lp.close(this)">
+                <i class="ico ico-close-b-16-16"></i>
+            </button>
+        </div>
+        <!--//lp3-box-->
     </div>
     <!--//lp-layout-->
 
     <div class="flex-row-wrap-gap10-pd20">
         <button type="button" class="btn-h30-pdlr20-bdw1-solid-bdcCCCCCC-br5-hvbgEEEEEE" onclick="lp.open('createRoute',700,500)">
             <span class="txt-tw600-fs14-lh10">Create Route</span>
+        </button>
+        <button type="button" class="btn-h30-pdlr20-bdw1-solid-bdcCCCCCC-br5-hvbgEEEEEE" onclick="lp.open('aircraft',150,1000)">
+            <span class="txt-tw600-fs14-lh10">Aircraft</span>
+        </button>
+        <button type="button" class="btn-h30-pdlr20-bdw1-solid-bdcCCCCCC-br5-hvbgEEEEEE" onclick="lp.open('aiAnalysis',200,800)">
+            <span class="txt-tw600-fs14-lh10">AI 영상분석</span>
+        </button>
+        <button type="button" class="btn-h30-pdlr20-bdw1-solid-bdcCCCCCC-br5-hvbgEEEEEE" onclick="lp.open('aiOption',250,900)">
+            <span class="txt-tw600-fs14-lh10">AI</span>
         </button>
     </div>
 </body>
