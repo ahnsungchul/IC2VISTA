@@ -29,7 +29,7 @@
         <!-- <link rel="stylesheet" type="text/css" href="./resources/common/common/css/style.css" /> -->
 
         <!--js-->
-        <script src="./resources/js/jquery-1.11.2.min.js" type="text/javascript"></script>
+        <script src="resources/js/jquery-1.11.2.min.js" type="text/javascript"></script>
         <!-- //기본 세팅 -->
 
         <script>
@@ -79,11 +79,11 @@
                         }else if(_tr.eq(i).find("td").eq(7).text() == "게시판-등록"){
                             _type6 += 1;
                         }
-                        if(_tr.eq(i).find("td").eq(11).hasClass("ok")){
+                        if(_tr.eq(i).find("td").eq(10).hasClass("ok")){
                             _type7 += 1;
-                        }else if(_tr.eq(i).find("td").eq(11).hasClass("hold")){
+                        }else if(_tr.eq(i).find("td").eq(10).hasClass("hold")){
                             _type8 += 1;
-                        }else if(_tr.eq(i).find("td").eq(11).hasClass("del")){
+                        }else if(_tr.eq(i).find("td").eq(10).hasClass("del")){
                             _type9 += 1;
                         }
                     }
@@ -184,6 +184,7 @@
             .menutree td:nth-child(4),
             .menutree td:nth-child(5),
             .menutree td:nth-child(6),
+            .menutree td:nth-child(9),
             .menutree td:nth-child(10){ text-align: left;}
             .menutree td.url {text-align:left;padding-left:10px;}
             .menutree td.url a::before{ font-size: 9px; content: '▶ ';}
@@ -308,7 +309,7 @@
                         <col style="width: 10%;" />
                         <col style="width: 5%;" />
                         <col style="width: 5%;" />
-                        <col style="width: 7%;" />
+                        <col style="width: 8%;" />
                         <col style="width: auto;" />
                         <col style="width: 80px;" />
                         <col style="width: 10%;" />
@@ -342,7 +343,7 @@
                         <col style="width: 10%;" />
                         <col style="width: 5%;" />
                         <col style="width: 5%;" />
-                        <col style="width: 7%;" />
+                        <col style="width: 8%;" />
                         <col style="width: auto;" />
                         <col style="width: 80px;" />
                         <col style="width: 10%;" />
@@ -373,12 +374,12 @@
                             <td>html</td>
                             <td class="id">01-default-control-screen</td>
                             <td class="url"></td>
-                            <td class="ing"></td><!-- ok:완료, ing:진행중, edit:수정, check:확인필요, hold:보류 -->
+                            <td class="ok"></td><!-- ok:완료, ing:진행중, edit:수정, check:확인필요, hold:보류 -->
                             <td class="t_a_l"></td>
                         </tr>
                         <tr>
                             <td class="count"></td>
-                            <td>02-layer-popup</td>
+                            <td>Layer Popup</td>
                             <td></td>
                             <td></td>
                             <td></td>
@@ -388,6 +389,62 @@
                             <td class="id">02-layer-popup</td>
                             <td class="url"></td>
                             <td class="ing"></td><!-- ok:완료, ing:진행중, edit:수정, check:확인필요, hold:보류 -->
+                            <td class="t_a_l"></td>
+                        </tr>
+                        <tr>
+                            <td class="count"></td>
+                            <td>Login(Drone)</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>공통</td>
+                            <td>html</td>
+                            <td class="id">03-login-drone</td>
+                            <td class="url"></td>
+                            <td class="ok"></td><!-- ok:완료, ing:진행중, edit:수정, check:확인필요, hold:보류 -->
+                            <td class="t_a_l"></td>
+                        </tr>
+                        <tr>
+                            <td class="count"></td>
+                            <td>Login(Ship)</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>공통</td>
+                            <td>html</td>
+                            <td class="id">03-login-ship</td>
+                            <td class="url"></td>
+                            <td class="ok"></td><!-- ok:완료, ing:진행중, edit:수정, check:확인필요, hold:보류 -->
+                            <td class="t_a_l"></td>
+                        </tr>
+                        <tr>
+                            <td class="count"></td>
+                            <td>Login(Robot)</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>공통</td>
+                            <td>html</td>
+                            <td class="id">03-login-robot</td>
+                            <td class="url"></td>
+                            <td class="ok"></td><!-- ok:완료, ing:진행중, edit:수정, check:확인필요, hold:보류 -->
+                            <td class="t_a_l"></td>
+                        </tr>
+                        <tr>
+                            <td class="count"></td>
+                            <td>Dashboard Video</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>공통</td>
+                            <td>html</td>
+                            <td class="id">04-dashboard-video</td>
+                            <td class="url"></td>
+                            <td class="ok"></td><!-- ok:완료, ing:진행중, edit:수정, check:확인필요, hold:보류 -->
                             <td class="t_a_l"></td>
                         </tr>
                     </tbody>

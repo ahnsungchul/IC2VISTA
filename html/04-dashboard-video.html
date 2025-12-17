@@ -159,7 +159,7 @@
     </div>
     <!--//lp-layout-->
 
-    <div id="control-wrap" class="type-map">
+    <div id="control-wrap" class="type-video">
     <!--
         지도타입:type-map,
         대시보드타입:type-dashboard,
@@ -1257,85 +1257,108 @@
 
         <!--main-layout-->
         <main id="main-layout">
-            <!--고정바-컨트롤버튼-->
-            <div class="fixed-tool-control">
-                <div class="iFlex-col-gap15">
-                    <div class="iFlex-col-gap1">
-                        <button type="button" class="btn-wh30-bg000000-op05-br5">
-                            <i class="ico ico-crosshair-w-18-18"></i>
-                        </button>
-                        <button type="button" class="btn-wh30-bg000000-op05-br5">
-                            <i class="ico ico-add-w-18-18"></i>
-                        </button>
-                        <button type="button" class="btn-wh30-bg000000-op05-br5">
-                            <i class="ico ico-subtract-w-18-18"></i>
-                        </button>
-                        <button type="button" class="btn-wh30-bg000000-op05-br5">
-                            <i class="ico ico-share-w-18-18"></i>
-                        </button>
-                    </div>
-                    <div class="iFlex-col-gap1">
-                        <button type="button" class="btn-wh30-bg000000-op05-br5">
-                            <i class="ico ico-ruler-w-18-18"></i>
-                        </button>
-                        <button type="button" class="btn-wh30-bg000000-op05-br5">
-                            <i class="ico ico-shape-w-18-18"></i>
-                        </button>
-                        <button type="button" class="btn-wh30-bg000000-op05-br5">
-                            <i class="ico ico-pencil-ruler-w-18-18"></i>
-                        </button>
-                        <button type="button" class="btn-wh30-bg000000-op05-br5">
-                            <i class="ico ico-flag-w-18-18"></i>
-                        </button>
-                        <button type="button" class="btn-wh30-bg000000-op05-br5">
-                            <i class="ico ico-download-w-18-18"></i>
-                        </button>
-                        <button type="button" class="btn-wh30-bg000000-op05-br5">
-                            <i class="ico ico-crop-w-18-18"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <!--//고정바-GPS-->
-            <!--고정바-GPS-->
-            <div class="fixed-tool-gps">
-                <div class="badge-wFull-bg000000-op05-br5-pdtb10">
-                    <div class="flex-center-wrap-gap5">
-                        <div class="flex-row-gap5 m_r_5">
-                            <span class="badge-wh10-bg2AA138-br5-mgtb2"></span>
-                            <p class="txt-fw500-fs14-fcFFFFFF-lh14px">GPS(양호)</p>
+            <!--main-option-box-->
+            <aside id="main-option-box">
+                <div class="scroll-y">
+                    <div class="flex-col-gap10">
+                        <!--acco-boader-box-->
+                        <div class="acco-boader-box accoJS active">
+                            <div class="box-head">
+                                <button type="button" class="btn-acco accoJS-btn">
+                                    <span class="iFlex-row-gap10 ai-c">
+                                        <span class="badge-wh30-bg5490DE-br15">
+                                            <i class="ico ico-station-w-20-20"></i>
+                                        </span>
+                                        <span class="txt-fw700-fs18-fc000000-lh10">표준</span>
+                                    </span>
+                                    <span class="badge-wh22-bgFFFFFF-br11 bsdw-2px2px4px0px-0000001A">
+                                        <i class="ico ico-arrow-down-b-16-16"></i>
+                                    </span>
+                                </button>
+                            </div>
+                            <div class="box-body accoJS-cont p_b_30px">
+                                <ul class="list-col-box-gap40">
+                                    <li class="item">
+                                        <div class="flex-row-gap10">
+                                            <div class="badge-wh60-bgF7F9FB-br30">
+                                                <img src="../resources/img/@sample-drone-img.png" />
+                                            </div>
+                                            <div class="flex-col-gap10 ai-s flex1">
+                                                <div class="badge-h20-bg153457-br3-pdlr5">
+                                                    <p class="txt-fw600-fs10-fcFFFFFF-lh20px">진행중</p>
+                                                </div>
+                                                <p class="txt-fw700-fs14-fc000000-lh10">임무_20251123_01</p>
+                                                <div class="flex-row-gap3">
+                                                    <div class="badge-wh10-bg153457-br5 m_1"></div>
+                                                    <ul class="list-row-box-gap10">
+                                                        <li class="item">
+                                                            <p class="txt-fw500-fs12-fc5F627B-lh12px">DOCK</p>
+                                                        </li>
+                                                        <li class="item">
+                                                            <p class="txt-fw500-fs12-fc5F627B-lh12px">IC2VISTA DOCK 01</p>    
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="switch-txt-type2-gap5 flex-row row2 wFull">
+                                                    <label>
+                                                        <input type="radio" name="camera1" checked >
+                                                        <span class="txt txt-wFull-h20">FPV Camera</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="radio" name="camera1" >
+                                                        <span class="txt txt-wFull-h20">M30 Camera</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                    <li class="item">
+                                        <div class="flex-row-gap10">
+                                            <div class="badge-wh60-bgF7F9FB-br30">
+                                                <img src="../resources/img/@sample-drone-img.png" />
+                                            </div>
+                                            <div class="flex-col-gap10 ai-s flex1">
+                                                <div class="badge-h20-bg5490DE-br3-pdlr5">
+                                                    <p class="txt-fw600-fs10-fcFFFFFF-lh20px">대기</p>
+                                                </div>
+                                                <p class="txt-fw700-fs14-fc000000-lh10">임무_20251123_01</p>
+                                                <div class="flex-row-gap3">
+                                                    <div class="badge-wh10-bg153457-br5 m_1"></div>
+                                                    <ul class="list-row-box-gap10">
+                                                        <li class="item">
+                                                            <p class="txt-fw500-fs12-fc5F627B-lh12px">DOCK</p>
+                                                        </li>
+                                                        <li class="item">
+                                                            <p class="txt-fw500-fs12-fc5F627B-lh12px">IC2VISTA DOCK 01</p>    
+                                                        </li>
+                                                    </ul>
+                                                </div>
+                                                <div class="switch-txt-type2-gap5 flex-row row2 wFull">
+                                                    <label>
+                                                        <input type="radio" name="camera2" checked >
+                                                        <span class="txt txt-wFull-h20">FPV Camera</span>
+                                                    </label>
+                                                    <label>
+                                                        <input type="radio" name="camera2" >
+                                                        <span class="txt txt-wFull-h20">M30 Camera</span>
+                                                    </label>
+                                                </div>
+                                            </div>
+                                        </div>
+                                    </li>
+                                </ul>
+                            </div>
                         </div>
-                        <p class="txt-fw500-fs14-fcFFFFFF-lh14px m_r_5">위도(37.402912), 경도(127.108221), 고도(55m), 방향(북동(NE))</p>
-                        <p class="txt-fw500-fs14-fcFFFFFF-lh14px">PS 속도(62 km/h), 평균 속도(48 km/h), GPS 수신 상태(매우 양호), 경로 추적(활성화됨)</p>
+                        <!--//acco-boader-box-->
                     </div>
                 </div>
+            </aside>
+            <!--//main-option-box-->
+            <!--main-video-box-->
+            <div id="main-video-box">
+
             </div>
-            <!--//고정바-GPS-->
-            <!--스낵바-배너리알림-->
-            <div class="snack-bar-battery">
-                <div class="battery">
-                    <div class="badge-h40-bg5490DE-br5-pdlr18 flex-row-gap10 ai-c">
-                        <i class="ico ico-battery-w-18-18"></i>
-                        <p class="txt-fw600-fs12-fcFFFFFF">잔여 배터리 위험 경고</p>
-                        <p class="txt-fw600-fs12-fcFFFFFF">10:33</p>
-                    </div>
-                    <button type="button" class="btn-wh22-bgFFFFFF-br11 snack-bar-close">
-                        <i class="ico ico-close-b-16-16"></i>
-                    </button>
-                </div>
-            </div>
-            <!--//스낵바-배너리알림-->
-            <!--지도마커-->
-            <div class="marker-box-type1" style="top: 300px; left: 400px;"><!--개발시 style삭제-->
-                <i class="ico ico-drone-w-24-24"></i>
-            </div>
-            <button type="button" class="marker-box-type2" style="top: 200px; left: 460px;"><!--개발시 style삭제-->
-                <i class="ico ico-drone-w-24-24"></i>
-            </button>
-            <div class="marker-box-type3" style="top: 300px; left: 540px;"><!--개발시 style삭제-->
-                <i class="ico ico-drone-w-24-24"></i>
-            </div>
-            <!--지도마커-->
+            <!--//main-video-box-->
         </main>
         <!--//main-layout-->
     </div>

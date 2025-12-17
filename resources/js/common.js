@@ -87,7 +87,7 @@ const depth3 = {
 }
 
 const dronDetailJS = {
-    _target : "#side-right-layout .dron-detail-box",
+    _target : "#aside-right-layout .dron-detail-box",
     open(_this){
         // console.log(">>> gnb.open");
         if($(document).find(dronDetailJS._target).hasClass("show")){
