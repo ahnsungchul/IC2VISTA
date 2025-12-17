@@ -1,14 +1,4 @@
 @charset "utf-8";
-/*
-###################################################
-
-	[PAG] is a professional web publishing company.
-    COMPANY NAME : PAG(PAGNATION)
-	HOMEPAGE : www.pag.kr
-	EMAIL : pag@pag.kr
-	
-###################################################
-*/
 
 .scroll-y{ width: 100%; height: 100%; padding-right: 0.25rem; overflow-y: auto;}
 [class*=scroll-]::-webkit-scrollbar { width: 0.25rem; height: 0.25rem;}
@@ -776,6 +766,7 @@
 .ico.ico-car-b-16-16{ background-image: url(../img/ico/ico-car-b-16-16.svg);}
 .ico.ico-ship-b-16-16{ background-image: url(../img/ico/ico-ship-b-16-16.svg);}
 .ico.ico-moving-b-16-16{ background-image: url(../img/ico/ico-moving-b-16-16.svg);}
+.ico.ico-battery-low-b-10-10{ background-image: url(../img/ico/ico-battery-low-b-10-10.svg);}
 
 [class*="badge-"][class*="-wh"]{ display: inline-flex; align-items: center; justify-content: center;}
 

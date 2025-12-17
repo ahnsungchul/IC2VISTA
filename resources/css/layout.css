@@ -1,14 +1,4 @@
 @charset "utf-8";
-/*
-###################################################
-
-	[PAG] is a professional web publishing company.
-    COMPANY NAME : PAG(PAGNATION)
-	HOMEPAGE : www.pag.kr
-	EMAIL : pag@pag.kr
-	
-###################################################
-*/
 
 #control-wrap{ width: 100%; height: 100%; background-color: #fff; display: grid; grid-template-columns: repeat(1, 1fr); grid-template-rows: 3.125rem repeat(1, 1fr); position: relative;}
 
@@ -46,7 +36,7 @@
 #gnb-layout .depth1-box .util-menu .count{ width: 0.875rem; height: 0.875rem; background-color: #C10230; font-weight: 600; font-size: 0.625rem; color: #fff; line-height: 1; padding: 0; margin: -0.938rem 0 0 0; display: flex; align-items: center; justify-content: center; border-radius: 0.438rem; position: absolute; top: 50%; left: 50%;}
 #gnb-layout .depth1-box .util-menu:hover .ico{ opacity: 1;}
 #gnb-layout .depth2-box{ width: 17.25rem; background-color: #fff; padding: 0 0.188rem 0.938rem 0.313rem; box-sizing: border-box; position: absolute; top: 3.125rem; right: auto; bottom: 0; left: -17.25rem; transition: left 0.1s; z-index: 2;}
-#gnb-layout .depth2-box > .scroll-y{ padding: 0 0.188rem 0 0.313rem; display: none;}
+#gnb-layout .depth2-box > .scroll-y{ display: none;}
 #gnb-layout .depth2-box .depth2-open,
 #gnb-layout .depth2-box .depth2-close{ width: 1.875rem; height: 3.125rem; background-color: #fff; display: none; align-items: center; justify-content: center; border-radius: 0 0.313rem 0.313rem 0; position: absolute; top: 3.75rem; right: -1.875rem;}
 #gnb-layout .depth2-box .depth2-open{ display: flex;}
