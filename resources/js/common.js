@@ -44,7 +44,9 @@ const depth2 = {
         }
         $(document).find(depth2._target).addClass("show");
         setTimeout(() => {
-            $(document).find("#gnb-layout .depth1-menu.active").removeClass("active");
+            if(_this != undefined){
+                $(document).find("#gnb-layout .depth1-menu.active").removeClass("active");
+            }
             $(_this).addClass("active");
             $(document).find(depth2._target).addClass("active");
         }, 100);
@@ -55,7 +57,7 @@ const depth2 = {
             return false;
         }
         $(document).find(depth2._target).removeClass("active");
-        $(document).find("#gnb-layout .depth1-menu.active").removeClass("active");
+        // $(document).find("#gnb-layout .depth1-menu.active").removeClass("active");
         setTimeout(() => {
             $(document).find(depth2._target).removeClass("show");
         }, 100);

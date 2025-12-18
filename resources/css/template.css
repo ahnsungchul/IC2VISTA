@@ -86,6 +86,7 @@
 [class*="-wh26"]{ width: 1.625rem; height: 1.625rem;}
 [class*="-wh30"]{ width: 1.875rem; height: 1.875rem;}
 [class*="-wh34"]{ width: 2.125rem; height: 2.125rem;}
+[class*="-wh40"]{ width: 2.5rem; height: 2.5rem;}
 [class*="-wh46"]{ width: 2.875rem; height: 2.875rem;}
 [class*="-wh55"]{ width: 3.438rem; height: 3.438rem;}
 [class*="-wh60"]{ width: 3.75rem; height: 3.75rem;}
@@ -233,6 +234,7 @@
 [class*="-bgC9CFDA"]{ background-color: #C9CFDA;}
 [class*="-bgF5F6F8"]{ background-color: #F5F6F8;}
 [class*="-bg5467DE"]{ background-color: #5467DE;}
+[class*="-bgD22E11"]{ background-color: #D22E11;}
 
 [class*="-hvbg000000"]:hover{ background-color: #000000;}
 [class*="-hvbg000000"]:hover[class*="-op09"]{ background-color: #000000E6;}
@@ -470,6 +472,7 @@
 [class*="txt-"][class*="-fw500"]{ font-weight: 500;}
 [class*="txt-"][class*="-fw600"]{ font-weight: 600;}
 [class*="txt-"][class*="-fw700"]{ font-weight: 700;}
+[class*="txt-"][class*="-fs8"]{ font-size: 0.5rem;}
 [class*="txt-"][class*="-fs9"]{ font-size: 0.563rem;}
 [class*="txt-"][class*="-fs10"]{ font-size: 0.625rem;}
 [class*="txt-"][class*="-fs11"]{ font-size: 0.688rem;}
@@ -967,15 +970,6 @@ position: absolute; top: 1.875rem;}
 .donut-container .donut-chart::before { content: ""; position: absolute; top: 0; left: 50%; transform: translateX(-50%); width: 0.5rem; height: 0.5rem; background: #5692e4; border-radius: 50%; z-index: 2;}
 .donut-container .center-text::before { content: ""; position: absolute; width: 0.5rem; height: 0.5rem; background: #5692e4; border-radius: 50%; z-index: 2; top: calc(50% - (5.125rem / 2)); left: 50%; transform-origin: 50% calc((5.125rem / 2)); transform: translateX(-50%) rotate(calc(var(--percentage) * 3.6deg));}
 .donut-container .center-text { position: relative; z-index: 10; color: #ffffff; display: flex; flex-direction: column; align-items: center; justify-content: center; gap: 0.313rem;}
-/*
-.donut-container.pct1 .donut-chart{ background: conic-gradient(#5692e4 calc(1 * 1%),#122c4b 0);}
-.donut-container.pct1 .center-text::before{ transform: translateX(-50%) rotate(calc(1 * 3.6deg));}
-.donut-container.pct2 .donut-chart{ background: conic-gradient(#5692e4 calc(2 * 1%),#122c4b 0);}
-.donut-container.pct2 .center-text::before{ transform: translateX(-50%) rotate(calc(2 * 3.6deg));}
-.donut-container.pct3 .donut-chart{ background: conic-gradient(#5692e4 calc(3 * 1%),#122c4b 0);}
-.donut-container.pct3 .center-text::before{ transform: translateX(-50%) rotate(calc(3 * 3.6deg));}
-.donut-container.pct4 .donut-chart{ background: conic-gradient(#5692e4 calc(4 * 1%),#122c4b 0);}
-.donut-container.pct4 .center-text::before{ transform: translateX(-50%) rotate(calc(4 * 3.6deg));}
-.donut-container.pct5 .donut-chart{ background: conic-gradient(#5692e4 calc(5 * 1%),#122c4b 0);}
-.donut-container.pct5 .center-text::before{ transform: translateX(-50%) rotate(calc(5 * 3.6deg));}
-*/
+
+.layout-option-box[class*="switch-txt-"] [class*="badge-"]{ position: absolute; top: 50%; left: 50%; transform: translate(-50%,-50%);}
+.layout-option-box[class*="switch-txt-"] input:checked + .txt{ background-color: inherit; border: 2px solid #5490DE;}
