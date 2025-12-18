@@ -1,7 +1,6 @@
 $(function() {
     accoJS.init();
     rangeJS.init();
-    $( "#lp-layout .draggableJS" ).draggable();
 });
 
 const gnb = {
@@ -249,11 +248,21 @@ const lp = {
             return false;
         }
         $(document).find("#lp-layout .lp-box."+_target).addClass("on").css({"z-index":onTotal,"top":_top,"left":_left});
+        $( "#lp-layout .draggableJS" ).draggable();
     },
     close(_this){
         if($(document).find("#lp-layout > .on").length == 0){
             $("html").removeClass("lpOpen");
         }
         $(_this).parents(".lp-box").removeClass("on").removeAttr("style");
+    }
+}
+
+const videoSplitJS = {
+    _target : '#main-video-box',
+    _screenBox : '.screen-split-box',
+    select(_this){
+        $(videoSplitJS._target).find(videoSplitJS._screenBox).removeClass("on");
+        $(videoSplitJS._target).find(videoSplitJS._screenBox + "." + $(_this).val()).addClass("on");
     }
 }

@@ -95,5 +95,8 @@ body:has( #aside-right-layout .dron-detail-box.active) #control-wrap.type-map #m
 #control-wrap.type-video #main-layout{ padding-left: 0; display: grid; grid-template-columns: 17.25rem repeat(1, 1fr); grid-template-rows: repeat(1, 1fr); transition: all 0.1s;}
 #control-wrap.type-video:has( #gnb-layout.active) #main-layout{ padding-left: 4rem;}
 
-#main-option-box{ padding: 0 0.188rem 0.938rem 0.313rem; grid-column: 1 / 2; grid-row: 1 / 2;}
+#main-option-box{ height: calc(100vh - 3.125rem); padding: 0 0.188rem 0.938rem 0.313rem; grid-column: 1 / 2; grid-row: 1 / 2;}
 #main-video-box{ grid-column: 2 / 3; grid-row: 1 / 2;}
+
+#control-wrap.type-control #main-layout{ padding-left: 0; display: grid; gap: 0.625rem; grid-template-columns: 37.5rem repeat(1, 1fr); grid-template-rows: repeat(1, 1fr) repeat(1, 1fr); transition: all 0.1s;}
+#control-wrap.type-control:has( #gnb-layout.active) #main-layout{ padding-left: 4rem;}
