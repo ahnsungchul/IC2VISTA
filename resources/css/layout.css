@@ -92,6 +92,9 @@ body:has( #aside-right-layout .dron-detail-box.active) #control-wrap.type-map #m
 body:has( #aside-right-layout .dron-detail-box.active) #control-wrap.type-map #main-layout [class*="snack-bar-"][class*="-battery"]{ right: 24.75rem;}
 body:has( #aside-right-layout .dron-detail-box.active) #control-wrap.type-map #main-layout [class*="fixed-tool-"][class*="-control"]{ right: 21.25rem;}
 
+#control-wrap.type-control #main-layout [class*="fixed-tool-"]{ position: absolute; transition: all 0.1s;}
+#control-wrap.type-control #main-layout [class*="fixed-tool-"][class*="-control"]{ bottom: 0.625rem; right: 0.625rem;}
+
 #control-wrap.type-video #main-layout{ padding-left: 0; display: grid; grid-template-columns: 17.25rem repeat(1, 1fr); grid-template-rows: repeat(1, 1fr); transition: all 0.1s;}
 #control-wrap.type-video:has( #gnb-layout.active) #main-layout{ padding-left: 4rem;}
 
