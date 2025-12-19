@@ -1085,6 +1085,9 @@ position: absolute; top: 1.875rem;}
     .video-view-box > .box-head{ flex-wrap: wrap; gap: 0.313rem;}
     .video-view-box > .box-head .iFlex-row-gap5{ width: 100%;}
     .video-view-box > .box-head .iFlex-row-gap5:first-child{ flex: none;}
-    .video-view-box > .box-head [class*="badge-w100"]{ width: 5.625rem; margin: 0;}
+    .video-view-box > .box-head [class*="badge-w100"]{ margin: 0;}
     .video-view-box > .box-head .iFlex-row-gap5:last-child{ width: auto;}
+}
+@container videoView (width < 300px) {
+    .video-view-box > .box-head [class*="badge-w100"]{ width: 5.625rem;}
 }
