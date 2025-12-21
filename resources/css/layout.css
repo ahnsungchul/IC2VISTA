@@ -69,37 +69,19 @@
 
 #main-layout{ grid-column: 1 / 2; grid-row: 2 / 3;}
 
-#control-wrap.type-map #main-layout{ background-color: #999; position: relative;}
-#control-wrap.type-map #main-layout [class*="fixed-tool-"]{ position: absolute; transition: all 0.1s;}
-#control-wrap.type-map #main-layout [class*="fixed-tool-"][class*="-gps"]{ right: 1.875rem; bottom: 0.625rem; left: 1.875rem;}
-#control-wrap.type-map #main-layout [class*="fixed-tool-"][class*="-control"]{ top: 0.625rem; right: 0.625rem;}
-#control-wrap.type-map #main-layout [class*="snack-bar-"]{ position: absolute; transition: all 0.1s;}
-#control-wrap.type-map #main-layout [class*="snack-bar-"][class*="-battery"]{ right: 1.875rem; bottom: 4.938rem;}
-#control-wrap.type-map #main-layout [class*="snack-bar-"][class*="-battery"] .battery{ position: relative;}
-#control-wrap.type-map #main-layout [class*="snack-bar-"][class*="-battery"] .snack-bar-close{ position: absolute; top: -0.688rem; right: -0.688rem;}
-#control-wrap.type-map #main-layout [class*="marker-box-"]{ width: 2.875rem; height: 2.875rem; display: flex; align-items: center; justify-content: center; border-radius: 50%; position: absolute;}
-#control-wrap.type-map #main-layout [class*="marker-box-"][class*="-type1"]{ background-color: #C10230;}
-#control-wrap.type-map #main-layout [class*="marker-box-"][class*="-type2"]{ background-color: #124689;}
-#control-wrap.type-map #main-layout [class*="marker-box-"][class*="-type3"]{ background-color: #5490DE;}
-body:has( #gnb-layout.show.active) 
-#control-wrap.type-map #main-layout [class*="fixed-tool-"][class*="-gps"]{ left: 7.5rem;}
-body:has( .depth2-box.show.active) 
-#control-wrap.type-map #main-layout [class*="fixed-tool-"][class*="-gps"]{ left: 26.375rem;}
-body:has( #gnb-layout.show.active):has( .depth2-box.show.active) 
-#control-wrap.type-map #main-layout [class*="fixed-tool-"][class*="-gps"]{ left: 30.375rem;}
-body:has( #gnb-layout.show.active):has( .depth2-box.show.active):has( .depth3-box.show.active) #control-wrap.type-map #main-layout [class*="fixed-tool-"][class*="-gps"]{ left: 53.25rem;}
-body:has( #aside-right-layout .dron-detail-box.active) #control-wrap.type-map #main-layout [class*="fixed-tool-"][class*="-gps"],
-body:has( #aside-right-layout .dron-detail-box.active) #control-wrap.type-map #main-layout [class*="snack-bar-"][class*="-battery"]{ right: 24.75rem;}
-body:has( #aside-right-layout .dron-detail-box.active) #control-wrap.type-map #main-layout [class*="fixed-tool-"][class*="-control"]{ right: 21.25rem;}
-
-#control-wrap.type-control #main-layout [class*="fixed-tool-"]{ position: absolute; transition: all 0.1s;}
-#control-wrap.type-control #main-layout [class*="fixed-tool-"][class*="-control"]{ bottom: 0.625rem; right: 0.625rem;}
-
 #control-wrap.type-video #main-layout{ padding-left: 0; display: grid; grid-template-columns: 17.25rem repeat(1, 1fr); grid-template-rows: repeat(1, 1fr); transition: all 0.1s;}
 #control-wrap.type-video:has( #gnb-layout.active) #main-layout{ padding-left: 4rem;}
 
-#main-option-box{ height: calc(100vh - 3.125rem); padding: 0 0.188rem 0.938rem 0.313rem; grid-column: 1 / 2; grid-row: 1 / 2;}
+#main-option-box{ height: calc(100vh - 3.125rem); padding: 0 0.125rem 0.938rem 0.625rem; grid-column: 1 / 2; grid-row: 1 / 2;}
 #main-video-box{ grid-column: 2 / 3; grid-row: 1 / 2;}
 
 #control-wrap.type-control #main-layout{ padding-left: 0; display: grid; gap: 0.625rem; grid-template-columns: 37.5rem repeat(1, 1fr); grid-template-rows: repeat(1, 1fr) repeat(1, 1fr); transition: all 0.1s;}
+#control-wrap.type-control #main-layout > .flex-col{ grid-column: 2 / 3; grid-row: 1 / 3;}
 #control-wrap.type-control:has( #gnb-layout.active) #main-layout{ padding-left: 4rem;}
+
+#control-wrap.type-board #main-layout{ padding-left: 0; display: grid; grid-template-columns: 17.25rem repeat(1, 1fr); grid-template-rows: repeat(1, 1fr); transition: all 0.1s; position: relative;}
+#control-wrap.type-board:has( #gnb-layout.active) #main-layout{ padding-left: 4rem;}
+
+#main-lnb-box{ height: 100%; padding: 1.375rem 0.188rem 0.938rem 0.625rem; grid-column: 1 / 2; grid-row: 1 / 2;}
+#main-board-box{ padding: 1.375rem 0.625rem 0.625rem 0.625rem; grid-column: 2 / 3; grid-row: 1 / 2; transition: all 0.1s;}
+#control-wrap.type-board:has( .route-snack-box.active) #main-board-box{ padding-left: 17.25rem;}

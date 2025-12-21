@@ -159,7 +159,7 @@
     </div>
     <!--//lp-layout-->
 
-    <div id="control-wrap" class="type-control">
+    <div id="control-wrap" class="type-board">
     <!--
         지도타입:type-map,
         대시보드타입:type-dashboard,
@@ -1257,485 +1257,498 @@
 
         <!--main-layout-->
         <main id="main-layout">
-            <!--fly-control-box-->
-            <div class="fly-control-box station">
-                <div class="box-head">
-                    <p class="txt-fw500-fs14-fcFFFFFF-lh10 as-c">Station Camera</p>
-                    <div class="iFlex-row-gap5 ai-c">
-                         <button type="button" class="btn-wh24">
-                            <i class="ico ico-webcam-no-w-24-24"></i>
-                         </button>
-                         <button type="button" class="btn-wh24">
-                            <i class="ico ico-restart-w-24-24"></i>
-                         </button>
-                         <button type="button" class="btn-wh24">
-                            <i class="ico ico-settings-w-24-24"></i>
-                         </button>
-                         <button type="button" class="btn-wh24">
-                            <i class="ico ico-picture-in-picture-w-24-24"></i>
-                         </button>
+            <!--dashboard-layout-box-->
+            <div class="dashboard-layout-box">
+                <!--dashboard-cont-box-->
+                <div class="dashboard-cont-box">
+                    <div class="box-head">
+                        <p class="txt-fw700-fs18-fc000000-lh10">스토리지 현황</p>
                     </div>
-                </div>
-                <div class="box-body">
-                    <!--Station Camera-->
-                    Station Camera
-                    <!--//Station Camera-->
-                </div>
-            </div>
-            <!--//fly-control-box-->
-
-            <!--fly-control-box-->
-            <div class="fly-control-box map">
-                <div class="box-head">
-                    <p class="txt-fw500-fs14-fcFFFFFF-lh10 as-c">MAP</p>
-                </div>
-                <div class="box-body">
-                    <!--고정바-컨트롤버튼-->
-                    <div class="fixed-tool-control">
-                        <div class="iFlex-col-gap11 ai-c">
-                            <div class="box-wh52" style="transform: rotate(0deg);"><!--나침반 방향-->
-                                <i class="ico ico-compass-b-52-52"></i>
-                            </div>
-                            <div class="iFlex-col-gap1">
-                                <button type="button" class="btn-wh30-bg000000-op05-br5">
-                                    <span class="txt-fw700-fs14-fcFFFFFF-lh10">3D</span>
-                                </button>
-                                <button type="button" class="btn-wh30-bg000000-op05-br5">
-                                    <i class="ico ico-information-w-18-18"></i>
-                                </button>
-                                <button type="button" class="btn-wh30-bg000000-op05-br5">
-                                    <i class="ico ico-plane-w-18-18"></i>
-                                </button>
-                                <button type="button" class="btn-wh30-bg000000-op05-br5">
-                                    <i class="ico ico-crosshair-w-18-18"></i>
-                                </button>
-                                <button type="button" class="btn-wh30-bg000000-op05-br5">
-                                    <i class="ico ico-add-w-18-18"></i>
-                                </button>
-                                <button type="button" class="btn-wh30-bg000000-op05-br5">
-                                    <i class="ico ico-subtract-w-18-18"></i>
-                                </button>
+                    <div class="box-body">
+                        <div class="scroll-y">
+                            <div class="flex-col-center-gap20-hFull">
+                                <!--저장공간-->
+                                <div class="flex-col-gap10">
+                                    <div class="flex-sb">
+                                        <p class="txt-fw700-fs12-fc5F627B-lh10">저장공간</p>
+                                        <p class="txt-fw700-fs12-fc5F627B-lh10">1.6T / 2T</p>
+                                    </div>
+                                    <div class="box-wFull-h15-bgC9CFDA-br5-relative">
+                                        <span class="box-h15-bg5467DE-br5-absolute" style="width: 40%;"></span>
+                                    </div>
+                                </div>
+                                <!--//저장공간-->
+                                <!--이미지-->
+                                <div class="flex-col-gap10">
+                                    <div class="flex-sb">
+                                        <p class="txt-fw700-fs12-fc5F627B-lh10">이미지</p>
+                                        <p class="txt-fw700-fs12-fc5F627B-lh10">900G</p>
+                                    </div>
+                                    <div class="box-wFull-h15-bgC9CFDA-br5-relative">
+                                        <span class="box-h15-bg5490DE-br5-absolute" style="width: 40%;"></span>
+                                    </div>
+                                </div>
+                                <!--//이미지-->
+                                <!--영상-->
+                                <div class="flex-col-gap10">
+                                    <div class="flex-sb">
+                                        <p class="txt-fw700-fs12-fc5F627B-lh10">영상</p>
+                                        <p class="txt-fw700-fs12-fc5F627B-lh10">1.7T</p>
+                                    </div>
+                                    <div class="box-wFull-h15-bgC9CFDA-br5-relative">
+                                        <span class="box-h15-bg29259A-br5-absolute" style="width: 40%;"></span>
+                                    </div>
+                                </div>
+                                <!--//영상-->
                             </div>
                         </div>
                     </div>
-                    <!--//고정바-컨트롤버튼-->
-                    <!--MAP-->
-                    MAP
-                    <!--//MAP-->
                 </div>
-            </div>
-            <!--//fly-control-box-->
-
-            <div class="flex-col">
-                <!--fly-control-box-->
-                <div class="fly-control-box drone flex1">
+                <!--//dashboard-cont-box-->
+                
+                <!--dashboard-cont-box-->
+                <div class="dashboard-cont-box">
                     <div class="box-head">
-                        <p class="txt-fw500-fs14-fcFFFFFF-lh10 as-c">DRONE Camera</p>
-                        <div class="iFlex-row-gap5 ai-c">
-                            <button type="button" class="btn-wh24">
-                                <i class="ico ico-webcam-no-w-24-24"></i>
-                            </button>
-                            <button type="button" class="btn-wh24">
-                                <i class="ico ico-restart-w-24-24"></i>
-                            </button>
-                            <button type="button" class="btn-wh24">
-                                <i class="ico ico-settings-w-24-24"></i>
-                            </button>
-                            <button type="button" class="btn-wh24">
-                                <i class="ico ico-picture-in-picture-w-24-24"></i>
-                            </button>
+                        <p class="txt-fw700-fs18-fc000000-lh10">비행 현황</p>
+                        <button type="button" class="btn-wh24">
+                            <i class="ico ico-add-b-24-24"></i>
+                        </button>
+                    </div>
+                    <div class="box-body">
+                        <div class="scroll-y">
+                            <div class="flex-sb-gap10-hFull">
+                                <div class="iFlex-col-gap15-center-bgF7F9FB-br5 ai-c flex1">
+                                    <div class="flex-col-gap5-center ai-c">
+                                        <div class="badge-wh38-bg5467DE-br19">
+                                            <i class="ico ico-flight-takeoff-w-20-20"></i>
+                                        </div>
+                                        <p class="txt-fw700-fs14-fc5F627B-lh10">비행횟수</p>
+                                    </div>
+                                    <p class="txt-fw700-fs22-fcF80F6C-lh10">136</p>
+                                </div>
+                                <div class="iFlex-col-gap15-center-bgF7F9FB-br5 ai-c flex1">
+                                    <div class="flex-col-gap5-center ai-c">
+                                        <div class="badge-wh38-bg5467DE-br19">
+                                            <i class="ico ico-clock2-w-20-20"></i>
+                                        </div>
+                                        <p class="txt-fw700-fs14-fc5F627B-lh10">총 운항기간(S)</p>
+                                    </div>
+                                    <p class="txt-fw700-fs22-fc5467DE-lh10">136</p>
+                                </div>
+                                <div class="iFlex-col-gap15-center-bgF7F9FB-br5 ai-c flex1">
+                                    <div class="flex-col-gap5-center ai-c">
+                                        <div class="badge-wh38-bg5467DE-br19">
+                                            <i class="ico ico-route-w-20-20"></i>
+                                        </div>
+                                        <p class="txt-fw700-fs14-fc5F627B-lh10">비행경로 거리(M)</p>
+                                    </div>
+                                    <p class="txt-fw700-fs22-fc29259A-lh10">136</p>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--//dashboard-cont-box-->
+                
+                <!--dashboard-cont-box-->
+                <div class="dashboard-cont-box">
+                    <div class="box-head">
+                        <p class="txt-fw700-fs18-fc000000-lh10">임무현황</p>
+                        <div class="switch-txt-type1 flex-row-gap5">
+                            <label>
+                                <input type="radio" name="switch1" checked >
+                                <span class="txt txt-h30-pdlr10-br15">주간</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="switch1" >
+                                <span class="txt txt-h30-pdlr10-br15">월간</span>
+                            </label>
+                            <label>
+                                <input type="radio" name="switch1" >
+                                <span class="txt txt-h30-pdlr10-br15">일간</span>
+                            </label>
                         </div>
                     </div>
                     <div class="box-body">
-                        <!--고정바-cameraInfo-->
-                        <div class="fixed-tool-cameraInfo-wFull">
-                            <div class="flex-sb-pdlr20-h30-bg000000-op05 ai-c">
-                                <div class="iFlex-row-gap5 ai-c">
-                                    <dl class="iFlex-row-gap5 ai-c">
-                                        <dt class="txt-fw500-fs14-fcFFFFFF-lh16px">SO</dt>
-                                        <dd class="txt-fw500-fs14-fcFFFFFF-lh16px">800</dd>
-                                    </dl>
-                                    <dl class="iFlex-row-gap5 ai-c">
-                                        <dt class="txt-fw500-fs14-fcFFFFFF-lh16px">Shutter</dt>
-                                        <dd class="txt-fw500-fs14-fcFFFFFF-lh16px">1/100</dd>
-                                    </dl>
-                                    <ul class="list-row-box-gap10 ai-c">
-                                        <li class="item item-h16">
-                                            <dl class="iFlex-row-gap5 ai-c">
-                                                <dt class="txt-fw500-fs14-fcFFFFFF-lh16px-op05">F</dt>
-                                                <dd class="txt-fw500-fs14-fcFFFFFF-lh16px">5.6</dd>
-                                            </dl>
+                        <div class="scroll-y">
+                            <div class="flex-row-gap10-wrap-hFull row2">
+                                <div class="box-bg5467DE-pdlr30-br5 flex-center ai-c">
+                                    <ul class="list-row-box-h22-gap10 ai-c flex1">
+                                        <li class="item flex1">
+                                            <p class="txt-fw700-fs14-fcFFFFFF-lh10">승인대기</p>
                                         </li>
-                                        <li class="item item-h16">
-                                            <p class="txt-fw500-fs14-fcFFFFFF-lh16px-op05">MM+3.0</p>
-                                        </li>
-                                        <li class="item item-h16">
-                                            <p class="txt-fw500-fs14-fcFFFFFF-lh16px">MF</p>
-                                        </li>
-                                        <li class="item item-h16">
-                                            <div class="iFlex-row-gap5 ai-c">
-                                                <i class="ico ico-sd-card-w-16-16"></i>
-                                                <p class="txt-fw500-fs14-fcFFFFFF-lh16px">CWZI 1425</p>
-                                            </div>
+                                        <li class="item box-w60">
+                                            <p class="txt-fw700-fs22-fcFFFFFF-tar-lh10">2</p>
                                         </li>
                                     </ul>
                                 </div>
-                                <div class="box-w94-h20-bgFFFFFF-op02-br5 flex-center-gap5 ai-c">
-                                    <div class="badge-wh10-bgC10230-br5"></div>
-                                    <p class="txt-fw500-fs14-fcFFFFFF-lh10">22:20:00</p>
+                                <div class="box-bgC02A66-pdlr30-br5 flex-center ai-c">
+                                    <ul class="list-row-box-h22-gap10 ai-c flex1">
+                                        <li class="item flex1">
+                                            <p class="txt-fw700-fs14-fcFFFFFF-lh10">승인</p>
+                                        </li>
+                                        <li class="item box-w60">
+                                            <p class="txt-fw700-fs22-fcFFFFFF-tar-lh10">2</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="box-bg5490DE-pdlr30-br5 flex-center ai-c">
+                                    <ul class="list-row-box-h22-gap10 ai-c flex1">
+                                        <li class="item flex1">
+                                            <p class="txt-fw700-fs14-fcFFFFFF-lh10">임무중</p>
+                                        </li>
+                                        <li class="item box-w60">
+                                            <p class="txt-fw700-fs22-fcFFFFFF-tar-lh10">2</p>
+                                        </li>
+                                    </ul>
+                                </div>
+                                <div class="box-bg29259A-pdlr30-br5 flex-center ai-c">
+                                    <ul class="list-row-box-h22-gap10 ai-c flex1">
+                                        <li class="item flex1">
+                                            <p class="txt-fw700-fs14-fcFFFFFF-lh10">임무완료</p>
+                                        </li>
+                                        <li class="item box-w60">
+                                            <p class="txt-fw700-fs22-fcFFFFFF-tar-lh10">2</p>
+                                        </li>
+                                    </ul>
                                 </div>
                             </div>
                         </div>
-                        <!--//고정바-cameraInfo-->
-                        <!--고정바-irwide-->
-                        <div class="fixed-tool-irwide">
-                            <div class="flex-col-gap1">
-                                <button type="button" class="btn-w48-h30-bgFFFFFF-br5-op05">
-                                    <p class="txt-fw700-fs14-fcFFFFFF-lh10">IR</p>
-                                </button>
-                                <button type="button" class="btn-w48-h30-bgFFFFFF-br5-op05">
-                                    <p class="txt-fw700-fs14-fcFFFFFF-lh10">WIDE</p>
-                                </button>
-                            </div>
+                    </div>
+                </div>
+                <!--//dashboard-cont-box-->
+                
+                <!--dashboard-cont-box-->
+                <div class="dashboard-cont-box" style=" grid-column: 4 / 5; grid-row: 1 / 3;">
+                    <div class="box-head">
+                    </div>
+                    <div class="box-body">
+                        <div class="scroll-y">
                         </div>
-                        <!--//고정바-irwide-->
-                        <!--고정바-btn-->
-                        <div class="fixed-tool-btn">
-                            <div class="flex-row-gap15">
-                                <button type="button" class="btn-wh40-bg000000-br5-op04">
-                                    <i class="ico ico-circle-w-18-18"></i>
-                                </button>
-                                <div class="iFlex-row-gap1">
-                                    <button type="button" class="btn-wh40-bg000000-br5-op04">
-                                        <i class="ico ico-mic-w-18-18"></i>
-                                    </button>
-                                    <button type="button" class="btn-wh40-bg000000-br5-op04">
-                                        <i class="ico ico-voiceprint-w-18-18"></i>
-                                    </button>
-                                </div>
-                                <div class="iFlex-row-gap1">
-                                    <button type="button" class="btn-wh40-bg000000-br5-op04">
-                                        <i class="ico ico-qr-scan-w-20-20"></i>
-                                    </button>
-                                    <button type="button" class="btn-wh40-bg000000-br5-op04">
-                                        <i class="ico ico-navigation-w-20-20"></i>
-                                    </button>
-                                </div>
-                                <div class="iFlex-row-gap1">
-                                    <button type="button" class="btn-wh40-bg000000-br5-op04">
-                                        <i class="ico ico-diamonds-w-20-20"></i>
-                                    </button>
-                                    <button type="button" class="btn-wh40-bg000000-br5-op04">
-                                        <i class="ico ico-brightness-w-20-20"></i>
-                                    </button>
-                                </div>
-                                <div class="iFlex-row-gap1">
-                                    <button type="button" class="btn-wh40-bg000000-br5-op04">
-                                        <i class="ico ico-fullscreen-ai-w-20-20"></i>
-                                    </button>
-                                    <button type="button" class="btn-wh40-bg000000-br5-op04">
-                                        <i class="ico ico-donut-chart-w-20-20"></i>
-                                    </button>
-                                    <button type="button" class="btn-wh40-bg000000-br5-op04">
-                                        <i class="ico ico-tv-ai-w-20-20"></i>
-                                    </button>
-                                </div>
-                                <div class="iFlex-row-gap1">
-                                    <button type="button" class="btn-wh40-bg000000-br5-op04">
-                                        <i class="ico ico-alarm-w-20-20"></i>
-                                    </button>
-                                    <button type="button" class="btn-wh40-bg000000-br5-op04">
-                                        <i class="ico ico-navigation2-w-20-20"></i>
-                                    </button>
-                                </div>
-                            </div>
-                        </div>
-                        <!--//고정바-btn-->
-                        <!--고정바-lens-->
-                        <div class="fixed-tool-lens">
-                            <div class="flex-col-gap1">
-                                <button type="button" class="btn-wh40-bg000000-br5-op04">
-                                    <i class="ico ico-"></i>
-                                </button>
-                                <button type="button" class="btn-wh40-bg000000-br5-op04">
-                                    <i class="ico ico-circle-w-18-18"></i>
-                                </button>
-                                <div class="box-w40-bg000000-br5-op04">
-                                    <div class="map-zoom-box">
-                                        <div class="txt flex-col-sb">
-                                            <p class="txt-fw700-fs8-fcFFFFFF-tar-lh10">200x</p>
-                                            <span class="bar"></span>
-                                            <p class="txt-fw700-fs8-fcFFFFFF-tar-lh10">20x</p>
-                                            <span class="bar"></span>
-                                            <p class="txt-fw700-fs8-fcFFFFFF-tar-lh10">10x</p>
-                                            <span class="bar"></span>
-                                            <p class="txt-fw700-fs8-fcFFFFFF-tar-lh10">5x</p>
-                                            <span class="bar"></span>
-                                            <p class="txt-fw700-fs8-fcFFFFFF-tar-lh10">2x</p>
-                                        </div>
-                                        <div class="iFlex-col rangeJS" data-rangeType="min" data-rangeMin="1" data-rangeMax="5" data-rangeDefault="3" data-orientation="vertical">
-                                            <div class="rangeJS-box-zoom">
-                                                <input type="hidden" class="rangeJS-val">
-                                                <div class="rangeJS-slider"></div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-                        </div>
-                        <!--//고정바-lens-->
-                        <!--스낵바-배너리알림-->
-                        <div class="snack-bar-battery">
-                            <div class="battery">
-                                <div class="badge-h40-bg5490DE-br5-pdlr18 flex-row-gap10 ai-c">
-                                    <i class="ico ico-battery-w-18-18"></i>
-                                    <p class="txt-fw600-fs12-fcFFFFFF">잔여 배터리 위험 경고</p>
-                                    <p class="txt-fw600-fs12-fcFFFFFF">10:33</p>
-                                </div>
-                                <button type="button" class="btn-wh22-bgFFFFFF-br11 snack-bar-close">
-                                    <i class="ico ico-close-b-16-16"></i>
-                                </button>
-                            </div>
-                        </div>
-                        <!--//스낵바-배너리알림-->
-                        <!--DRONE Camera-->
-                        DRONE Camera
-                        <!--//DRONE Camera-->
                     </div>
                 </div>
-                <!--//fly-control-box-->
-                <div class="flex-row">
-                    <!--fly-control-box-->
-                    <div class="fly-control-box dock">
-                        <div class="box-head">
-                            <p class="txt-fw500-fs14-fcFFFFFF-lh10 as-c">DOCK Camera</p>
-                            <div class="badge-wh24">
-                                <i class="ico ico-signal-w-24-24"></i>
-                            </div>
-                        </div>
-                        <div class="box-body">
-                            <!--DOCK Camera-->
-                            DOCK Camera
-                            <!--//DOCK Camera-->
-                        </div>
+                <!--//dashboard-cont-box-->
+
+                <!--dashboard-cont-box-->
+                <div class="dashboard-cont-box" style=" grid-column: 1 / 2; grid-row: 2 / 4;">
+                    <div class="box-head">
+                        <p class="txt-fw700-fs18-fc000000-lh10">자산현황</p>
                     </div>
-                    <!--//fly-control-box-->
-                    <!--fly-control-box-->
-                    <div class="fly-control-box info">
-                        <div class="box-body">
-                            <div class="iFlex-row-gap50-hFull ai-c">
-                                <!--info1-->
-                                <div class="flex-col-hFull-sb">
-                                    <div class="flex-col-gap5-w120-bg121215-br5-pdlr10-pdtb9">
-                                        <p class="txt-fw600-fs14-fcFFFFFF-lh10">Battery Level</p>
-                                        <div class="flex-row-gap3 ai-c">
-                                            <i class="ico ico-battery-low-w-12-12"></i>
-                                            <p class="txt-fw500-fs10-fcFFFFFF-lh10">88.1%</p>
+                    <div class="box-body">
+                        <div class="scroll-y">
+                            <div class="flex-col-gap36-center-hFull">
+                                <div class="flex-sb ai-c">
+                                    <!--donut-split4-charts-container-->
+                                    <div class="donut-split4-charts-container" style="--percentage1:25%;--percentage2:0 50%;--percentage3:0 75%;--percentage4:0%">
+                                        <div class="donut-chart segment-chart">
+                                            <div class="chart-content">
+                                                <span class="txt-fw700-fs26-fc153457-lh10">2</span>
+                                                <span class="txt-fw700-fs14-fc153457-lh10">스테이션</span>
+                                            </div>
                                         </div>
                                     </div>
-                                    <div class="flex-col-gap5-w120-bg121215-br5-pdlr10-pdtb9">
-                                        <p class="txt-fw600-fs14-fcFFFFFF-lh10">To Land</p>
-                                        <p class="txt-fw500-fs10-fcFFFFFF-lh10">20:59</p>
-                                    </div>
-                                    <div class="flex-col-gap5-w120-bg121215-br5-pdlr10-pdtb9">
-                                        <p class="txt-fw600-fs14-fcFFFFFF-lh10">Smart RTH</p>
-                                        <p class="txt-fw500-fs10-fcFFFFFF-lh10">23:38</p>
-                                    </div>
-                                    <div class="flex-col-gap5-w120-bg121215-br5-pdlr10-pdtb9">
-                                        <p class="txt-fw600-fs14-fcFFFFFF-lh10">Satellites</p>
-                                        <div class="flex-row-gap3 ai-c">
-                                            <p class="txt-fw500-fs10-fcFFFFFF-lh10">RTK</p>
-                                            <i class="ico ico-battery-low-w-12-12"></i>
-                                            <p class="txt-fw500-fs10-fcFFFFFF-lh10">20</p>
+                                    <!--//donut-split4-charts-container-->
+                                    <div class="flex-col-gap20">
+                                        <div class="flex-sb-w182">
+                                            <div class="iFlex-row-gap5 ai-c">
+                                                <div class="badge-wh10-bg5467DE-br5"></div>
+                                                <p class="txt-fw500-fs14-fc000000-lh10">유후</p>
+                                            </div>
+                                            <p class="txt-fw500-fs14-fc000000-lh10">0(0.0%)</p>
+                                        </div>
+                                        <div class="flex-sb-w182">
+                                            <div class="iFlex-row-gap5 ai-c">
+                                                <div class="badge-wh10-bgF80F6C-br5"></div>
+                                                <p class="txt-fw500-fs14-fc000000-lh10">작업</p>
+                                            </div>
+                                            <p class="txt-fw500-fs14-fc000000-lh10">0(0.0%)</p>
+                                        </div>
+                                        <div class="flex-sb-w182">
+                                            <div class="iFlex-row-gap5 ai-c">
+                                                <div class="badge-wh10-bg5490DE-br5"></div>
+                                                <p class="txt-fw500-fs14-fc000000-lh10">디버그</p>
+                                            </div>
+                                            <p class="txt-fw500-fs14-fc000000-lh10">0(0.0%)</p>
+                                        </div>
+                                        <div class="flex-sb-w182">
+                                            <div class="iFlex-row-gap5 ai-c">
+                                                <div class="badge-wh10-bgC9CFDA-br5"></div>
+                                                <p class="txt-fw500-fs14-fc000000-lh10">오프라인</p>
+                                            </div>
+                                            <p class="txt-fw500-fs14-fc000000-lh10">0(0.0%)</p>
                                         </div>
                                     </div>
                                 </div>
-                                <!--//info1-->
-                                <!--info2-->
-                                <div class="flex-row-hFull">
-                                    <div class="flex-col-center-gap7-pdt19">
-                                        <div class="flex-row ai-c">
-                                            <i class="ico ico-windy-type1-w-14-14"></i>
-                                            <i class="ico ico-arrow-right-down-w-14-14"></i>
-                                            <p class="txt-fw700-fs10-fcFFFFFF-lh14px">15.5m/s</p>
+                                <div class="flex-sb-bgF7F9FB-br5-gap64-pd20-pdtb30">
+                                    <div class="flex-col-gap10 flex1">
+                                        <div class="flex-sb">
+                                            <p class="txt-fw700-fs12-fc5F627B-lh10">기체</p>
+                                            <p class="txt-fw700-fs12-fc5F627B-lh10">12</p>
                                         </div>
-                                        <div class="flex-row-gap8 ai-c">
-                                            <p class="txt-fw700-fs10-fc2AA138-lh10">SPD<br>m/s</p>
-                                            <p class="txt-fw700-fs16-fc2AA138-lh10">13.8</p>
-                                        </div>
-                                    </div>
-                                    <div class="flex-col-center-gap10-pdt19">
-                                        <div class="ico-relative">
-                                            <p class="txt-fw700-fs10-fc5490DE-lh10">75.3m</p>
-                                            <i class="ico ico-triangle-down-b-8-8 ico-center-absolute" style="right: -0.813rem;"></i>
-                                        </div>
-                                        <div class="flex-col-gap4 ai-c" style="padding-bottom: 14px;">
-                                            <p class="txt-fw700-fs10-fc2AA138-lh10">30˚</p>
-                                            <div class="gauge-bar-vertical-type1">
-                                                <span></span>
-                                                <span></span>
-                                                <span class="center"></span>
-                                                <span></span>
-                                                <span></span>
-                                                <div class="pointer" style="top: 50%;"><!--게이지 높이-->
-                                                    <i class="ico ico-triangle-right-b-8-9"></i>
-                                                </div>
+                                        <div class="multi-bar-chart-container chart-w140">
+                                            <div class="bar1 bar-h15" style="width: 60%;">
+                                                <p class="txt txt-fw700-fs12-fc5F627B-lh10">7</p>
                                             </div>
-                                        </div>
-                                        <div class="ico-relative">
-                                            <p class="txt-fw700-fs10-fc5490DE-lh10">56.8m</p>
-                                            <i class="ico ico-diamonds-b-14-14 ico-center-absolute" style="right: -0.938rem;"></i>
-                                        </div>
-                                    </div>
-                                    <div class="flex-col-center-gap12">
-                                        <p class="txt-fw700-fs10-fcFFFFFF-lh10-tac">000˚</p>
-                                        <div class="compass-box">
-                                            <!--나침반-->
-                                        </div>
-                                    </div>
-                                    <div class="flex-col-center-gap10-pdt19">
-                                        <div class="ico-relative">
-                                            <p class="txt-fw700-fs10-fc5490DE-lh10">36.5m</p>
-                                            <i class="ico ico-x-b-10-10 ico-center-absolute" style="left: -0.813rem;"></i>
-                                        </div>
-                                        <div class="flex-col-gap4 ai-c">
-                                            <p class="txt-fw700-fs10-fc2AA138-lh10">30˚</p>
-                                            <div class="gauge-bar-vertical-type2">
-                                                <div class="pointer end" style="top: 0%;"></div><!--게이지 높이-->
-                                                <div class="pointer start" style="top: 50%;"></div><!--게이지 높이-->
-                                            </div>
-                                            <p class="txt-fw700-fs10-fc2AA138-lh10">28.7m</p>
-                                        </div>
-                                        <div class="ico-relative">
-                                            <p class="txt-fw700-fs10-fc5490DE-lh10">271.3m</p>
-                                            <div class="badge-wh15-bgC10230-br7 ico-center-absolute" style="left: -1.063rem;">
-                                                <p class="txt-fw700-fs10-fcFFFFFF-lh10">H</p>
+                                            <div class="bar2 bar-h15">
+                                                <p class="txt txt-fw700-fs12-fc5F627B-lh10">5</p>
                                             </div>
                                         </div>
                                     </div>
-                                    <div class="flex-col-center-gap3-pdt19 ai-e">
-                                        <div class="flex-row ai-c">
-                                            <p class="txt-fw700-fs10-fcFFFFFF-lh14px">2.5 VS</p>
+                                    <div class="flex-col-gap10 flex1">
+                                        <div class="flex-sb">
+                                            <p class="txt-fw700-fs12-fc5F627B-lh10">릴레이스테이션</p>
+                                            <p class="txt-fw700-fs12-fc5F627B-lh10">16</p>
                                         </div>
-                                        <div class="flex-row-gap4 ai-c">
-                                            <p class="txt-fw700-fs16-fc2AA138-lh10">13.8</p>
-                                            <p class="txt-fw700-fs10-fc2AA138-lh10-tac">ALT<br>m</p>
-                                        </div>
-                                        <div class="flex-row ai-c">
-                                            <p class="txt-fw700-fs10-fcFFFFFF-lh14px">1287 ASL</p>
+                                        <div class="multi-bar-chart-container chart-w140">
+                                            <div class="bar1 bar-h15" style="width: 60%;">
+                                                <p class="txt txt-fw700-fs12-fc5F627B-lh10">10</p>
+                                            </div>
+                                            <div class="bar2 bar-h15" style="width: 20%;">
+                                                <p class="txt txt-fw700-fs12-fc5F627B-lh10">4</p>
+                                            </div>
+                                            <div class="bar3 bar-h15">
+                                                <p class="txt txt-fw700-fs12-fc5F627B-lh10">2</p>
+                                            </div>
                                         </div>
                                     </div>
                                 </div>
-                                <!--//info2-->
-                                <!--info3-->
-                                <div class="flex-col-center-gap21-hFull">
-                                    <div class="flex-row-gap10">
-                                        <div class="flex-row-gap3">
-                                            <div class="flex-col ai-c">
-                                                <button type="button" class="btn-w24-h16">
-                                                    <i class="ico ico-reset-w-12-12"></i>
-                                                </button>
-                                                <div class="flex-col-gap3">
-                                                    <button type="button" class="btn-wh24-bg121215-br5">
-                                                        <span class="txt-fw600-fs14-fcFFFFFF-lh10">Q</span>
-                                                    </button>
-                                                    <button type="button" class="btn-wh24-bg121215-br5">
-                                                        <span class="txt-fw600-fs14-fcFFFFFF-lh10">A</span>
-                                                    </button>
-                                                </div>
-                                                <button type="button" class="btn-w24-h16">
-                                                    <i class="ico ico-arrow-left-w-12-12"></i>
-                                                </button>
-                                            </div>
-                                            <div class="flex-col ai-c">
-                                                <button type="button" class="btn-w24-h16">
-                                                    <i class="ico ico-arrow-up-w-12-12"></i>
-                                                </button>
-                                                <div class="flex-col-gap3">
-                                                    <button type="button" class="btn-wh24-bg121215-br5">
-                                                        <span class="txt-fw600-fs14-fcFFFFFF-lh10">W</span>
-                                                    </button>
-                                                    <button type="button" class="btn-wh24-bg121215-br5">
-                                                        <span class="txt-fw600-fs14-fcFFFFFF-lh10">S</span>
-                                                    </button>
-                                                </div>
-                                                <button type="button" class="btn-w24-h16">
-                                                    <i class="ico ico-arrow-down-w-12-12"></i>
-                                                </button>
-                                            </div>
-                                            <div class="flex-col ai-c">
-                                                <button type="button" class="btn-w24-h16">
-                                                    <i class="ico ico-reset-w-12-12"></i>
-                                                </button>
-                                                <div class="flex-col-gap3">
-                                                    <button type="button" class="btn-wh24-bg121215-br5">
-                                                        <span class="txt-fw600-fs14-fcFFFFFF-lh10">E</span>
-                                                    </button>
-                                                    <button type="button" class="btn-wh24-bg121215-br5">
-                                                        <span class="txt-fw600-fs14-fcFFFFFF-lh10">D</span>
-                                                    </button>
-                                                </div>
-                                                <button type="button" class="btn-w24-h16">
-                                                    <i class="ico ico-arrow-right-w-12-12"></i>
-                                                </button>
-                                            </div>
-                                        </div>
-                                        <div class="flex-col ai-c">
-                                            <button type="button" class="btn-w24-h16">
-                                                <i class="ico ico-arrow-up2-w-12-12"></i>
-                                            </button>
-                                            <div class="flex-col-gap3">
-                                                <button type="button" class="btn-wh24-bg121215-br5">
-                                                    <span class="txt-fw600-fs14-fcFFFFFF-lh10">C</span>
-                                                </button>
-                                                <button type="button" class="btn-wh24-bg121215-br5">
-                                                    <span class="txt-fw600-fs14-fcFFFFFF-lh10">Z</span>
-                                                </button>
-                                            </div>
-                                            <button type="button" class="btn-w24-h16">
-                                                <i class="ico ico-arrow-down2-w-12-12"></i>
-                                            </button>
-                                        </div>
-                                    </div>
-                                    <button type="button" class="btn-w112-h24-bg121215-br5">
-                                        <span class="txt-fw600-fs12-fcFFFFFF-lh10">High Speed[X]</span>
-                                    </button>
-                                </div>
-                                <!--//info3-->
-                                <!--info4-->
-                                <div class="flex-row-wrap-gap5-w245 row2">
-                                    <button type="button" class="btn-h40-bg121215-br5">
-                                        <span class="txt-fw600-fs10-fcFFFFFF-lh10">Settings</span>
-                                    </button>
-                                    <button type="button" class="btn-h40-bg121215-br5">
-                                        <span class="txt-fw600-fs10-fcFFFFFF-lh10">Control1</span>
-                                    </button>
-                                    <button type="button" class="btn-h40-bg121215-br5">
-                                        <span class="txt-fw600-fs10-fcFFFFFF-lh10">RTH</span>
-                                    </button>
-                                    <button type="button" class="btn-h40-bg121215-br5">
-                                        <span class="txt-fw600-fs10-fcFFFFFF-lh10">Control2</span>
-                                    </button>
-                                    <button type="button" class="btn-h40-bg121215-br5">
-                                        <span class="txt-fw600-fs10-fcFFFFFF-lh10">Emergency Landing</span>
-                                    </button>
-                                    <button type="button" class="btn-h40-bg121215-br5">
-                                        <span class="txt-fw600-fs10-fcFFFFFF-lh10">Control3</span>
-                                    </button>
-                                    <button type="button" class="btn-h40-bg5490DE-br5">
-                                        <span class="txt-fw600-fs10-fcFFFFFF-lh10">Pause [Space]</span>
-                                    </button>
-                                    <button type="button" class="btn-h40-bg121215-br5">
-                                        <span class="txt-fw600-fs10-fcFFFFFF-lh10">Control4</span>
-                                    </button>
-                                </div>
-                                <!--//info4-->
                             </div>
                         </div>
                     </div>
-                    <!--//fly-control-box-->
                 </div>
+                <!--//dashboard-cont-box-->
+
+                <!--dashboard-cont-box-->
+                <div class="dashboard-cont-box" style=" grid-column: 2 / 3; grid-row: 2 / 5;">
+                    <div class="box-head">
+                        <p class="txt-fw700-fs18-fc000000-lh10">작업 현황</p>
+                        <button type="button" class="btn-wh24">
+                            <i class="ico ico-add-b-24-24"></i>
+                        </button>
+                    </div>
+                    <div class="box-body">
+                        <div class="flex-col-sb-hFull">
+                            <div class="flex-col-gap11">
+                                <div class="flex-sb ai-c">
+                                    <p class="txt-fw700-fs14-fc5F627B-lh10">작업배포</p>
+                                    <select class="select-h30-type4">
+                                        <option>일</option>
+                                    </select>
+                                </div>
+                                차트
+                            </div>
+                            <div class="flex-col-gap11">
+                                <div class="flex-sb ai-c">
+                                    <p class="txt-fw700-fs14-fc5F627B-lh10">결과</p>
+                                    <select class="select-h30-type4">
+                                        <option>일</option>
+                                    </select>
+                                </div>
+                                차트
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--//dashboard-cont-box-->
+
+                <!--dashboard-cont-box-->
+                <div class="dashboard-cont-box" style=" grid-column: 3 / 4; grid-row: 2 / 5;">
+                    <div class="box-head">
+                    </div>
+                    <div class="box-body">
+                    </div>
+                </div>
+                <!--//dashboard-cont-box-->
+
+                <!--dashboard-cont-box-->
+                <div class="dashboard-cont-box" style=" grid-column: 4 / 5; grid-row: 3 / 5;">
+                    <div class="box-head">
+                        <p class="txt-fw700-fs18-fc000000-lh10">날씨현황</p>
+                    </div>
+                    <div class="box-body">
+                        <div class="flex-col-gap19">
+                            <div class="flex-row-gap6 ai-c">
+                                <i class="ico ico-weather-type1-24-24"></i>
+                                <p class="txt-fw700-fs18-fc000000-lh10">12℃</p>
+                                <p class="txt-fw500-fs14-fc5F627B-lh10">날씨 맑음</p>
+                            </div>
+                            <div class="flex-col-gap10 moveTabJS tab-type2">
+                                <div class="tab-btn flex-row-gap5 box-h30">
+                                    <button type="button" class="btn-tab btn-w70-h30-bgFFFFFF-br15 on">
+                                        <span class="txt-fw600-fs12-fc5F627B-lh10">기온</span>
+                                    </button>
+                                    <button type="button" class="btn-tab btn-w70-h30-bgFFFFFF-br15">
+                                        <span class="txt-fw600-fs12-fc5F627B-lh10">강수확률</span>
+                                    </button>
+                                    <button type="button" class="btn-tab btn-w70-h30-bgFFFFFF-br15">
+                                        <span class="txt-fw600-fs12-fc5F627B-lh10">바람</span>
+                                    </button>
+                                </div>
+                                <div class="flex-row-gap5 row7 tab-con">
+                                    <div class="box-h65-bgF5F6F8-br5 flex-col-center-gap3 ai-c">
+                                        <i class="ico ico-weather-type1-24-24"></i>
+                                        <p class="txt-fw600-fs12-fc000000-lh10">일</p>
+                                        <div class="iFlex-row-center-gap3">
+                                            <p class="txt-fw600-fs10-fc5F627B-lh10">10°</p>
+                                            <p class="txt-fw600-fs10-fc5F627B-lh10">3°</p>
+                                        </div>
+                                    </div>
+                                    <div class="box-h65-bgF5F6F8-br5 flex-col-center-gap3 ai-c">
+                                        <i class="ico ico-weather-type2-24-24"></i>
+                                        <p class="txt-fw600-fs12-fc000000-lh10">월</p>
+                                        <div class="iFlex-row-center-gap3">
+                                            <p class="txt-fw600-fs10-fc5F627B-lh10">10°</p>
+                                            <p class="txt-fw600-fs10-fc5F627B-lh10">3°</p>
+                                        </div>
+                                    </div>
+                                    <div class="box-h65-bgF5F6F8-br5 flex-col-center-gap3 ai-c">
+                                        <i class="ico ico-weather-type3-24-24"></i>
+                                        <p class="txt-fw600-fs12-fc000000-lh10">화</p>
+                                        <div class="iFlex-row-center-gap3">
+                                            <p class="txt-fw600-fs10-fc5F627B-lh10">10°</p>
+                                            <p class="txt-fw600-fs10-fc5F627B-lh10">3°</p>
+                                        </div>
+                                    </div>
+                                    <div class="box-h65-bgF5F6F8-br5 flex-col-center-gap3 ai-c">
+                                        <i class="ico ico-weather-type4-24-24"></i>
+                                        <p class="txt-fw600-fs12-fc000000-lh10">수</p>
+                                        <div class="iFlex-row-center-gap3">
+                                            <p class="txt-fw600-fs10-fc5F627B-lh10">10°</p>
+                                            <p class="txt-fw600-fs10-fc5F627B-lh10">3°</p>
+                                        </div>
+                                    </div>
+                                    <div class="box-h65-bgF5F6F8-br5 flex-col-center-gap3 ai-c">
+                                        <i class="ico ico-weather-type5-24-24"></i>
+                                        <p class="txt-fw600-fs12-fc000000-lh10">목</p>
+                                        <div class="iFlex-row-center-gap3">
+                                            <p class="txt-fw600-fs10-fc5F627B-lh10">10°</p>
+                                            <p class="txt-fw600-fs10-fc5F627B-lh10">3°</p>
+                                        </div>
+                                    </div>
+                                    <div class="box-h65-bgF5F6F8-br5 flex-col-center-gap3 ai-c">
+                                        <i class="ico ico-weather-type6-24-24"></i>
+                                        <p class="txt-fw600-fs12-fc000000-lh10">금</p>
+                                        <div class="iFlex-row-center-gap3">
+                                            <p class="txt-fw600-fs10-fc5F627B-lh10">10°</p>
+                                            <p class="txt-fw600-fs10-fc5F627B-lh10">3°</p>
+                                        </div>
+                                    </div>
+                                    <div class="box-h65-bgF5F6F8-br5 flex-col-center-gap3 ai-c">
+                                        <i class="ico ico-weather-type7-24-24"></i>
+                                        <p class="txt-fw600-fs12-fc000000-lh10">토</p>
+                                        <div class="iFlex-row-center-gap3">
+                                            <p class="txt-fw600-fs10-fc5F627B-lh10">10°</p>
+                                            <p class="txt-fw600-fs10-fc5F627B-lh10">3°</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="flex-row-gap5 tab-con">
+                                    강수확률
+                                </div>
+                                <div class="flex-row-gap5 tab-con">
+                                    바람
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--//dashboard-cont-box-->
+
+                <!--dashboard-cont-box-->
+                <div class="dashboard-cont-box">
+                    <div class="box-head">
+                        <p class="txt-fw700-fs18-fc000000-lh10">데이터 현황</p>
+                        <button type="button" class="btn-wh24">
+                            <i class="ico ico-add-b-24-24"></i>
+                        </button>
+                    </div>
+                    <div class="box-body">
+                        <div class="flex-row-gap20-wrap row2">
+                            <div class="box-bgF7F9FB-br5-pdlr20-pdtb15">
+                                <div class="flex-row-gap14">
+                                    <div class="flex-col-gap5">
+                                        <p class="txt-fw700-fs22-fc153457-lh10">234</p>
+                                        <p class="txt-fw700-fs14-fc5F627B-lh10">미디어 파일</p>
+                                    </div>
+                                    <div class="flex-row-gap5">
+                                        <div class="box-w15-h45-bgC9CFDA-br3-relative">
+                                            <span class="box-w15-bg5467DE-br3-absolute" style="height: 40%; bottom: 0;"></span>
+                                        </div>
+                                        <div class="box-w15-h45-bgC9CFDA-br3-relative">
+                                            <span class="box-w15-bg5490DE-br3-absolute" style="height: 60%; bottom: 0;"></span>
+                                        </div>
+                                        <div class="box-w15-h45-bgC9CFDA-br3-relative">
+                                            <span class="box-w15-bgF80F6C-br3-absolute" style="height: 50%; bottom: 0;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-bgF7F9FB-br5-pdlr20-pdtb15">
+                                <div class="flex-row-gap14">
+                                    <div class="flex-col-gap5">
+                                        <p class="txt-fw700-fs22-fc153457-lh10">432</p>
+                                        <p class="txt-fw700-fs14-fc5F627B-lh10">모델</p>
+                                    </div>
+                                    <div class="flex-row-gap5">
+                                        <div class="box-w15-h45-bgC9CFDA-br3-relative">
+                                            <span class="box-w15-bg5467DE-br3-absolute" style="height: 40%; bottom: 0;"></span>
+                                        </div>
+                                        <div class="box-w15-h45-bgC9CFDA-br3-relative">
+                                            <span class="box-w15-bg5490DE-br3-absolute" style="height: 60%; bottom: 0;"></span>
+                                        </div>
+                                        <div class="box-w15-h45-bgC9CFDA-br3-relative">
+                                            <span class="box-w15-bgF80F6C-br3-absolute" style="height: 50%; bottom: 0;"></span>
+                                        </div>
+                                        <div class="box-w15-h45-bgC9CFDA-br3-relative">
+                                            <span class="box-w15-bgB4B6B9-br3-absolute" style="height: 80%; bottom: 0;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-bgF7F9FB-br5-pdlr20-pdtb15">
+                                <div class="flex-row-gap14">
+                                    <div class="flex-col-gap5">
+                                        <p class="txt-fw700-fs22-fc153457-lh10">234</p>
+                                        <p class="txt-fw700-fs14-fc5F627B-lh10">보고서</p>
+                                    </div>
+                                    <div class="flex-row-gap5">
+                                        <div class="box-w15-h45-bgC9CFDA-br3-relative">
+                                            <span class="box-w15-bg5467DE-br3-absolute" style="height: 40%; bottom: 0;"></span>
+                                        </div>
+                                        <div class="box-w15-h45-bgC9CFDA-br3-relative">
+                                            <span class="box-w15-bg5490DE-br3-absolute" style="height: 60%; bottom: 0;"></span>
+                                        </div>
+                                        <div class="box-w15-h45-bgC9CFDA-br3-relative">
+                                            <span class="box-w15-bgF80F6C-br3-absolute" style="height: 50%; bottom: 0;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <div class="box-bgF7F9FB-br5-pdlr20-pdtb15">
+                                <div class="flex-row-gap14">
+                                    <div class="flex-col-gap5">
+                                        <p class="txt-fw700-fs22-fc153457-lh10">234</p>
+                                        <p class="txt-fw700-fs14-fc5F627B-lh10">AI객체정보</p>
+                                    </div>
+                                    <div class="flex-row-gap5">
+                                        <div class="box-w15-h45-bgC9CFDA-br3-relative">
+                                            <span class="box-w15-bg5467DE-br3-absolute" style="height: 40%; bottom: 0;"></span>
+                                        </div>
+                                        <div class="box-w15-h45-bgC9CFDA-br3-relative">
+                                            <span class="box-w15-bg5490DE-br3-absolute" style="height: 60%; bottom: 0;"></span>
+                                        </div>
+                                        <div class="box-w15-h45-bgC9CFDA-br3-relative">
+                                            <span class="box-w15-bgF80F6C-br3-absolute" style="height: 50%; bottom: 0;"></span>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--//dashboard-cont-box-->
             </div>
+            <!--//dashboard-layout-box-->
         </main>
         <!--//main-layout-->
     </div>
