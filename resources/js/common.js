@@ -275,11 +275,14 @@ const lp = {
         if($(document).find("#lp-layout .lp-box."+_target).hasClass("on")){
             return false;
         }
-        $(document).find("#lp-layout .lp-box."+_target).addClass("on").css({"z-index":onTotal,"top":_top,"left":_left});
+        $(document).find("#lp-layout .lp-box."+_target).addClass("on").css({"z-index":onTotal});
+        const topVal = _top || (($(document).innerHeight() - $(document).find("#lp-layout .lp-box."+_target).innerHeight()) / 2);
+        const leftVal = _left || (($(document).innerWidth() - $(document).find("#lp-layout .lp-box."+_target).innerWidth()) / 2);
+        $(document).find("#lp-layout .lp-box."+_target).css({"z-index":onTotal,"top":topVal,"left":leftVal});
         $( "#lp-layout .draggableJS" ).draggable();
     },
     close(_this){
-        if($(document).find("#lp-layout > .on").length == 0){
+        if($(document).find("#lp-layout > .on").length == 1){
             $("html").removeClass("lpOpen");
         }
         $(_this).parents(".lp-box").removeClass("on").removeAttr("style");

@@ -83,5 +83,10 @@
 #control-wrap.type-board:has( #gnb-layout.active) #main-layout{ padding-left: 4rem;}
 
 #main-lnb-box{ height: 100%; padding: 1.375rem 0.188rem 0.938rem 0.625rem; grid-column: 1 / 2; grid-row: 1 / 2;}
-#main-board-box{ padding: 1.375rem 0.625rem 0.625rem 0.625rem; grid-column: 2 / 3; grid-row: 1 / 2; transition: all 0.1s;}
+#main-board-box,
+#main-lnb-box[style*="display:none"] ~ #main-board-box,
+#main-lnb-box[style*="display: none"] ~ #main-board-box,
+#main-lnb-box[style*="display :none"] ~ #main-board-box,
+#main-lnb-box[style*="display : none"] ~ #main-board-box{ padding: 1.375rem 0.625rem 0.625rem 0.625rem; grid-column: 1 / 3; grid-row: 1 / 2; transition: all 0.1s;}
+#main-lnb-box ~ #main-board-box{ grid-column: 2 / 3; grid-row: 1 / 2; transition: all 0.1s;}
 #control-wrap.type-board:has( .route-snack-box.active) #main-board-box{ padding-left: 17.25rem;}

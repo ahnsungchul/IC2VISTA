@@ -162,7 +162,7 @@
     <div id="control-wrap" class="type-board">
     <!--
         지도타입:type-map,
-        대시보드타입:type-dashboard,
+        대시보드타입:type-video,
         조정제어타입:type-control,
         보드타입:type-board,
     -->
@@ -1286,7 +1286,7 @@
                                                         <p class="txt-fw700-fs14-fc000000-lh10">사진</p>
                                                     </div>
                                                     <p class="badge-w40-h22-bg153457-br3 txt-fw600-fs12-fcFFFFFF-lh22px-tac">6파일</p>
-                                                    <p class="txt-fw700-fs14-fc000000-lh10-mgl20">16.69G</p>
+                                                    <p class="txt-w60-fw700-fs14-fc000000-lh10-mgl10">16.69G</p>
                                                 </div>
                                                 <div class="flex-sb-gap ai-c wFull">
                                                     <div class="flex-row-gap10 ai-c flex1">
@@ -1296,7 +1296,7 @@
                                                         <p class="txt-fw700-fs14-fc000000-lh10">동영상</p>
                                                     </div>
                                                     <p class="badge-w40-h22-bg153457-br3 txt-fw600-fs12-fcFFFFFF-lh22px-tac">6파일</p>
-                                                    <p class="txt-fw700-fs14-fc000000-lh10-mgl20">16.69G</p>
+                                                    <p class="txt-w60-fw700-fs14-fc000000-lh10-mgl10">16.69G</p>
                                                 </div>
                                                 <div class="flex-sb-gap ai-c wFull">
                                                     <div class="flex-row-gap10 ai-c flex1">
@@ -1306,7 +1306,20 @@
                                                         <p class="txt-fw700-fs14-fc000000-lh10">압축파일</p>
                                                     </div>
                                                     <p class="badge-w40-h22-bg153457-br3 txt-fw600-fs12-fcFFFFFF-lh22px-tac">6파일</p>
-                                                    <p class="txt-fw700-fs14-fc000000-lh10-mgl20">16.69G</p>
+                                                    <p class="txt-w60-fw700-fs14-fc000000-lh10-mgl10">7G</p>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="flex-row-pdlr20-pdtb23 ai-c">
+                                                <div class="flex-sb-gap ai-c wFull">
+                                                    <div class="flex-row-gap10 ai-c flex1">
+                                                        <div class="badge-wh26-bgD22E11-br13">
+                                                            <i class="ico ico-chart-w-12-12"></i>
+                                                        </div>
+                                                        <p class="txt-fw700-fs14-fc000000-lh10">사용가능</p>
+                                                    </div>
+                                                    <p class="txt-fw700-fs14-fc000000-lh10-mgl20">4.17T</p>
                                                 </div>
                                             </div>
                                         </li>
@@ -1326,7 +1339,7 @@
                     <div class="box-head">
                         <div class="tit">
                             <i class="ico ico-tit-b-12-12"></i>
-                            <p class="txt-fw700-fs18-fc000000-lh10">기본정보</p>
+                            <p class="txt-fw700-fs18-fc000000-lh10">미디어 관리</p>
                         </div>
                     </div>
                     <div class="box-body">
@@ -1337,39 +1350,61 @@
                                     <!--table-type1-->
                                     <table class="table-type1">
                                         <colgroup>
-                                            <col style="width: 299px;" />
+                                            <col style="width: 6.875rem;" />
+                                            <col />
+                                            <col style="width: 6.875rem;" />
                                             <col />
                                         </colgroup>
                                         <tbody>
                                             <tr>
-                                                <th scope="row">주행경로(50자 이내)</th>
+                                                <th scope="row">생성일</th>
                                                 <td>
-                                                    <input type="text" class="input-w360-h34-type1" placeholder="1번 주행경로(에이포인트)" >
+                                                    <div class="iFlex-row-gap10 ai-c">
+                                                        <input type="date" class="input-w182-h34-type1">
+                                                        <p class="txt-fw500-fs16-fc000000-lh10">~</p>
+                                                        <input type="date" class="input-w182-h34-type1">
+                                                    </div>
                                                 </td>
-                                            </tr>
-                                            <tr>
-                                                <th scope="row">경로유형</th>
+                                                <th scope="row">파일형태</th>
                                                 <td>
-                                                    <div class="chk-group-row-gap20">
+                                                    <div class="chk-group-gap10">
                                                         <label>
-                                                            <input type="radio" name="routeCHK" checked >
-                                                            <span class="txt txt-fw400-fs14-fc5F627B">Waypoint방식</span>
+                                                            <input type="checkbox">
+                                                            <span class="txt txt-fw400-fs14-fc5F627B-lh10">전체</span>
                                                         </label>
                                                         <label>
-                                                            <input type="radio" name="routeCHK" >
-                                                            <span class="txt txt-fw400-fs14-fc5F627B">Area방식</span>
+                                                            <input type="checkbox">
+                                                            <span class="txt txt-fw400-fs14-fc5F627B-lh10">JPG</span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="checkbox">
+                                                            <span class="txt txt-fw400-fs14-fc5F627B-lh10">mp4</span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="checkbox">
+                                                            <span class="txt txt-fw400-fs14-fc5F627B-lh10">압축파일</span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="checkbox">
+                                                            <span class="txt txt-fw400-fs14-fc5F627B-lh10">기타</span>
                                                         </label>
                                                     </div>
                                                 </td>
                                             </tr>
                                             <tr>
-                                                <th scope="row">주행경로(50자 이내)</th>
+                                                <th scope="row">촬영장비</th>
                                                 <td>
-                                                    <div class="iFlex-row-gap10 ai-c">
-                                                        <input type="text" class="input-w55-h34-type1" value="10" >
-                                                        <p class="txt-fw400-fs14-fc5F627B-lh10">km/h</p>
-                                                        <p class="txt-fw400-fs14-fc5F627B-lh10">or</p>
-                                                        <p class="txt-fw400-fs14-fc5F627B-lh10">m/s</p>
+                                                    <select class="select-w395-h34-type4">
+                                                        <option>전체</option>
+                                                    </select>
+                                                </td>
+                                                <th scope="row">검색조건</th>
+                                                <td>
+                                                    <div class="flex-row-gap10 ai-c">
+                                                        <select class="select-w132-h34-type4">
+                                                            <option>전체</option>
+                                                        </select>
+                                                        <input type="text" class="input-w363-h34-type1">
                                                     </div>
                                                 </td>
                                             </tr>
@@ -1386,8 +1421,125 @@
                                             <span class="txt-fw600-fs14-fc5F627B-lh10">수정</span>
                                         </button>
                                         <button type="button" class="btn-w90-h40-bg153457-br5">
-                                            <span class="txt-fw600-fs14-fcFFFFFF-lh10">삭제</span>
+                                            <span class="txt-fw600-fs14-fcFFFFFF-lh10">수정</span>
                                         </button>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//cont-box-->
+                            <!--cont-box-->
+                            <div class="cont-box box-mgt76">
+                                <div class="box-head">
+                                    <div class="flex-sb ai-c">
+                                        <p class="txt-fw500-fs14-fc000000-lh10">총 100건</p>
+                                        <div class="iFlex-row-gap5 ai-c">
+                                            <button type="button" class="btn-h30-br5-pdlr15-bdw1-solid-bdcE1E4EB">
+                                                <span class="txt-fw600-fs12-fc000000-lh10">폴더만들기</span>
+                                            </button>
+                                            <button type="button" class="btn-h30-br5-pdlr15-bdw1-solid-bdcE1E4EB">
+                                                <span class="txt-fw600-fs12-fc000000-lh10">폴더이동</span>
+                                            </button>
+                                            <div class="switch-txt-type4-gap5">
+                                                <label>
+                                                    <input type="radio" name="switch3" checked >
+                                                    <span class="txt badge-wh30-br5">
+                                                        <i class="ico ico-board-list-w-16-16"></i>
+                                                        <i class="ico ico-board-list-b-16-16"></i>
+                                                    </span>
+                                                </label>
+                                                <label>
+                                                    <input type="radio" name="switch3" >
+                                                    <span class="txt badge-wh30-br5">
+                                                        <i class="ico ico-board-card-w-16-16"></i>
+                                                        <i class="ico ico-board-card-b-16-16"></i>
+                                                    </span>
+                                                </label>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="box-body box-mgt8">
+                                    게시판(카드형 디자인 요청중)
+                                </div>
+                                <div class="box-foot box-mgt20">
+                                    <div class="flex-sb">
+                                        <button type="button" class="btn-h30-br5-pdlr15-bdw1-solid-bdcE1E4EB">
+                                            <span class="txt-fw600-fs12-fc000000-lh10">엑셀 다운로드</span>
+                                        </button>
+                                    </div>
+                                    <div class="paging-box" style="margin-top: -20px;">
+                                        <ul class="list">
+                                            <li class="item">
+                                                <button type="button" class="btn-wh30 btn">
+                                                    <i class="ico ico-arrow-left-double-b-18-18"></i>
+                                                </button>
+                                            </li>
+                                            <li class="item">
+                                                <button type="button" class="btn-wh30 btn">
+                                                    <i class="ico ico-arrow-left-b-18-18"></i>
+                                                </button>
+                                            </li>
+                                            <li class="item">
+                                                <button type="button" class="btn-wh30 btn on">
+                                                    <span class="txt-fw600-fs14-lh10 txt">1</span>
+                                                </button>
+                                            </li>
+                                            <li class="item">
+                                                <button type="button" class="btn-wh30 btn">
+                                                    <span class="txt-fw600-fs14-lh10 txt">2</span>
+                                                </button>
+                                            </li>
+                                            <li class="item">
+                                                <button type="button" class="btn-wh30 btn">
+                                                    <span class="txt-fw600-fs14-lh10 txt">3</span>
+                                                </button>
+                                            </li>
+                                            <li class="item">
+                                                <button type="button" class="btn-wh30 btn">
+                                                    <span class="txt-fw600-fs14-lh10 txt">4</span>
+                                                </button>
+                                            </li>
+                                            <li class="item">
+                                                <button type="button" class="btn-wh30 btn">
+                                                    <span class="txt-fw600-fs14-lh10 txt">5</span>
+                                                </button>
+                                            </li>
+                                            <li class="item">
+                                                <button type="button" class="btn-wh30 btn">
+                                                    <span class="txt-fw600-fs14-lh10 txt">6</span>
+                                                </button>
+                                            </li>
+                                            <li class="item">
+                                                <button type="button" class="btn-wh30 btn">
+                                                    <span class="txt-fw600-fs14-lh10 txt">7</span>
+                                                </button>
+                                            </li>
+                                            <li class="item">
+                                                <button type="button" class="btn-wh30 btn">
+                                                    <span class="txt-fw600-fs14-lh10 txt">8</span>
+                                                </button>
+                                            </li>
+                                            <li class="item">
+                                                <button type="button" class="btn-wh30 btn">
+                                                    <span class="txt-fw600-fs14-lh10 txt">9</span>
+                                                </button>
+                                            </li>
+                                            <li class="item">
+                                                <button type="button" class="btn-wh30 btn">
+                                                    <span class="txt-fw600-fs14-lh10 txt">10</span>
+                                                </button>
+                                            </li>
+                                            <li class="item">
+                                                <button type="button" class="btn-wh30 btn">
+                                                    <i class="ico ico-arrow-right-b-18-18"></i>
+                                                </button>
+                                            </li>
+                                            <li class="item">
+                                                <button type="button" class="btn-wh30 btn">
+                                                    <i class="ico ico-arrow-right-double-b-18-18"></i>
+                                                </button>
+                                            </li>
+                                        </ul>
                                     </div>
                                 </div>
                             </div>
