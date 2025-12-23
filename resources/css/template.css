@@ -1033,7 +1033,8 @@
 .ico.ico-board-card-w-16-16{ background-image: url(../img/ico/ico-board-card-w-16-16.svg);}
 .ico.ico-board-card-b-16-16{ background-image: url(../img/ico/ico-board-card-b-16-16.svg);}
 
-[class*="badge-"][class*="-wh"]{ display: inline-flex; align-items: center; justify-content: center;}
+[class*="badge-"]{ display: inline-flex; align-items: center;}
+[class*="badge-"][class*="-wh"]{ justify-content: center;}
 
 [class*="btn-"]{ display: inline-flex; align-items: center; justify-content: center;}
 [class*="btn-"][class*="-wh"]{ padding: 0;}
@@ -1239,9 +1240,10 @@ position: absolute; top: 1.875rem;}
 #lp-layout .lp-box.equipmentList{ width: 56rem;}
 #lp-layout .lp-box.routeVideo{ width: 24.625rem;}
 #lp-layout .lp-box.routeVideo .box-body{ padding: 1.25rem;}
-#lp-layout .lp-box.routeVideo .video-thumb-box{ width: 100%; height: 14.75rem;}
+#lp-layout .lp-box.routeVideo .thumb-video-box{ width: 100%; height: 14.75rem;}
 #lp-layout .lp-box.routeImg{ width: auto;}
 #lp-layout .lp-box.routeImg .box-body{ padding: 1.25rem;}
+#lp-layout .lp-box.routeImg .thumb-img-box{ width: auto; height: auto;}
 
 [class*="snack-bar-"][class*="-battery"] .snack-bar-close{ position: absolute; top: -0.688rem; right: -0.688rem;}
 #control-wrap.type-map #main-layout{ background-color: #999; position: relative;}
@@ -1475,3 +1477,6 @@ body:has( #aside-right-layout .dron-detail-box.active) #control-wrap.type-map #m
 
 .thumb-img-box{ height: 7.5rem; background-color: #eee; display: flex; align-items: center; justify-content: center;}
 .thumb-img-box img{ max-height: 100%; width: auto; height: auto;}
+
+[class*="dl-row"]{ display: flex; flex-direction: row;}
+[class*="dl-col"]{ display: flex; flex-direction: column;}
