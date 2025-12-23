@@ -271,15 +271,30 @@ const rangeJS = {
 const lp = {
     open(_target,_top,_left){
         $("html").addClass("lpOpen");
+        const _thisPop = $(document).find("#lp-layout .lp-box."+_target);
         const onTotal = $(document).find("#lp-layout .lp-box.on").length + 1;
-        if($(document).find("#lp-layout .lp-box."+_target).hasClass("on")){
+        if(_thisPop.hasClass("on")){
             return false;
         }
-        $(document).find("#lp-layout .lp-box."+_target).addClass("on").css({"z-index":onTotal});
-        const topVal = _top || (($(document).innerHeight() - $(document).find("#lp-layout .lp-box."+_target).innerHeight()) / 2);
-        const leftVal = _left || (($(document).innerWidth() - $(document).find("#lp-layout .lp-box."+_target).innerWidth()) / 2);
-        $(document).find("#lp-layout .lp-box."+_target).css({"z-index":onTotal,"top":topVal,"left":leftVal});
-        $( "#lp-layout .draggableJS" ).draggable();
+        _thisPop.addClass("on").css({"z-index":onTotal});
+        
+        const _browserH = $(document).innerHeight();
+        let _popH = _thisPop.innerHeight();
+        const _headH = _thisPop.find(".box-head").innerHeight();
+        const _footH = _thisPop.find(".box-foot").innerHeight();
+        const _body = _thisPop.find(".box-body");
+        if(_browserH < _popH){
+            _body.innerHeight(_browserH - _headH - _footH - 40);
+        }
+        _popH = _thisPop.innerHeight();
+        const _browserW = $(document).innerWidth();
+        const _popW = _thisPop.innerWidth();
+        const topVal = _top || ((_browserH - _popH) / 2);
+        const leftVal = _left || ((_browserW - _popW) / 2);
+        _thisPop.css({"z-index":onTotal,"top":topVal,"left":leftVal});
+        if(_thisPop.hasClass("draggableJS")){
+            $( "#lp-layout .draggableJS" ).draggable();
+        }
     },
     close(_this){
         if($(document).find("#lp-layout > .on").length == 1){
