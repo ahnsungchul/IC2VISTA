@@ -7,6 +7,8 @@
 <link rel="shortcut icon" href="../img/inc/favicon.ico" type="image/x-icon">
 <title>IC2VISTA</title>
 <script type="text/javascript" src="../resources/js/jquery-1.11.2.min.js"></script>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.3.1/jquery.min.js"></script>
+<script type="text/javascript" src="../resources/js/jstree.js"></script>
 <script type="text/javascript" src="../resources/js/jquery-ui.js"></script>
 <script type="text/javascript" src="../resources/js/common.js"></script>
 <link rel="stylesheet" type="text/css" href="../resources/css/common.css">
@@ -1104,6 +1106,248 @@
             </button>
         </div>
         <!--//lp2-box-->
+        <!--lp3-box-->
+        <div class="lp-box typeLP3 folderMov">
+            <div class="box-head">
+                <h2 class="tit">이동</h2>
+            </div>
+            <div class="box-body">
+                <div class="scroll-y">
+                    <div class="flex-col-gap10">
+                        <!--search-box-type2-->
+                        <div class="search-box-type2">
+                            <input type="text" placeholder="검색할 폴더명을 입력해주세요.">
+                            <button type="button">
+                                <i class="ico ico-search-b-24-24"></i>
+                            </button>
+                        </div>
+                        <!--//search-box-type2-->
+                        <!--tree-list-type1-->
+                        <div id="test" class="tree-list-type1 treeJS">
+                            <ul>
+                                <li data-jstree='{ "opened" : true }'>모든파일
+                                    <ul>
+                                        <li data-jstree='{ "opened" : true }'>라이브 스트림 녹화
+                                            <ul>
+                                                <li>Panorma</li>
+                                                <li>Roof Inspection</li>
+                                            </ul>
+                                        </li>
+                                    </ul>
+                                </li>
+                            </ul>
+                        </div>
+                        <!--//tree-list-type1-->
+                    </div>
+                </div>
+            </div>
+            <div class="box-foot">
+                <div class="flex-center-gap5">
+                    <button type="button" class="btn-w90-h30-bdw1-solid-bdcE1E4EB-br5">
+                        <p class="txt-fw600-fs12-fc5F627B-lh10">취소</p>
+                    </button>
+                    <button type="button" class="btn-w90-h30-bg153457-br5">
+                        <p class="txt-fw600-fs12-fcFFFFFF-lh10">확인</p>
+                    </button>
+                </div>
+            </div>
+            <button type="button" class="lp-close" onclick="lp.close(this)">
+                <i class="ico ico-close-b-16-16"></i>
+            </button>
+        </div>
+        <!--//lp3-box-->
+        <!--lp3-box-->
+        <div class="lp-box typeLP3 videoControl">
+            <div class="box-body">
+                <!--video-control-box-->
+                <div class="video-control-box">
+                    <div class="video-box videoSelectJS">
+                        <div class="video">
+                            <!--고정바-videoInfo-->
+                            <div class="fixed-tool-videoInfo-wFull">
+                                <div class="flex-sb-pdlr20-h40-bg000000-op05 ai-c">
+                                    <div class="iFlex-row-gap10 ai-c">
+                                        <p class="txt-fw500-fs14-fcFFFFFF-lh10">물류창고001</p>
+                                        <p class="txt-fw500-fs12-fcFFFFFF-lh10">2025.12.24 12:06:24 (UTC +09)</p>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//고정바-videoInfo-->
+                            <video controls>
+                                <source src="../resources/mp4/@sample-mp4-1.mp4" type="video/mp4">
+                            </video>
+                        </div>
+                        <div class="list">
+                            <div class="video-chk">
+                                <label style="background-image: url(../resources/img/@sample-bg-img.png);">
+                                    <input type="radio" value="../resources/mp4/@sample-mp4-1.mp4" name="videoCK" onchange="videoSelectJS.select(this)" checked >
+                                    <span class="btn">
+                                        <i class="ico ico-play-w-16-16"></i>
+                                    </span>
+                                </label>
+                                <label style="background-image: url(../resources/img/@sample-bg-img.png);">
+                                    <input type="radio" value="../resources/mp4/@sample-mp4-2.mp4" name="videoCK" onchange="videoSelectJS.select(this)" >
+                                    <span class="btn">
+                                        <i class="ico ico-play-w-16-16"></i>
+                                    </span>
+                                </label>
+                                <label style="background-image: url(../resources/img/@sample-bg-img.png);">
+                                    <input type="radio" value="../resources/mp4/@sample-mp4-3.mp4" name="videoCK" onchange="videoSelectJS.select(this)" >
+                                    <span class="btn">
+                                        <i class="ico ico-play-w-16-16"></i>
+                                    </span>
+                                </label>
+                            </div>
+                        </div>
+                    </div>
+                    <div class="info-box">
+                        <div class="box-head">
+                            <div class="badge-wh30-bg2AA138-br15">
+                                <i class="ico ico-video-ai-w-20-20"></i>
+                            </div>
+                            <p class="txt-fw700-fs18-fc000000">미디어 정보</p>
+                        </div>
+                        <div class="box-body">
+                            <div class="scroll-y">
+                                <div class="flex-col-gap14">
+                                    <dl class="flex-row-h26 ai-c">
+                                        <dt class="flex-row-gap10-w70 ai-c">
+                                            <p class="txt-fw700-fs14-fc000000-lh10">이름</p>
+                                            <button type="button" class="btn-wh20-bg0070C0-br10">
+                                                <i class="ico ico-pencil-w-14-14"></i>
+                                            </button>
+                                        </dt>
+                                        <dd class="flex1">
+                                            <div class="flex-row-gap10 ai-c">
+                                                <input type="text" class="input-w120-h26-type1" >
+                                                <div class="iFlex-row-gap5 ai-c">
+                                                    <button type="button" class="btn-wh20-bg2AA138-br10">
+                                                        <i class="ico ico-check-w-14-14"></i>
+                                                    </button>
+                                                    <button type="button" class="btn-wh20-bgC10230-br10">
+                                                        <i class="ico ico-close-w-14-14"></i>
+                                                    </button>
+                                                </div>
+                                            </div>
+                                        </dd>
+                                    </dl>
+                                    <dl class="flex-row-h26 ai-c">
+                                        <dt class="flex-row-gap10-w70 ai-c">
+                                            <p class="txt-fw700-fs14-fc000000-lh10">파일유형</p>
+                                        </dt>
+                                        <dd class="flex1">
+                                            <p class="txt-fw500-fs14-fc5F627B-lh10-pdlr9">파노라마</p>
+                                        </dd>
+                                    </dl>
+                                    <dl class="flex-row-h26 ai-c">
+                                        <dt class="flex-row-gap10-w70 ai-c">
+                                            <p class="txt-fw700-fs14-fc000000-lh10">임무명</p>
+                                        </dt>
+                                        <dd class="flex1">
+                                            <p class="txt-fw500-fs14-fc5F627B-lh10-pdlr9">창고순찰_251212</p>
+                                        </dd>
+                                    </dl>
+                                    <dl class="flex-row-h26 ai-c">
+                                        <dt class="flex-row-gap10-w70 ai-c">
+                                            <p class="txt-fw700-fs14-fc000000-lh10">경로명</p>
+                                        </dt>
+                                        <dd class="flex1">
+                                            <p class="txt-fw500-fs14-fc5F627B-lh10-pdlr9">순찰경로1</p>
+                                        </dd>
+                                    </dl>
+                                    <dl class="flex-row-h26 ai-c">
+                                        <dt class="flex-row-gap10-w70 ai-c">
+                                            <p class="txt-fw700-fs14-fc000000-lh10">해상도</p>
+                                        </dt>
+                                        <dd class="flex1">
+                                            <p class="txt-fw500-fs14-fc5F627B-lh10-pdlr9">8192*4096</p>
+                                        </dd>
+                                    </dl>
+                                    <dl class="flex-row-h26 ai-c">
+                                        <dt class="flex-row-gap10-w70 ai-c">
+                                            <p class="txt-fw700-fs14-fc000000-lh10">크기</p>
+                                        </dt>
+                                        <dd class="flex1">
+                                            <p class="txt-fw500-fs14-fc5F627B-lh10-pdlr9">12.0M</p>
+                                        </dd>
+                                    </dl>
+                                    <dl class="flex-row-h26 ai-c">
+                                        <dt class="flex-row-gap10-w70 ai-c">
+                                            <p class="txt-fw700-fs14-fc000000-lh10">페이로드</p>
+                                        </dt>
+                                        <dd class="flex1">
+                                            <p class="txt-fw500-fs14-fc5F627B-lh10-pdlr9">H20</p>
+                                        </dd>
+                                    </dl>
+                                    <dl class="flex-row-h26 ai-c">
+                                        <dt class="flex-row-gap10-w70 ai-c">
+                                            <p class="txt-fw700-fs14-fc000000-lh10">생성일</p>
+                                        </dt>
+                                        <dd class="flex1">
+                                            <p class="txt-fw500-fs14-fc5F627B-lh10-pdlr9">2025.12.12  12:06:24(UTC +09)</p>
+                                        </dd>
+                                    </dl>
+                                    <dl class="flex-row-h26 ai-c">
+                                        <dt class="flex-row-gap10-w70 ai-c">
+                                            <p class="txt-fw700-fs14-fc000000-lh10">태그</p>
+                                            <button type="button" class="btn-wh20-bg0070C0-br10">
+                                                <i class="ico ico-pencil-w-14-14"></i>
+                                            </button>
+                                        </dt>
+                                        <dd class="flex1">
+                                            <p class="txt-fw500-fs14-fc5F627B-lh10-pdlr9">창고, 항공뷰</p>
+                                        </dd>
+                                    </dl>
+                                    <dl class="flex-col-gap20 ai-c">
+                                        <dt class="flex-row-wFull">
+                                            <p class="txt-fw700-fs14-fc000000-lh10-tal">위치</p>
+                                        </dt>
+                                        <dd class="box-wFull-h147-br5-ovH-relative">
+                                            <!--고정바-dim-->
+                                            <div class="fixed-tool-dim">
+                                            </div>
+                                            <!--//고정바-dim-->
+                                            <!--고정바-videoInfo-->
+                                            <div class="fixed-tool-location">
+                                                <div class="flex-sb-pdlr10-h30-bg000000-op05-br5 ai-c">
+                                                    <div class="iFlex-row-gap5 ai-c">
+                                                        <p class="txt-fw500-fs12-fcFFFFFF-lh10">위도(37.402912), 경도(127.108221) 고도(55m)</p>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                            <!--//고정바-videoInfo-->
+                                        </dd>
+                                    </dl>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+                <!--//video-control-box-->                
+            </div>
+            <button type="button" class="lp-close" onclick="lp.close(this)">
+                <i class="ico ico-close-b-16-16"></i>
+            </button>
+        </div>
+        <!--//lp3-box-->
+        <!--lp3-box-->
+        <div class="lp-box typeLP3 tagSetting">
+            <div class="box-head">
+                <h2 class="tit">태그설정</h2>
+            </div>
+            <div class="box-body">
+                <div class="flex-row-gap6">
+                    <input type="text" class="input-h40-type1 flex1" placeholder="Enter키를 눌러 확인" >
+                    <button type="button" class="btn-w52-h40-bg153457-br5">
+                        <span class="txt-fw600-fs12-fcFFFFFF-lh10">확인</span>
+                    </button>
+                </div>
+            </div>
+            <button type="button" class="lp-close" onclick="lp.close(this)">
+                <i class="ico ico-close-b-16-16"></i>
+            </button>
+        </div>
+        <!--//lp3-box-->
     </div>
     <!--//lp-layout-->
 
@@ -1143,6 +1387,15 @@
         </button>
         <button type="button" class="btn-h30-pdlr20-bdw1-solid-bdcCCCCCC-br5-hvbgEEEEEE" onclick="lp.open('routeVideo',250,900)">
             <span class="txt-tw600-fs14-lh10">장비주행이력</span>
+        </button>
+        <button type="button" class="btn-h30-bg333333-pdlr20-br5-hvbg111111" onclick="lp.open('folderMov')">
+            <span class="txt-tw600-fs14-fcFFFFFF-lh10">폴더이동</span>
+        </button>
+        <button type="button" class="btn-h30-bg333333-pdlr20-br5-hvbg111111" onclick="lp.open('videoControl')">
+            <span class="txt-tw600-fs14-fcFFFFFF-lh10">영상관제 화면</span>
+        </button>
+        <button type="button" class="btn-h30-bg333333-pdlr20-br5-hvbg111111" onclick="lp.open('tagSetting')">
+            <span class="txt-tw600-fs14-fcFFFFFF-lh10">태그설정</span>
         </button>
     </div>
 </body>

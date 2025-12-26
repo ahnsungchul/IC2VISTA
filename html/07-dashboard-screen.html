@@ -1421,9 +1421,49 @@
                 <!--dashboard-cont-box-->
                 <div class="dashboard-cont-box" style=" grid-column: 4 / 5; grid-row: 1 / 3;">
                     <div class="box-head">
+                        <p class="txt-fw700-fs18-fc000000-lh10">임무수행 인원현황</p>
+                        <button type="button" class="btn-wh24">
+                            <i class="ico ico-add-b-24-24"></i>
+                        </button>
                     </div>
                     <div class="box-body">
                         <div class="scroll-y">
+                            <table class="table-list-type2">
+                                <colgroup>
+                                    <col style="width: 100px;" />
+                                    <col style="width: 100px;" />
+                                    <col />
+                                </colgroup>
+                                <thead>
+                                    <tr>
+                                        <th scope="col">성명</th>
+                                        <th scope="col">상태</th>
+                                        <th scope="col">임무 및 기간</th>
+                                    </tr>
+                                </thead>
+                                <tbody>
+                                    <tr>
+                                        <td class="t_a_c">홍길동</td>
+                                        <td class="t_a_c">준비중</td>
+                                        <td class="t_a_c">안티고개 주변 도로순찰3<br>(25.12.23 12:30 ~ 25.12.23 13:20)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="t_a_c">홍길동</td>
+                                        <td class="t_a_c">임무중</td>
+                                        <td class="t_a_c">안티고개 주변 도로순찰3<br>(25.12.23 12:30 ~ 25.12.23 13:20)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="t_a_c">홍길동</td>
+                                        <td class="t_a_c">임무중</td>
+                                        <td class="t_a_c">안티고개 주변 도로순찰3<br>(25.12.23 12:30 ~ 25.12.23 13:20)</td>
+                                    </tr>
+                                    <tr>
+                                        <td class="t_a_c">홍길동</td>
+                                        <td class="t_a_c">임무완료</td>
+                                        <td class="t_a_c">안티고개 주변 도로순찰3<br>(25.12.23 12:30 ~ 25.12.23 13:20)</td>
+                                    </tr>
+                                </tbody>
+                            </table>
                         </div>
                     </div>
                 </div>
@@ -1556,8 +1596,100 @@
                 <!--dashboard-cont-box-->
                 <div class="dashboard-cont-box" style=" grid-column: 3 / 4; grid-row: 2 / 5;">
                     <div class="box-head">
+                        <p class="txt-fw700-fs18-fc000000-lh10">알림</p>
+                        <button type="button" class="btn-wh24">
+                            <i class="ico ico-add-b-24-24"></i>
+                        </button>
                     </div>
                     <div class="box-body">
+                        <div class="scroll-y">
+                            <div class="flex-col-gap10">
+                                <!--noti-tool-box-->
+                                <div class="noti-tool-box box-bg5467DE">
+                                    <div class="iFlex-row-gap10 ai-c">
+                                        <i class="ico ico-question-w-18-18"></i>
+                                        <p class="txt-fw600-fs12-fcFFFFFF-lh10">[공지]낙뢰 조심 기상예보</p>
+                                    </div>
+                                    <p class="txt-fw600-fs12-fcFFFFFF-lh10">12/23 12:20:43</p>
+                                    <button type="button" class="btn-close">
+                                        <i class="ico ico-close-b-16-16"></i>
+                                    </button>
+                                </div>
+                                <!--//noti-tool-box-->
+                                <!--noti-tool-box-->
+                                <div class="noti-tool-box box-bg5490DE">
+                                    <div class="iFlex-row-gap10 ai-c">
+                                        <i class="ico ico-warning-w-18-18"></i>
+                                        <p class="txt-fw600-fs12-fcFFFFFF-lh10">홍길동 임무수행 준비중</p>
+                                    </div>
+                                    <p class="txt-fw600-fs12-fcFFFFFF-lh10">12/23 12:20:43</p>
+                                    <button type="button" class="btn-close">
+                                        <i class="ico ico-close-b-16-16"></i>
+                                    </button>
+                                </div>
+                                <!--//noti-tool-box-->
+                                <!--noti-tool-box-->
+                                <div class="noti-tool-box box-bg5490DE">
+                                    <div class="iFlex-row-gap10 ai-c">
+                                        <i class="ico ico-warning-w-18-18"></i>
+                                        <p class="txt-fw600-fs12-fcFFFFFF-lh10">장영실 임무수행 시작</p>
+                                    </div>
+                                    <p class="txt-fw600-fs12-fcFFFFFF-lh10">12/23 12:20:43</p>
+                                    <button type="button" class="btn-close">
+                                        <i class="ico ico-close-b-16-16"></i>
+                                    </button>
+                                </div>
+                                <!--//noti-tool-box-->
+                                <!--noti-tool-box-->
+                                <div class="noti-tool-box box-bg29259A">
+                                    <div class="iFlex-row-gap10 ai-c">
+                                        <i class="ico ico-alarm-w-18-18"></i>
+                                        <p class="txt-fw600-fs12-fcFFFFFF-lh10">비행금지구역 접근</p>
+                                    </div>
+                                    <p class="txt-fw600-fs12-fcFFFFFF-lh10">12/23 12:20:43</p>
+                                    <button type="button" class="btn-close">
+                                        <i class="ico ico-close-b-16-16"></i>
+                                    </button>
+                                </div>
+                                <!--//noti-tool-box-->
+                                <!--noti-tool-box-->
+                                <div class="noti-tool-box box-bg29259A">
+                                    <div class="iFlex-row-gap10 ai-c">
+                                        <i class="ico ico-battery-w-18-18"></i>
+                                        <p class="txt-fw600-fs12-fcFFFFFF-lh10">잔여 배터리 위험 경고</p>
+                                    </div>
+                                    <p class="txt-fw600-fs12-fcFFFFFF-lh10">12/23 12:20:43</p>
+                                    <button type="button" class="btn-close">
+                                        <i class="ico ico-close-b-16-16"></i>
+                                    </button>
+                                </div>
+                                <!--//noti-tool-box-->
+                                <!--noti-tool-box-->
+                                <div class="noti-tool-box box-bg29259A">
+                                    <div class="iFlex-row-gap10 ai-c">
+                                        <i class="ico ico-hard-drive-w-18-18"></i>
+                                        <p class="txt-fw600-fs12-fcFFFFFF-lh10">스토리지 저장공간 부족</p>
+                                    </div>
+                                    <p class="txt-fw600-fs12-fcFFFFFF-lh10">12/23 12:20:43</p>
+                                    <button type="button" class="btn-close">
+                                        <i class="ico ico-close-b-16-16"></i>
+                                    </button>
+                                </div>
+                                <!--//noti-tool-box-->
+                                <!--noti-tool-box-->
+                                <div class="noti-tool-box box-bgC02A66">
+                                    <div class="iFlex-row-gap10 ai-c">
+                                        <i class="ico ico-chat-off-w-18-18"></i>
+                                        <p class="txt-fw600-fs12-fcFFFFFF-lh10">장비와 통신 두절 </p>
+                                    </div>
+                                    <p class="txt-fw600-fs12-fcFFFFFF-lh10">12/23 12:20:43</p>
+                                    <button type="button" class="btn-close">
+                                        <i class="ico ico-close-b-16-16"></i>
+                                    </button>
+                                </div>
+                                <!--//noti-tool-box-->
+                            </div>
+                        </div>
                     </div>
                 </div>
                 <!--//dashboard-cont-box-->
@@ -1569,89 +1701,133 @@
                     </div>
                     <div class="box-body">
                         <div class="scroll-y">
-                            <div class="flex-col-gap19">
-                                <div class="flex-row-gap6 ai-c">
-                                    <i class="ico ico-weather-type1-24-24"></i>
-                                    <p class="txt-fw700-fs18-fc000000-lh10">12℃</p>
-                                    <p class="txt-fw500-fs14-fc5F627B-lh10">날씨 맑음</p>
-                                </div>
-                                <div class="flex-col-gap10 moveTabJS tab-type2">
-                                    <div class="tab-btn flex-row-gap5 box-h30">
-                                        <button type="button" class="btn-tab btn-w70-h30-bgFFFFFF-br15 on">
-                                            <span class="txt-fw600-fs12-fc5F627B-lh10">기온</span>
-                                        </button>
-                                        <button type="button" class="btn-tab btn-w70-h30-bgFFFFFF-br15">
-                                            <span class="txt-fw600-fs12-fc5F627B-lh10">강수확률</span>
-                                        </button>
-                                        <button type="button" class="btn-tab btn-w70-h30-bgFFFFFF-br15">
-                                            <span class="txt-fw600-fs12-fc5F627B-lh10">바람</span>
-                                        </button>
+                            <div class="flex-col-gap12">
+                                <div class="flex-sb">
+                                    <div class="flex-col-gap9">
+                                        <div class="box-h22-bg153457-pdlr5-br3">
+                                            <p class="txt-fw600-fs12-fcFFFFFF-lh22px">2025.12.22(월)</p>
+                                        </div>
+                                        <p class="txt-fw700-fs18-fc000000-lh10">16:45:41</p>
                                     </div>
-                                    <div class="flex-row-gap5 row7 tab-con">
-                                        <div class="box-h65-bgF5F6F8-br5 flex-col-center-gap3 ai-c">
+                                    <div class="flex-col-gap6">
+                                        <div class="flex-row-gap3 ai-c">
+                                            <i class="ico ico-map-pin-b-16-16"></i>
+                                            <p class="txt-fw500-fs12-fc5F627B-lh10">서울특별시 서초구 서초1동</p>
+                                        </div>
+                                        <div class="flex-row-gap3 ai-c">
                                             <i class="ico ico-weather-type1-24-24"></i>
-                                            <p class="txt-fw600-fs12-fc000000-lh10">일</p>
-                                            <div class="iFlex-row-center-gap3">
-                                                <p class="txt-fw600-fs10-fc5F627B-lh10">10°</p>
-                                                <p class="txt-fw600-fs10-fc5F627B-lh10">3°</p>
-                                            </div>
+                                            <p class="txt-fw700-fs18-fc000000-lh10">12℃</p>
                                         </div>
-                                        <div class="box-h65-bgF5F6F8-br5 flex-col-center-gap3 ai-c">
-                                            <i class="ico ico-weather-type2-24-24"></i>
-                                            <p class="txt-fw600-fs12-fc000000-lh10">월</p>
-                                            <div class="iFlex-row-center-gap3">
-                                                <p class="txt-fw600-fs10-fc5F627B-lh10">10°</p>
-                                                <p class="txt-fw600-fs10-fc5F627B-lh10">3°</p>
-                                            </div>
-                                        </div>
-                                        <div class="box-h65-bgF5F6F8-br5 flex-col-center-gap3 ai-c">
-                                            <i class="ico ico-weather-type3-24-24"></i>
-                                            <p class="txt-fw600-fs12-fc000000-lh10">화</p>
-                                            <div class="iFlex-row-center-gap3">
-                                                <p class="txt-fw600-fs10-fc5F627B-lh10">10°</p>
-                                                <p class="txt-fw600-fs10-fc5F627B-lh10">3°</p>
-                                            </div>
-                                        </div>
-                                        <div class="box-h65-bgF5F6F8-br5 flex-col-center-gap3 ai-c">
-                                            <i class="ico ico-weather-type4-24-24"></i>
-                                            <p class="txt-fw600-fs12-fc000000-lh10">수</p>
-                                            <div class="iFlex-row-center-gap3">
-                                                <p class="txt-fw600-fs10-fc5F627B-lh10">10°</p>
-                                                <p class="txt-fw600-fs10-fc5F627B-lh10">3°</p>
-                                            </div>
-                                        </div>
-                                        <div class="box-h65-bgF5F6F8-br5 flex-col-center-gap3 ai-c">
-                                            <i class="ico ico-weather-type5-24-24"></i>
-                                            <p class="txt-fw600-fs12-fc000000-lh10">목</p>
-                                            <div class="iFlex-row-center-gap3">
-                                                <p class="txt-fw600-fs10-fc5F627B-lh10">10°</p>
-                                                <p class="txt-fw600-fs10-fc5F627B-lh10">3°</p>
-                                            </div>
-                                        </div>
-                                        <div class="box-h65-bgF5F6F8-br5 flex-col-center-gap3 ai-c">
-                                            <i class="ico ico-weather-type6-24-24"></i>
-                                            <p class="txt-fw600-fs12-fc000000-lh10">금</p>
-                                            <div class="iFlex-row-center-gap3">
-                                                <p class="txt-fw600-fs10-fc5F627B-lh10">10°</p>
-                                                <p class="txt-fw600-fs10-fc5F627B-lh10">3°</p>
-                                            </div>
-                                        </div>
-                                        <div class="box-h65-bgF5F6F8-br5 flex-col-center-gap3 ai-c">
-                                            <i class="ico ico-weather-type7-24-24"></i>
-                                            <p class="txt-fw600-fs12-fc000000-lh10">토</p>
-                                            <div class="iFlex-row-center-gap3">
-                                                <p class="txt-fw600-fs10-fc5F627B-lh10">10°</p>
-                                                <p class="txt-fw600-fs10-fc5F627B-lh10">3°</p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <div class="flex-row-gap5 tab-con">
-                                        강수확률
-                                    </div>
-                                    <div class="flex-row-gap5 tab-con">
-                                        바람
                                     </div>
                                 </div>
+                                <table class="table-list-type2">
+                                    <colgroup>
+                                        <col />
+                                        <col />
+                                        <col />
+                                        <col />
+                                        <col />
+                                        <col />
+                                    </colgroup>
+                                    <tbody>
+                                        <tr>
+                                            <td class="t_a_c">16:00</td>
+                                            <td class="t_a_c">12℃</td>
+                                            <td class="t_a_c">
+                                                <i class="ico ico-weather-type1-14-14"></i>
+                                            </td>
+                                            <td class="t_a_c">16:00</td>
+                                            <td class="t_a_c">12℃</td>
+                                            <td class="t_a_c">
+                                                <i class="ico ico-weather-type1-14-14"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="t_a_c">16:00</td>
+                                            <td class="t_a_c">12℃</td>
+                                            <td class="t_a_c">
+                                                <i class="ico ico-weather-type1-14-14"></i>
+                                            </td>
+                                            <td class="t_a_c">16:00</td>
+                                            <td class="t_a_c">12℃</td>
+                                            <td class="t_a_c">
+                                                <i class="ico ico-weather-type1-14-14"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="t_a_c">16:00</td>
+                                            <td class="t_a_c">12℃</td>
+                                            <td class="t_a_c">
+                                                <i class="ico ico-weather-type1-14-14"></i>
+                                            </td>
+                                            <td class="t_a_c">16:00</td>
+                                            <td class="t_a_c">12℃</td>
+                                            <td class="t_a_c">
+                                                <i class="ico ico-weather-type1-14-14"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="t_a_c">16:00</td>
+                                            <td class="t_a_c">12℃</td>
+                                            <td class="t_a_c">
+                                                <i class="ico ico-weather-type1-14-14"></i>
+                                            </td>
+                                            <td class="t_a_c">16:00</td>
+                                            <td class="t_a_c">12℃</td>
+                                            <td class="t_a_c">
+                                                <i class="ico ico-weather-type1-14-14"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="t_a_c">16:00</td>
+                                            <td class="t_a_c">12℃</td>
+                                            <td class="t_a_c">
+                                                <i class="ico ico-weather-type1-14-14"></i>
+                                            </td>
+                                            <td class="t_a_c">16:00</td>
+                                            <td class="t_a_c">12℃</td>
+                                            <td class="t_a_c">
+                                                <i class="ico ico-weather-type1-14-14"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="t_a_c">16:00</td>
+                                            <td class="t_a_c">12℃</td>
+                                            <td class="t_a_c">
+                                                <i class="ico ico-weather-type1-14-14"></i>
+                                            </td>
+                                            <td class="t_a_c">16:00</td>
+                                            <td class="t_a_c">12℃</td>
+                                            <td class="t_a_c">
+                                                <i class="ico ico-weather-type1-14-14"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="t_a_c">16:00</td>
+                                            <td class="t_a_c">12℃</td>
+                                            <td class="t_a_c">
+                                                <i class="ico ico-weather-type1-14-14"></i>
+                                            </td>
+                                            <td class="t_a_c">16:00</td>
+                                            <td class="t_a_c">12℃</td>
+                                            <td class="t_a_c">
+                                                <i class="ico ico-weather-type1-14-14"></i>
+                                            </td>
+                                        </tr>
+                                        <tr>
+                                            <td class="t_a_c">16:00</td>
+                                            <td class="t_a_c">12℃</td>
+                                            <td class="t_a_c">
+                                                <i class="ico ico-weather-type1-14-14"></i>
+                                            </td>
+                                            <td class="t_a_c">16:00</td>
+                                            <td class="t_a_c">12℃</td>
+                                            <td class="t_a_c">
+                                                <i class="ico ico-weather-type1-14-14"></i>
+                                            </td>
+                                        </tr>
+                                    </tbody>
+                                </table>
                             </div>
                         </div>
                     </div>

@@ -1257,585 +1257,728 @@
 
         <!--main-layout-->
         <main id="main-layout">
-            <!--main-lnb-box-->
-            <aside id="main-lnb-box">
-                <div class="scroll-y">
-                    <div class="flex-col-gap10">
-                        <!--lnb-list-box-->
-                        <div class="lnb-list-box">
-                            <div class="box-body">
-                                <nav class="list-box">
-                                    <ul class="list">
-                                        <li class="item">
-                                            <div class="flex-row-pdlr30-pdtb23 ai-c">
-                                                <p class="txt-fw700-fs14-fc000000-lh10">미디어 파일</p>
-                                            </div>
-                                        </li>
-                                        <li class="item">
-                                            <div class="flex-row-pdlr30-pdtb23 ai-c">
-                                                <p class="txt-fw700-fs14-fc000000-lh10">스토리지 사용</p>
-                                            </div>
-                                        </li>
-                                        <li class="item">
-                                            <div class="flex-col-gap10-pdlr20-pdtb24 ai-c">
-                                                <div class="flex-sb-gap ai-c wFull">
-                                                    <div class="flex-row-gap10 ai-c flex1">
-                                                        <div class="badge-wh26-bg5467DE-br13">
-                                                            <i class="ico ico-image-w-12-12"></i>
-                                                        </div>
-                                                        <p class="txt-fw700-fs14-fc000000-lh10">사진</p>
-                                                    </div>
-                                                    <p class="badge-w40-h22-bg153457-br3 txt-fw600-fs12-fcFFFFFF-lh22px-tac">6파일</p>
-                                                    <p class="txt-w60-fw700-fs14-fc000000-lh10-mgl10">16.69G</p>
-                                                </div>
-                                                <div class="flex-sb-gap ai-c wFull">
-                                                    <div class="flex-row-gap10 ai-c flex1">
-                                                        <div class="badge-wh26-bg5490DE-br13">
-                                                            <i class="ico ico-video-w-12-12"></i>
-                                                        </div>
-                                                        <p class="txt-fw700-fs14-fc000000-lh10">동영상</p>
-                                                    </div>
-                                                    <p class="badge-w40-h22-bg153457-br3 txt-fw600-fs12-fcFFFFFF-lh22px-tac">6파일</p>
-                                                    <p class="txt-w60-fw700-fs14-fc000000-lh10-mgl10">16.69G</p>
-                                                </div>
-                                                <div class="flex-sb-gap ai-c wFull">
-                                                    <div class="flex-row-gap10 ai-c flex1">
-                                                        <div class="badge-wh26-bg153457-br13">
-                                                            <i class="ico ico-zip-w-12-12"></i>
-                                                        </div>
-                                                        <p class="txt-fw700-fs14-fc000000-lh10">압축파일</p>
-                                                    </div>
-                                                    <p class="badge-w40-h22-bg153457-br3 txt-fw600-fs12-fcFFFFFF-lh22px-tac">6파일</p>
-                                                    <p class="txt-w60-fw700-fs14-fc000000-lh10-mgl10">7G</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                        <li class="item">
-                                            <div class="flex-row-pdlr20-pdtb23 ai-c">
-                                                <div class="flex-sb-gap ai-c wFull">
-                                                    <div class="flex-row-gap10 ai-c flex1">
-                                                        <div class="badge-wh26-bgD22E11-br13">
-                                                            <i class="ico ico-chart-w-12-12"></i>
-                                                        </div>
-                                                        <p class="txt-fw700-fs14-fc000000-lh10">사용가능</p>
-                                                    </div>
-                                                    <p class="txt-fw700-fs14-fc000000-lh10-mgl20">4.17T</p>
-                                                </div>
-                                            </div>
-                                        </li>
-                                    </ul>
-                                </nav>
-                            </div>
-                        </div>
-                        <!--//lnb-list-box-->
-                    </div>
-                </div>
-            </aside>
-            <!--//main-lnb-box-->
-            
             <!--main-board-box-->
             <div id="main-board-box">
                 <div class="board-cont-box">
                     <div class="box-head">
                         <div class="tit">
                             <i class="ico ico-tit-b-12-12"></i>
-                            <p class="txt-fw700-fs18-fc000000-lh10">미디어 관리</p>
+                            <p class="txt-fw700-fs18-fc000000-lh10">주행경로 목록</p>
                         </div>
                     </div>
                     <div class="box-body">
                         <div class="scroll-y">
                             <!--cont-box-->
                             <div class="cont-box">
-                                <div class="box-body">
+                                <div class="box-head">
+                                    <div class="flex-sb ai-c">
+                                        <p class="txt-fw500-fs14-fc000000-lh10">기본정보</p>
+                                    </div>
+                                </div>
+                                <div class="box-body box-mgt10">
                                     <!--table-type1-->
                                     <table class="table-type1">
                                         <colgroup>
-                                            <col style="width: 6.875rem;" />
-                                            <col />
-                                            <col style="width: 6.875rem;" />
-                                            <col />
-                                            <col style="width: 6.875rem;" />
+                                            <col style="width: 18.688rem;" />
                                             <col />
                                         </colgroup>
                                         <tbody>
                                             <tr>
-                                                <th scope="row">생성일</th>
+                                                <th scope="row">주행경로(50자 이내)</th>
                                                 <td>
-                                                    <div class="iFlex-row-gap10 ai-c">
-                                                        <input type="date" class="input-w182-h34-type1">
-                                                        <p class="txt-fw500-fs16-fc000000-lh10">~</p>
-                                                        <input type="date" class="input-w182-h34-type1">
+                                                    <input type="text" class="input-w360-h34-type1" placeholder="1번 주행경로(에이포인트)" >
+                                                </td>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">경로유형</th>
+                                                <td>
+                                                    <div class="chk-group-row-gap20">
+                                                        <label>
+                                                            <input type="radio" name="routeCHK" checked >
+                                                            <span class="txt txt-fw400-fs14-fc5F627B">Waypoint방식</span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="radio" name="routeCHK" >
+                                                            <span class="txt txt-fw400-fs14-fc5F627B">Area방식</span>
+                                                        </label>
                                                     </div>
                                                 </td>
-                                                <th scope="row">촬영장비</th>
+                                            </tr>
+                                            <tr>
+                                                <th scope="row">주행경로(50자 이내)</th>
                                                 <td>
-                                                    <select class="select-w70pct-h34-type4">
-                                                        <option>전체</option>
-                                                    </select>
-                                                </td>
-                                                <th scope="row">검색조건</th>
-                                                <td>
-                                                    <input type="text" class="input-w70pct-h34-type1">
+                                                    <div class="iFlex-row-gap10 ai-c">
+                                                        <input type="text" class="input-w55-h34-type1" value="10" >
+                                                        <p class="txt-fw400-fs14-fc5F627B-lh10">km/h</p>
+                                                        <p class="txt-fw400-fs14-fc5F627B-lh10">or</p>
+                                                        <p class="txt-fw400-fs14-fc5F627B-lh10">m/s</p>
+                                                    </div>
                                                 </td>
                                             </tr>
                                         </tbody>
                                     </table>
                                     <!--//table-type1-->
                                 </div>
-                                <div class="box-foot flex-row-mgt30 jc-e">
-                                    <div class="flex-row-gap5">
-                                        <button type="button" class="btn-w90-h40-br5-bdw1-solid-bdcE1E4EB">
-                                            <span class="txt-fw600-fs14-fc5F627B-lh10">초기화</span>
-                                        </button>
-                                        <button type="button" class="btn-w90-h40-bg153457-br5">
-                                            <span class="txt-fw600-fs14-fcFFFFFF-lh10">수정</span>
-                                        </button>
+                            </div>
+                            <!--//cont-box-->
+                            <!--cont-box-->
+                            <div class="cont-box box-mgt30 flex1">
+                                <div class="box-head">
+                                    <div class="flex-sb ai-c">
+                                        <p class="txt-fw500-fs14-fc000000-lh10">주행경로 설정</p>
+                                    </div>
+                                </div>
+                                <div class="box-body box-mgt10 flex1">
+                                    <div class="driving-route-setting-box">
+                                        <div class="setting-box box-pdtb20">
+                                            <div class="scroll-y">
+                                                <div class="flex-col-gap20">
+                                                    <div class="flex-row-gap10">
+                                                        <dl class="flex-col-gap5-center-h55-bgF7F9FB-br5 flex1">
+                                                            <dt class="txt-fw600-fs10-fc5F627B-tac-lh10">총 주행거리</dt>
+                                                            <dd class="txt-fw600-fs14-fc000000-tac-lh10">1400.8m</dd>
+                                                        </dl>
+                                                        <dl class="flex-col-gap5-center-h55-bgF7F9FB-br5 flex1">
+                                                            <dt class="txt-fw600-fs10-fc5F627B-tac-lh10">Waypoint개수</dt>
+                                                            <dd class="txt-fw600-fs14-fc000000-tac-lh10">5 point</dd>
+                                                        </dl>
+                                                    </div>
+                                                    <div class="flex-col-gap10">
+                                                        <select class="select-h30-type4">
+                                                            <option>waypoint1</option>
+                                                        </select>
+                                                        <!--acco-boader-box-->
+                                                        <div class="acco-boader-box type2 accoJS active">
+                                                            <div class="box-head">
+                                                                <button type="button" class="btn-acco accoJS-btn">
+                                                                    <span class="txt-fw600-fs10-fcFFFFFF-lh10">좌표</span>
+                                                                    <span class="badge-wh12">
+                                                                        <i class="ico ico-arrow-down-w-12-12"></i>
+                                                                    </span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="box-body accoJS-cont">
+                                                                <div class="flex-col-gap5">
+                                                                    <dl class="flex-row ai-c">
+                                                                        <dt class="txt-w75-fw400-fs14-fc5F627B-lh10">위도</dt>
+                                                                        <dd class="flex1">
+                                                                            <input type="text" class="input-h30-type1">
+                                                                        </dd>
+                                                                    </dl>
+                                                                    <dl class="flex-row ai-c">
+                                                                        <dt class="txt-w75-fw400-fs14-fc5F627B-lh10">경도</dt>
+                                                                        <dd class="flex1">
+                                                                            <input type="text" class="input-h30-type1">
+                                                                        </dd>
+                                                                    </dl>
+                                                                    <dl class="flex-row ai-c">
+                                                                        <dt class="txt-w75-fw400-fs14-fc5F627B-lh10">반경</dt>
+                                                                        <dd class="flex1">
+                                                                            <input type="text" class="input-h30-type1" readonly >
+                                                                        </dd>
+                                                                    </dl>
+                                                                    <dl class="flex-row ai-c">
+                                                                        <dt class="txt-w75-fw400-fs14-fc5F627B-lh10">주소</dt>
+                                                                        <dd class="flex1">
+                                                                            <input type="text" class="input-h30-type1">
+                                                                        </dd>
+                                                                    </dl>
+                                                                    <dl class="flex-row ai-c">
+                                                                        <dt class="txt-w75-fw400-fs14-fc5F627B-lh10">호버링 시간</dt>
+                                                                        <dd class="flex1">
+                                                                            <input type="number" class="input-h30-type1">
+                                                                        </dd>
+                                                                    </dl>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--//acco-boader-box-->
+                                                        <!--acco-boader-box-->
+                                                        <div class="acco-boader-box type2 accoJS active">
+                                                            <div class="box-head">
+                                                                <button type="button" class="btn-acco accoJS-btn">
+                                                                    <span class="txt-fw600-fs10-fcFFFFFF-lh10">좌표</span>
+                                                                    <span class="badge-wh12">
+                                                                        <i class="ico ico-arrow-down-w-12-12"></i>
+                                                                    </span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="box-body accoJS-cont">
+                                                                <div class="flex-col-gap5">
+                                                                    <dl class="flex-row ai-c">
+                                                                        <dt class="txt-w75-fw400-fs14-fc5F627B-lh10">POI번호</dt>
+                                                                        <dd class="flex1 flex-sb">
+                                                                            <button type="button" class="btn-wh18-bg153457-br3">
+                                                                                <i class="ico ico-subtract-w-12-12"></i>
+                                                                            </button>
+                                                                            <p class="txt-fw600-fs14-fc000000-lh10">1</p>
+                                                                            <button type="button" class="btn-wh18-bgFFFFFF-br3-bdw1-solid-bdcE1E4EB">
+                                                                                <i class="ico ico-add-b-12-12"></i>
+                                                                            </button>
+                                                                        </dd>
+                                                                    </dl>
+                                                                    <dl class="flex-row ai-c">
+                                                                        <dt class="txt-w75-fw400-fs14-fc5F627B-lh10">위도</dt>
+                                                                        <dd class="flex1">
+                                                                            <input type="text" class="input-h30-type1">
+                                                                        </dd>
+                                                                    </dl>
+                                                                    <dl class="flex-row ai-c">
+                                                                        <dt class="txt-w75-fw400-fs14-fc5F627B-lh10">경도</dt>
+                                                                        <dd class="flex1">
+                                                                            <input type="text" class="input-h30-type1">
+                                                                        </dd>
+                                                                    </dl>
+                                                                    <dl class="flex-row ai-c">
+                                                                        <dt class="txt-w75-fw400-fs14-fc5F627B-lh10">반경</dt>
+                                                                        <dd class="flex1">
+                                                                            <input type="text" class="input-h30-type1" readonly >
+                                                                        </dd>
+                                                                    </dl>
+                                                                    <dl class="flex-row ai-c">
+                                                                        <dt class="txt-w75-fw400-fs14-fc5F627B-lh10">주소</dt>
+                                                                        <dd class="flex1">
+                                                                            <input type="text" class="input-h30-type1">
+                                                                        </dd>
+                                                                    </dl>
+                                                                    <dl class="flex-row ai-c">
+                                                                        <dt class="txt-w75-fw400-fs14-fc5F627B-lh10">POI고도</dt>
+                                                                        <dd class="flex1">
+                                                                            <input type="number" class="input-h30-type1">
+                                                                        </dd>
+                                                                    </dl>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--//acco-boader-box-->
+                                                        <!--acco-boader-box-->
+                                                        <div class="acco-boader-box type2 accoJS active">
+                                                            <div class="box-head">
+                                                                <button type="button" class="btn-acco accoJS-btn">
+                                                                    <span class="txt-fw600-fs10-fcFFFFFF-lh10">고도</span>
+                                                                    <span class="badge-wh12">
+                                                                        <i class="ico ico-arrow-down-w-12-12"></i>
+                                                                    </span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="box-body accoJS-cont">
+                                                                <div class="flex-col-gap10">
+                                                                    <dl class="flex-col-gap10">
+                                                                        <dt class="txt-fw700-fs14-fc000000-lh10">다중 Waypoint 고도 조절</dt>
+                                                                        <dd class="flex-row ai-c">
+                                                                            <div class="flex-sb ai-c flex1">
+                                                                                <button type="button" class="btn-wh18-bg153457-br3">
+                                                                                    <i class="ico ico-subtract-w-12-12"></i>
+                                                                                </button>
+                                                                                <p class="txt-fw600-fs14-fc000000-lh10">1</p>
+                                                                                <button type="button" class="btn-wh18-bgFFFFFF-br3-bdw1-solid-bdcE1E4EB">
+                                                                                    <i class="ico ico-add-b-12-12"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                            <p class="txt-fw600-fs14-fc000000-lh10-pdlr13">~</p>
+                                                                            <div class="flex-sb ai-c flex1">
+                                                                                <button type="button" class="btn-wh18-bg153457-br3">
+                                                                                    <i class="ico ico-subtract-w-12-12"></i>
+                                                                                </button>
+                                                                                <p class="txt-fw600-fs14-fc000000-lh10">2</p>
+                                                                                <button type="button" class="btn-wh18-bgFFFFFF-br3-bdw1-solid-bdcE1E4EB">
+                                                                                    <i class="ico ico-add-b-12-12"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </dd>
+                                                                        <dd class="rangeJS" data-rangeType="min" data-rangeMin="1" data-rangeMax="10" data-rangeDefault="6">
+                                                                            <div class="rangeJS-box-type1">
+                                                                                <input type="hidden" class="rangeJS-val">
+                                                                                <button type="button" class="badge-wh20-bg153457-br3 rangeJS-btn rangeJS-subtract">
+                                                                                    <span class="txt-fw600-fs14-fcFFFFFF-lh10">L</span>
+                                                                                </button>
+                                                                                <div class="rangeJS-slider"></div>
+                                                                                <button type="button" class="badge-wh20-bgFFFFFF-br3-bdw1-solid-bdcE1E4EB rangeJS-btn rangeJS-btn rangeJS-add">
+                                                                                    <span class="txt-fw600-fs14-fc000000-lh10">H</span>
+                                                                                </button>
+                                                                            </div>
+                                                                        </dd>
+                                                                    </dl>
+                                                                    <dl class="flex-row ai-c">
+                                                                        <dt class="txt-w75-fw400-fs14-fc5F627B-lh10">변경고도(m)</dt>
+                                                                        <dd class="flex1">
+                                                                            <input type="text" class="input-h30-type1">
+                                                                        </dd>
+                                                                    </dl>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--//acco-boader-box-->
+                                                        <!--acco-boader-box-->
+                                                        <div class="acco-boader-box type2 accoJS active">
+                                                            <div class="box-head">
+                                                                <button type="button" class="btn-acco accoJS-btn">
+                                                                    <span class="txt-fw600-fs10-fcFFFFFF-lh10">속도</span>
+                                                                    <span class="badge-wh12">
+                                                                        <i class="ico ico-arrow-down-w-12-12"></i>
+                                                                    </span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="box-body accoJS-cont">
+                                                                <div class="flex-col-gap10">
+                                                                    <dl class="flex-col-gap10">
+                                                                        <dt class="txt-fw700-fs14-fc000000-lh10">다중 Waypoint 비행 속도 조절</dt>
+                                                                        <dd class="flex-row ai-c">
+                                                                            <div class="flex-sb ai-c flex1">
+                                                                                <button type="button" class="btn-wh18-bg153457-br3">
+                                                                                    <i class="ico ico-subtract-w-12-12"></i>
+                                                                                </button>
+                                                                                <p class="txt-fw600-fs14-fc000000-lh10">1</p>
+                                                                                <button type="button" class="btn-wh18-bgFFFFFF-br3-bdw1-solid-bdcE1E4EB">
+                                                                                    <i class="ico ico-add-b-12-12"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                            <p class="txt-fw600-fs14-fc000000-lh10-pdlr13">~</p>
+                                                                            <div class="flex-sb ai-c flex1">
+                                                                                <button type="button" class="btn-wh18-bg153457-br3">
+                                                                                    <i class="ico ico-subtract-w-12-12"></i>
+                                                                                </button>
+                                                                                <p class="txt-fw600-fs14-fc000000-lh10">2</p>
+                                                                                <button type="button" class="btn-wh18-bgFFFFFF-br3-bdw1-solid-bdcE1E4EB">
+                                                                                    <i class="ico ico-add-b-12-12"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </dd>
+                                                                        <dd class="box-h14">
+                                                                            <label class="chk-box">
+                                                                                <input type="checkbox" >
+                                                                                <span class="txt txt-fw500-fs12-fc000000-lh10">전체 주행 속도로 설정</span>
+                                                                            </label>
+                                                                        </dd>
+                                                                    </dl>
+                                                                    <dl class="flex-row ai-c">
+                                                                        <dt class="txt-w75-fw400-fs14-fc5F627B-lh10">변경고도(m)</dt>
+                                                                        <dd class="flex1">
+                                                                            <input type="text" class="input-h30-type1">
+                                                                        </dd>
+                                                                    </dl>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--//acco-boader-box-->
+                                                        <!--acco-boader-box-->
+                                                        <div class="acco-boader-box type2 accoJS active">
+                                                            <div class="box-head">
+                                                                <button type="button" class="btn-acco accoJS-btn">
+                                                                    <span class="txt-fw600-fs10-fcFFFFFF-lh10">비행모드</span>
+                                                                    <span class="badge-wh12">
+                                                                        <i class="ico ico-arrow-down-w-12-12"></i>
+                                                                    </span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="box-body accoJS-cont">
+                                                                <div class="flex-col-gap10">
+                                                                    <dl class="flex-col-gap10">
+                                                                        <dt class="txt-fw700-fs14-fc000000-lh10">다중 Waypoint 비행모드 조절</dt>
+                                                                        <dd class="flex-row ai-c">
+                                                                            <div class="flex-sb ai-c flex1">
+                                                                                <button type="button" class="btn-wh18-bg153457-br3">
+                                                                                    <i class="ico ico-subtract-w-12-12"></i>
+                                                                                </button>
+                                                                                <p class="txt-fw600-fs14-fc000000-lh10">1</p>
+                                                                                <button type="button" class="btn-wh18-bgFFFFFF-br3-bdw1-solid-bdcE1E4EB">
+                                                                                    <i class="ico ico-add-b-12-12"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                            <p class="txt-fw600-fs14-fc000000-lh10-pdlr13">~</p>
+                                                                            <div class="flex-sb ai-c flex1">
+                                                                                <button type="button" class="btn-wh18-bg153457-br3">
+                                                                                    <i class="ico ico-subtract-w-12-12"></i>
+                                                                                </button>
+                                                                                <p class="txt-fw600-fs14-fc000000-lh10">2</p>
+                                                                                <button type="button" class="btn-wh18-bgFFFFFF-br3-bdw1-solid-bdcE1E4EB">
+                                                                                    <i class="ico ico-add-b-12-12"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </dd>
+                                                                        <dd>
+                                                                            <select class="select-wFull-h30-type4">
+                                                                                <option>Auto</option>
+                                                                            </select>
+                                                                        </dd>
+                                                                    </dl>
+                                                                    <dl class="flex-row ai-c">
+                                                                        <dt class="txt-w135-fw400-fs14-fc5F627B-lh10">주행속도 설정(km/h)</dt>
+                                                                        <dd class="flex1">
+                                                                            <div class="flex-sb ai-c flex1">
+                                                                                <button type="button" class="btn-wh18-bg153457-br3">
+                                                                                    <i class="ico ico-subtract-w-12-12"></i>
+                                                                                </button>
+                                                                                <p class="txt-fw600-fs14-fc000000-lh10">2</p>
+                                                                                <button type="button" class="btn-wh18-bgFFFFFF-br3-bdw1-solid-bdcE1E4EB">
+                                                                                    <i class="ico ico-add-b-12-12"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </dd>
+                                                                    </dl>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--//acco-boader-box-->
+                                                        <!--acco-boader-box-->
+                                                        <div class="acco-boader-box type2 accoJS active">
+                                                            <div class="box-head">
+                                                                <button type="button" class="btn-acco accoJS-btn">
+                                                                    <span class="txt-fw600-fs10-fcFFFFFF-lh10">촬영</span>
+                                                                    <span class="badge-wh12">
+                                                                        <i class="ico ico-arrow-down-w-12-12"></i>
+                                                                    </span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="box-body accoJS-cont">
+                                                                <div class="flex-col-gap10">
+                                                                    <dl class="flex-col-gap10">
+                                                                        <dt class="txt-fw700-fs14-fc000000-lh10">다중 Waypoint 촬영 설정</dt>
+                                                                        <dd class="flex-row ai-c">
+                                                                            <div class="flex-sb ai-c flex1">
+                                                                                <button type="button" class="btn-wh18-bg153457-br3">
+                                                                                    <i class="ico ico-subtract-w-12-12"></i>
+                                                                                </button>
+                                                                                <p class="txt-fw600-fs14-fc000000-lh10">1</p>
+                                                                                <button type="button" class="btn-wh18-bgFFFFFF-br3-bdw1-solid-bdcE1E4EB">
+                                                                                    <i class="ico ico-add-b-12-12"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                            <p class="txt-fw600-fs14-fc000000-lh10-pdlr13">~</p>
+                                                                            <div class="flex-sb ai-c flex1">
+                                                                                <button type="button" class="btn-wh18-bg153457-br3">
+                                                                                    <i class="ico ico-subtract-w-12-12"></i>
+                                                                                </button>
+                                                                                <p class="txt-fw600-fs14-fc000000-lh10">2</p>
+                                                                                <button type="button" class="btn-wh18-bgFFFFFF-br3-bdw1-solid-bdcE1E4EB">
+                                                                                    <i class="ico ico-add-b-12-12"></i>
+                                                                                </button>
+                                                                            </div>
+                                                                        </dd>
+                                                                    </dl>
+                                                                    <dl class="flex-row ai-c">
+                                                                        <dt class="txt-w75-fw400-fs14-fc5F627B-lh10">기수방향</dt>
+                                                                        <dd class="flex1">
+                                                                            <select class="select-wFull-h30-type4">
+                                                                                <option>Follows route</option>
+                                                                            </select>
+                                                                        </dd>
+                                                                    </dl>
+                                                                    <dl class="flex-row ai-c">
+                                                                        <dt class="txt-w75-fw400-fs14-fc5F627B-lh10">카메라틸트</dt>
+                                                                        <dd class="flex-row-gap10 row2 flex1">
+                                                                            <select class="select-h30-type4">
+                                                                                <option>POI</option>
+                                                                            </select>
+                                                                            <select class="select-h30-type4">
+                                                                                <option>2</option>
+                                                                            </select>
+                                                                        </dd>
+                                                                    </dl>
+                                                                    <dl class="flex-col-gap10">
+                                                                        <dt class="txt-fw700-fs14-fc000000-lh10">줌설정</dt>
+                                                                        <dd>
+                                                                            <select class="select-w60pct-h30-type4">
+                                                                                <option>확대/축소</option>
+                                                                            </select>
+                                                                        </dd>
+                                                                        <dd>
+                                                                            <div class="flex-rwo-gap5 ai-c rangeJS" data-rangeType="min" data-rangeMin="1" data-rangeMax="8" data-rangeDefault="6">
+                                                                                <div class="rangeJS-box-type1 flex1">
+                                                                                    <button type="button" class="badge-wh20-bg153457-br3 rangeJS-btn rangeJS-subtract">
+                                                                                        <span class="txt-fw600-fs14-fcFFFFFF-lh10">0</span>
+                                                                                    </button>
+                                                                                    <div class="rangeJS-slider"></div>
+                                                                                    <button type="button" class="badge-wh20-bgFFFFFF-br3-bdw1-solid-bdcE1E4EB rangeJS-btn rangeJS-btn rangeJS-add">
+                                                                                        <span class="txt-fw600-fs14-fc000000-lh10">x8</span>
+                                                                                    </button>
+                                                                                </div>
+                                                                                <input type="text" class="input-wh30-type1 rangeJS-val">
+                                                                            </div>
+                                                                        </dd>
+                                                                    </dl>
+                                                                    <dl class="flex-col-gap10">
+                                                                        <dt class="txt-fw700-fs14-fc000000-lh10">촬영동작</dt>
+                                                                        <dd>
+                                                                            <select class="select-w60pct-h30-type4">
+                                                                                <option>확대/축소</option>
+                                                                            </select>
+                                                                        </dd>
+                                                                        <dd class="flex-row-gap5 ai-c">
+                                                                            <select class="select-w55-h30-type4">
+                                                                                <option>3</option>
+                                                                            </select>
+                                                                            <p class="txt-fw400-fs14-fc5F627B-lh10">회 촬영</p>
+                                                                            <select class="select-w55-h30-type4">
+                                                                                <option>5</option>
+                                                                            </select>
+                                                                            <p class="txt-fw400-fs14-fc5F627B-lh10">초 마다</p>
+                                                                        </dd>
+                                                                    </dl>
+                                                                </div>
+                                                            </div>
+                                                        </div>
+                                                        <!--//acco-boader-box-->
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </div>
+                                        <div class="map-box">
+                                            <!--스낵바-경로리스트-->
+                                            <div class="snack-bar-routeList">
+                                                <div class="flex-col-gap14">
+                                                    <div class="flex-row-gap20 ai-c">
+                                                        <dl class="iFlex-row-gap10 ai-c">
+                                                            <dt class="txt-fw500-fs14-fc000000-lh10">지점반경</dt>
+                                                            <dd>
+                                                                <input type="text" class="input-w60-h30-txt-tac-type1" value="50.00" >
+                                                            </dd>
+                                                        </dl>
+                                                        <dl class="iFlex-row-gap10 ai-c">
+                                                            <dt class="txt-fw500-fs14-fc000000-lh10">로이터반경</dt>
+                                                            <dd>
+                                                                <input type="text" class="input-w40-h30-txt-tac-type1" value="80" >
+                                                            </dd>
+                                                        </dl>
+                                                        <dl class="iFlex-row-gap10 ai-c">
+                                                            <dt class="txt-fw500-fs14-fc000000-lh10">기본고도</dt>
+                                                            <dd>
+                                                                <input type="text" class="input-w60-h30-txt-tac-type1" value="100" >
+                                                            </dd>
+                                                        </dl>
+                                                        <select class="select-w94-h30-type4">
+                                                            <option>Relative</option>
+                                                        </select>
+                                                        <label class="chk-box">
+                                                            <input type="checkbox">
+                                                            <span class="txt txt-fw500-fs12-fc000000-lh10">높이검증</span>
+                                                        </label>
+                                                        <button type="button" class="btn-h22-bg153457-br3-pdlr5">
+                                                            <span class="txt-fw600-fs12-fcFFFFFF-lh10">아래에 추가</span>
+                                                        </button>
+                                                        <dl class="iFlex-row-gap10 ai-c">
+                                                            <dt class="txt-fw500-fs14-fc000000-lh10">고도경고</dt>
+                                                            <dd>
+                                                                <input type="text" class="input-w40-h30-txt-tac-type1" value="0" >
+                                                            </dd>
+                                                        </dl>
+                                                        <label class="chk-box">
+                                                            <input type="checkbox">
+                                                            <span class="txt txt-fw500-fs12-fc000000-lh10">MAVFTP</span>
+                                                        </label>
+                                                    </div>
+                                                    <table class="table-type1">
+                                                        <colgroup>
+                                                            <col style="width: 40px;" />
+                                                            <col />
+                                                            <col style="width: 40px;" />
+                                                            <col style="width: 40px;" />
+                                                            <col style="width: 40px;" />
+                                                            <col style="width: 40px;" />
+                                                            <col />
+                                                            <col />
+                                                            <col style="width: 70px;" />
+                                                            <col />
+                                                            <col style="width: 70px;" />
+                                                            <col style="width: 70px;" />
+                                                            <col style="width: 70px;" />
+                                                            <col style="width: 90px;" />
+                                                            <col style="width: 70px;" />
+                                                            <col style="width: 70px;" />
+                                                            <col style="width: 70px;" />
+                                                        </colgroup>
+                                                        <thead>
+                                                            <tr>
+                                                                <th scope="col"></th>
+                                                                <th scope="col">명령</th>
+                                                                <th scope="col" colspan="4">About alt</th>
+                                                                <th scope="col">Last</th>
+                                                                <th scope="col">Long</th>
+                                                                <th scope="col">Alt</th>
+                                                                <th scope="col">프레임</th>
+                                                                <th scope="col">삭제</th>
+                                                                <th scope="col"></th>
+                                                                <th scope="col"></th>
+                                                                <th scope="col">변화도%</th>
+                                                                <th scope="col">각도</th>
+                                                                <th scope="col">거리</th>
+                                                                <th scope="col">방위</th>
+                                                            </tr>
+                                                        </thead>
+                                                        <tbody>
+                                                            <tr>
+                                                                <td class="t_a_c">3</td>
+                                                                <td class="t_a_c">
+                                                                    <select class="select-wFull-h30-type4">
+                                                                        <option>Unknow</option>
+                                                                    </select>
+                                                                </td>
+                                                                <td class="t_a_c">0</td>
+                                                                <td class="t_a_c">0</td>
+                                                                <td class="t_a_c">0</td>
+                                                                <td class="t_a_c">0</td>
+                                                                <td class="t_a_c">-34.342434</td>
+                                                                <td class="t_a_c">149.234214</td>
+                                                                <td class="t_a_c">6</td>
+                                                                <td class="t_a_c">
+                                                                    <select class="select-wFull-h30-type4">
+                                                                        <option>Relative</option>
+                                                                    </select>
+                                                                </td>
+                                                                <td class="t_a_c">
+                                                                    <button type="button" class="btn-wh22-bgFFFFFF-br11 bsdw-2px2px4px0px-0000001A">
+                                                                        <i class="ico ico-close-b-16-16"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td class="t_a_c">
+                                                                    <button type="button" class="btn-wh22-bgFFFFFF-br11 bsdw-2px2px4px0px-0000001A">
+                                                                        <i class="ico ico-arrow-up-circle-b-16-16"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td class="t_a_c">
+                                                                    <button type="button" class="btn-wh22-bgFFFFFF-br11 bsdw-2px2px4px0px-0000001A">
+                                                                        <i class="ico ico-arrow-down-circle-b-16-16"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td class="t_a_c">0.0</td>
+                                                                <td class="t_a_c">0.0</td>
+                                                                <td class="t_a_c">47.8</td>
+                                                                <td class="t_a_c">0.0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="t_a_c">4</td>
+                                                                <td class="t_a_c">
+                                                                    <select class="select-wFull-h30-type4">
+                                                                        <option>Unknow</option>
+                                                                    </select>
+                                                                </td>
+                                                                <td class="t_a_c">0</td>
+                                                                <td class="t_a_c">0</td>
+                                                                <td class="t_a_c">0</td>
+                                                                <td class="t_a_c">0</td>
+                                                                <td class="t_a_c">-34.342434</td>
+                                                                <td class="t_a_c">149.234214</td>
+                                                                <td class="t_a_c">6</td>
+                                                                <td class="t_a_c">
+                                                                    <select class="select-wFull-h30-type4">
+                                                                        <option>Relative</option>
+                                                                    </select>
+                                                                </td>
+                                                                <td class="t_a_c">
+                                                                    <button type="button" class="btn-wh22-bgFFFFFF-br11 bsdw-2px2px4px0px-0000001A">
+                                                                        <i class="ico ico-close-b-16-16"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td class="t_a_c">
+                                                                    <button type="button" class="btn-wh22-bgFFFFFF-br11 bsdw-2px2px4px0px-0000001A">
+                                                                        <i class="ico ico-arrow-up-circle-b-16-16"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td class="t_a_c">
+                                                                    <button type="button" class="btn-wh22-bgFFFFFF-br11 bsdw-2px2px4px0px-0000001A">
+                                                                        <i class="ico ico-arrow-down-circle-b-16-16"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td class="t_a_c">0.0</td>
+                                                                <td class="t_a_c">0.0</td>
+                                                                <td class="t_a_c">47.8</td>
+                                                                <td class="t_a_c">0.0</td>
+                                                            </tr>
+                                                            <tr>
+                                                                <td class="t_a_c">5</td>
+                                                                <td class="t_a_c">
+                                                                    <select class="select-wFull-h30-type4">
+                                                                        <option>Unknow</option>
+                                                                    </select>
+                                                                </td>
+                                                                <td class="t_a_c">0</td>
+                                                                <td class="t_a_c">0</td>
+                                                                <td class="t_a_c">0</td>
+                                                                <td class="t_a_c">0</td>
+                                                                <td class="t_a_c">-34.342434</td>
+                                                                <td class="t_a_c">149.234214</td>
+                                                                <td class="t_a_c">6</td>
+                                                                <td class="t_a_c">
+                                                                    <select class="select-wFull-h30-type4">
+                                                                        <option>Relative</option>
+                                                                    </select>
+                                                                </td>
+                                                                <td class="t_a_c">
+                                                                    <button type="button" class="btn-wh22-bgFFFFFF-br11 bsdw-2px2px4px0px-0000001A">
+                                                                        <i class="ico ico-close-b-16-16"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td class="t_a_c">
+                                                                    <button type="button" class="btn-wh22-bgFFFFFF-br11 bsdw-2px2px4px0px-0000001A">
+                                                                        <i class="ico ico-arrow-up-circle-b-16-16"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td class="t_a_c">
+                                                                    <button type="button" class="btn-wh22-bgFFFFFF-br11 bsdw-2px2px4px0px-0000001A">
+                                                                        <i class="ico ico-arrow-down-circle-b-16-16"></i>
+                                                                    </button>
+                                                                </td>
+                                                                <td class="t_a_c">0.0</td>
+                                                                <td class="t_a_c">0.0</td>
+                                                                <td class="t_a_c">47.8</td>
+                                                                <td class="t_a_c">0.0</td>
+                                                            </tr>
+                                                        </tbody>
+                                                    </table>
+                                                    <div class="flex-row-gap20 ai-c">
+                                                        <select class="select-w94-h30-type4">
+                                                            <option>GEO</option>
+                                                        </select>
+                                                        <p class="txt-fw500-fs14-fc000000-lh10">-35.32423423</p>
+                                                        <p class="txt-fw500-fs14-fc000000-lh10">149.32423423</p>
+                                                        <p class="txt-fw500-fs14-fc000000-lh10">0.06</p>
+                                                        <label class="chk-box">
+                                                            <input type="checkbox">
+                                                            <span class="txt txt-fw500-fs12-fc000000-lh10">조정</span>
+                                                        </label>
+                                                        <label class="chk-box">
+                                                            <input type="checkbox">
+                                                            <span class="txt txt-fw500-fs12-fc000000-lh10">자리이동</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                                <button type="button" class="btn-wh22-bgFFFFFF-br11 snack-bar-close">
+                                                    <i class="ico ico-close-b-16-16"></i>
+                                                </button>
+                                            </div>
+                                            <!--//스낵바-경로리스트-->
+                                            <!--고정바-cameraInfo-->
+                                            <div class="fixed-tool-guideTxt">
+                                                <p class="txt-fw700-fs18-fcFFFFFF-lh10">지도를 확대/축소 하려면 Ctrl을 누른 채 스크롤 하세요.</p>
+                                            </div>
+                                            <!--//고정바-cameraInfo-->
+                                            <!--map-->
+                                            map
+                                            <!--//map-->
+                                        </div>
                                     </div>
                                 </div>
                             </div>
                             <!--//cont-box-->
                             <!--cont-box-->
-                            <div class="cont-box box-mgt60 media-file-table">
-                                <div class="box-head">
-                                    <!--table-location-box-->
-                                    <div class="table-location-box">
-                                        <a href="#" class="link txt-fw500-fs14-fc5F627B-lh10">모든파일</a>
-                                        <i class="ico ico-arrow-right-b-16-16"></i>
-                                        <p class="txt-fw500-fs14-fc5F627B-lh10">Panorama</p>
+                            <div class="cont-box box-mgt30">
+                                <div class="box-foot flex-sb">
+                                    <div class="flex1"></div>
+                                    <div class="flex-row-gap5">
                                     </div>
-                                    <!--//table-location-box-->
-                                </div>
-                                <div class="box-head box-mgt22">
-                                    <div class="flex-sb ai-c">
-                                        <p class="txt-fw500-fs14-fc000000-lh10">총 100건</p>
-                                        <div class="iFlex-row-gap5 ai-c">
-                                            <button type="button" class="btn-h30-br5-pdlr15-bdw1-solid-bdcE1E4EB">
-                                                <span class="txt-fw600-fs12-fc000000-lh10">폴더만들기</span>
-                                            </button>
-                                            <button type="button" class="btn-h30-br5-pdlr15-bdw1-solid-bdcE1E4EB">
-                                                <span class="txt-fw600-fs12-fc000000-lh10">폴더이동</span>
-                                            </button>
-                                            <div class="switch-txt-type4-gap5">
-                                                <label>
-                                                    <input type="radio" value="type-list" name="listType" checked >
-                                                    <span class="txt badge-wh30-br5">
-                                                        <i class="ico ico-board-list-w-16-16"></i>
-                                                        <i class="ico ico-board-list-b-16-16"></i>
-                                                    </span>
-                                                </label>
-                                                <label>
-                                                    <input type="radio" value="type-card" name="listType" >
-                                                    <span class="txt badge-wh30-br5">
-                                                        <i class="ico ico-board-card-w-16-16"></i>
-                                                        <i class="ico ico-board-card-b-16-16"></i>
-                                                    </span>
-                                                </label>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class="box-body box-mgt8">
-                                    <!--table-list-type1-->
-                                    <table class="table-list-type1">
-                                        <colgroup>
-                                            <col style="width: 3.75rem;" />
-                                            <col />
-                                            <col style="width: 5.625rem;" />
-                                            <col style="width: 4.25rem;" />
-                                            <col style="width: 5.563rem;" />
-                                            <col style="width: 5.563rem;" />
-                                            <col style="width: 10.625rem;" />
-                                            <col style="width: 8.625rem;" />
-                                        </colgroup>
-                                        <thead>
-                                            <tr>
-                                                <th scope="col">
-                                                    <label class="chk-box solo">
-                                                        <input type="checkbox" >
-                                                        <span class="txt">일괄선택</span>
-                                                    </label>
-                                                </th>
-                                                <th scope="col">파일명</th>
-                                                <th scope="col">프로젝트</th>
-                                                <th scope="col">크기</th>
-                                                <th scope="col">촬영장비</th>
-                                                <th scope="col">생성자</th>
-                                                <th scope="col">생성일</th>
-                                                <th scope="col">실행</th>
-                                            </tr>
-                                        </thead>
-                                        <tbody>
-                                            <tr>
-                                                <td class="t_a_c">
-                                                    <label class="chk-box solo">
-                                                        <input type="checkbox" >
-                                                        <span class="txt">선택</span>
-                                                    </label>
-                                                </td>
-                                                <td>
-                                                    <a href="#" class="btn-folder-gap5 link ai-c">
-                                                        <i class="ico ico-folder-b-22-22"></i>
-                                                        라이브 스트리밍 녹화
-                                                    </a>
-                                                </td>
-                                                <td class="t_a_c">-</td>
-                                                <td class="t_a_c">-</td>
-                                                <td class="t_a_c">-</td>
-                                                <td class="t_a_c">-</td>
-                                                <td class="t_a_c">-</td>
-                                                <td class="t_a_c">-</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="t_a_c">
-                                                    <label class="chk-box solo">
-                                                        <input type="checkbox" >
-                                                        <span class="txt">선택</span>
-                                                    </label>
-                                                </td>
-                                                <td>
-                                                    <a href="#" class="btn-folder-gap5 link ai-c">
-                                                        <i class="ico ico-folder-b-22-22"></i>
-                                                        라이브 스트리밍 녹화
-                                                    </a>
-                                                </td>
-                                                <td class="t_a_c">-</td>
-                                                <td class="t_a_c">-</td>
-                                                <td class="t_a_c">-</td>
-                                                <td class="t_a_c">-</td>
-                                                <td class="t_a_c">-</td>
-                                                <td class="t_a_c">-</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="t_a_c">
-                                                    <label class="chk-box solo">
-                                                        <input type="checkbox" >
-                                                        <span class="txt">선택</span>
-                                                    </label>
-                                                </td>
-                                                <td>
-                                                    <a href="#" class="link" style="--bg-url:url(../../resources/img/@sample-drone-img2.png)">
-                                                        25-11-3-_001.jpg
-                                                    </a>
-                                                </td>
-                                                <td class="t_a_c">프로젝트</td>
-                                                <td class="t_a_c">12M</td>
-                                                <td class="t_a_c">H20</td>
-                                                <td class="t_a_c">instech01</td>
-                                                <td class="t_a_c">2025.11.30  12:00:00</td>
-                                                <td class="t_a_c">
-                                                    <div class="flex-center-gap10">
-                                                        <button type="button" class="btn-wh26-bg153457-br13">
-                                                            <i class="ico ico-download-w-12-12"></i>
-                                                        </button>
-                                                        <button type="button" class="btn-wh26-bg153457-br13">
-                                                            <i class="ico ico-file-w-12-12"></i>
-                                                        </button>
-                                                        <button type="button" class="btn-wh26-bg153457-br13">
-                                                            <i class="ico ico-more-w-12-12"></i>
-                                                        </button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="t_a_c">
-                                                    <label class="chk-box solo">
-                                                        <input type="checkbox" >
-                                                        <span class="txt">선택</span>
-                                                    </label>
-                                                </td>
-                                                <td>
-                                                    <a href="#" class="link" style="--bg-url:url(../../resources/img/@sample-drone-img2.png)">
-                                                        25-11-3-_001.mp4
-                                                    </a>
-                                                </td>
-                                                <td class="t_a_c">프로젝트</td>
-                                                <td class="t_a_c">12M</td>
-                                                <td class="t_a_c">H20</td>
-                                                <td class="t_a_c">instech01</td>
-                                                <td class="t_a_c">2025.11.30  12:00:00</td>
-                                                <td class="t_a_c">
-                                                    <div class="flex-center-gap10">
-                                                        <button type="button" class="btn-wh26-bg153457-br13">
-                                                            <i class="ico ico-download-w-12-12"></i>
-                                                        </button>
-                                                        <button type="button" class="btn-wh26-bg153457-br13">
-                                                            <i class="ico ico-file-w-12-12"></i>
-                                                        </button>
-                                                        <button type="button" class="btn-wh26-bg153457-br13">
-                                                            <i class="ico ico-more-w-12-12"></i>
-                                                        </button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="t_a_c">
-                                                    <label class="chk-box solo">
-                                                        <input type="checkbox" >
-                                                        <span class="txt">선택</span>
-                                                    </label>
-                                                </td>
-                                                <td>
-                                                    <a href="#" class="link" style="--bg-url:url(../../resources/img/@sample-drone-img2.png)">
-                                                        25-11-3-_001.jpg
-                                                    </a>
-                                                </td>
-                                                <td class="t_a_c">프로젝트</td>
-                                                <td class="t_a_c">12M</td>
-                                                <td class="t_a_c">H20</td>
-                                                <td class="t_a_c">instech01</td>
-                                                <td class="t_a_c">2025.11.30  12:00:00</td>
-                                                <td class="t_a_c">
-                                                    <div class="flex-center-gap10">
-                                                        <button type="button" class="btn-wh26-bg153457-br13">
-                                                            <i class="ico ico-download-w-12-12"></i>
-                                                        </button>
-                                                        <button type="button" class="btn-wh26-bg153457-br13">
-                                                            <i class="ico ico-file-w-12-12"></i>
-                                                        </button>
-                                                        <button type="button" class="btn-wh26-bg153457-br13">
-                                                            <i class="ico ico-more-w-12-12"></i>
-                                                        </button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="t_a_c">
-                                                    <label class="chk-box solo">
-                                                        <input type="checkbox" >
-                                                        <span class="txt">선택</span>
-                                                    </label>
-                                                </td>
-                                                <td>
-                                                    <a href="#" class="link" style="--bg-url:url(../../resources/img/@sample-drone-img2.png)">
-                                                        25-11-3-_001.mp4
-                                                    </a>
-                                                </td>
-                                                <td class="t_a_c">프로젝트</td>
-                                                <td class="t_a_c">12M</td>
-                                                <td class="t_a_c">H20</td>
-                                                <td class="t_a_c">instech01</td>
-                                                <td class="t_a_c">2025.11.30  12:00:00</td>
-                                                <td class="t_a_c">
-                                                    <div class="flex-center-gap10">
-                                                        <button type="button" class="btn-wh26-bg153457-br13">
-                                                            <i class="ico ico-download-w-12-12"></i>
-                                                        </button>
-                                                        <button type="button" class="btn-wh26-bg153457-br13">
-                                                            <i class="ico ico-file-w-12-12"></i>
-                                                        </button>
-                                                        <button type="button" class="btn-wh26-bg153457-br13">
-                                                            <i class="ico ico-more-w-12-12"></i>
-                                                        </button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="t_a_c">
-                                                    <label class="chk-box solo">
-                                                        <input type="checkbox" >
-                                                        <span class="txt">선택</span>
-                                                    </label>
-                                                </td>
-                                                <td>
-                                                    <a href="#" class="link" style="--bg-url:url(../../resources/img/@sample-drone-img2.png)">
-                                                        25-11-3-_001.jpg
-                                                    </a>
-                                                </td>
-                                                <td class="t_a_c">프로젝트</td>
-                                                <td class="t_a_c">12M</td>
-                                                <td class="t_a_c">H20</td>
-                                                <td class="t_a_c">instech01</td>
-                                                <td class="t_a_c">2025.11.30  12:00:00</td>
-                                                <td class="t_a_c">
-                                                    <div class="flex-center-gap10">
-                                                        <button type="button" class="btn-wh26-bg153457-br13">
-                                                            <i class="ico ico-download-w-12-12"></i>
-                                                        </button>
-                                                        <button type="button" class="btn-wh26-bg153457-br13">
-                                                            <i class="ico ico-file-w-12-12"></i>
-                                                        </button>
-                                                        <button type="button" class="btn-wh26-bg153457-br13">
-                                                            <i class="ico ico-more-w-12-12"></i>
-                                                        </button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="t_a_c">
-                                                    <label class="chk-box solo">
-                                                        <input type="checkbox" >
-                                                        <span class="txt">선택</span>
-                                                    </label>
-                                                </td>
-                                                <td>
-                                                    <a href="#" class="link" style="--bg-url:url(../../resources/img/@sample-drone-img2.png)">
-                                                        25-11-3-_001.mp4
-                                                    </a>
-                                                </td>
-                                                <td class="t_a_c">프로젝트</td>
-                                                <td class="t_a_c">12M</td>
-                                                <td class="t_a_c">H20</td>
-                                                <td class="t_a_c">instech01</td>
-                                                <td class="t_a_c">2025.11.30  12:00:00</td>
-                                                <td class="t_a_c">
-                                                    <div class="flex-center-gap10">
-                                                        <button type="button" class="btn-wh26-bg153457-br13">
-                                                            <i class="ico ico-download-w-12-12"></i>
-                                                        </button>
-                                                        <button type="button" class="btn-wh26-bg153457-br13">
-                                                            <i class="ico ico-file-w-12-12"></i>
-                                                        </button>
-                                                        <button type="button" class="btn-wh26-bg153457-br13">
-                                                            <i class="ico ico-more-w-12-12"></i>
-                                                        </button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="t_a_c">
-                                                    <label class="chk-box solo">
-                                                        <input type="checkbox" >
-                                                        <span class="txt">선택</span>
-                                                    </label>
-                                                </td>
-                                                <td>
-                                                    <a href="#" class="link" style="--bg-url:url(../../resources/img/@sample-drone-img2.png)">
-                                                        25-11-3-_001.jpg
-                                                    </a>
-                                                </td>
-                                                <td class="t_a_c">프로젝트</td>
-                                                <td class="t_a_c">12M</td>
-                                                <td class="t_a_c">H20</td>
-                                                <td class="t_a_c">instech01</td>
-                                                <td class="t_a_c">2025.11.30  12:00:00</td>
-                                                <td class="t_a_c">
-                                                    <div class="flex-center-gap10">
-                                                        <button type="button" class="btn-wh26-bg153457-br13">
-                                                            <i class="ico ico-download-w-12-12"></i>
-                                                        </button>
-                                                        <button type="button" class="btn-wh26-bg153457-br13">
-                                                            <i class="ico ico-file-w-12-12"></i>
-                                                        </button>
-                                                        <button type="button" class="btn-wh26-bg153457-br13">
-                                                            <i class="ico ico-more-w-12-12"></i>
-                                                        </button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                            <tr>
-                                                <td class="t_a_c">
-                                                    <label class="chk-box solo">
-                                                        <input type="checkbox" >
-                                                        <span class="txt">선택</span>
-                                                    </label>
-                                                </td>
-                                                <td>
-                                                    <a href="#" class="link" style="--bg-url:url(../../resources/img/@sample-drone-img2.png)">
-                                                        25-11-3-_001.mp4
-                                                    </a>
-                                                </td>
-                                                <td class="t_a_c">프로젝트</td>
-                                                <td class="t_a_c">12M</td>
-                                                <td class="t_a_c">H20</td>
-                                                <td class="t_a_c">instech01</td>
-                                                <td class="t_a_c">2025.11.30  12:00:00</td>
-                                                <td class="t_a_c">
-                                                    <div class="flex-center-gap10">
-                                                        <button type="button" class="btn-wh26-bg153457-br13">
-                                                            <i class="ico ico-download-w-12-12"></i>
-                                                        </button>
-                                                        <button type="button" class="btn-wh26-bg153457-br13">
-                                                            <i class="ico ico-file-w-12-12"></i>
-                                                        </button>
-                                                        <button type="button" class="btn-wh26-bg153457-br13">
-                                                            <i class="ico ico-more-w-12-12"></i>
-                                                        </button>
-                                                    </div>
-                                                </td>
-                                            </tr>
-                                        </tbody>
-                                    </table>
-                                    <!--//table-list-type1-->
-                                </div>
-                                <div class="box-foot box-mgt20">
-                                    <div class="flex-sb">
-                                        <button type="button" class="btn-h30-br5-pdlr15-bdw1-solid-bdcE1E4EB">
-                                            <span class="txt-fw600-fs12-fc000000-lh10">엑셀 다운로드</span>
+                                    <div class="flex-row-gap5 jc-e flex1">
+                                        <button type="button" class="btn-w90-h40-br5-bdw1-solid-bdcE1E4EB">
+                                            <span class="txt-fw600-fs14-fc5F627B-lh10">내보내기</span>
                                         </button>
-                                    </div>
-                                    <div class="paging-box" style="margin-top: -20px;">
-                                        <ul class="list">
-                                            <li class="item">
-                                                <button type="button" class="btn-wh30 btn">
-                                                    <i class="ico ico-arrow-left-double-b-18-18"></i>
-                                                </button>
-                                            </li>
-                                            <li class="item">
-                                                <button type="button" class="btn-wh30 btn">
-                                                    <i class="ico ico-arrow-left-b-18-18"></i>
-                                                </button>
-                                            </li>
-                                            <li class="item">
-                                                <button type="button" class="btn-wh30 btn on">
-                                                    <span class="txt-fw600-fs14-lh10 txt">1</span>
-                                                </button>
-                                            </li>
-                                            <li class="item">
-                                                <button type="button" class="btn-wh30 btn">
-                                                    <span class="txt-fw600-fs14-lh10 txt">2</span>
-                                                </button>
-                                            </li>
-                                            <li class="item">
-                                                <button type="button" class="btn-wh30 btn">
-                                                    <span class="txt-fw600-fs14-lh10 txt">3</span>
-                                                </button>
-                                            </li>
-                                            <li class="item">
-                                                <button type="button" class="btn-wh30 btn">
-                                                    <span class="txt-fw600-fs14-lh10 txt">4</span>
-                                                </button>
-                                            </li>
-                                            <li class="item">
-                                                <button type="button" class="btn-wh30 btn">
-                                                    <span class="txt-fw600-fs14-lh10 txt">5</span>
-                                                </button>
-                                            </li>
-                                            <li class="item">
-                                                <button type="button" class="btn-wh30 btn">
-                                                    <span class="txt-fw600-fs14-lh10 txt">6</span>
-                                                </button>
-                                            </li>
-                                            <li class="item">
-                                                <button type="button" class="btn-wh30 btn">
-                                                    <span class="txt-fw600-fs14-lh10 txt">7</span>
-                                                </button>
-                                            </li>
-                                            <li class="item">
-                                                <button type="button" class="btn-wh30 btn">
-                                                    <span class="txt-fw600-fs14-lh10 txt">8</span>
-                                                </button>
-                                            </li>
-                                            <li class="item">
-                                                <button type="button" class="btn-wh30 btn">
-                                                    <span class="txt-fw600-fs14-lh10 txt">9</span>
-                                                </button>
-                                            </li>
-                                            <li class="item">
-                                                <button type="button" class="btn-wh30 btn">
-                                                    <span class="txt-fw600-fs14-lh10 txt">10</span>
-                                                </button>
-                                            </li>
-                                            <li class="item">
-                                                <button type="button" class="btn-wh30 btn">
-                                                    <i class="ico ico-arrow-right-b-18-18"></i>
-                                                </button>
-                                            </li>
-                                            <li class="item">
-                                                <button type="button" class="btn-wh30 btn">
-                                                    <i class="ico ico-arrow-right-double-b-18-18"></i>
-                                                </button>
-                                            </li>
-                                        </ul>
+                                        <button type="button" class="btn-w90-h40-br5-bdw1-solid-bdcE1E4EB">
+                                            <span class="txt-fw600-fs14-fc5F627B-lh10">목록</span>
+                                        </button>
+                                        <button type="button" class="btn-w90-h40-br5-bdw1-solid-bdcE1E4EB">
+                                            <span class="txt-fw600-fs14-fc5F627B-lh10">삭제</span>
+                                        </button>
+                                        <button type="button" class="btn-w90-h40-bg153457-br5">
+                                            <span class="txt-fw600-fs14-fcFFFFFF-lh10">저장</span>
+                                        </button>
                                     </div>
                                 </div>
                             </div>

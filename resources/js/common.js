@@ -2,6 +2,7 @@ $(function() {
     accoJS.init();
     rangeJS.init();
     moveTabJS.init();
+    treeJS.init();
 });
 
 const gnb = {
@@ -397,4 +398,42 @@ const moveTabJS = {
 
         this.switchTab($container, nextIdx);
     },
+};
+
+const treeJS = {
+    _target : '.treeJS',
+    init(){
+        const _self = this;
+        $(document).find(_self._target).each(function(){
+            if($(this).hasClass("js")){
+                return false;
+            }
+            $("#test").jstree();
+            $(this).addClass("js");
+        });
+    }
+}
+
+const videoSelectJS = {
+    _target: ".videoSelectJS",
+
+    select: function(_this) { // _this는 HTML 요소(버튼 등)입니다.
+        const _self = this;
+        const $btn = $(_this); // 전달받은 요소를 jQuery 객체로 변환
+        const $root = $btn.parents(_self._target);
+        const $video = $root.find(".video video"); // video 태그 선택
+        const $source = $video.find("source"); // 내부 source 태그 선택
+        const newSrc = $btn.val(); // 새로 선택된 비디오 경로
+        
+        // 1. 실제 비디오 DOM 요소 가져오기
+        const videoElement = $video.get(0);
+
+        // 2. 소스 변경 및 로드
+        $source.attr("src", newSrc);
+        videoElement.load(); // 새로운 소스를 비디오 객체에 불러옵니다.
+
+        // 3. 로드 후 즉시 정지 및 처음으로 이동
+        videoElement.pause();      // 일시 정지
+        videoElement.currentTime = 0; // 재생 시간을 0초(처음)로 초기화
+    }
 };
