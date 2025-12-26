@@ -435,5 +435,43 @@ const videoSelectJS = {
         // 3. 로드 후 즉시 정지 및 처음으로 이동
         videoElement.pause();      // 일시 정지
         videoElement.currentTime = 0; // 재생 시간을 0초(처음)로 초기화
+    },
+    mov: function(_this) {
+        const _self = this;
+        const $root = $(_this).parents(_self._target);
+        // 클릭한 요소의 부모 클래스로 방향 판단
+        const $mov = $(_this).parent().hasClass("fixed-tool-btnL") ? "left" : "right";
+        const $list = $root.find(".list .video-chk");
+        const $label = $list.find("label");
+        
+        // 1. 현재 체크된 라벨의 인덱스 (0부터 시작)
+        const $currentIndex = $list.find("label:has(input:checked)").index();
+        
+        let $nextIndex = 0;
+
+        if ($mov == "right") {
+            // [오른쪽 이동] 다음 인덱스 계산
+            $nextIndex = $currentIndex + 1;
+            // 마지막 항목을 넘어가면 다시 0번으로
+            if ($nextIndex >= $label.length) {
+                $nextIndex = 0;
+            }
+        } else {
+            // [왼쪽 이동] 이전 인덱스 계산
+            $nextIndex = $currentIndex - 1;
+            // 0보다 작아지면(즉, -1이 되면) 마지막 항목으로 이동
+            if ($nextIndex < 0) {
+                $nextIndex = $label.length - 1; // 인덱스는 length보다 1 작아야 합니다.
+            }
+        }
+
+        console.log(">>> 이동 방향:", $mov, "| 이동할 인덱스:", $nextIndex);
+
+        // 2. 계산된 인덱스의 input을 찾아서 체크
+        const $nextInput = $label.eq($nextIndex).find("input");
+        $nextInput.prop("checked", true);
+
+        // 3. 비디오 소스 교체 함수 호출
+        _self.select($nextInput); 
     }
 };

@@ -1084,6 +1084,11 @@
 .ico.ico-pencil-w-14-14{ background-image: url(../img/ico/ico-pencil-w-14-14.svg);}
 .ico.ico-check-w-14-14{ background-image: url(../img/ico/ico-check-w-14-14.svg);}
 .ico.ico-close-w-14-14{ background-image: url(../img/ico/ico-close-w-14-14.svg);}
+.ico.ico-picture-in-picture-w-20-20{ background-image: url(../img/ico/ico-picture-in-picture-w-20-20.svg);}
+.ico.ico-eye-off-w-20-20{ background-image: url(../img/ico/ico-eye-off-w-20-20.svg);}
+.ico.ico-slideshow-w-20-20{ background-image: url(../img/ico/ico-slideshow-w-20-20.svg);}
+.ico.ico-download-w-20-20{ background-image: url(../img/ico/ico-download-w-20-20.svg);}
+.ico.ico-delete-w-20-20{ background-image: url(../img/ico/ico-delete-w-20-20.svg);}
 
 [class*="badge-"],
 [class*="badge-"][class*="-wh"]{ display: inline-flex; align-items: center; justify-content: center;}
@@ -1342,6 +1347,9 @@ body:has( #aside-right-layout .dron-detail-box.active) #control-wrap.type-map #m
 #control-wrap.type-board #main-layout [class*="fixed-tool-"][class*="-guideTxt"]{ width: 100%; height: 100%; background-color: #00000080; display: flex; align-items: center; justify-content: center; position: absolute; top: 0; left: 0;}
 .lp-box [class*="fixed-tool-"][class*="-dim"]{ width: 100%; height: 100%; background-color: #00000080; position: absolute; top: 0; left: 0;}
 .lp-box [class*="fixed-tool-"][class*="-videoInfo"]{ position: absolute; top: 0; left: 0;}
+.lp-box [class*="fixed-tool-"][class*="-videoOption"]{ position: absolute; bottom: 2.5rem; left: 50%; transform: translateX(-50%); z-index: 1;}
+.lp-box [class*="fixed-tool-"][class*="-btnL"]{ position: absolute; top: 50%; left: 1.25rem; transform: translateY(-50%); z-index: 1;}
+.lp-box [class*="fixed-tool-"][class*="-btnR"]{ position: absolute; top: 50%; right: 1.25rem; transform: translateY(-50%); z-index: 1;}
 .lp-box [class*="fixed-tool-"][class*="-location"]{ position: absolute; bottom: 0.438rem; left: 0.5rem; right: 0.5rem;}
 
 .donut-container { width: 5.125rem; height: 5.125rem; display: flex; justify-content: center; align-items: center;}
@@ -1613,6 +1621,12 @@ body:has( #aside-right-layout .dron-detail-box.active) #control-wrap.type-map #m
 .video-control-box .video-box video{ width: 100%; height: 100%;}
 /* .video-control-box .video-box video::-webkit-media-controls-panel { transform: translateY(-170px);} */
 .video-control-box .video-box .video{ height: 100%; background-color: #222; flex: 1; position: relative;}
+.video-control-box .video-box .video .fixed-tool-btnL,
+.video-control-box .video-box .video .fixed-tool-btnR{ display: none;}
+.video-control-box .video-box .video:hover .fixed-tool-btnL,
+.video-control-box .video-box .video:hover .fixed-tool-btnR{ display: block;}
+.video-control-box .video-box .video:hover .fixed-tool-btnL button:hover,
+.video-control-box .video-box .video:hover .fixed-tool-btnR button:hover{ background-color: #000000CC;}
 .video-control-box .video-box .list{ width: 100%; height: 10.625rem; background-color: #000000; display: flex; align-items: center; justify-content: center;}
 .video-control-box .video-chk{ display: flex; gap: 0.625rem;}
 .video-control-box .video-chk label{ width: 12rem; height: 8.625rem; background: no-repeat center center; background-size: cover; border-radius: 0.313rem; position: relative; cursor: pointer;}
