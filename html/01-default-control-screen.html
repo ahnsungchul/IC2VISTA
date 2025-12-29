@@ -159,13 +159,7 @@
     </div>
     <!--//lp-layout-->
 
-    <div id="control-wrap" class="type-map">
-    <!--
-        지도타입:type-map,
-        대시보드타입:type-video,
-        조정제어타입:type-control,
-        보드타입:type-board,
-    -->
+    <div id="control-wrap">
         <!--head-layout-->
         <header id="header-layout">
             <!--로고-->
@@ -263,61 +257,61 @@
                 <nav class="depth1-box">
                     <ul class="list">
                         <li class="item">
-                            <button type="button" class="depth1-menu active" onclick="depth2.open(this)">
+                            <button type="button" class="depth1-menu">
                                 <i class="ico ico-dashboard-w-20-20"></i>
                                 <span class="txt">대시보드</span>
                             </button>
                         </li>
                         <li class="item">
-                            <button type="button" class="depth1-menu" onclick="depth2.open(this)">
+                            <button type="button" class="depth1-menu active">
                                 <i class="ico ico-drone-w-20-20"></i>
                                 <span class="txt">관제</span>
                             </button>
                         </li>
                         <li class="item">
-                            <button type="button" class="depth1-menu" onclick="depth2.open(this)">
+                            <button type="button" class="depth1-menu">
                                 <i class="ico ico-webcam-w-20-20"></i>
                                 <span class="txt">영상</span>
                             </button>
                         </li>
                         <li class="item">
-                            <button type="button" class="depth1-menu" onclick="depth2.open(this)">
+                            <button type="button" class="depth1-menu">
                                 <i class="ico ico-map-w-20-20"></i>
                                 <span class="txt">지도</span>
                             </button>
                         </li>
                         <li class="item">
-                            <button type="button" class="depth1-menu" onclick="depth2.open(this)">
+                            <button type="button" class="depth1-menu">
                                 <i class="ico ico-map2-w-20-20"></i>
                                 <span class="txt">지도종류</span>
                             </button>
                         </li>
                         <li class="item">
-                            <button type="button" class="depth1-menu" onclick="depth2.open(this)">
+                            <button type="button" class="depth1-menu">
                                 <i class="ico ico-gps-w-20-20"></i>
                                 <span class="txt">공역정보</span>
                             </button>
                         </li>
                         <li class="item">
-                            <button type="button" class="depth1-menu" onclick="depth2.open(this)">
+                            <button type="button" class="depth1-menu">
                                 <i class="ico ico-remote-w-20-20"></i>
                                 <span class="txt">임무</span>
                             </button>
                         </li>
                         <li class="item">
-                            <button type="button" class="depth1-menu" onclick="depth2.open(this)">
+                            <button type="button" class="depth1-menu">
                                 <i class="ico ico-route-w-20-20"></i>
                                 <span class="txt">경로</span>
                             </button>
                         </li>
                         <li class="item">
-                            <button type="button" class="depth1-menu" onclick="depth2.open(this)">
+                            <button type="button" class="depth1-menu">
                                 <i class="ico ico-disc-w-20-20"></i>
                                 <span class="txt">미디어</span>
                             </button>
                         </li>
                         <li class="item">
-                            <button type="button" class="depth1-menu" onclick="depth2.open(this)">
+                            <button type="button" class="depth1-menu">
                                 <i class="ico ico-chart-w-20-20"></i>
                                 <span class="txt">분석</span>
                             </button>
@@ -326,25 +320,25 @@
                             <i class="ico ico-dots-w-24-24"></i>
                         </li>
                         <li class="item">
-                            <button type="button" class="depth1-menu" onclick="depth2.open(this)">
+                            <button type="button" class="depth1-menu">
                                 <i class="ico ico-user-w-20-20"></i>
                                 <span class="txt">계정</span>
                             </button>
                         </li>
                         <li class="item">
-                            <button type="button" class="depth1-menu" onclick="depth2.open(this)">
+                            <button type="button" class="depth1-menu">
                                 <i class="ico ico-router-w-20-20"></i>
                                 <span class="txt">장비</span>
                             </button>
                         </li>
                         <li class="item">
-                            <button type="button" class="depth1-menu" onclick="depth2.open(this)">
+                            <button type="button" class="depth1-menu">
                                 <i class="ico ico-list-w-20-20"></i>
                                 <span class="txt">이력</span>
                             </button>
                         </li>
                         <li class="item">
-                            <button type="button" class="depth1-menu" onclick="depth2.open(this)">
+                            <button type="button" class="depth1-menu">
                                 <i class="ico ico-volume-w-20-20"></i>
                                 <span class="txt">공지</span>
                             </button>
@@ -371,7 +365,7 @@
                 </nav>
                 <!--//depth1-box-->
                 <!--depth2-box-->
-                <div class="depth2-box">
+                <div class="depth2-box show active">
                     <button type="button" class="depth2-open" onclick="depth2.open()">
                         <i class="ico ico-arrow-right-double-b-20-20"></i>
                     </button>
@@ -1259,85 +1253,90 @@
 
         <!--main-layout-->
         <main id="main-layout">
-            <!--고정바-컨트롤버튼-->
-            <div class="fixed-tool-control">
-                <div class="iFlex-col-gap15">
-                    <div class="iFlex-col-gap1">
-                        <button type="button" class="btn-wh30-bg000000-op05-br5">
-                            <i class="ico ico-crosshair-w-18-18"></i>
-                        </button>
-                        <button type="button" class="btn-wh30-bg000000-op05-br5">
-                            <i class="ico ico-add-w-18-18"></i>
-                        </button>
-                        <button type="button" class="btn-wh30-bg000000-op05-br5">
-                            <i class="ico ico-subtract-w-18-18"></i>
-                        </button>
-                        <button type="button" class="btn-wh30-bg000000-op05-br5">
-                            <i class="ico ico-share-w-18-18"></i>
-                        </button>
-                    </div>
-                    <div class="iFlex-col-gap1">
-                        <button type="button" class="btn-wh30-bg000000-op05-br5">
-                            <i class="ico ico-ruler-w-18-18"></i>
-                        </button>
-                        <button type="button" class="btn-wh30-bg000000-op05-br5">
-                            <i class="ico ico-shape-w-18-18"></i>
-                        </button>
-                        <button type="button" class="btn-wh30-bg000000-op05-br5">
-                            <i class="ico ico-pencil-ruler-w-18-18"></i>
-                        </button>
-                        <button type="button" class="btn-wh30-bg000000-op05-br5">
-                            <i class="ico ico-flag-w-18-18"></i>
-                        </button>
-                        <button type="button" class="btn-wh30-bg000000-op05-br5">
-                            <i class="ico ico-download-w-18-18"></i>
-                        </button>
-                        <button type="button" class="btn-wh30-bg000000-op05-br5">
-                            <i class="ico ico-crop-w-18-18"></i>
-                        </button>
-                    </div>
-                </div>
-            </div>
-            <!--//고정바-GPS-->
-            <!--고정바-GPS-->
-            <div class="fixed-tool-gps">
-                <div class="badge-wFull-bg000000-op05-br5-pdtb10">
-                    <div class="flex-center-wrap-gap5">
-                        <div class="flex-row-gap5 m_r_5">
-                            <span class="badge-wh10-bg2AA138-br5-mgtb2"></span>
-                            <p class="txt-fw500-fs14-fcFFFFFF-lh14px">GPS(양호)</p>
+            <!--control-screen-box-->
+            <div class="control-screen-box">
+                <!--고정바-컨트롤버튼-->
+                <div class="fixed-tool-control">
+                    <div class="iFlex-col-gap15">
+                        <div class="iFlex-col-gap1">
+                            <button type="button" class="btn-wh30-bg000000-op05-br5">
+                                <i class="ico ico-crosshair-w-18-18"></i>
+                            </button>
+                            <button type="button" class="btn-wh30-bg000000-op05-br5">
+                                <i class="ico ico-add-w-18-18"></i>
+                            </button>
+                            <button type="button" class="btn-wh30-bg000000-op05-br5">
+                                <i class="ico ico-subtract-w-18-18"></i>
+                            </button>
+                            <button type="button" class="btn-wh30-bg000000-op05-br5">
+                                <i class="ico ico-share-w-18-18"></i>
+                            </button>
                         </div>
-                        <p class="txt-fw500-fs14-fcFFFFFF-lh14px m_r_5">위도(37.402912), 경도(127.108221), 고도(55m), 방향(북동(NE))</p>
-                        <p class="txt-fw500-fs14-fcFFFFFF-lh14px">PS 속도(62 km/h), 평균 속도(48 km/h), GPS 수신 상태(매우 양호), 경로 추적(활성화됨)</p>
+                        <div class="iFlex-col-gap1">
+                            <button type="button" class="btn-wh30-bg000000-op05-br5">
+                                <i class="ico ico-ruler-w-18-18"></i>
+                            </button>
+                            <button type="button" class="btn-wh30-bg000000-op05-br5">
+                                <i class="ico ico-shape-w-18-18"></i>
+                            </button>
+                            <button type="button" class="btn-wh30-bg000000-op05-br5">
+                                <i class="ico ico-pencil-ruler-w-18-18"></i>
+                            </button>
+                            <button type="button" class="btn-wh30-bg000000-op05-br5">
+                                <i class="ico ico-flag-w-18-18"></i>
+                            </button>
+                            <button type="button" class="btn-wh30-bg000000-op05-br5">
+                                <i class="ico ico-download-w-18-18"></i>
+                            </button>
+                            <button type="button" class="btn-wh30-bg000000-op05-br5">
+                                <i class="ico ico-crop-w-18-18"></i>
+                            </button>
+                        </div>
                     </div>
                 </div>
-            </div>
-            <!--//고정바-GPS-->
-            <!--스낵바-배너리알림-->
-            <div class="snack-bar-battery">
-                <div class="battery">
-                    <div class="badge-h40-bg5490DE-br5-pdlr18 flex-row-gap10 ai-c">
-                        <i class="ico ico-battery-w-18-18"></i>
-                        <p class="txt-fw600-fs12-fcFFFFFF">잔여 배터리 위험 경고</p>
-                        <p class="txt-fw600-fs12-fcFFFFFF">10:33</p>
+                <!--//고정바-GPS-->
+                <!--고정바-GPS-->
+                <div class="fixed-tool-gps">
+                    <div class="badge-wFull-bg000000-op05-br5-pdtb10">
+                        <div class="flex-center-wrap-gap5">
+                            <div class="flex-row-gap5 m_r_5">
+                                <span class="badge-wh10-bg2AA138-br5-mgtb2"></span>
+                                <p class="txt-fw500-fs14-fcFFFFFF-lh14px">GPS(양호)</p>
+                            </div>
+                            <p class="txt-fw500-fs14-fcFFFFFF-lh14px m_r_5">위도(37.402912), 경도(127.108221), 고도(55m), 방향(북동(NE))</p>
+                            <p class="txt-fw500-fs14-fcFFFFFF-lh14px">PS 속도(62 km/h), 평균 속도(48 km/h), GPS 수신 상태(매우 양호), 경로 추적(활성화됨)</p>
+                        </div>
                     </div>
-                    <button type="button" class="btn-wh22-bgFFFFFF-br11 snack-bar-close">
-                        <i class="ico ico-close-b-16-16"></i>
-                    </button>
                 </div>
+                <!--//고정바-GPS-->
+                <!--스낵바-배너리알림-->
+                <div class="snack-bar-battery">
+                    <div class="battery">
+                        <div class="badge-h40-bg5490DE-br5-pdlr18 flex-row-gap10 ai-c">
+                            <i class="ico ico-battery-w-18-18"></i>
+                            <p class="txt-fw600-fs12-fcFFFFFF">잔여 배터리 위험 경고</p>
+                            <p class="txt-fw600-fs12-fcFFFFFF">10:33</p>
+                        </div>
+                        <button type="button" class="btn-wh22-bgFFFFFF-br11 snack-bar-close">
+                            <i class="ico ico-close-b-16-16"></i>
+                        </button>
+                    </div>
+                </div>
+                <!--//스낵바-배너리알림-->
+                <!--지도마커-->
+                <div class="marker-box-type1" style="top: 300px; left: 400px;"><!--개발시 style삭제-->
+                    <i class="ico ico-drone-w-24-24"></i>
+                </div>
+                <button type="button" class="marker-box-type2" style="top: 200px; left: 460px;"><!--개발시 style삭제-->
+                    <i class="ico ico-drone-w-24-24"></i>
+                </button>
+                <div class="marker-box-type3" style="top: 300px; left: 540px;"><!--개발시 style삭제-->
+                    <i class="ico ico-drone-w-24-24"></i>
+                </div>
+                <!--지도마커-->
+                지도
             </div>
-            <!--//스낵바-배너리알림-->
-            <!--지도마커-->
-            <div class="marker-box-type1" style="top: 300px; left: 400px;"><!--개발시 style삭제-->
-                <i class="ico ico-drone-w-24-24"></i>
-            </div>
-            <button type="button" class="marker-box-type2" style="top: 200px; left: 460px;"><!--개발시 style삭제-->
-                <i class="ico ico-drone-w-24-24"></i>
-            </button>
-            <div class="marker-box-type3" style="top: 300px; left: 540px;"><!--개발시 style삭제-->
-                <i class="ico ico-drone-w-24-24"></i>
-            </div>
-            <!--지도마커-->
+            <!--//control-screen-box-->
         </main>
         <!--//main-layout-->
     </div>

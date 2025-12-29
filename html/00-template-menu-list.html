@@ -1,0 +1,1167 @@
+<!DOCTYPE HTML>
+<html lang="ko">
+<head>
+<meta charset="utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=edge">
+<meta name="viewport" content="width=device-width,initial-scale=1.0,minimum-scale=1.0,maximum-scale=1.0,user-scalable=no">
+<link rel="shortcut icon" href="../img/inc/favicon.ico" type="image/x-icon">
+<title>IC2VISTA</title>
+<script type="text/javascript" src="../resources/js/jquery-1.11.2.min.js"></script>
+<script type="text/javascript" src="../resources/js/jquery-ui.js"></script>
+<script type="text/javascript" src="../resources/js/common.js"></script>
+<link rel="stylesheet" type="text/css" href="../resources/css/common.css">
+<link rel="stylesheet" type="text/css" href="../resources/css/jquery-ui.css">
+<link rel="stylesheet" type="text/css" href="../resources/css/layout.css">
+<link rel="stylesheet" type="text/css" href="../resources/css/template.css">
+</head>
+<body>
+    <div class="flex-row-gap10-hFull-pd5">
+        <div class="flex-col-bg000000-op02-pd5-bdw1-solid-bdc444444">
+            <div class="box-bg000000-h30-pd5 flex-center ai-c">
+                <p class="txt-fw600-fs16-fcFFFFFF-lh10">2댑스 슬라이드메뉴</p>
+            </div>
+            <div class="box-w360-hFull-ovH-relative">
+                <!--대시보드 메뉴-->
+                <div id="gnb-layout">
+                    <div class="depth2-box show active">
+                        <button type="button" class="depth2-open" onclick="depth2.open()">
+                            <i class="ico ico-arrow-right-double-b-20-20"></i>
+                        </button>
+                        <div class="scroll-y">
+                            <div class="flex-col-gap20-hFull">
+                                <!--acco-boader-box-->
+                                <div class="acco-boader-box accoJS active">
+                                    <div class="box-head">
+                                        <button type="button" class="btn-acco accoJS-btn">
+                                            <span class="iFlex-row-gap10 ai-c">
+                                                <span class="badge-wh30-bg5490DE-br15">
+                                                    <i class="ico ico-station-w-20-20"></i>
+                                                </span>
+                                                <span class="txt-fw700-fs18-fc000000-lh10">스테이션</span>
+                                                <span class="txt-fw700-fs14-fc000000-lh10">(2/3)</span>
+                                            </span>
+                                            <span class="badge-wh22-bgFFFFFF-br11 bsdw-2px2px4px0px-0000001A">
+                                                <i class="ico ico-arrow-down-b-16-16"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div class="box-body accoJS-cont p_b_30px">
+                                        <ul class="list-col-box-gap40">
+                                            <li class="item">
+                                                <button type="button" class="detail-info-btn" onclick="dronDetailJS.open(this)">선택</button>
+                                                <div class="flex-row-gap10 option-box">
+                                                    <div class="badge-wh60-bgF7F9FB-br30">
+                                                        <img src="../resources/img/@sample-drone-img.png">
+                                                    </div>
+                                                    <div class="flex-col-gap10 ai-s flex1">
+                                                        <div class="badge-h20-bg153457-br3-pdlr5">
+                                                            <p class="txt-fw600-fs10-fcFFFFFF-lh20px">진행중</p>
+                                                        </div>
+                                                        <p class="txt-fw700-fs14-fc000000-lh10">임무_20251123_01</p>
+                                                        <div class="flex-row-gap3">
+                                                            <div class="badge-wh10-bg153457-br5 m_1"></div>
+                                                            <ul class="list-row-box-gap10">
+                                                                <li class="item">
+                                                                    <p class="txt-fw500-fs12-fc5F627B-lh12px">DOCK</p>
+                                                                </li>
+                                                                <li class="item">
+                                                                    <p class="txt-fw500-fs12-fc5F627B-lh12px">IC2VISTA DOCK 01</p>    
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="switch-txt-type2-gap5 flex-row row2 wFull">
+                                                            <label>
+                                                                <input type="radio" name="camera1" checked="">
+                                                                <span class="txt txt-wFull-h20">FPV Camera</span>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" name="camera1">
+                                                                <span class="txt txt-wFull-h20">M30 Camera</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="item">
+                                                <button type="button" class="detail-info-btn" onclick="dronDetailJS.open(this)">선택</button>
+                                                <div class="flex-row-gap10 option-box">
+                                                    <div class="badge-wh60-bgF7F9FB-br30">
+                                                        <img src="../resources/img/@sample-drone-img.png">
+                                                    </div>
+                                                    <div class="flex-col-gap10 ai-s flex1">
+                                                        <div class="badge-h20-bg5490DE-br3-pdlr5">
+                                                            <p class="txt-fw600-fs10-fcFFFFFF-lh20px">대기</p>
+                                                        </div>
+                                                        <p class="txt-fw700-fs14-fc000000-lh10">임무_20251123_01</p>
+                                                        <div class="flex-row-gap3">
+                                                            <div class="badge-wh10-bg153457-br5 m_1"></div>
+                                                            <ul class="list-row-box-gap10">
+                                                                <li class="item">
+                                                                    <p class="txt-fw500-fs12-fc5F627B-lh12px">DOCK</p>
+                                                                </li>
+                                                                <li class="item">
+                                                                    <p class="txt-fw500-fs12-fc5F627B-lh12px">IC2VISTA DOCK 01</p>    
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="switch-txt-type2-gap5 flex-row row2 wFull">
+                                                            <label>
+                                                                <input type="radio" name="camera2" checked="">
+                                                                <span class="txt txt-wFull-h20">FPV Camera</span>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" name="camera2">
+                                                                <span class="txt txt-wFull-h20">M30 Camera</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--//acco-boader-box-->
+                                <!--acco-boader-box-->
+                                <div class="acco-boader-box accoJS active">
+                                    <div class="box-head">
+                                        <button type="button" class="btn-acco accoJS-btn">
+                                            <span class="iFlex-row-gap10 ai-c">
+                                                <span class="badge-wh30-bg153457-br15">
+                                                    <i class="ico ico-drone-w-20-20"></i>
+                                                </span>
+                                                <span class="txt-fw700-fs18-fc000000-lh10">드론</span>
+                                                <span class="txt-fw700-fs14-fc000000-lh10">(2/5)</span>
+                                            </span>
+                                            <span class="badge-wh22-bgFFFFFF-br11 bsdw-2px2px4px0px-0000001A">
+                                                <i class="ico ico-arrow-down-b-16-16"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div class="box-body accoJS-cont p_b_30px">
+                                        <ul class="list-col-box-gap40">
+                                            <li class="item">
+                                                <button type="button" class="detail-info-btn" onclick="dronDetailJS.open(this)">선택</button>
+                                                <div class="flex-row-gap10 option-box">
+                                                    <div class="flex-col-gap5 ai-c">
+                                                        <div class="badge-wh60-bgF7F9FB-br30">
+                                                            <img src="../resources/img/@sample-drone-img.png">
+                                                        </div>
+                                                        <p class="txt-h15-bgC10230-fw600-fs9-fcFFFFFF-lh15px-pdlr3-br3">관리자 제어</p>
+                                                    </div>
+                                                    <div class="flex-col-gap5 ai-s flex1">
+                                                        <div class="flex-row-gap3">
+                                                            <div class="badge-wh10-bg153457-br5 m_1"></div>
+                                                            <ul class="list-row-box-gap10">
+                                                                <li class="item">
+                                                                    <p class="txt-fw500-fs12-fc5F627B-lh12px">DOCK</p>
+                                                                </li>
+                                                                <li class="item">
+                                                                    <p class="txt-fw500-fs12-fc5F627B-lh12px">DRONE 01</p>    
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="flex-row-gap5">
+                                                            <div class="badge-h20-bgFFFFFF-br3-pdlr7-bdw1-solid-bdcE1E4EB flex-row-gap1 ai-c">
+                                                                <p class="txt-fw600-fs10-fc5F627B-lh10">4G</p>
+                                                                <i class="ico ico-4g-b-7-7"></i>
+                                                            </div>
+                                                            <div class="badge-h20-bgFFFFFF-br3-pdlr7-bdw1-solid-bdcE1E4EB flex-row-gap1 ai-c">
+                                                                <p class="txt-fw600-fs10-fc5F627B-lh10">RTK</p>
+                                                                <i class="ico ico-router-b-10-10"></i>
+                                                                <p class="txt-fw600-fs10-fc5F627B-lh10">20</p>
+                                                            </div>
+                                                            <div class="badge-h20-bgFFFFFF-br3-pdlr7-bdw1-solid-bdcE1E4EB flex-row-gap1 ai-c">
+                                                                <i class="ico ico-battery-low-b-10-10"></i>
+                                                                <p class="txt-fw600-fs10-fc5F627B-lh10">88.1%</p>
+                                                            </div>
+                                                        </div>
+                                                        <p class="txt-fw600-fs10-fc5F627B-lh10">ASL 610.5m AGL 72.3m H.S 10.3m/s H 72.3m</p>
+                                                        <div class="flex-col-gap5 wFull">
+                                                            <div class="flex-row-gap5 row2">
+                                                                <button class="btn-h20-bgF5F6F8-br3-hvbgEEEEEE" onclick="depth3.open()">
+                                                                    <span class="txt-fw600-fs10-fc5F627B-lh10">경로설정</span>
+                                                                </button>
+                                                                <button class="btn-h20-bgF5F6F8-br3-hvbgEEEEEE">
+                                                                    <span class="txt-fw600-fs10-fc5F627B-lh10">상태정보</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="flex-row-gap5 row2">
+                                                                <button class="btn-h20-bgF5F6F8-br3-hvbgEEEEEE">
+                                                                    <span class="txt-fw600-fs10-fc5F627B-lh10">임무설정</span>
+                                                                </button>
+                                                                <select class="select-h20-type1">
+                                                                    <option>추가설정</option>
+                                                                    <option>세부메뉴1</option>
+                                                                    <option>세부메뉴2</option>
+                                                                    <option>세부메뉴3</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="switch-txt-type2-gap5 flex-row row2 wFull">
+                                                                <label>
+                                                                    <input type="radio" name="camera3" checked="">
+                                                                    <span class="txt txt-wFull-h20">FPV Camera</span>
+                                                                </label>
+                                                                <label>
+                                                                    <input type="radio" name="camera3">
+                                                                    <span class="txt txt-wFull-h20">M30 Camera</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="item">
+                                                <button type="button" class="detail-info-btn" onclick="dronDetailJS.open(this)">선택</button>
+                                                <div class="flex-row-gap10 option-box">
+                                                    <div class="flex-col-gap5 ai-c">
+                                                        <div class="badge-wh60-bgF7F9FB-br30">
+                                                            <img src="../resources/img/@sample-drone-img.png">
+                                                        </div>
+                                                        <p class="txt-h15-bg2AA138-fw600-fs9-fcFFFFFF-lh15px-pdlr3-br3">자동제어</p>
+                                                    </div>
+                                                    <div class="flex-col-gap10 ai-s flex1">
+                                                        <div class="flex-row-gap3">
+                                                            <div class="badge-wh10-bg153457-br5 m_1"></div>
+                                                            <ul class="list-row-box-gap10">
+                                                                <li class="item">
+                                                                    <p class="txt-fw500-fs12-fc5F627B-lh12px">DOCK</p>
+                                                                </li>
+                                                                <li class="item">
+                                                                    <p class="txt-fw500-fs12-fc5F627B-lh12px">DRONE 02</p>    
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="flex-col-gap5 wFull">
+                                                            <div class="flex-row-gap5 row2">
+                                                                <button class="btn-h20-bgF5F6F8-br3-hvbgEEEEEE" onclick="depth3.open()">
+                                                                    <span class="txt-fw600-fs10-fc5F627B-lh10">경로설정</span>
+                                                                </button>
+                                                                <button class="btn-h20-bgF5F6F8-br3-hvbgEEEEEE">
+                                                                    <span class="txt-fw600-fs10-fc5F627B-lh10">상태정보</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="flex-row-gap5 row2">
+                                                                <button class="btn-h20-bgF5F6F8-br3-hvbgEEEEEE">
+                                                                    <span class="txt-fw600-fs10-fc5F627B-lh10">임무설정</span>
+                                                                </button>
+                                                                <select class="select-h20-type1">
+                                                                    <option>추가설정</option>
+                                                                    <option>세부메뉴1</option>
+                                                                    <option>세부메뉴2</option>
+                                                                    <option>세부메뉴3</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="switch-txt-type2-gap5 flex-row row2 wFull">
+                                                                <label>
+                                                                    <input type="radio" name="camera4" checked="">
+                                                                    <span class="txt txt-wFull-h20">FPV Camera</span>
+                                                                </label>
+                                                                <label>
+                                                                    <input type="radio" name="camera4">
+                                                                    <span class="txt txt-wFull-h20">M30 Camera</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="item">
+                                                <button type="button" class="detail-info-btn" onclick="dronDetailJS.open(this)">선택</button>
+                                                <div class="flex-row-gap10 option-box">
+                                                    <div class="flex-col-gap5 ai-c">
+                                                        <div class="badge-wh60-bgF7F9FB-br30">
+                                                            <img src="../resources/img/@sample-drone-img.png">
+                                                        </div>
+                                                        <p class="txt-h15-bg5490DE-fw600-fs9-fcFFFFFF-lh15px-pdlr3-br3">수동제어</p>
+                                                    </div>
+                                                    <div class="flex-col-gap10 ai-s flex1">
+                                                        <div class="flex-row-gap3">
+                                                            <div class="badge-wh10-bgC10230-br5 m_1"></div>
+                                                            <ul class="list-row-box-gap10">
+                                                                <li class="item">
+                                                                    <p class="txt-fw500-fs12-fc5F627B-lh12px">DOCK</p>
+                                                                </li>
+                                                                <li class="item">
+                                                                    <p class="txt-fw500-fs12-fc5F627B-lh12px">DRONE 03</p>    
+                                                                </li>
+                                                            </ul>
+                                                        </div>
+                                                        <div class="flex-col-gap5 wFull">
+                                                            <div class="flex-row-gap5 row2">
+                                                                <button class="btn-h20-bgF5F6F8-br3-hvbgEEEEEE" onclick="depth3.open()">
+                                                                    <span class="txt-fw600-fs10-fc5F627B-lh10">경로설정</span>
+                                                                </button>
+                                                                <button class="btn-h20-bgF5F6F8-br3-hvbgEEEEEE">
+                                                                    <span class="txt-fw600-fs10-fc5F627B-lh10">상태정보</span>
+                                                                </button>
+                                                            </div>
+                                                            <div class="flex-row-gap5 row2">
+                                                                <button class="btn-h20-bgF5F6F8-br3-hvbgEEEEEE">
+                                                                    <span class="txt-fw600-fs10-fc5F627B-lh10">임무설정</span>
+                                                                </button>
+                                                                <select class="select-h20-type1">
+                                                                    <option>추가설정</option>
+                                                                    <option>세부메뉴1</option>
+                                                                    <option>세부메뉴2</option>
+                                                                    <option>세부메뉴3</option>
+                                                                </select>
+                                                            </div>
+                                                            <div class="switch-txt-type2-gap5 flex-row row2 wFull">
+                                                                <label>
+                                                                    <input type="radio" name="camera5" checked="">
+                                                                    <span class="txt txt-wFull-h20">FPV Camera</span>
+                                                                </label>
+                                                                <label>
+                                                                    <input type="radio" name="camera5">
+                                                                    <span class="txt txt-wFull-h20">M30 Camera</span>
+                                                                </label>
+                                                            </div>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </div>
+                                </div>
+                                <!--//acco-boader-box-->
+                                <!--acco-boader-box-->
+                                <div class="acco-boader-box accoJS active">
+                                    <div class="box-head">
+                                        <button type="button" class="btn-acco accoJS-btn">
+                                            <span class="iFlex-row-gap10 ai-c">
+                                                <span class="badge-wh30-bg390D84-br15">
+                                                    <i class="ico ico-user-w-20-20"></i>
+                                                </span>
+                                                <span class="txt-fw700-fs18-fc000000-lh10">온라인 사용자</span>
+                                            </span>
+                                            <span class="badge-wh22-bgFFFFFF-br11 bsdw-2px2px4px0px-0000001A">
+                                                <i class="ico ico-arrow-down-b-16-16"></i>
+                                            </span>
+                                        </button>
+                                    </div>
+                                    <div class="box-body accoJS-cont">
+                                        <div class="flex-col-gap15-pd15">
+                                            <p class="txt-fw600-fs12-fc5F627B-lh12px">eddie0613@ins-tech.co.kr</p>
+                                            <p class="txt-fw600-fs12-fc5F627B-lh12px">jkjeon@ins-tech.co.kr</p>
+                                        </div>
+                                    </div>
+                                </div>
+                                <!--//acco-boader-box-->
+                            </div>
+                        </div>
+                        <button type="button" class="depth2-close" onclick="depth2.close()">
+                            <i class="ico ico-arrow-left-double-b-20-20"></i>
+                        </button>
+                    </div>
+                </div>
+                <!--//대시보드 메뉴-->
+            </div>
+        </div>
+        <div class="flex-col-bgFFFFFF-pd5-bdw1-solid-bdc444444">
+            <div class="box-bg000000-h30-pd5 flex-center ai-c">
+                <p class="txt-fw600-fs16-fcFFFFFF-lh10">2댑스 고정메뉴</p>
+            </div>
+            <div class="box-w276-hFull-pdtb10-ovH-relative">
+                <!--main-option-box-->
+                <aside id="main-option-box">
+                    <div class="scroll-y">
+                        <div class="flex-col-gap10">
+                            <!--acco-boader-box-->
+                            <div class="acco-boader-box accoJS active">
+                                <div class="box-head">
+                                    <button type="button" class="btn-acco accoJS-btn">
+                                        <span class="iFlex-row-gap10 ai-c">
+                                            <span class="badge-wh30-bg5467DE-br15">
+                                                <i class="ico ico-layout-w-20-20"></i>
+                                            </span>
+                                            <span class="txt-fw700-fs18-fc000000-lh10">표준</span>
+                                        </span>
+                                        <span class="badge-wh22-bgFFFFFF-br11 bsdw-2px2px4px0px-0000001A">
+                                            <i class="ico ico-arrow-down-b-16-16"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="box-body accoJS-cont">
+                                    <ul class="list-col-box-gap20">
+                                        <li class="item">
+                                            <div class="flex-col-gap5">
+                                                <p class="txt-fw700-fs14-fc000000-lh10">레이아웃 설정</p>
+                                                <!--레이아웃 표준-->
+                                                <dl class="flex-col-gap5">
+                                                    <dt class="flex-row">
+                                                        <p class="txt-fw700-fs12-fc5F627B-lh10">표준</p>
+                                                    </dt>
+                                                    <dd class="flex-row">
+                                                        <div class="switch-txt-type3-gap9 layout-option-box">
+                                                            <label>
+                                                                <input type="radio" value="split1" onchange="videoSplitJS.select(this)" name="layoutCK" >
+                                                                <span class="txt btn-wh40-br3">
+                                                                    <i class="ico ico-layout-type1-b-28-28"></i>
+                                                                    <i class="ico ico-layout-type1-w-28-28"></i>
+                                                                    <span class="badge-wh14-bg153457-br7">
+                                                                        <span class="txt-fw600-fs8-fcFFFFFF-lh10">1</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" value="split4" onchange="videoSplitJS.select(this)" name="layoutCK" checked >
+                                                                <span class="txt btn-wh40-br3">
+                                                                    <i class="ico ico-layout-type2-b-28-28"></i>
+                                                                    <i class="ico ico-layout-type2-w-28-28"></i>
+                                                                    <span class="badge-wh14-bg153457-br7">
+                                                                        <span class="txt-fw600-fs8-fcFFFFFF-lh10">4</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" value="split9" onchange="videoSplitJS.select(this)" name="layoutCK" >
+                                                                <span class="txt btn-wh40-br3">
+                                                                    <i class="ico ico-layout-type3-b-28-28"></i>
+                                                                    <i class="ico ico-layout-type3-w-28-28"></i>
+                                                                    <span class="badge-wh14-bg153457-br7">
+                                                                        <span class="txt-fw600-fs8-fcFFFFFF-lh10">9</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" value="split16" onchange="videoSplitJS.select(this)" name="layoutCK" >
+                                                                <span class="txt btn-wh40-br3">
+                                                                    <i class="ico ico-layout-type4-b-28-28"></i>
+                                                                    <i class="ico ico-layout-type4-w-28-28"></i>
+                                                                    <span class="badge-wh14-bg153457-br7">
+                                                                        <span class="txt-fw600-fs8-fcFFFFFF-lh10">16</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" value="split25" onchange="videoSplitJS.select(this)" name="layoutCK" >
+                                                                <span class="txt btn-wh40-br3">
+                                                                    <i class="ico ico-layout-type5-b-28-28"></i>
+                                                                    <i class="ico ico-layout-type5-w-28-28"></i>
+                                                                    <span class="badge-wh14-bg153457-br7">
+                                                                        <span class="txt-fw600-fs8-fcFFFFFF-lh10">25</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                                <!--//레이아웃 표준-->
+                                                <!--레이아웃 L자형-->
+                                                <dl class="flex-col-gap5">
+                                                    <dt class="flex-row">
+                                                        <p class="txt-fw700-fs12-fc5F627B-lh10">L자형</p>
+                                                    </dt>
+                                                    <dd class="flex-row">
+                                                        <div class="switch-txt-type3-gap9 layout-option-box">
+                                                            <label>
+                                                                <input type="radio" value="split6" onchange="videoSplitJS.select(this)" name="layoutCK" >
+                                                                <span class="txt btn-wh40-br3">
+                                                                    <i class="ico ico-layout-type6-b-28-28"></i>
+                                                                    <i class="ico ico-layout-type6-w-28-28"></i>
+                                                                    <span class="badge-wh14-bg153457-br7">
+                                                                        <span class="txt-fw600-fs8-fcFFFFFF-lh10">6</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" value="split8" onchange="videoSplitJS.select(this)" name="layoutCK" >
+                                                                <span class="txt btn-wh40-br3">
+                                                                    <i class="ico ico-layout-type7-b-28-28"></i>
+                                                                    <i class="ico ico-layout-type7-w-28-28"></i>
+                                                                    <span class="badge-wh14-bg153457-br7">
+                                                                        <span class="txt-fw600-fs8-fcFFFFFF-lh10">8</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" value="split13" onchange="videoSplitJS.select(this)" name="layoutCK" >
+                                                                <span class="txt btn-wh40-br3">
+                                                                    <i class="ico ico-layout-type8-b-28-28"></i>
+                                                                    <i class="ico ico-layout-type8-w-28-28"></i>
+                                                                    <span class="badge-wh14-bg153457-br7">
+                                                                        <span class="txt-fw600-fs8-fcFFFFFF-lh10">13</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                                <!--//레이아웃 L자형-->
+                                                <!--레이아웃 서라운드-->
+                                                <dl class="flex-col-gap5">
+                                                    <dt class="flex-row">
+                                                        <p class="txt-fw700-fs12-fc5F627B-lh10">서라운드</p>
+                                                    </dt>
+                                                    <dd class="flex-row">
+                                                        <div class="switch-txt-type3-gap9 layout-option-box">
+                                                            <label>
+                                                                <input type="radio" value="split13s" onchange="videoSplitJS.select(this)" name="layoutCK" >
+                                                                <span class="txt btn-wh40-br3">
+                                                                    <i class="ico ico-layout-type9-b-28-28"></i>
+                                                                    <i class="ico ico-layout-type9-w-28-28"></i>
+                                                                    <span class="badge-wh14-bg153457-br7">
+                                                                        <span class="txt-fw600-fs8-fcFFFFFF-lh10">13</span>
+                                                                    </span>
+                                                                </span>
+                                                            </label>
+                                                        </div>
+                                                    </dd>
+                                                </dl>
+                                                <!--//레이아웃 서라운드-->
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="flex-col-gap10">
+                                                <p class="txt-fw700-fs14-fc000000-lh10">라이브뷰 설정</p>
+                                                <!--OSD정보-->
+                                                <div class="flex-sb-bgF5F6F8-pd10-br5 ai-c">
+                                                    <p class="txt-fw700-fs14-fc000000-lh10">OSD정보</p>
+                                                    <label class="switch-circle-w30-h20-type1">
+                                                        <input type="checkbox" checked >
+                                                    </label>
+                                                </div>
+                                                <!--//OSD정보-->
+                                                <!--OSD정보-->
+                                                <div class="flex-sb-bgF5F6F8-pd10-br5 ai-c">
+                                                    <p class="txt-fw700-fs14-fc000000-lh10">디스플레이</p>
+                                                    <label class="switch-circle-w30-h20-type1">
+                                                        <input type="checkbox" checked >
+                                                    </label>
+                                                </div>
+                                                <!--//OSD정보-->
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--//acco-boader-box-->
+                            <!--acco-boader-box-->
+                            <div class="acco-boader-box accoJS active">
+                                <div class="box-head">
+                                    <button type="button" class="btn-acco accoJS-btn">
+                                        <span class="iFlex-row-gap10 ai-c">
+                                            <span class="badge-wh30-bgD22E11-br15">
+                                                <i class="ico ico-chat-voice-ai-w-20-20"></i>
+                                            </span>
+                                            <span class="txt-fw700-fs18-fc000000-lh10">AI영상분석</span>
+                                        </span>
+                                        <span class="badge-wh22-bgFFFFFF-br11 bsdw-2px2px4px0px-0000001A">
+                                            <i class="ico ico-arrow-down-b-16-16"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="box-body accoJS-cont">
+                                    <div class="flex-sb ai-e">
+                                        <div class="flex-col-gap10">
+                                            <!--사람-->
+                                            <dl class="flex-row ai-c">
+                                                <dt>
+                                                    <p class="txt-w30-fw700-fs12-fc5F627B-lh10">사람</p>
+                                                </dt>
+                                                <dd class="flex1">
+                                                    <div class="switch-txt-type3-gap5 ai-video-box">
+                                                        <label>
+                                                            <input type="checkbox" >
+                                                            <span class="txt btn-wh28-br3">
+                                                                <i class="ico ico-human1-b-18-18"></i>
+                                                                <i class="ico ico-human1-w-18-18"></i>
+                                                            </span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="checkbox" >
+                                                            <span class="txt btn-wh28-br3">
+                                                                <i class="ico ico-human2-b-18-18"></i>
+                                                                <i class="ico ico-human2-w-18-18"></i>
+                                                            </span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="checkbox" >
+                                                            <span class="txt btn-wh28-br3">
+                                                                <i class="ico ico-human3-b-18-18"></i>
+                                                                <i class="ico ico-human3-w-18-18"></i>
+                                                            </span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="checkbox" >
+                                                            <span class="txt btn-wh28-br3">
+                                                                <i class="ico ico-human4-b-18-18"></i>
+                                                                <i class="ico ico-human4-w-18-18"></i>
+                                                            </span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="checkbox" >
+                                                            <span class="txt btn-wh28-br3">
+                                                                <i class="ico ico-human5-b-18-18"></i>
+                                                                <i class="ico ico-human5-w-18-18"></i>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                            <!--//사람-->
+                                            <!--차량-->
+                                            <dl class="flex-row ai-c">
+                                                <dt>
+                                                    <p class="txt-w30-fw700-fs12-fc5F627B-lh10">차량</p>
+                                                </dt>
+                                                <dd class="flex1">
+                                                    <div class="switch-txt-type3-gap5 ai-video-box">
+                                                        <label>
+                                                            <input type="checkbox" >
+                                                            <span class="txt btn-wh28-br3">
+                                                                <i class="ico ico-cycle-b-18-18"></i>
+                                                                <i class="ico ico-cycle-w-18-18"></i>
+                                                            </span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="checkbox" >
+                                                            <span class="txt btn-wh28-br3">
+                                                                <i class="ico ico-bike-b-18-18"></i>
+                                                                <i class="ico ico-bike-w-18-18"></i>
+                                                            </span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="checkbox" >
+                                                            <span class="txt btn-wh28-br3">
+                                                                <i class="ico ico-car-b-18-18"></i>
+                                                                <i class="ico ico-car-w-18-18"></i>
+                                                            </span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="checkbox" >
+                                                            <span class="txt btn-wh28-br3">
+                                                                <i class="ico ico-police-car-b-18-18"></i>
+                                                                <i class="ico ico-police-car-w-18-18"></i>
+                                                            </span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="checkbox" >
+                                                            <span class="txt btn-wh28-br3">
+                                                                <i class="ico ico-bus-b-18-18"></i>
+                                                                <i class="ico ico-bus-w-18-18"></i>
+                                                            </span>
+                                                        </label>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                            <!--//차량-->
+                                            <!--색상-->
+                                            <dl class="flex-row">
+                                                <dt>
+                                                    <p class="txt-w30-fw700-fs12-fc5F627B-lh10">색상</p>
+                                                </dt>
+                                                <dd class="flex1">
+                                                    <div class="switch-txt-type3-gap5-wrap ai-video-box">
+                                                        <label>
+                                                            <input type="checkbox" >
+                                                            <span class="txt btn-wh14-bgFFFFFF-br3"></span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="checkbox" >
+                                                            <span class="txt btn-wh14-bg595959-br3"></span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="checkbox" >
+                                                            <span class="txt btn-wh14-bgFF0000-br3"></span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="checkbox" >
+                                                            <span class="txt btn-wh14-bgFFC000-br3"></span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="checkbox" >
+                                                            <span class="txt btn-wh14-bg548235-br3"></span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="checkbox" >
+                                                            <span class="txt btn-wh14-bgFFFF00-br3"></span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="checkbox" >
+                                                            <span class="txt btn-wh14-bg00B050-br3"></span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="checkbox" >
+                                                            <span class="txt btn-wh14-bg0070C0-br3"></span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="checkbox" >
+                                                            <span class="txt btn-wh14-bg9DC3E6-br3"></span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="checkbox" >
+                                                            <span class="txt btn-wh14-bg7030A0-br3"></span>
+                                                        </label>
+                                                    </div>
+                                                </dd>
+                                            </dl>
+                                            <!--//차량-->
+                                        </div>
+                                        <div class="flex-row-w50 jc-e">
+                                            <button type="button" class="btn-h22-bg5490DE-pdlr5-br3">
+                                                <span class="txt-fw700-fs12-fcFFFFFF-lh10">적용</span>
+                                            </button>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                            <!--//acco-boader-box-->
+                            <!--acco-boader-box-->
+                            <div class="acco-boader-box accoJS active">
+                                <div class="box-head">
+                                    <button type="button" class="btn-acco accoJS-btn">
+                                        <span class="iFlex-row-gap10 ai-c">
+                                            <span class="badge-wh30-bg5490DE-br15">
+                                                <i class="ico ico-station-w-20-20"></i>
+                                            </span>
+                                            <span class="txt-fw700-fs18-fc000000-lh10">스테이션</span>
+                                            <span class="txt-fw700-fs14-fc000000-lh10">(2/3)</span>
+                                        </span>
+                                        <span class="badge-wh22-bgFFFFFF-br11 bsdw-2px2px4px0px-0000001A">
+                                            <i class="ico ico-arrow-down-b-16-16"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="box-body accoJS-cont p_b_30px">
+                                    <ul class="list-col-box-gap40">
+                                        <li class="item">
+                                            <div class="flex-row-gap10">
+                                                <div class="badge-wh60-bgF7F9FB-br30">
+                                                    <img src="../resources/img/@sample-drone-img.png" />
+                                                </div>
+                                                <div class="flex-col-gap10 ai-s flex1">
+                                                    <div class="badge-h20-bg153457-br3-pdlr5">
+                                                        <p class="txt-fw600-fs10-fcFFFFFF-lh20px">진행중</p>
+                                                    </div>
+                                                    <p class="txt-fw700-fs14-fc000000-lh10">임무_20251123_01</p>
+                                                    <div class="flex-row-gap3">
+                                                        <div class="badge-wh10-bg153457-br5 m_1"></div>
+                                                        <ul class="list-row-box-gap10">
+                                                            <li class="item">
+                                                                <p class="txt-fw500-fs12-fc5F627B-lh12px">DOCK</p>
+                                                            </li>
+                                                            <li class="item">
+                                                                <p class="txt-fw500-fs12-fc5F627B-lh12px">IC2VISTA DOCK 01</p>    
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="switch-txt-type2-gap5 flex-row row2 wFull">
+                                                        <label>
+                                                            <input type="radio" name="camera6" checked >
+                                                            <span class="txt txt-wFull-h20">FPV Camera</span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="radio" name="camera6" >
+                                                            <span class="txt txt-wFull-h20">M30 Camera</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <div class="flex-row-gap10">
+                                                <div class="badge-wh60-bgF7F9FB-br30">
+                                                    <img src="../resources/img/@sample-drone-img.png" />
+                                                </div>
+                                                <div class="flex-col-gap10 ai-s flex1">
+                                                    <div class="badge-h20-bg5490DE-br3-pdlr5">
+                                                        <p class="txt-fw600-fs10-fcFFFFFF-lh20px">대기</p>
+                                                    </div>
+                                                    <p class="txt-fw700-fs14-fc000000-lh10">임무_20251123_01</p>
+                                                    <div class="flex-row-gap3">
+                                                        <div class="badge-wh10-bg153457-br5 m_1"></div>
+                                                        <ul class="list-row-box-gap10">
+                                                            <li class="item">
+                                                                <p class="txt-fw500-fs12-fc5F627B-lh12px">DOCK</p>
+                                                            </li>
+                                                            <li class="item">
+                                                                <p class="txt-fw500-fs12-fc5F627B-lh12px">IC2VISTA DOCK 01</p>    
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="switch-txt-type2-gap5 flex-row row2 wFull">
+                                                        <label>
+                                                            <input type="radio" name="camera7" checked >
+                                                            <span class="txt txt-wFull-h20">FPV Camera</span>
+                                                        </label>
+                                                        <label>
+                                                            <input type="radio" name="camera7" >
+                                                            <span class="txt txt-wFull-h20">M30 Camera</span>
+                                                        </label>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--//acco-boader-box-->
+                            <!--acco-boader-box-->
+                            <div class="acco-boader-box accoJS active">
+                                <div class="box-head">
+                                    <button type="button" class="btn-acco accoJS-btn">
+                                        <span class="iFlex-row-gap10 ai-c">
+                                            <span class="badge-wh30-bg153457-br15">
+                                                <i class="ico ico-drone-w-20-20"></i>
+                                            </span>
+                                            <span class="txt-fw700-fs18-fc000000-lh10">드론</span>
+                                            <span class="txt-fw700-fs14-fc000000-lh10">(2/5)</span>
+                                        </span>
+                                        <span class="badge-wh22-bgFFFFFF-br11 bsdw-2px2px4px0px-0000001A">
+                                            <i class="ico ico-arrow-down-b-16-16"></i>
+                                        </span>
+                                    </button>
+                                </div>
+                                <div class="box-body accoJS-cont p_b_30px">
+                                    <ul class="list-col-box-gap40">
+                                        <li class="item">
+                                            <button type="button" class="detail-info-btn" onclick="dronDetailJS.open(this)">선택</button>
+                                            <div class="flex-row-gap10 option-box">
+                                                <div class="flex-col-gap5 ai-c">
+                                                    <div class="badge-wh60-bgF7F9FB-br30">
+                                                        <img src="../resources/img/@sample-drone-img.png" />
+                                                    </div>
+                                                    <p class="txt-h15-bgC10230-fw600-fs9-fcFFFFFF-lh15px-pdlr3-br3">관리자 제어</p>
+                                                </div>
+                                                <div class="flex-col-gap5 ai-s flex1">
+                                                    <div class="flex-row-gap3">
+                                                        <div class="badge-wh10-bg153457-br5 m_1"></div>
+                                                        <ul class="list-row-box-gap10">
+                                                            <li class="item">
+                                                                <p class="txt-fw500-fs12-fc5F627B-lh12px">DOCK</p>
+                                                            </li>
+                                                            <li class="item">
+                                                                <p class="txt-fw500-fs12-fc5F627B-lh12px">DRONE 01</p>    
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="flex-row-gap5">
+                                                        <div class="badge-h20-bgFFFFFF-br3-pdlr7-bdw1-solid-bdcE1E4EB flex-row-gap1 ai-c">
+                                                            <p class="txt-fw600-fs10-fc5F627B-lh10">4G</p>
+                                                            <i class="ico ico-4g-b-7-7"></i>
+                                                        </div>
+                                                        <div class="badge-h20-bgFFFFFF-br3-pdlr7-bdw1-solid-bdcE1E4EB flex-row-gap1 ai-c">
+                                                            <p class="txt-fw600-fs10-fc5F627B-lh10">RTK</p>
+                                                            <i class="ico ico-router-b-10-10"></i>
+                                                            <p class="txt-fw600-fs10-fc5F627B-lh10">20</p>
+                                                        </div>
+                                                        <div class="badge-h20-bgFFFFFF-br3-pdlr7-bdw1-solid-bdcE1E4EB flex-row-gap1 ai-c">
+                                                            <i class="ico ico-battery-low-b-10-10"></i>
+                                                            <p class="txt-fw600-fs10-fc5F627B-lh10">88.1%</p>
+                                                        </div>
+                                                    </div>
+                                                    <p class="txt-fw600-fs10-fc5F627B-lh10">ASL 610.5m AGL 72.3m H.S 10.3m/s H 72.3m</p>
+                                                    <div class="flex-col-gap5 wFull">
+                                                        <div class="flex-row-gap5 row2">
+                                                            <button class="btn-h20-bgF5F6F8-br3-hvbgEEEEEE" onclick="depth3.open()">
+                                                                <span class="txt-fw600-fs10-fc5F627B-lh10">경로설정</span>
+                                                            </button>
+                                                            <button class="btn-h20-bgF5F6F8-br3-hvbgEEEEEE">
+                                                                <span class="txt-fw600-fs10-fc5F627B-lh10">상태정보</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="flex-row-gap5 row2">
+                                                            <button class="btn-h20-bgF5F6F8-br3-hvbgEEEEEE">
+                                                                <span class="txt-fw600-fs10-fc5F627B-lh10">임무설정</span>
+                                                            </button>
+                                                            <select class="select-h20-type1">
+                                                                <option>추가설정</option>
+                                                                <option>세부메뉴1</option>
+                                                                <option>세부메뉴2</option>
+                                                                <option>세부메뉴3</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="switch-txt-type2-gap5 flex-row row2 wFull">
+                                                            <label>
+                                                                <input type="radio" name="camera8" checked >
+                                                                <span class="txt txt-wFull-h20">FPV Camera</span>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" name="camera8" >
+                                                                <span class="txt txt-wFull-h20">M30 Camera</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <button type="button" class="detail-info-btn" onclick="dronDetailJS.open(this)">선택</button>
+                                            <div class="flex-row-gap10 option-box">
+                                                <div class="flex-col-gap5 ai-c">
+                                                    <div class="badge-wh60-bgF7F9FB-br30">
+                                                        <img src="../resources/img/@sample-drone-img.png" />
+                                                    </div>
+                                                    <p class="txt-h15-bg2AA138-fw600-fs9-fcFFFFFF-lh15px-pdlr3-br3">자동제어</p>
+                                                </div>
+                                                <div class="flex-col-gap10 ai-s flex1">
+                                                    <div class="flex-row-gap3">
+                                                        <div class="badge-wh10-bg153457-br5 m_1"></div>
+                                                        <ul class="list-row-box-gap10">
+                                                            <li class="item">
+                                                                <p class="txt-fw500-fs12-fc5F627B-lh12px">DOCK</p>
+                                                            </li>
+                                                            <li class="item">
+                                                                <p class="txt-fw500-fs12-fc5F627B-lh12px">DRONE 02</p>    
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="flex-col-gap5 wFull">
+                                                        <div class="flex-row-gap5 row2">
+                                                            <button class="btn-h20-bgF5F6F8-br3-hvbgEEEEEE" onclick="depth3.open()">
+                                                                <span class="txt-fw600-fs10-fc5F627B-lh10">경로설정</span>
+                                                            </button>
+                                                            <button class="btn-h20-bgF5F6F8-br3-hvbgEEEEEE">
+                                                                <span class="txt-fw600-fs10-fc5F627B-lh10">상태정보</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="flex-row-gap5 row2">
+                                                            <button class="btn-h20-bgF5F6F8-br3-hvbgEEEEEE">
+                                                                <span class="txt-fw600-fs10-fc5F627B-lh10">임무설정</span>
+                                                            </button>
+                                                            <select class="select-h20-type1">
+                                                                <option>추가설정</option>
+                                                                <option>세부메뉴1</option>
+                                                                <option>세부메뉴2</option>
+                                                                <option>세부메뉴3</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="switch-txt-type2-gap5 flex-row row2 wFull">
+                                                            <label>
+                                                                <input type="radio" name="camera9" checked >
+                                                                <span class="txt txt-wFull-h20">FPV Camera</span>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" name="camera9" >
+                                                                <span class="txt txt-wFull-h20">M30 Camera</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                        <li class="item">
+                                            <button type="button" class="detail-info-btn" onclick="dronDetailJS.open(this)">선택</button>
+                                            <div class="flex-row-gap10 option-box">
+                                                <div class="flex-col-gap5 ai-c">
+                                                    <div class="badge-wh60-bgF7F9FB-br30">
+                                                        <img src="../resources/img/@sample-drone-img.png" />
+                                                    </div>
+                                                    <p class="txt-h15-bg5490DE-fw600-fs9-fcFFFFFF-lh15px-pdlr3-br3">수동제어</p>
+                                                </div>
+                                                <div class="flex-col-gap10 ai-s flex1">
+                                                    <div class="flex-row-gap3">
+                                                        <div class="badge-wh10-bgC10230-br5 m_1"></div>
+                                                        <ul class="list-row-box-gap10">
+                                                            <li class="item">
+                                                                <p class="txt-fw500-fs12-fc5F627B-lh12px">DOCK</p>
+                                                            </li>
+                                                            <li class="item">
+                                                                <p class="txt-fw500-fs12-fc5F627B-lh12px">DRONE 03</p>    
+                                                            </li>
+                                                        </ul>
+                                                    </div>
+                                                    <div class="flex-col-gap5 wFull">
+                                                        <div class="flex-row-gap5 row2">
+                                                            <button class="btn-h20-bgF5F6F8-br3-hvbgEEEEEE" onclick="depth3.open()">
+                                                                <span class="txt-fw600-fs10-fc5F627B-lh10">경로설정</span>
+                                                            </button>
+                                                            <button class="btn-h20-bgF5F6F8-br3-hvbgEEEEEE">
+                                                                <span class="txt-fw600-fs10-fc5F627B-lh10">상태정보</span>
+                                                            </button>
+                                                        </div>
+                                                        <div class="flex-row-gap5 row2">
+                                                            <button class="btn-h20-bgF5F6F8-br3-hvbgEEEEEE">
+                                                                <span class="txt-fw600-fs10-fc5F627B-lh10">임무설정</span>
+                                                            </button>
+                                                            <select class="select-h20-type1">
+                                                                <option>추가설정</option>
+                                                                <option>세부메뉴1</option>
+                                                                <option>세부메뉴2</option>
+                                                                <option>세부메뉴3</option>
+                                                            </select>
+                                                        </div>
+                                                        <div class="switch-txt-type2-gap5 flex-row row2 wFull">
+                                                            <label>
+                                                                <input type="radio" name="camera10" checked >
+                                                                <span class="txt txt-wFull-h20">FPV Camera</span>
+                                                            </label>
+                                                            <label>
+                                                                <input type="radio" name="camera10" >
+                                                                <span class="txt txt-wFull-h20">M30 Camera</span>
+                                                            </label>
+                                                        </div>
+                                                    </div>
+                                                </div>
+                                            </div>
+                                        </li>
+                                    </ul>
+                                </div>
+                            </div>
+                            <!--//acco-boader-box-->
+                        </div>
+                    </div>
+                </aside>
+                <!--//main-option-box-->
+            </div>
+        </div>
+        <div class="flex-col-bgFFFFFF-pd5-bdw1-solid-bdc444444">
+            <div class="box-bg000000-h30-pd5 flex-center ai-c">
+                <p class="txt-fw600-fs16-fcFFFFFF-lh10">2댑스 고정메뉴</p>
+            </div>
+            <div class="box-w276-hFull-pdtb10-ovH-relative">
+                <!--main-lnb-box-->
+                <aside id="main-lnb-box">
+                    <div class="scroll-y">
+                        <div class="flex-col-gap10">
+                            <!--lnb-list-box-->
+                            <div class="lnb-list-box">
+                                <div class="box-head">
+                                    <p class="txt-fw700-fs18-fc000000-lh10">주행경로 관리</p>
+                                </div>
+                                <div class="box-body">
+                                    <nav class="list-box">
+                                        <ul class="list">
+                                            <li class="item">
+                                                <button type="button" class="btn-lnb on">
+                                                    <span class="txt">주행경로명</span>
+                                                </button>
+                                            </li>
+                                            <li class="item">
+                                                <button type="button" class="btn-lnb">
+                                                    <span class="txt">경로유형</span>
+                                                </button>
+                                            </li>
+                                            <li class="item">
+                                                <button type="button" class="btn-lnb">
+                                                    <span class="txt">전체 주행속도 설정</span>
+                                                </button>
+                                            </li>
+                                            <li class="item">
+                                                <button type="button" class="btn-lnb">
+                                                    <span class="txt">좌표</span>
+                                                </button>
+                                            </li>
+                                            <li class="item">
+                                                <button type="button" class="btn-lnb">
+                                                    <span class="txt">POI</span>
+                                                </button>
+                                            </li>
+                                            <li class="item">
+                                                <button type="button" class="btn-lnb">
+                                                    <span class="txt">고도</span>
+                                                </button>
+                                            </li>
+                                            <li class="item">
+                                                <button type="button" class="btn-lnb">
+                                                    <span class="txt">속도</span>
+                                                </button>
+                                            </li>
+                                            <li class="item">
+                                                <button type="button" class="btn-lnb">
+                                                    <span class="txt">비행모드</span>
+                                                </button>
+                                            </li>
+                                            <li class="item">
+                                                <button type="button" class="btn-lnb">
+                                                    <span class="txt">촬영</span>
+                                                </button>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <!--//lnb-list-box-->
+                        </div>
+                    </div>
+                </aside>
+                <!--//main-lnb-box-->
+            </div>
+        </div>
+        <div class="flex-col-bgFFFFFF-pd5-bdw1-solid-bdc444444">
+            <div class="box-bg000000-h30-pd5 flex-center ai-c">
+                <p class="txt-fw600-fs16-fcFFFFFF-lh10">2댑스 고정메뉴</p>
+            </div>
+            <div class="box-w276-hFull-pdtb10-ovH-relative">
+                <!--main-lnb-box-->
+                <aside id="main-lnb-box">
+                    <div class="scroll-y">
+                        <div class="flex-col-gap10">
+                            <!--lnb-list-box-->
+                            <div class="lnb-list-box">
+                                <div class="box-body">
+                                    <nav class="list-box">
+                                        <ul class="list">
+                                            <li class="item">
+                                                <div class="flex-row-pdlr30-pdtb23 ai-c">
+                                                    <p class="txt-fw700-fs14-fc000000-lh10">미디어 파일</p>
+                                                </div>
+                                            </li>
+                                            <li class="item">
+                                                <div class="flex-row-pdlr30-pdtb23 ai-c">
+                                                    <p class="txt-fw700-fs14-fc000000-lh10">스토리지 사용</p>
+                                                </div>
+                                            </li>
+                                            <li class="item">
+                                                <div class="flex-col-gap10-pdlr20-pdtb24 ai-c">
+                                                    <div class="flex-sb-gap ai-c wFull">
+                                                        <div class="flex-row-gap10 ai-c flex1">
+                                                            <div class="badge-wh26-bg5467DE-br13">
+                                                                <i class="ico ico-image-w-12-12"></i>
+                                                            </div>
+                                                            <p class="txt-fw700-fs14-fc000000-lh10">사진</p>
+                                                        </div>
+                                                        <p class="badge-w40-h22-bg153457-br3 txt-fw600-fs12-fcFFFFFF-lh22px-tac">6파일</p>
+                                                        <p class="txt-w60-fw700-fs14-fc000000-lh10-mgl10">16.69G</p>
+                                                    </div>
+                                                    <div class="flex-sb-gap ai-c wFull">
+                                                        <div class="flex-row-gap10 ai-c flex1">
+                                                            <div class="badge-wh26-bg5490DE-br13">
+                                                                <i class="ico ico-video-w-12-12"></i>
+                                                            </div>
+                                                            <p class="txt-fw700-fs14-fc000000-lh10">동영상</p>
+                                                        </div>
+                                                        <p class="badge-w40-h22-bg153457-br3 txt-fw600-fs12-fcFFFFFF-lh22px-tac">6파일</p>
+                                                        <p class="txt-w60-fw700-fs14-fc000000-lh10-mgl10">16.69G</p>
+                                                    </div>
+                                                    <div class="flex-sb-gap ai-c wFull">
+                                                        <div class="flex-row-gap10 ai-c flex1">
+                                                            <div class="badge-wh26-bg153457-br13">
+                                                                <i class="ico ico-zip-w-12-12"></i>
+                                                            </div>
+                                                            <p class="txt-fw700-fs14-fc000000-lh10">압축파일</p>
+                                                        </div>
+                                                        <p class="badge-w40-h22-bg153457-br3 txt-fw600-fs12-fcFFFFFF-lh22px-tac">6파일</p>
+                                                        <p class="txt-w60-fw700-fs14-fc000000-lh10-mgl10">7G</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                            <li class="item">
+                                                <div class="flex-row-pdlr20-pdtb23 ai-c">
+                                                    <div class="flex-sb-gap ai-c wFull">
+                                                        <div class="flex-row-gap10 ai-c flex1">
+                                                            <div class="badge-wh26-bgD22E11-br13">
+                                                                <i class="ico ico-chart-w-12-12"></i>
+                                                            </div>
+                                                            <p class="txt-fw700-fs14-fc000000-lh10">사용가능</p>
+                                                        </div>
+                                                        <p class="txt-fw700-fs14-fc000000-lh10-mgl20">4.17T</p>
+                                                    </div>
+                                                </div>
+                                            </li>
+                                        </ul>
+                                    </nav>
+                                </div>
+                            </div>
+                            <!--//lnb-list-box-->
+                        </div>
+                    </div>
+                </aside>
+                <!--//main-lnb-box-->
+            </div>
+        </div>
+    </div>
+
+</body>
+</html>

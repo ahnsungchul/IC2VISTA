@@ -317,7 +317,7 @@ const lp = {
 }
 
 const videoSplitJS = {
-    _target : '#main-video-box',
+    _target : '.main-video-grid',
     _screenBox : '.screen-split-box',
     select(_this){
         $(this._target).find(this._screenBox).removeClass("on");

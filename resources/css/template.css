@@ -144,6 +144,8 @@
 [class*="-w182"]{ width: 11.375rem;}
 [class*="-w235"]{ width: 14.688rem;}
 [class*="-w245"]{ width: 15.313rem;}
+[class*="-w276"]{ width: 17.25rem;}
+[class*="-w300"]{ width: 18.75rem}
 [class*="-w360"]{ width: 22.5rem}
 [class*="-w363"]{ width: 22.688rem}
 [class*="-w395"]{ width: 24.688rem}
@@ -1313,44 +1315,40 @@ position: absolute; top: 1.875rem;}
 #lp-layout .lp-box.tagSetting{ width: 24.625rem;}
 
 [class*="snack-bar-"][class*="-battery"] .snack-bar-close{ position: absolute; top: -0.688rem; right: -0.688rem;}
-#control-wrap.type-map #main-layout{ background-color: #999; position: relative;}
-#control-wrap.type-map #main-layout [class*="fixed-tool-"]{ position: absolute; transition: all 0.1s;}
-#control-wrap.type-map #main-layout [class*="fixed-tool-"][class*="-gps"]{ right: 1.875rem; bottom: 0.625rem; left: 1.875rem;}
-#control-wrap.type-map #main-layout [class*="fixed-tool-"][class*="-control"]{ top: 0.625rem; right: 0.625rem;}
-#control-wrap.type-map #main-layout [class*="snack-bar-"]{ position: absolute; transition: all 0.1s;}
-#control-wrap.type-map #main-layout [class*="snack-bar-"][class*="-battery"]{ right: 1.875rem; bottom: 4.938rem;}
-#control-wrap.type-map #main-layout [class*="marker-box-"]{ width: 2.875rem; height: 2.875rem; display: flex; align-items: center; justify-content: center; border-radius: 50%; position: absolute;}
-#control-wrap.type-map #main-layout [class*="marker-box-"][class*="-type1"]{ background-color: #C10230;}
-#control-wrap.type-map #main-layout [class*="marker-box-"][class*="-type2"]{ background-color: #124689;}
-#control-wrap.type-map #main-layout [class*="marker-box-"][class*="-type3"]{ background-color: #5490DE;}
-body:has( #gnb-layout.show.active) 
-#control-wrap.type-map #main-layout [class*="fixed-tool-"][class*="-gps"]{ left: 7.5rem;}
-body:has( .depth2-box.show.active) 
-#control-wrap.type-map #main-layout [class*="fixed-tool-"][class*="-gps"]{ left: 26.375rem;}
-body:has( #gnb-layout.show.active):has( .depth2-box.show.active) 
-#control-wrap.type-map #main-layout [class*="fixed-tool-"][class*="-gps"]{ left: 30.375rem;}
-body:has( #gnb-layout.show.active):has( .depth2-box.show.active):has( .depth3-box.show.active) #control-wrap.type-map #main-layout [class*="fixed-tool-"][class*="-gps"]{ left: 53.25rem;}
-body:has( #aside-right-layout .dron-detail-box.active) #control-wrap.type-map #main-layout [class*="fixed-tool-"][class*="-gps"],
-body:has( #aside-right-layout .dron-detail-box.active) #control-wrap.type-map #main-layout [class*="snack-bar-"][class*="-battery"]{ right: 24.75rem;}
-body:has( #aside-right-layout .dron-detail-box.active) #control-wrap.type-map #main-layout [class*="fixed-tool-"][class*="-control"]{ right: 21.25rem;}
-#control-wrap.type-control #main-layout [class*="fixed-tool-"]{ position: absolute; transition: all 0.1s;}
-#control-wrap.type-control #main-layout [class*="fixed-tool-"][class*="-control"]{ bottom: 0.625rem; right: 0.625rem;}
-#control-wrap.type-control #main-layout [class*="fixed-tool-"][class*="-cameraInfo"]{ top: 0; left: 0;}
-#control-wrap.type-control #main-layout [class*="fixed-tool-"][class*="-irwide"]{ top: 50%; left: 0.625rem; transform: translateY(-50%);}
-#control-wrap.type-control #main-layout [class*="fixed-tool-"][class*="-btn"]{ bottom: 0.625rem; left: 0.625rem;}
-#control-wrap.type-control #main-layout [class*="fixed-tool-"][class*="-lens"]{ bottom: 0.625rem; right: 0.625rem;}
-#control-wrap.type-control #main-layout [class*="snack-bar-"][class*="-battery"]{ position: absolute; bottom: 5.25rem; left: 0.625rem;}
+#main-layout .control-screen-box [class*="fixed-tool-"]{ position: absolute; transition: all 0.1s;}
+#main-layout .control-screen-box [class*="fixed-tool-"][class*="-gps"]{ right: 1.875rem; bottom: 0.625rem; left: 1.875rem;}
+#main-layout .control-screen-box [class*="fixed-tool-"][class*="-control"]{ top: 0.625rem; right: 0.625rem;}
+#main-layout .control-screen-box [class*="snack-bar-"]{ position: absolute; transition: all 0.1s;}
+#main-layout .control-screen-box [class*="snack-bar-"][class*="-battery"]{ right: 1.875rem; bottom: 4.938rem;}
+#main-layout .control-screen-box [class*="marker-box-"]{ width: 2.875rem; height: 2.875rem; display: flex; align-items: center; justify-content: center; border-radius: 50%; position: absolute;}
+#main-layout .control-screen-box [class*="marker-box-"][class*="-type1"]{ background-color: #C10230;}
+#main-layout .control-screen-box [class*="marker-box-"][class*="-type2"]{ background-color: #124689;}
+#main-layout .control-screen-box [class*="marker-box-"][class*="-type3"]{ background-color: #5490DE;}
+#control-wrap:has( #gnb-layout.show.active)  #main-layout [class*="fixed-tool-"][class*="-gps"]{ left: 7.5rem;}
+#control-wrap:has( .depth2-box.show.active)  #main-layout [class*="fixed-tool-"][class*="-gps"]{ left: 26.375rem;}
+#control-wrap:has( #gnb-layout.show.active):has( .depth2-box.show.active)  #main-layout [class*="fixed-tool-"][class*="-gps"]{ left: 30.375rem;}
+#control-wrap:has( #gnb-layout.show.active):has( .depth2-box.show.active):has( .depth3-box.show.active) #main-layout [class*="fixed-tool-"][class*="-gps"]{ left: 53.25rem;}
+#control-wrap:has( #aside-right-layout .dron-detail-box.active) #main-layout [class*="fixed-tool-"][class*="-gps"],
+#control-wrap:has( #aside-right-layout .dron-detail-box.active) #main-layout [class*="snack-bar-"][class*="-battery"]{ right: 24.75rem;}
+#control-wrap:has( #aside-right-layout .dron-detail-box.active) #main-layout [class*="fixed-tool-"][class*="-control"]{ right: 21.25rem;}
+#main-layout .fly-control-box [class*="fixed-tool-"]{ position: absolute; transition: all 0.1s;}
+#main-layout .fly-control-box [class*="fixed-tool-"][class*="-control"]{ bottom: 0.625rem; right: 0.625rem;}
+#main-layout .fly-control-box [class*="fixed-tool-"][class*="-cameraInfo"]{ top: 0; left: 0;}
+#main-layout .fly-control-box [class*="fixed-tool-"][class*="-irwide"]{ top: 50%; left: 0.625rem; transform: translateY(-50%);}
+#main-layout .fly-control-box [class*="fixed-tool-"][class*="-btn"]{ bottom: 0.625rem; left: 0.625rem;}
+#main-layout .fly-control-box [class*="fixed-tool-"][class*="-lens"]{ bottom: 0.625rem; right: 0.625rem;}
+#main-layout .fly-control-box [class*="snack-bar-"][class*="-battery"]{ position: absolute; bottom: 5.25rem; left: 0.625rem;}
 #control-wrap.type-board #main-layout [class*="snack-bar-"][class*="-mapGuide"]{ background-color: #00000080; padding: 1.875rem 2.125rem; border-radius: 0.313rem; position: absolute; top: 7.125rem; left: 1.875rem; z-index: 1;}
 #control-wrap.type-board #main-layout [class*="snack-bar-"][class*="-mapGuide"] .snack-bar-close{ position: absolute; top: 0.625rem; right: 0.625rem;}
-#control-wrap.type-board #main-layout [class*="snack-bar-"][class*="-routeList"]{ background-color: #FFFFFF; padding: 1.25rem; border-radius: 0.313rem; position: absolute; bottom: 1.875rem; left: 1.875rem; right: 1.875rem; z-index: 1;}
-#control-wrap.type-board #main-layout [class*="snack-bar-"][class*="-routeList"] .snack-bar-close{ box-shadow: 0.125rem 0.125rem 0.25rem 0 #0000001A; position: absolute; top: 0.625rem; right: 0.625rem;}
-#control-wrap.type-board #main-layout [class*="fixed-tool-"][class*="-guideTxt"]{ width: 100%; height: 100%; background-color: #00000080; display: flex; align-items: center; justify-content: center; position: absolute; top: 0; left: 0;}
-.lp-box [class*="fixed-tool-"][class*="-dim"]{ width: 100%; height: 100%; background-color: #00000080; position: absolute; top: 0; left: 0;}
-.lp-box [class*="fixed-tool-"][class*="-videoInfo"]{ position: absolute; top: 0; left: 0;}
-.lp-box [class*="fixed-tool-"][class*="-videoOption"]{ position: absolute; bottom: 2.5rem; left: 50%; transform: translateX(-50%); z-index: 1;}
-.lp-box [class*="fixed-tool-"][class*="-btnL"]{ position: absolute; top: 50%; left: 1.25rem; transform: translateY(-50%); z-index: 1;}
-.lp-box [class*="fixed-tool-"][class*="-btnR"]{ position: absolute; top: 50%; right: 1.25rem; transform: translateY(-50%); z-index: 1;}
-.lp-box [class*="fixed-tool-"][class*="-location"]{ position: absolute; bottom: 0.438rem; left: 0.5rem; right: 0.5rem;}
+#main-layout .driving-route-setting-box [class*="snack-bar-"][class*="-routeList"]{ background-color: #FFFFFF; padding: 1.25rem; border-radius: 0.313rem; position: absolute; bottom: 1.875rem; left: 1.875rem; right: 1.875rem; z-index: 1;}
+#main-layout .driving-route-setting-box [class*="snack-bar-"][class*="-routeList"] .snack-bar-close{ box-shadow: 0.125rem 0.125rem 0.25rem 0 #0000001A; position: absolute; top: 0.625rem; right: 0.625rem;}
+#main-layout .driving-route-setting-box [class*="fixed-tool-"][class*="-guideTxt"]{ width: 100%; height: 100%; background-color: #00000080; display: flex; align-items: center; justify-content: center; position: absolute; top: 0; left: 0;}
+.lp-box.videoControl [class*="fixed-tool-"][class*="-dim"]{ width: 100%; height: 100%; background-color: #00000080; position: absolute; top: 0; left: 0;}
+.lp-box.videoControl [class*="fixed-tool-"][class*="-videoInfo"]{ position: absolute; top: 0; left: 0;}
+.lp-box.videoControl [class*="fixed-tool-"][class*="-videoOption"]{ position: absolute; bottom: 2.5rem; left: 50%; transform: translateX(-50%); z-index: 1;}
+.lp-box.videoControl [class*="fixed-tool-"][class*="-btnL"]{ position: absolute; top: 50%; left: 1.25rem; transform: translateY(-50%); z-index: 1;}
+.lp-box.videoControl [class*="fixed-tool-"][class*="-btnR"]{ position: absolute; top: 50%; right: 1.25rem; transform: translateY(-50%); z-index: 1;}
+.lp-box.videoControl [class*="fixed-tool-"][class*="-location"]{ position: absolute; bottom: 0.438rem; left: 0.5rem; right: 0.5rem;}
 
 .donut-container { width: 5.125rem; height: 5.125rem; display: flex; justify-content: center; align-items: center;}
 .donut-container .donut-chart { position: relative; width: 5.125rem; height: 5.125rem; border-radius: 50%; /* 배경색과 차트 색상 설정 */ background: conic-gradient(#5692e4 calc(var(--percentage) * 1%),#122c4b 0); display: flex; justify-content: center; align-items: center;}
@@ -1499,9 +1497,9 @@ body:has( #aside-right-layout .dron-detail-box.active) #control-wrap.type-map #m
 [class*="table-"] .ico,
 [class*="table-"] img{ max-width: 100%; display: inline-block; vertical-align: middle;}
 
-.route-snack-box{ width: 16rem; display: none; flex-direction: column; border: 0.063rem solid #E1E4EB; border-radius: 0.313rem; opacity: 0; position: fixed; top: 4.5rem; left: 21.25rem; transition: all 0.1s;}
+.route-snack-box{ width: 16rem; display: none; flex-direction: column; border: 0.063rem solid #E1E4EB; border-radius: 0.313rem; opacity: 0; position: fixed; top: 3.125rem; left: 21.563rem; bottom: 0.938rem; transition: all 0.1s;}
 .route-snack-box > .box-head{ height: 3.125rem; padding: 0 1.25rem; display: flex; justify-content: space-between;}
-.route-snack-box > .box-body{ padding: 0.625rem 0.625rem 1.25rem 0.625rem; border-top: 0.063rem solid #E1E4EB;}
+.route-snack-box > .box-body{ height: calc(100% - 3.125rem); padding: 0.625rem 0.625rem 1.25rem 0.625rem; border-top: 0.063rem solid #E1E4EB;}
 .route-snack-box > .btn-close{ position: absolute; top:  -0.688rem; right: -0.688rem;}
 .route-snack-box.show{ display: flex;}
 .route-snack-box.active{ opacity: 1;}
@@ -1522,8 +1520,6 @@ body:has( #aside-right-layout .dron-detail-box.active) #control-wrap.type-map #m
 .moveTabJS .tab-con.on{ display: flex;}
 .moveTabJS.tab-type2 .btn-tab{ border: 0.063rem solid #E1E4EB;}
 .moveTabJS.tab-type2 .btn-tab.on{ border: 0;}
-
-.dashboard-layout-box{ width: 100%; height: 100%; padding: 1.375rem 0.625rem 0.625rem 0.625rem; display: grid; gap: 0.625rem; grid-column: 1 / 3; grid-row: 1 / 2; grid-template-columns: repeat(1, 1fr) repeat(1, 1fr) repeat(1, 1fr) repeat(1, 1fr); grid-template-rows: repeat(1, 1fr) repeat(1, 1fr) repeat(1, 1fr) repeat(1, 1fr);}
 
 .dashboard-cont-box{ width: 100%; height: 100%; display: flex; flex-direction: column; border: 0.063rem solid #E1E4EB; border-radius: 0.313rem;}
 .dashboard-cont-box > .box-head{ height: 3.375rem; padding: 0.313rem 1.25rem; display: flex; justify-content: space-between; align-items: center;}

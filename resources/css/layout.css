@@ -13,7 +13,7 @@
 
 #control-wrap{ width: 100%; height: 100%; background-color: #fff; display: grid; grid-template-columns: repeat(1, 1fr); grid-template-rows: 3.125rem repeat(1, 1fr); position: relative;}
 
-#header-layout{ background-color: #fff; padding: 0 0.625rem 0 4.625rem; display: flex; justify-content: space-between; align-items: center; grid-column: 1 / 2; grid-row: 1 / 2; position: relative; z-index: 998;}
+#header-layout{ background-color: #fff; padding: 0 0.625rem 0 4.625rem; display: flex; justify-content: space-between; align-items: center; grid-column: 1 / 2; grid-row: 1 / 2; position: relative;}
 
 #aside-left-layout{ position: fixed; top: 0; right: auto; bottom: 0; left: 0; z-index: 999;}
 
@@ -46,7 +46,7 @@
 #gnb-layout .depth1-box .util-menu .txt{ font-size: 0; text-indent: -624.938rem; opacity: 0;}
 #gnb-layout .depth1-box .util-menu .count{ width: 0.875rem; height: 0.875rem; background-color: #C10230; font-weight: 600; font-size: 0.625rem; color: #fff; line-height: 1; padding: 0; margin: -0.938rem 0 0 0; display: flex; align-items: center; justify-content: center; border-radius: 0.438rem; position: absolute; top: 50%; left: 50%;}
 #gnb-layout .depth1-box .util-menu:hover .ico{ opacity: 1;}
-#gnb-layout .depth2-box{ width: 17.25rem; background-color: #fff; padding: 0 0.188rem 0.938rem 0.313rem; box-sizing: border-box; position: absolute; top: 3.125rem; right: auto; bottom: 0; left: -17.25rem; transition: left 0.1s; z-index: 2;}
+#gnb-layout .depth2-box{ width: 17.25rem; background-color: #fff; padding: 0 0.5rem 0.938rem 0.625rem; box-sizing: border-box; position: absolute; top: 3.125rem; right: auto; bottom: 0; left: -17.25rem; transition: left 0.1s; z-index: 2;}
 #gnb-layout .depth2-box > .scroll-y{ display: none;}
 #gnb-layout .depth2-box .depth2-open,
 #gnb-layout .depth2-box .depth2-close{ width: 1.875rem; height: 3.125rem; background-color: #fff; display: none; align-items: center; justify-content: center; border-radius: 0 0.313rem 0.313rem 0; position: absolute; top: 3.75rem; right: -1.875rem;}
@@ -67,26 +67,18 @@
 #gnb-layout.active .depth2-box.active{ left: 4rem;}
 #gnb-layout.active .depth3-box{ left: 21.25rem;}
 
-#main-layout{ grid-column: 1 / 2; grid-row: 2 / 3;}
+#main-layout{ padding-left: 0; display: grid; grid-column: 1 / 2; grid-row: 2 / 3; grid-template-columns: 17.25rem repeat(1, 1fr); grid-template-rows: repeat(1, 1fr); transition: all 0.1s; position: relative;}
+#control-wrap:has( #gnb-layout.active) #main-layout{ padding-left: 4rem;}
+#control-wrap:has( #gnb-layout.active):has( .control-screen-box) #main-layout{ padding-left: 0;}
 
-#control-wrap.type-video #main-layout{ padding-left: 0; display: grid; grid-template-columns: 17.25rem repeat(1, 1fr); grid-template-rows: repeat(1, 1fr); transition: all 0.1s;}
-#control-wrap.type-video:has( #gnb-layout.active) #main-layout{ padding-left: 4rem;}
+#main-layout .control-screen-box{ background-color: #999; position: relative; grid-column: 1 / 3; grid-row: 1 / 2;}
 
-#main-option-box{ height: calc(100vh - 3.125rem); padding: 0 0.125rem 0.938rem 0.625rem; grid-column: 1 / 2; grid-row: 1 / 2;}
-#main-video-box{ grid-column: 2 / 3; grid-row: 1 / 2;}
+#main-layout .main-video-grid{ grid-column: 1 / 3; grid-row: 1 / 2; transition: all 0.1s;}
+#main-layout .main-board-box{ padding: 0 0.625rem 0.625rem 0.625rem; grid-column: 1 / 3; grid-row: 1 / 2; transition: all 0.1s;}
+#control-wrap:has( #gnb-layout .depth2-box.active) .main-video-grid,
+#control-wrap:has( #gnb-layout .depth2-box.active) .main-board-box{ grid-column: 2 / 3; grid-row: 1 / 2;}
 
-#control-wrap.type-control #main-layout{ padding-left: 0; display: grid; gap: 0.625rem; grid-template-columns: 37.5rem repeat(1, 1fr); grid-template-rows: repeat(1, 1fr) repeat(1, 1fr); transition: all 0.1s;}
-#control-wrap.type-control #main-layout > .flex-col{ grid-column: 2 / 3; grid-row: 1 / 3;}
-#control-wrap.type-control:has( #gnb-layout.active) #main-layout{ padding-left: 4rem;}
+#main-layout .fly-control-grid{ padding-left: 0; display: grid; gap: 0.625rem; grid-column: 1 / 3; grid-row: 1 / 2; grid-template-columns: 37.5rem repeat(1, 1fr); grid-template-rows: repeat(1, 1fr) repeat(1, 1fr); transition: all 0.1s;}
+#main-layout .fly-control-grid > .flex-col{ grid-column: 2 / 3; grid-row: 1 / 3;}
 
-#control-wrap.type-board #main-layout{ padding-left: 0; display: grid; grid-template-columns: 17.25rem repeat(1, 1fr); grid-template-rows: repeat(1, 1fr); transition: all 0.1s; position: relative;}
-#control-wrap.type-board:has( #gnb-layout.active) #main-layout{ padding-left: 4rem;}
-
-#main-lnb-box{ height: 100%; padding: 0 0.188rem 0.938rem 0.625rem; grid-column: 1 / 2; grid-row: 1 / 2;}
-#main-board-box,
-#main-lnb-box[style*="display:none"] ~ #main-board-box,
-#main-lnb-box[style*="display: none"] ~ #main-board-box,
-#main-lnb-box[style*="display :none"] ~ #main-board-box,
-#main-lnb-box[style*="display : none"] ~ #main-board-box{ padding: 0 0.625rem 0.625rem 0.625rem; grid-column: 1 / 3; grid-row: 1 / 2; transition: all 0.1s;}
-#main-lnb-box ~ #main-board-box{ grid-column: 2 / 3; grid-row: 1 / 2; transition: all 0.1s;}
-#control-wrap.type-board:has( .route-snack-box.active) #main-board-box{ padding-left: 17.25rem;}
+#main-layout .dashboard-layout-grid{ padding: 0 0.625rem 0.625rem 0.625rem; display: grid; gap: 0.625rem; grid-column: 1 / 3; grid-row: 1 / 2; grid-template-columns: repeat(1, 1fr) repeat(1, 1fr) repeat(1, 1fr) repeat(1, 1fr); grid-template-rows: repeat(1, 1fr) repeat(1, 1fr) repeat(1, 1fr) repeat(1, 1fr);}

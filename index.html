@@ -268,6 +268,10 @@
             .ex-box::before {content: '화면예시 : ';}
 
             span.new {color: #00F; font-weight: bold;}
+
+            tr.clear td,
+            tr.clear td a{ text-decoration: line-through; color: #888;}
+            tr.clear td{ background-color: #ddd !important;}
         </style>
     </head>
     <body>
@@ -359,6 +363,20 @@
                             <td>공통</td>
                             <td>html</td>
                             <td class="id">00-template</td>
+                            <td class="url"></td>
+                            <td class="ok"></td><!-- ok:완료, ing:진행중, edit:수정, check:확인필요, hold:보류 -->
+                            <td class="t_a_l"></td>
+                        </tr>
+                        <tr class="clear">
+                            <td class="count"></td>
+                            <td>Template</td>
+                            <td>Menu List</td>
+                            <td></td>
+                            <td></td>
+                            <td></td>
+                            <td>공통</td>
+                            <td>html</td>
+                            <td class="id">00-template-menu-list</td>
                             <td class="url"></td>
                             <td class="ok"></td><!-- ok:완료, ing:진행중, edit:수정, check:확인필요, hold:보류 -->
                             <td class="t_a_l"></td>
@@ -497,7 +515,7 @@
                                 11_조종제어(조작패널)화면<br>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="clear">
                             <td class="count"></td>
                             <td>Driving Route Management</td>
                             <td></td>
@@ -513,7 +531,7 @@
                                 12_주행경로-관리-등록(신규등록)<br>
                             </td>
                         </tr>
-                        <tr>
+                        <tr class="clear">
                             <td class="count"></td>
                             <td>Driving Route Management</td>
                             <td>Edit</td>
